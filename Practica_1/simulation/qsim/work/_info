@@ -1,8 +1,8 @@
 m255
 K4
 z2
-!s11e MIXED_VERSIONS
-!s11f vlog 2020.1 2020.02, Feb 28 2020
+!s11f MIXED_VERSIONS
+!s11e vcom 2020.1 2020.02, Feb 28 2020
 13
 !s112 1.1
 !i10d 8192
@@ -11,14 +11,14 @@ z2
 cModel Technology
 Z0 dD:/Programas/intelFPGA_lite/Projects_MAX10/Practica_1/simulation/qsim
 Ehard_block
-Z1 w1612284999
+Z1 w1612362064
 Z2 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
 Z3 DPx11 fiftyfivenm 21 fiftyfivenm_atom_pack 0 22 OTUTkBjTeYVegmIWhVi3N0
 Z4 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
 Z5 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z6 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
 Z7 DPx11 fiftyfivenm 22 fiftyfivenm_components 0 22 C5K^h=:j[4HI?HO^UkN3:2
-!i122 18
+!i122 48
 R0
 Z8 8Practica_1.vho
 Z9 FPractica_1.vho
@@ -28,9 +28,9 @@ Vhj[i;a0dD85B`o1JPT^cg2
 !s100 3A]XnMhF<;9mKUe5mn3aM1
 Z10 OV;C;2020.1;71
 32
-Z11 !s110 1612285000
+Z11 !s110 1612362065
 !i10b 1
-Z12 !s108 1612285000.000000
+Z12 !s108 1612362065.000000
 Z13 !s90 -work|work|Practica_1.vho|
 Z14 !s107 Practica_1.vho|
 !i113 1
@@ -44,7 +44,7 @@ R5
 R6
 R7
 DEx4 work 10 hard_block 0 22 hj[i;a0dD85B`o1JPT^cg2
-!i122 18
+!i122 48
 l76
 L54 28
 Va5ClDYec`9chO`Ne0M1NL2
@@ -59,30 +59,6 @@ R14
 !i113 1
 R15
 R16
-vPractica_1
-Z17 !s110 1612284916
-!i10b 1
-!s100 oKY;lF^5C57h:2l^ZWnHN3
-Z18 !s11b Dg1SIo80bB@j0V0VzS_@n1
-IUo[EFF]_LjBCkEQ?Z]Ze`1
-Z19 VDg1SIo80bB@j0V0VzS_@n1
-R0
-w1612284915
-8Practica_1.vo
-FPractica_1.vo
-!i122 14
-L0 32 213
-Z20 OV;L;2020.1;71
-r1
-!s85 0
-31
-Z21 !s108 1612284916.000000
-!s107 Practica_1.vo|
-!s90 -work|work|Practica_1.vo|
-!i113 1
-R15
-Z22 tCvgOpt 0
-n@practica_1
 Epractica_1
 R1
 R2
@@ -91,7 +67,7 @@ R4
 R5
 R6
 R7
-!i122 18
+!i122 48
 R0
 R8
 R9
@@ -117,7 +93,7 @@ R5
 R6
 R7
 DEx4 work 10 practica_1 0 22 87cX>jYThDGhJ;6Y`Z[E22
-!i122 18
+!i122 48
 l138
 L105 202
 V4OIZLcYi6:OUO<mT^^7<K3
@@ -132,14 +108,38 @@ R14
 !i113 1
 R15
 R16
+vPractica_1
+Z17 !s110 1612355984
+!i10b 1
+!s100 oKY;lF^5C57h:2l^ZWnHN3
+Z18 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IUo[EFF]_LjBCkEQ?Z]Ze`1
+Z19 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1612355983
+8Practica_1.vo
+FPractica_1.vo
+!i122 32
+L0 32 213
+Z20 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z21 !s108 1612355984.000000
+!s107 Practica_1.vo|
+!s90 -work|work|Practica_1.vo|
+!i113 1
+R15
+Z22 tCvgOpt 0
+n@practica_1
 Epractica_1_vhd_vec_tst
-Z23 w1612284998
+R1
 R5
 R6
-!i122 19
+!i122 49
 R0
-Z24 8Cronograma_P1.vwf.vht
-Z25 FCronograma_P1.vwf.vht
+Z23 8Cronograma_P1.vwf.vht
+Z24 FCronograma_P1.vwf.vht
 l0
 L32 1
 VCc[[?an:E:eo`DdK9b3;21
@@ -149,43 +149,43 @@ R10
 R11
 !i10b 1
 R12
-Z26 !s90 -work|work|Cronograma_P1.vwf.vht|
-Z27 !s107 Cronograma_P1.vwf.vht|
+Z25 !s90 -work|work|Cronograma_P1.vwf.vht|
+Z26 !s107 Cronograma_P1.vwf.vht|
 !i113 1
 R15
 R16
 Apractica_1_arch
 R5
 R6
-Z28 DEx4 work 22 practica_1_vhd_vec_tst 0 22 Cc[[?an:E:eo`DdK9b3;21
-!i122 19
+Z27 DEx4 work 22 practica_1_vhd_vec_tst 0 22 Cc[[?an:E:eo`DdK9b3;21
+!i122 49
 l49
-Z29 L34 62
-Z30 VBNj_jU?hhI:fJn?Ho=0;93
-Z31 !s100 b7aNLlKa_o2NdDYjUFRFo2
+Z28 L34 50
+Z29 V35c?NF=;DaB6]iTP:^j9e1
+Z30 !s100 8GYG4e;]lFkMgePcAPFK`0
 R10
 32
 R11
 !i10b 1
 R12
+R25
 R26
-R27
 !i113 1
 R15
 R16
 vPractica_1_vlg_vec_tst
 R17
 !i10b 1
-!s100 M1IMzPL3QDNjk;DNO>D3S0
+!s100 FiS<82FWaI<zzBNH]?o1L2
 R18
-IQb][X7fVeHi<YLLcX]bIa3
+I6GVnNX63LF_6feWL]O?PK2
 R19
 R0
-w1612284914
+w1612355982
 8Cronograma_P1.vwf.vt
 FCronograma_P1.vwf.vt
-!i122 15
-L0 30 48
+!i122 33
+L0 30 47
 R20
 r1
 !s85 0
