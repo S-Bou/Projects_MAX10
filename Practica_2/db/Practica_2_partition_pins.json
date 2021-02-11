@@ -1,0 +1,57 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "cout",
+					"strict" : false
+				},
+				{
+					"name" : "PWM_OUT",
+					"strict" : false
+				},
+				{
+					"name" : "LED_OUT",
+					"strict" : false
+				},
+				{
+					"name" : "CLK",
+					"strict" : false
+				},
+				{
+					"name" : "DATAIN[7]",
+					"strict" : false
+				},
+				{
+					"name" : "DATAIN[6]",
+					"strict" : false
+				},
+				{
+					"name" : "DATAIN[5]",
+					"strict" : false
+				},
+				{
+					"name" : "DATAIN[4]",
+					"strict" : false
+				},
+				{
+					"name" : "DATAIN[3]",
+					"strict" : false
+				},
+				{
+					"name" : "DATAIN[2]",
+					"strict" : false
+				},
+				{
+					"name" : "DATAIN[1]",
+					"strict" : false
+				},
+				{
+					"name" : "DATAIN[0]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

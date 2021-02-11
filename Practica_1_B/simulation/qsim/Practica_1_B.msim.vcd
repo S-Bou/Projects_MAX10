@@ -1,0 +1,188 @@
+$comment
+	File created using the following command:
+		vcd file Practica_1_B.msim.vcd -direction
+$end
+$date
+	Thu Feb 11 12:22:36 2021
+$end
+$version
+	ModelSim Version 2020.1
+$end
+$timescale
+	1ps
+$end
+
+$scope module practica_1_b_vhd_vec_tst $end
+$var wire 1 ! a $end
+$var wire 1 " b $end
+$var wire 1 # c $end
+$var wire 1 $ d $end
+$var wire 1 % D0 $end
+$var wire 1 & D1 $end
+$var wire 1 ' D2 $end
+$var wire 1 ( D3 $end
+$var wire 1 ) D4 $end
+$var wire 1 * D5 $end
+$var wire 1 + D6 $end
+$var wire 1 , D7 $end
+$var wire 1 - e $end
+$var wire 1 . f $end
+$var wire 1 / g $end
+
+$scope module i1 $end
+$var wire 1 0 gnd $end
+$var wire 1 1 vcc $end
+$var wire 1 2 unknown $end
+$var wire 1 3 devoe $end
+$var wire 1 4 devclrn $end
+$var wire 1 5 devpor $end
+$var wire 1 6 ww_devoe $end
+$var wire 1 7 ww_devclrn $end
+$var wire 1 8 ww_devpor $end
+$var wire 1 9 ww_a $end
+$var wire 1 : ww_D0 $end
+$var wire 1 ; ww_D4 $end
+$var wire 1 < ww_D3 $end
+$var wire 1 = ww_D6 $end
+$var wire 1 > ww_D2 $end
+$var wire 1 ? ww_D7 $end
+$var wire 1 @ ww_D1 $end
+$var wire 1 A ww_D5 $end
+$var wire 1 B ww_b $end
+$var wire 1 C ww_c $end
+$var wire 1 D ww_d $end
+$var wire 1 E ww_e $end
+$var wire 1 F ww_f $end
+$var wire 1 G ww_g $end
+$var wire 1 H \~QUARTUS_CREATED_ADC1~_CHSEL_bus\ [4] $end
+$var wire 1 I \~QUARTUS_CREATED_ADC1~_CHSEL_bus\ [3] $end
+$var wire 1 J \~QUARTUS_CREATED_ADC1~_CHSEL_bus\ [2] $end
+$var wire 1 K \~QUARTUS_CREATED_ADC1~_CHSEL_bus\ [1] $end
+$var wire 1 L \~QUARTUS_CREATED_ADC1~_CHSEL_bus\ [0] $end
+$var wire 1 M \~QUARTUS_CREATED_ADC2~_CHSEL_bus\ [4] $end
+$var wire 1 N \~QUARTUS_CREATED_ADC2~_CHSEL_bus\ [3] $end
+$var wire 1 O \~QUARTUS_CREATED_ADC2~_CHSEL_bus\ [2] $end
+$var wire 1 P \~QUARTUS_CREATED_ADC2~_CHSEL_bus\ [1] $end
+$var wire 1 Q \~QUARTUS_CREATED_ADC2~_CHSEL_bus\ [0] $end
+$var wire 1 R \~QUARTUS_CREATED_GND~I_combout\ $end
+$var wire 1 S \~QUARTUS_CREATED_UNVM~~busy\ $end
+$var wire 1 T \~QUARTUS_CREATED_ADC1~~eoc\ $end
+$var wire 1 U \~QUARTUS_CREATED_ADC2~~eoc\ $end
+$var wire 1 V \a~output_o\ $end
+$var wire 1 W \b~output_o\ $end
+$var wire 1 X \c~output_o\ $end
+$var wire 1 Y \d~output_o\ $end
+$var wire 1 Z \e~output_o\ $end
+$var wire 1 [ \f~output_o\ $end
+$var wire 1 \ \g~output_o\ $end
+$var wire 1 ] \D4~input_o\ $end
+$var wire 1 ^ \D0~input_o\ $end
+$var wire 1 _ \D3~input_o\ $end
+$var wire 1 ` \D5~input_o\ $end
+$var wire 1 a \D1~input_o\ $end
+$var wire 1 b \inst1|sub|88~0_combout\ $end
+$var wire 1 c \D6~input_o\ $end
+$var wire 1 d \D2~input_o\ $end
+$var wire 1 e \inst1|sub|88~1_combout\ $end
+$var wire 1 f \D7~input_o\ $end
+$var wire 1 g \inst1|sub|84~combout\ $end
+$var wire 1 h \inst2|22~0_combout\ $end
+$var wire 1 i \inst2|25~0_combout\ $end
+$var wire 1 j \inst2|24~0_combout\ $end
+$var wire 1 k \inst2|23~0_combout\ $end
+$var wire 1 l \inst9|81~0_combout\ $end
+$var wire 1 m \inst9|82~0_combout\ $end
+$var wire 1 n \inst9|83~combout\ $end
+$var wire 1 o \inst9|84~0_combout\ $end
+$var wire 1 p \inst9|85~combout\ $end
+$var wire 1 q \inst9|86~0_combout\ $end
+$var wire 1 r \inst9|87~combout\ $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+0"
+0#
+0$
+0%
+0&
+0'
+0(
+0)
+0*
+0+
+0,
+0-
+0.
+1/
+00
+11
+x2
+13
+14
+15
+16
+17
+18
+09
+0:
+0;
+0<
+0=
+0>
+0?
+0@
+0A
+0B
+0C
+0D
+0E
+0F
+1G
+0R
+zS
+zT
+zU
+0V
+0W
+0X
+0Y
+0Z
+0[
+1\
+0]
+0^
+0_
+0`
+0a
+0b
+0c
+0d
+0e
+0f
+0g
+0h
+0i
+0j
+0k
+0l
+0m
+0n
+0o
+0p
+0q
+1r
+0H
+0I
+0J
+0K
+0L
+0M
+0N
+0O
+0P
+0Q
+$end
+#1000000
