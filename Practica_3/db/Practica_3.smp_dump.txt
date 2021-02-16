@@ -1,0 +1,6 @@
+
+State Machine - |Practica_3|P_3:inst11|fstate
+Name fstate.Q2 fstate.Q1 fstate.Q0 
+fstate.Q0 0 0 0 
+fstate.Q1 0 1 1 
+fstate.Q2 1 0 1 

@@ -1,0 +1,150 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_1/simulation/qsim
+Eadder_4b
+Z1 w1613479982
+Z2 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z3 DPx11 fiftyfivenm 21 fiftyfivenm_atom_pack 0 22 OTUTkBjTeYVegmIWhVi3N0
+Z4 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z5 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z6 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+Z7 DPx11 fiftyfivenm 22 fiftyfivenm_components 0 22 C5K^h=:j[4HI?HO^UkN3:2
+!i122 24
+R0
+Z8 8Adder_4b.vho
+Z9 FAdder_4b.vho
+l0
+L89 1
+VOAb7mK2Y764IAKk7`9Sjl0
+!s100 DCF6?UE5YAcm[Tb>26?AC1
+Z10 OV;C;2020.1;71
+32
+Z11 !s110 1613479983
+!i10b 1
+Z12 !s108 1613479983.000000
+Z13 !s90 -work|work|Adder_4b.vho|
+Z14 !s107 Adder_4b.vho|
+!i113 1
+Z15 o-work work
+Z16 tExplicit 1 CvgOpt 0
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 8 adder_4b 0 22 OAb7mK2Y764IAKk7`9Sjl0
+!i122 24
+l169
+L116 497
+VHaQL3`7gfZDN3oWPRkS^;3
+!s100 QVgdRLcc5WHHloOB^>z981
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+Eadder_4b_vhd_vec_tst
+Z17 w1613479981
+R5
+R6
+!i122 25
+R0
+Z18 8Waveform_A4B.vwf.vht
+Z19 FWaveform_A4B.vwf.vht
+l0
+L32 1
+VY`;<]WE65L>[8]A]aKiYP0
+!s100 ;H8oBchM=]JhJPBCX]`gP2
+R10
+32
+R11
+!i10b 1
+R12
+Z20 !s90 -work|work|Waveform_A4B.vwf.vht|
+Z21 !s107 Waveform_A4B.vwf.vht|
+!i113 1
+R15
+R16
+Aadder_4b_arch
+R5
+R6
+Z22 DEx4 work 20 adder_4b_vhd_vec_tst 0 22 Y`;<]WE65L>[8]A]aKiYP0
+!i122 25
+l51
+L34 153
+VTNFCED@?;DE@n`HZc]a?g0
+!s100 _YeKC:a=U>FT6BmaM;NSb0
+R10
+32
+R11
+!i10b 1
+R12
+R20
+R21
+!i113 1
+R15
+R16
+Ehard_block
+R1
+R2
+R3
+R4
+R5
+R6
+R7
+!i122 24
+R0
+R8
+R9
+l0
+L35 1
+Vhj[i;a0dD85B`o1JPT^cg2
+!s100 3A]XnMhF<;9mKUe5mn3aM1
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 10 hard_block 0 22 hj[i;a0dD85B`o1JPT^cg2
+!i122 24
+l76
+L54 28
+Va5ClDYec`9chO`Ne0M1NL2
+!s100 >:Wi^nX[YiN=@>>JC6K_83
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16

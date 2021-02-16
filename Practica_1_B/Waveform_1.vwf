@@ -21,6 +21,7 @@ after 2500 simTimestamp
 run -all
 quit -f
 
+
 </modelsim_script>
 <modelsim_script_timing>onerror {exit -code 1}
 vlib work
@@ -39,6 +40,7 @@ proc simTimestamp {} {
 after 2500 simTimestamp
 run -all
 quit -f
+
 
 </modelsim_script_timing>
 <hdl_lang>vhdl</hdl_lang>
@@ -284,7 +286,9 @@ TRANSITION_LIST("D0")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 60.0;
+		LEVEL 0 FOR 930.0;
 	}
 }
 
@@ -329,7 +333,8 @@ TRANSITION_LIST("D5")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 1 FOR 70.0;
+		LEVEL 0 FOR 930.0;
 	}
 }
 
@@ -462,7 +467,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "NUM_A";
 	EXPAND_STATUS = EXPANDED;
-	RADIX = Binary;
+	RADIX = Unsigned;
 	TREE_INDEX = 8;
 	TREE_LEVEL = 0;
 	CHILDREN = 9, 10, 11, 12;
@@ -472,7 +477,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "D3";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
+	RADIX = Unsigned;
 	TREE_INDEX = 9;
 	TREE_LEVEL = 1;
 	PARENT = 8;
@@ -482,7 +487,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "D2";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
+	RADIX = Unsigned;
 	TREE_INDEX = 10;
 	TREE_LEVEL = 1;
 	PARENT = 8;
@@ -492,7 +497,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "D1";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
+	RADIX = Unsigned;
 	TREE_INDEX = 11;
 	TREE_LEVEL = 1;
 	PARENT = 8;
@@ -502,7 +507,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "D0";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
+	RADIX = Unsigned;
 	TREE_INDEX = 12;
 	TREE_LEVEL = 1;
 	PARENT = 8;
@@ -512,7 +517,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "NUM_B";
 	EXPAND_STATUS = EXPANDED;
-	RADIX = Binary;
+	RADIX = Unsigned;
 	TREE_INDEX = 13;
 	TREE_LEVEL = 0;
 	CHILDREN = 14, 15, 16, 17;
@@ -522,7 +527,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "D7";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
+	RADIX = Unsigned;
 	TREE_INDEX = 14;
 	TREE_LEVEL = 1;
 	PARENT = 13;
@@ -532,7 +537,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "D6";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
+	RADIX = Unsigned;
 	TREE_INDEX = 15;
 	TREE_LEVEL = 1;
 	PARENT = 13;
@@ -542,7 +547,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "D5";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
+	RADIX = Unsigned;
 	TREE_INDEX = 16;
 	TREE_LEVEL = 1;
 	PARENT = 13;
@@ -552,7 +557,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "D4";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
+	RADIX = Unsigned;
 	TREE_INDEX = 17;
 	TREE_LEVEL = 1;
 	PARENT = 13;

@@ -1,11 +1,11 @@
-Fitter Status : Successful - Sun Feb 07 10:31:18 2021
+Fitter Status : Successful - Mon Feb 15 09:32:33 2021
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 Revision Name : Practica_2
 Top-level Entity Name : Practica_2
 Family : MAX 10
 Device : 10M50DAF484C6GES
 Timing Models : Preliminary
-Total logic elements : 26 / 49,760 ( < 1 % )
+Total logic elements : 27 / 49,760 ( < 1 % )
     Total combinational functions : 19 / 49,760 ( < 1 % )
     Dedicated logic registers : 16 / 49,760 ( < 1 % )
 Total registers : 16

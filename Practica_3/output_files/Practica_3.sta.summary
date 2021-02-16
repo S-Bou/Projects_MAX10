@@ -1,0 +1,101 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'CLK'
+Slack : -1.014
+TNS   : -2.800
+
+Type  : Slow 1200mV 85C Model Setup 'PULSES'
+Slack : -0.015
+TNS   : -0.028
+
+Type  : Slow 1200mV 85C Model Hold 'CLK'
+Slack : 0.331
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'PULSES'
+Slack : 0.359
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'PULSES'
+Slack : -1.445
+TNS   : -5.780
+
+Type  : Slow 1200mV 85C Model Removal 'PULSES'
+Slack : 1.950
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'PULSES'
+Slack : -3.000
+TNS   : -7.888
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLK'
+Slack : -3.000
+TNS   : -6.666
+
+Type  : Slow 1200mV 0C Model Setup 'CLK'
+Slack : -0.890
+TNS   : -2.437
+
+Type  : Slow 1200mV 0C Model Setup 'PULSES'
+Slack : 0.078
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'CLK'
+Slack : 0.299
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'PULSES'
+Slack : 0.325
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'PULSES'
+Slack : -1.178
+TNS   : -4.712
+
+Type  : Slow 1200mV 0C Model Removal 'PULSES'
+Slack : 1.724
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'PULSES'
+Slack : -3.000
+TNS   : -7.888
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLK'
+Slack : -3.000
+TNS   : -6.666
+
+Type  : Fast 1200mV 0C Model Setup 'CLK'
+Slack : 0.217
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'PULSES'
+Slack : 0.527
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'CLK'
+Slack : 0.152
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'PULSES'
+Slack : 0.166
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'PULSES'
+Slack : -0.361
+TNS   : -1.444
+
+Type  : Fast 1200mV 0C Model Removal 'PULSES'
+Slack : 1.094
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'PULSES'
+Slack : -3.000
+TNS   : -7.260
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLK'
+Slack : -3.000
+TNS   : -6.096
+
+------------------------------------------------------------

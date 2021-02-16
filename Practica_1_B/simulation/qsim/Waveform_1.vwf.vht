@@ -19,7 +19,7 @@
 -- the top level entity of the current Quartus project .The user can use this   
 -- testbench to simulate his design using a third-party simulation tool .       
 -- *****************************************************************************
--- Generated on "02/11/2021 12:22:34"
+-- Generated on "02/15/2021 08:18:25"
                                                              
 -- Vhdl Test Bench(with test vectors) for design  :          Practica_1_B
 -- 
@@ -89,19 +89,12 @@ BEGIN
 	g => g
 	);
 
--- D0
-t_prcs_D0: PROCESS
+-- D3
+t_prcs_D3: PROCESS
 BEGIN
-	D0 <= '0';
+	D3 <= '0';
 WAIT;
-END PROCESS t_prcs_D0;
-
--- D1
-t_prcs_D1: PROCESS
-BEGIN
-	D1 <= '0';
-WAIT;
-END PROCESS t_prcs_D1;
+END PROCESS t_prcs_D3;
 
 -- D2
 t_prcs_D2: PROCESS
@@ -110,26 +103,30 @@ BEGIN
 WAIT;
 END PROCESS t_prcs_D2;
 
--- D3
-t_prcs_D3: PROCESS
+-- D1
+t_prcs_D1: PROCESS
 BEGIN
-	D3 <= '0';
+	D1 <= '0';
 WAIT;
-END PROCESS t_prcs_D3;
+END PROCESS t_prcs_D1;
 
--- D4
-t_prcs_D4: PROCESS
+-- D0
+t_prcs_D0: PROCESS
 BEGIN
-	D4 <= '0';
+	D0 <= '0';
+	WAIT FOR 10000 ps;
+	D0 <= '1';
+	WAIT FOR 60000 ps;
+	D0 <= '0';
 WAIT;
-END PROCESS t_prcs_D4;
+END PROCESS t_prcs_D0;
 
--- D5
-t_prcs_D5: PROCESS
+-- D7
+t_prcs_D7: PROCESS
 BEGIN
-	D5 <= '0';
+	D7 <= '0';
 WAIT;
-END PROCESS t_prcs_D5;
+END PROCESS t_prcs_D7;
 
 -- D6
 t_prcs_D6: PROCESS
@@ -138,10 +135,19 @@ BEGIN
 WAIT;
 END PROCESS t_prcs_D6;
 
--- D7
-t_prcs_D7: PROCESS
+-- D5
+t_prcs_D5: PROCESS
 BEGIN
-	D7 <= '0';
+	D5 <= '1';
+	WAIT FOR 70000 ps;
+	D5 <= '0';
 WAIT;
-END PROCESS t_prcs_D7;
+END PROCESS t_prcs_D5;
+
+-- D4
+t_prcs_D4: PROCESS
+BEGIN
+	D4 <= '0';
+WAIT;
+END PROCESS t_prcs_D4;
 END Practica_1_B_arch;

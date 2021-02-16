@@ -35,7 +35,7 @@ https://fpgasoftware.intel.com/eula.
 		(line (pt 109 12)(pt 113 8))
 	)
 	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
-	(annotation_block (location)(rect -16 496 40 656))
+	(annotation_block (location)(rect -24 520 32 680))
 )
 (pin
 	(input)
@@ -52,7 +52,7 @@ https://fpgasoftware.intel.com/eula.
 		(line (pt 109 12)(pt 113 8))
 	)
 	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
-	(annotation_block (location)(rect -8 416 56 440))
+	(annotation_block (location)(rect -16 280 48 304))
 )
 (pin
 	(output)
@@ -69,7 +69,7 @@ https://fpgasoftware.intel.com/eula.
 		(line (pt 82 8)(pt 78 12))
 		(line (pt 78 12)(pt 82 8))
 	)
-	(annotation_block (location)(rect 528 352 584 376))
+	(annotation_block (location)(rect 456 296 512 320))
 )
 (pin
 	(output)
@@ -86,7 +86,7 @@ https://fpgasoftware.intel.com/eula.
 		(line (pt 82 8)(pt 78 12))
 		(line (pt 78 12)(pt 82 8))
 	)
-	(annotation_block (location)(rect 1232 528 1296 552))
+	(annotation_block (location)(rect 1096 472 1160 496))
 )
 (pin
 	(output)
@@ -103,7 +103,7 @@ https://fpgasoftware.intel.com/eula.
 		(line (pt 82 8)(pt 78 12))
 		(line (pt 78 12)(pt 82 8))
 	)
-	(annotation_block (location)(rect 1104 472 1160 496))
+	(annotation_block (location)(rect 1096 328 1152 352))
 )
 (symbol
 	(rect 256 80 392 280)
@@ -546,11 +546,6 @@ https://fpgasoftware.intel.com/eula.
 	(pt 184 512)
 )
 (connector
-	(pt 248 496)
-	(pt 144 496)
-	(bus)
-)
-(connector
 	(pt 248 480)
 	(pt 216 480)
 )
@@ -579,17 +574,6 @@ https://fpgasoftware.intel.com/eula.
 (connector
 	(pt 248 528)
 	(pt 216 528)
-)
-(connector
-	(pt 640 312)
-	(pt 640 176)
-	(bus)
-)
-(connector
-	(text "COUNT[7..0]" (rect 398 160 457 177)(font "Intel Clear" ))
-	(pt 392 176)
-	(pt 640 176)
-	(bus)
 )
 (connector
 	(pt 648 360)
@@ -652,6 +636,22 @@ https://fpgasoftware.intel.com/eula.
 (connector
 	(pt 216 320)
 	(pt 408 320)
+)
+(connector
+	(pt 640 312)
+	(pt 640 176)
+	(bus)
+)
+(connector
+	(text "COUNT[7..0]" (rect 406 160 465 177)(font "Intel Clear" ))
+	(pt 392 176)
+	(pt 640 176)
+	(bus)
+)
+(connector
+	(pt 144 496)
+	(pt 248 496)
+	(bus)
 )
 (junction (pt 408 264))
 (junction (pt 216 320))

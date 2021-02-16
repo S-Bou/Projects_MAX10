@@ -1,0 +1,138 @@
+|Adder_4b
+Cout <= Full_Adder_4bit:inst.Cout
+Cin => Full_Adder_4bit:inst.Cin
+A[0] => Full_Adder_4bit:inst.INA[0]
+A[1] => Full_Adder_4bit:inst.INA[1]
+A[2] => Full_Adder_4bit:inst.INA[2]
+A[3] => Full_Adder_4bit:inst.INA[3]
+B[0] => Full_Adder_4bit:inst.INB[0]
+B[1] => Full_Adder_4bit:inst.INB[1]
+B[2] => Full_Adder_4bit:inst.INB[2]
+B[3] => Full_Adder_4bit:inst.INB[3]
+S[0] <= Full_Adder_4bit:inst.SUM[0]
+S[1] <= Full_Adder_4bit:inst.SUM[1]
+S[2] <= Full_Adder_4bit:inst.SUM[2]
+S[3] <= Full_Adder_4bit:inst.SUM[3]
+
+
+|Adder_4b|Full_Adder_4bit:inst
+Cout <= Full_Adder:inst3.CO
+INA[0] => Full_Adder:inst.A
+INA[1] => Full_Adder:inst1.A
+INA[2] => Full_Adder:inst2.A
+INA[3] => Full_Adder:inst3.A
+INB[0] => Full_Adder:inst.B
+INB[1] => Full_Adder:inst1.B
+INB[2] => Full_Adder:inst2.B
+INB[3] => Full_Adder:inst3.B
+Cin => Full_Adder:inst.CI
+SUM[0] <= Full_Adder:inst.S
+SUM[1] <= Full_Adder:inst1.S
+SUM[2] <= Full_Adder:inst2.S
+SUM[3] <= Full_Adder:inst3.S
+
+
+|Adder_4b|Full_Adder_4bit:inst|Full_Adder:inst3
+CO <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+A => Half_Adder:inst1.A
+B => Half_Adder:inst.A
+CI => Half_Adder:inst.B
+S <= Half_Adder:inst1.S
+
+
+|Adder_4b|Full_Adder_4bit:inst|Full_Adder:inst3|Half_Adder:inst1
+C <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+A => inst2.IN0
+A => inst.IN0
+B => inst2.IN1
+B => inst.IN1
+S <= inst.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Adder_4b|Full_Adder_4bit:inst|Full_Adder:inst3|Half_Adder:inst
+C <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+A => inst2.IN0
+A => inst.IN0
+B => inst2.IN1
+B => inst.IN1
+S <= inst.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Adder_4b|Full_Adder_4bit:inst|Full_Adder:inst2
+CO <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+A => Half_Adder:inst1.A
+B => Half_Adder:inst.A
+CI => Half_Adder:inst.B
+S <= Half_Adder:inst1.S
+
+
+|Adder_4b|Full_Adder_4bit:inst|Full_Adder:inst2|Half_Adder:inst1
+C <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+A => inst2.IN0
+A => inst.IN0
+B => inst2.IN1
+B => inst.IN1
+S <= inst.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Adder_4b|Full_Adder_4bit:inst|Full_Adder:inst2|Half_Adder:inst
+C <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+A => inst2.IN0
+A => inst.IN0
+B => inst2.IN1
+B => inst.IN1
+S <= inst.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Adder_4b|Full_Adder_4bit:inst|Full_Adder:inst1
+CO <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+A => Half_Adder:inst1.A
+B => Half_Adder:inst.A
+CI => Half_Adder:inst.B
+S <= Half_Adder:inst1.S
+
+
+|Adder_4b|Full_Adder_4bit:inst|Full_Adder:inst1|Half_Adder:inst1
+C <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+A => inst2.IN0
+A => inst.IN0
+B => inst2.IN1
+B => inst.IN1
+S <= inst.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Adder_4b|Full_Adder_4bit:inst|Full_Adder:inst1|Half_Adder:inst
+C <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+A => inst2.IN0
+A => inst.IN0
+B => inst2.IN1
+B => inst.IN1
+S <= inst.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Adder_4b|Full_Adder_4bit:inst|Full_Adder:inst
+CO <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+A => Half_Adder:inst1.A
+B => Half_Adder:inst.A
+CI => Half_Adder:inst.B
+S <= Half_Adder:inst1.S
+
+
+|Adder_4b|Full_Adder_4bit:inst|Full_Adder:inst|Half_Adder:inst1
+C <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+A => inst2.IN0
+A => inst.IN0
+B => inst2.IN1
+B => inst.IN1
+S <= inst.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Adder_4b|Full_Adder_4bit:inst|Full_Adder:inst|Half_Adder:inst
+C <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+A => inst2.IN0
+A => inst.IN0
+B => inst2.IN1
+B => inst.IN1
+S <= inst.DB_MAX_OUTPUT_PORT_TYPE
+
+
