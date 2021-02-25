@@ -2,17 +2,46 @@
 Cout <= Full_Adder_4bit:inst.Cout
 Cin => Full_Adder_4bit:inst.Cin
 A[0] => Full_Adder_4bit:inst.INA[0]
+A[0] => 7447:inst1.A
 A[1] => Full_Adder_4bit:inst.INA[1]
+A[1] => 7447:inst1.B
 A[2] => Full_Adder_4bit:inst.INA[2]
+A[2] => 7447:inst1.C
 A[3] => Full_Adder_4bit:inst.INA[3]
+A[3] => 7447:inst1.D
 B[0] => Full_Adder_4bit:inst.INB[0]
+B[0] => 7447:inst5.A
 B[1] => Full_Adder_4bit:inst.INB[1]
+B[1] => 7447:inst5.B
 B[2] => Full_Adder_4bit:inst.INB[2]
+B[2] => 7447:inst5.C
 B[3] => Full_Adder_4bit:inst.INB[3]
+B[3] => 7447:inst5.D
+Aa <= 7447:inst1.OA
+Ab <= 7447:inst1.OB
+Ac <= 7447:inst1.OC
+Ad <= 7447:inst1.OD
+Ae <= 7447:inst1.OE
+Af <= 7447:inst1.OF
+Ag <= 7447:inst1.OG
+Ba <= 7447:inst5.OA
+Bb <= 7447:inst5.OB
+Bc <= 7447:inst5.OC
+Bd <= 7447:inst5.OD
+Be <= 7447:inst5.OE
+Bf <= 7447:inst5.OF
+Bg <= 7447:inst5.OG
+Sa <= 7447:inst6.OA
 S[0] <= Full_Adder_4bit:inst.SUM[0]
 S[1] <= Full_Adder_4bit:inst.SUM[1]
 S[2] <= Full_Adder_4bit:inst.SUM[2]
 S[3] <= Full_Adder_4bit:inst.SUM[3]
+Sb <= 7447:inst6.OB
+Sc <= 7447:inst6.OC
+Sd <= 7447:inst6.OD
+Se <= 7447:inst6.OE
+Sf <= 7447:inst6.OF
+Sg <= 7447:inst6.OG
 
 
 |Adder_4b|Full_Adder_4bit:inst
@@ -134,5 +163,71 @@ A => inst.IN0
 B => inst2.IN1
 B => inst.IN1
 S <= inst.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Adder_4b|7447:inst1
+OG <= 87.DB_MAX_OUTPUT_PORT_TYPE
+C => 25.IN0
+LTN => 25.IN1
+LTN => 27.IN1
+LTN => 29.IN1
+LTN => 13.IN5
+LTN => 38.IN3
+BIN => 37.IN0
+B => 27.IN0
+D => 14.IN0
+A => 29.IN0
+RBIN => 15.IN0
+OF <= 86.DB_MAX_OUTPUT_PORT_TYPE
+OE <= 85.DB_MAX_OUTPUT_PORT_TYPE
+RBON <= 13.DB_MAX_OUTPUT_PORT_TYPE
+OD <= 84.DB_MAX_OUTPUT_PORT_TYPE
+OC <= 83.DB_MAX_OUTPUT_PORT_TYPE
+OB <= 82.DB_MAX_OUTPUT_PORT_TYPE
+OA <= 81.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Adder_4b|7447:inst5
+OG <= 87.DB_MAX_OUTPUT_PORT_TYPE
+C => 25.IN0
+LTN => 25.IN1
+LTN => 27.IN1
+LTN => 29.IN1
+LTN => 13.IN5
+LTN => 38.IN3
+BIN => 37.IN0
+B => 27.IN0
+D => 14.IN0
+A => 29.IN0
+RBIN => 15.IN0
+OF <= 86.DB_MAX_OUTPUT_PORT_TYPE
+OE <= 85.DB_MAX_OUTPUT_PORT_TYPE
+RBON <= 13.DB_MAX_OUTPUT_PORT_TYPE
+OD <= 84.DB_MAX_OUTPUT_PORT_TYPE
+OC <= 83.DB_MAX_OUTPUT_PORT_TYPE
+OB <= 82.DB_MAX_OUTPUT_PORT_TYPE
+OA <= 81.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Adder_4b|7447:inst6
+OG <= 87.DB_MAX_OUTPUT_PORT_TYPE
+C => 25.IN0
+LTN => 25.IN1
+LTN => 27.IN1
+LTN => 29.IN1
+LTN => 13.IN5
+LTN => 38.IN3
+BIN => 37.IN0
+B => 27.IN0
+D => 14.IN0
+A => 29.IN0
+RBIN => 15.IN0
+OF <= 86.DB_MAX_OUTPUT_PORT_TYPE
+OE <= 85.DB_MAX_OUTPUT_PORT_TYPE
+RBON <= 13.DB_MAX_OUTPUT_PORT_TYPE
+OD <= 84.DB_MAX_OUTPUT_PORT_TYPE
+OC <= 83.DB_MAX_OUTPUT_PORT_TYPE
+OB <= 82.DB_MAX_OUTPUT_PORT_TYPE
+OA <= 81.DB_MAX_OUTPUT_PORT_TYPE
 
 

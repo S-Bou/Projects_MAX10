@@ -1,0 +1,125 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'CLK'
+Slack : -1.271
+TNS   : -3.123
+
+Type  : Slow 1200mV 85C Model Setup 'FF_META:inst17|inst1'
+Slack : -0.060
+TNS   : -0.120
+
+Type  : Slow 1200mV 85C Model Hold 'CLK'
+Slack : 0.250
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'FF_META:inst17|inst1'
+Slack : 0.324
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'CLK'
+Slack : -0.921
+TNS   : -2.949
+
+Type  : Slow 1200mV 85C Model Recovery 'FF_META:inst17|inst1'
+Slack : -0.236
+TNS   : -0.944
+
+Type  : Slow 1200mV 85C Model Removal 'FF_META:inst17|inst1'
+Slack : 0.438
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'CLK'
+Slack : 1.056
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLK'
+Slack : -3.000
+TNS   : -16.442
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'FF_META:inst17|inst1'
+Slack : -1.222
+TNS   : -4.888
+
+Type  : Slow 1200mV 0C Model Setup 'CLK'
+Slack : -1.092
+TNS   : -2.382
+
+Type  : Slow 1200mV 0C Model Setup 'FF_META:inst17|inst1'
+Slack : 0.033
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'CLK'
+Slack : 0.238
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'FF_META:inst17|inst1'
+Slack : 0.294
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'CLK'
+Slack : -0.733
+TNS   : -2.213
+
+Type  : Slow 1200mV 0C Model Recovery 'FF_META:inst17|inst1'
+Slack : -0.125
+TNS   : -0.500
+
+Type  : Slow 1200mV 0C Model Removal 'FF_META:inst17|inst1'
+Slack : 0.394
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'CLK'
+Slack : 0.977
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLK'
+Slack : -3.000
+TNS   : -16.442
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'FF_META:inst17|inst1'
+Slack : -1.222
+TNS   : -4.888
+
+Type  : Fast 1200mV 0C Model Setup 'CLK'
+Slack : -0.036
+TNS   : -0.065
+
+Type  : Fast 1200mV 0C Model Setup 'FF_META:inst17|inst1'
+Slack : 0.492
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'CLK'
+Slack : 0.039
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'FF_META:inst17|inst1'
+Slack : 0.148
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'CLK'
+Slack : -0.016
+TNS   : -0.016
+
+Type  : Fast 1200mV 0C Model Recovery 'FF_META:inst17|inst1'
+Slack : 0.353
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'FF_META:inst17|inst1'
+Slack : 0.229
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'CLK'
+Slack : 0.497
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLK'
+Slack : -3.000
+TNS   : -14.241
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'FF_META:inst17|inst1'
+Slack : -1.000
+TNS   : -4.000
+
+------------------------------------------------------------

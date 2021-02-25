@@ -1,6 +1,6 @@
 Analysis & Synthesis report for Adder_4b
-Tue Feb 16 13:48:35 2021
-Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Mon Feb 22 12:11:20 2021
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
 ---------------------
@@ -23,9 +23,9 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2020  Intel Corporation. All rights reserved.
+Copyright (C) 2018  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
-and other software and tools, and any partner logic 
+and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
@@ -35,24 +35,23 @@ the Intel FPGA IP License Agreement, or other applicable license
 agreement, including, without limitation, that your use is for
 the sole purpose of programming logic devices manufactured by
 Intel and sold by Intel or its authorized distributors.  Please
-refer to the applicable agreement for further details, at
-https://fpgasoftware.intel.com/eula.
+refer to the applicable agreement for further details.
 
 
 
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Feb 16 13:48:35 2021       ;
-; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
+; Analysis & Synthesis Status        ; Successful - Mon Feb 22 12:11:20 2021       ;
+; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; Adder_4b                                    ;
 ; Top-level Entity Name              ; Adder_4b                                    ;
 ; Family                             ; MAX 10                                      ;
-; Total logic elements               ; 10                                          ;
-;     Total combinational functions  ; 10                                          ;
+; Total logic elements               ; 31                                          ;
+;     Total combinational functions  ; 31                                          ;
 ;     Dedicated logic registers      ; 0                                           ;
 ; Total registers                    ; 0                                           ;
-; Total pins                         ; 14                                          ;
+; Total pins                         ; 35                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -164,16 +163,17 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                     ;
-+----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                           ; Library ;
-+----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------+---------+
-; Half_Adder.bdf                   ; yes             ; User Block Diagram/Schematic File  ; D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_1/Half_Adder.bdf      ;         ;
-; Full_Adder.bdf                   ; yes             ; User Block Diagram/Schematic File  ; D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_1/Full_Adder.bdf      ;         ;
-; Full_Adder_4bit.bdf              ; yes             ; User Block Diagram/Schematic File  ; D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_1/Full_Adder_4bit.bdf ;         ;
-; Adder_4b.bdf                     ; yes             ; User Block Diagram/Schematic File  ; D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_1/Adder_4b.bdf        ;         ;
-+----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------+---------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                     ;
++----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                           ; Library ;
++----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------------+---------+
+; Half_Adder.bdf                   ; yes             ; User Block Diagram/Schematic File  ; D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_1/Half_Adder.bdf                      ;         ;
+; Full_Adder.bdf                   ; yes             ; User Block Diagram/Schematic File  ; D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_1/Full_Adder.bdf                      ;         ;
+; Full_Adder_4bit.bdf              ; yes             ; User Block Diagram/Schematic File  ; D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_1/Full_Adder_4bit.bdf                 ;         ;
+; Adder_4b.bdf                     ; yes             ; User Block Diagram/Schematic File  ; D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_1/Adder_4b.bdf                        ;         ;
+; 7447.bdf                         ; yes             ; Megafunction                       ; d:/programas/intelfpga_lite/quartus_ii_18.1/quartus/libraries/others/maxplus2/7447.bdf ;         ;
++----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------------+---------+
 
 
 +----------------------------------------------------------+
@@ -181,30 +181,30 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+------------+
 ; Resource                                    ; Usage      ;
 +---------------------------------------------+------------+
-; Estimated Total logic elements              ; 10         ;
+; Estimated Total logic elements              ; 31         ;
 ;                                             ;            ;
-; Total combinational functions               ; 10         ;
+; Total combinational functions               ; 31         ;
 ; Logic element usage by number of LUT inputs ;            ;
-;     -- 4 input functions                    ; 4          ;
-;     -- 3 input functions                    ; 4          ;
+;     -- 4 input functions                    ; 19         ;
+;     -- 3 input functions                    ; 10         ;
 ;     -- <=2 input functions                  ; 2          ;
 ;                                             ;            ;
 ; Logic elements by mode                      ;            ;
-;     -- normal mode                          ; 10         ;
+;     -- normal mode                          ; 31         ;
 ;     -- arithmetic mode                      ; 0          ;
 ;                                             ;            ;
 ; Total registers                             ; 0          ;
 ;     -- Dedicated logic registers            ; 0          ;
 ;     -- I/O registers                        ; 0          ;
 ;                                             ;            ;
-; I/O pins                                    ; 14         ;
+; I/O pins                                    ; 35         ;
 ;                                             ;            ;
 ; Embedded Multiplier 9-bit elements          ; 0          ;
 ;                                             ;            ;
 ; Maximum fan-out node                        ; A[2]~input ;
-; Maximum fan-out                             ; 3          ;
-; Total fan-out                               ; 51         ;
-; Average fan-out                             ; 1.34       ;
+; Maximum fan-out                             ; 10         ;
+; Total fan-out                               ; 171        ;
+; Average fan-out                             ; 1.69       ;
 +---------------------------------------------+------------+
 
 
@@ -213,7 +213,10 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+------------------------------------------------------------------+-----------------+--------------+
 ; Compilation Hierarchy Node  ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                              ; Entity Name     ; Library Name ;
 +-----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+------------------------------------------------------------------+-----------------+--------------+
-; |Adder_4b                   ; 10 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 14   ; 0            ; 0          ; |Adder_4b                                                        ; Adder_4b        ; work         ;
+; |Adder_4b                   ; 31 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 35   ; 0            ; 0          ; |Adder_4b                                                        ; Adder_4b        ; work         ;
+;    |7447:inst1|             ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Adder_4b|7447:inst1                                             ; 7447            ; work         ;
+;    |7447:inst5|             ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Adder_4b|7447:inst5                                             ; 7447            ; work         ;
+;    |7447:inst6|             ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Adder_4b|7447:inst6                                             ; 7447            ; work         ;
 ;    |Full_Adder_4bit:inst|   ; 10 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Adder_4b|Full_Adder_4bit:inst                                   ; Full_Adder_4bit ; work         ;
 ;       |Full_Adder:inst1|    ; 2 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Adder_4b|Full_Adder_4bit:inst|Full_Adder:inst1                  ; Full_Adder      ; work         ;
 ;          |Half_Adder:inst1| ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Adder_4b|Full_Adder_4bit:inst|Full_Adder:inst1|Half_Adder:inst1 ; Half_Adder      ; work         ;
@@ -247,15 +250,15 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 14                          ;
-; cycloneiii_lcell_comb ; 10                          ;
-;     normal            ; 10                          ;
+; boundary_port         ; 35                          ;
+; cycloneiii_lcell_comb ; 31                          ;
+;     normal            ; 31                          ;
 ;         2 data inputs ; 2                           ;
-;         3 data inputs ; 4                           ;
-;         4 data inputs ; 4                           ;
+;         3 data inputs ; 10                          ;
+;         4 data inputs ; 19                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 4.00                        ;
-; Average LUT depth     ; 2.95                        ;
+; Max LUT depth         ; 5.00                        ;
+; Average LUT depth     ; 3.02                        ;
 +-----------------------+-----------------------------+
 
 
@@ -264,7 +267,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -273,8 +276,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
-    Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Tue Feb 16 13:48:27 2021
+    Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+    Info: Processing started: Mon Feb 22 12:11:08 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Adder_4b -c Adder_4b
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
@@ -290,17 +293,19 @@ Info (12127): Elaborating entity "Adder_4b" for the top level hierarchy
 Info (12128): Elaborating entity "Full_Adder_4bit" for hierarchy "Full_Adder_4bit:inst"
 Info (12128): Elaborating entity "Full_Adder" for hierarchy "Full_Adder_4bit:inst|Full_Adder:inst3"
 Info (12128): Elaborating entity "Half_Adder" for hierarchy "Full_Adder_4bit:inst|Full_Adder:inst3|Half_Adder:inst1"
+Info (12128): Elaborating entity "7447" for hierarchy "7447:inst1"
+Info (12130): Elaborated megafunction instantiation "7447:inst1"
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 24 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 66 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 9 input pins
-    Info (21059): Implemented 5 output pins
-    Info (21061): Implemented 10 logic cells
+    Info (21059): Implemented 26 output pins
+    Info (21061): Implemented 31 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4759 megabytes
-    Info: Processing ended: Tue Feb 16 13:48:35 2021
-    Info: Elapsed time: 00:00:08
-    Info: Total CPU time (on all processors): 00:00:18
+    Info: Peak virtual memory: 4761 megabytes
+    Info: Processing ended: Mon Feb 22 12:11:21 2021
+    Info: Elapsed time: 00:00:13
+    Info: Total CPU time (on all processors): 00:00:21
 
 

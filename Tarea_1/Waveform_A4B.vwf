@@ -24,6 +24,9 @@ quit -f
 
 
 
+
+
+
 </modelsim_script>
 <modelsim_script_timing>onerror {exit -code 1}
 vlib work
@@ -46,6 +49,9 @@ quit -f
 
 
 
+
+
+
 </modelsim_script_timing>
 <hdl_lang>vhdl</hdl_lang>
 </simulation_settings>*/
@@ -56,9 +62,9 @@ the Block Editor! File corruption is VERY likely to occur.
 */
 
 /*
-Copyright (C) 2020  Intel Corporation. All rights reserved.
+Copyright (C) 2018  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
-and other software and tools, and any partner logic 
+and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
@@ -68,8 +74,7 @@ the Intel FPGA IP License Agreement, or other applicable license
 agreement, including, without limitation, that your use is for
 the sole purpose of programming logic devices manufactured by
 Intel and sold by Intel or its authorized distributors.  Please
-refer to the applicable agreement for further details, at
-https://fpgasoftware.intel.com/eula.
+refer to the applicable agreement for further details.
 */
 
 HEADER
@@ -259,10 +264,8 @@ TRANSITION_LIST("A[3]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 70.0;
-		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 60.0;
-		LEVEL 1 FOR 180.0;
+		LEVEL 0 FOR 250.0;
+		LEVEL 1 FOR 100.0;
 		LEVEL 0 FOR 100.0;
 		LEVEL 1 FOR 180.0;
 		LEVEL 0 FOR 370.0;
@@ -274,7 +277,8 @@ TRANSITION_LIST("A[2]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 170.0;
+		LEVEL 0 FOR 110.0;
+		LEVEL 1 FOR 60.0;
 		LEVEL 0 FOR 280.0;
 		LEVEL 1 FOR 180.0;
 		LEVEL 0 FOR 370.0;
@@ -286,8 +290,7 @@ TRANSITION_LIST("A[1]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 70.0;
-		LEVEL 0 FOR 100.0;
+		LEVEL 0 FOR 170.0;
 		LEVEL 1 FOR 280.0;
 		LEVEL 0 FOR 90.0;
 		LEVEL 1 FOR 90.0;
@@ -301,9 +304,10 @@ TRANSITION_LIST("A[0]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 70.0;
-		LEVEL 0 FOR 100.0;
-		LEVEL 1 FOR 180.0;
+		LEVEL 0 FOR 70.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 140.0;
+		LEVEL 1 FOR 100.0;
 		LEVEL 0 FOR 100.0;
 		LEVEL 1 FOR 310.0;
 		LEVEL 0 FOR 240.0;
@@ -326,12 +330,12 @@ TRANSITION_LIST("B[2]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 110.0;
-		LEVEL 0 FOR 60.0;
-		LEVEL 1 FOR 180.0;
+		LEVEL 0 FOR 250.0;
+		LEVEL 1 FOR 100.0;
 		LEVEL 0 FOR 100.0;
 		LEVEL 1 FOR 180.0;
-		LEVEL 0 FOR 370.0;
+		LEVEL 0 FOR 130.0;
+		LEVEL 1 FOR 240.0;
 	}
 }
 
@@ -340,11 +344,12 @@ TRANSITION_LIST("B[1]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 70.0;
-		LEVEL 0 FOR 40.0;
+		LEVEL 0 FOR 110.0;
 		LEVEL 1 FOR 60.0;
 		LEVEL 0 FOR 180.0;
-		LEVEL 1 FOR 650.0;
+		LEVEL 1 FOR 280.0;
+		LEVEL 0 FOR 130.0;
+		LEVEL 1 FOR 240.0;
 	}
 }
 
@@ -354,10 +359,9 @@ TRANSITION_LIST("B[0]")
 	{
 		REPEAT = 1;
 		LEVEL 0 FOR 70.0;
-		LEVEL 1 FOR 100.0;
-		LEVEL 0 FOR 370.0;
-		LEVEL 1 FOR 90.0;
-		LEVEL 0 FOR 370.0;
+		LEVEL 1 FOR 180.0;
+		LEVEL 0 FOR 290.0;
+		LEVEL 1 FOR 460.0;
 	}
 }
 

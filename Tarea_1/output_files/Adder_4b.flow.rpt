@@ -1,6 +1,6 @@
 Flow report for Adder_4b
-Tue Feb 16 13:53:02 2021
-Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Mon Feb 22 12:11:44 2021
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
 ---------------------
@@ -21,9 +21,9 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2020  Intel Corporation. All rights reserved.
+Copyright (C) 2018  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
-and other software and tools, and any partner logic 
+and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
@@ -33,26 +33,25 @@ the Intel FPGA IP License Agreement, or other applicable license
 agreement, including, without limitation, that your use is for
 the sole purpose of programming logic devices manufactured by
 Intel and sold by Intel or its authorized distributors.  Please
-refer to the applicable agreement for further details, at
-https://fpgasoftware.intel.com/eula.
+refer to the applicable agreement for further details.
 
 
 
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Tue Feb 16 13:53:02 2021       ;
-; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
+; Flow Status                        ; Successful - Mon Feb 22 12:11:40 2021       ;
+; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; Adder_4b                                    ;
 ; Top-level Entity Name              ; Adder_4b                                    ;
 ; Family                             ; MAX 10                                      ;
 ; Device                             ; 10M50DAF484C6GES                            ;
 ; Timing Models                      ; Preliminary                                 ;
-; Total logic elements               ; 11 / 49,760 ( < 1 % )                       ;
-;     Total combinational functions  ; 11 / 49,760 ( < 1 % )                       ;
+; Total logic elements               ; 32 / 49,760 ( < 1 % )                       ;
+;     Total combinational functions  ; 32 / 49,760 ( < 1 % )                       ;
 ;     Dedicated logic registers      ; 0 / 49,760 ( 0 % )                          ;
 ; Total registers                    ; 0                                           ;
-; Total pins                         ; 14 / 360 ( 4 % )                            ;
+; Total pins                         ; 35 / 360 ( 10 % )                           ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0 / 1,677,312 ( 0 % )                       ;
 ; Embedded Multiplier 9-bit elements ; 0 / 288 ( 0 % )                             ;
@@ -67,7 +66,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 02/16/2021 13:48:27 ;
+; Start date & time ; 02/22/2021 12:11:08 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Adder_4b            ;
 +-------------------+---------------------+
@@ -78,7 +77,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 215938450624713.161347970716940        ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 215938450624713.161399226809204        ; --            ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --         ;
 ; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; --          ; Top        ;
@@ -93,17 +92,11 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:08     ; 1.0                     ; 4759 MB             ; 00:00:18                           ;
-; Fitter               ; 00:00:05     ; 1.0                     ; 5773 MB             ; 00:00:08                           ;
-; Assembler            ; 00:00:03     ; 1.0                     ; 4686 MB             ; 00:00:03                           ;
-; Timing Analyzer      ; 00:00:01     ; 1.0                     ; 4839 MB             ; 00:00:02                           ;
-; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4632 MB             ; 00:00:00                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4641 MB             ; 00:00:00                           ;
-; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4632 MB             ; 00:00:00                           ;
-; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4641 MB             ; 00:00:00                           ;
-; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4632 MB             ; 00:00:00                           ;
-; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4641 MB             ; 00:00:00                           ;
-; Total                ; 00:00:18     ; --                      ; --                  ; 00:00:31                           ;
+; Analysis & Synthesis ; 00:00:11     ; 1.0                     ; 4761 MB             ; 00:00:20                           ;
+; Fitter               ; 00:00:10     ; 1.0                     ; 5764 MB             ; 00:00:09                           ;
+; Assembler            ; 00:00:03     ; 1.0                     ; 4679 MB             ; 00:00:03                           ;
+; Timing Analyzer      ; 00:00:03     ; 1.0                     ; 4834 MB             ; 00:00:02                           ;
+; Total                ; 00:00:27     ; --                      ; --                  ; 00:00:34                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -116,12 +109,6 @@ https://fpgasoftware.intel.com/eula.
 ; Fitter               ; DESKTOP-P90D7IV  ; Windows 10 ; 10.0       ; x86_64         ;
 ; Assembler            ; DESKTOP-P90D7IV  ; Windows 10 ; 10.0       ; x86_64         ;
 ; Timing Analyzer      ; DESKTOP-P90D7IV  ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; DESKTOP-P90D7IV  ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; DESKTOP-P90D7IV  ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; DESKTOP-P90D7IV  ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; DESKTOP-P90D7IV  ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; DESKTOP-P90D7IV  ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; DESKTOP-P90D7IV  ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 
@@ -132,12 +119,6 @@ quartus_map --read_settings_files=on --write_settings_files=off Adder_4b -c Adde
 quartus_fit --read_settings_files=off --write_settings_files=off Adder_4b -c Adder_4b
 quartus_asm --read_settings_files=off --write_settings_files=off Adder_4b -c Adder_4b
 quartus_sta Adder_4b -c Adder_4b
-quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off Adder_4b -c Adder_4b --vector_source=D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_1/Waveform_A4B.vwf --testbench_file=D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_1/simulation/qsim/Waveform_A4B.vwf.vht
-quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_1/simulation/qsim/ Adder_4b -c Adder_4b
-quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off Adder_4b -c Adder_4b --vector_source=D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_1/Waveform_A4B.vwf --testbench_file=D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_1/simulation/qsim/Waveform_A4B.vwf.vht
-quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_1/simulation/qsim/ Adder_4b -c Adder_4b
-quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off Adder_4b -c Adder_4b --vector_source=D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_1/Waveform_A4B.vwf --testbench_file=D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_1/simulation/qsim/Waveform_A4B.vwf.vht
-quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_1/simulation/qsim/ Adder_4b -c Adder_4b
 
 
 

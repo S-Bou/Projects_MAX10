@@ -1,0 +1,251 @@
+|Practica_4
+OPERATE <= P_3:inst11.OPERATE
+CLK => P_3:inst11.clock
+CLK => FF_META:inst18.CLK
+CLK => FF_META:inst25.CLK
+CLK => inst20.CLK
+CLK => inst19.CLK
+CLK => FF_META:inst17.CLK
+RESET => FF_META:inst18.CLRN
+MONO => FF_META:inst25.D
+S[0] => 74147:inst.1N
+S[1] => 74147:inst.2N
+S[2] => 74147:inst.3N
+S[3] => 74147:inst.4N
+S[4] => 74147:inst.5N
+S[5] => 74147:inst.6N
+S[6] => 74147:inst.7N
+S[7] => 74147:inst.8N
+S[8] => 74147:inst.9N
+PULSES => FF_META:inst17.D
+ALARM <= P_3:inst11.ALARM
+a <= 7447:inst12.OA
+b <= 7447:inst12.OB
+c <= 7447:inst12.OC
+d <= 7447:inst12.OD
+e <= 7447:inst12.OE
+f <= 7447:inst12.OF
+g <= 7447:inst12.OG
+c1 <= 7447:inst13.OC
+d1 <= 7447:inst13.OD
+e1 <= 7447:inst13.OE
+f1 <= 7447:inst13.OF
+g1 <= 7447:inst13.OG
+a_1 <= 7447:inst13.OA
+b_1 <= 7447:inst13.OB
+
+
+|Practica_4|P_3:inst11
+clock => fstate~1.DATAIN
+reset => reg_fstate.Q0.OUTPUTSELECT
+reset => reg_fstate.Q1.OUTPUTSELECT
+reset => reg_fstate.Q2.OUTPUTSELECT
+reset => OPERATE.OUTPUTSELECT
+reset => ALARM.OUTPUTSELECT
+MONO => process_1.IN0
+MONO => process_1.IN0
+MONO => process_1.IN0
+MONO => process_1.IN0
+EQUAL => process_1.IN1
+EQUAL => process_1.IN1
+EQUAL => process_1.IN1
+EQUAL => process_1.IN1
+OPERATE <= OPERATE.DB_MAX_OUTPUT_PORT_TYPE
+ALARM <= ALARM.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Practica_4|FF_META:inst18
+OUTPUT <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLRN => inst1.ACLR
+CLRN => inst.ACLR
+CLK => inst1.CLK
+CLK => inst.CLK
+D => inst.DATAIN
+
+
+|Practica_4|FF_META:inst25
+OUTPUT <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLRN => inst1.ACLR
+CLRN => inst.ACLR
+CLK => inst1.CLK
+CLK => inst.CLK
+D => inst.DATAIN
+
+
+|Practica_4|7485:inst2
+a[0] => f7485:sub.a[0]
+a[1] => f7485:sub.a[1]
+a[2] => f7485:sub.a[2]
+a[3] => f7485:sub.a[3]
+b[0] => f7485:sub.b[0]
+b[1] => f7485:sub.b[1]
+b[2] => f7485:sub.b[2]
+b[3] => f7485:sub.b[3]
+agbi => f7485:sub.agbi
+albi => f7485:sub.albi
+aebi => f7485:sub.aebi
+agbo <= f7485:sub.agbo
+albo <= f7485:sub.albo
+aebo <= f7485:sub.aebo
+
+
+|Practica_4|7485:inst2|f7485:sub
+ALBO <= 87.DB_MAX_OUTPUT_PORT_TYPE
+AGBI => 96.IN0
+A0 => 90.IN0
+A0 => 104.IN0
+A0 => 103.IN1
+B0 => 90.IN1
+B0 => 97.IN0
+A1 => 89.IN0
+A1 => 112.IN0
+A1 => 104.IN1
+B1 => 89.IN1
+B1 => 95.IN0
+A2 => 91.IN0
+A2 => 129.IN0
+A2 => 105.IN1
+B2 => 91.IN1
+B2 => 100.IN0
+A3 => 92.IN0
+A3 => 114.IN0
+A3 => 129.IN1
+B3 => 92.IN1
+B3 => 99.IN0
+AEBI => 93.IN0
+AEBI => 108.IN0
+AEBO <= 108.DB_MAX_OUTPUT_PORT_TYPE
+AGBO <= 86.DB_MAX_OUTPUT_PORT_TYPE
+ALBI => 134.IN0
+
+
+|Practica_4|74147:inst
+DN <= 68.DB_MAX_OUTPUT_PORT_TYPE
+8N => 63.IN0
+9N => 65.IN0
+CN <= 9.DB_MAX_OUTPUT_PORT_TYPE
+4N => 57.IN0
+5N => 60.IN0
+6N => 62.IN0
+7N => 114.IN0
+BN <= 8.DB_MAX_OUTPUT_PORT_TYPE
+2N => 55.IN0
+3N => 56.IN0
+AN <= 7.DB_MAX_OUTPUT_PORT_TYPE
+1N => 53.IN0
+
+
+|Practica_4|74191:inst1
+clk => f74191:sub.clk
+gn => f74191:sub.gn
+ldn => f74191:sub.ldn
+dnup => f74191:sub.dnup
+d => f74191:sub.d
+c => f74191:sub.c
+b => f74191:sub.b
+a => f74191:sub.a
+qd <= f74191:sub.qd
+qc <= f74191:sub.qc
+qb <= f74191:sub.qb
+qa <= f74191:sub.qa
+mxmn <= f74191:sub.mxmn
+rcon <= f74191:sub.rcon
+
+
+|Practica_4|74191:inst1|f74191:sub
+QD <= 19.DB_MAX_OUTPUT_PORT_TYPE
+D => 105.IN0
+D => 111.IN0
+LDN => 105.IN1
+LDN => 91.IN1
+LDN => 69.IN1
+LDN => 60.IN1
+LDN => 59.IN1
+LDN => 71.IN1
+LDN => 98.IN1
+LDN => 112.IN1
+CLK => 19.CLK
+CLK => 18.CLK
+CLK => 17.CLK
+CLK => 16.CLK
+C => 91.IN0
+C => 97.IN0
+B => 69.IN0
+B => 70.IN0
+A => 60.IN0
+A => 61.IN0
+GN => 116.DATAIN
+DNUP => 67.IN0
+DNUP => 63.IN1
+DNUP => 76.IN0
+DNUP => 73.IN1
+DNUP => 87.IN0
+DNUP => 86.IN1
+DNUP => 103.IN0
+DNUP => 100.IN1
+RCON <= 102.DB_MAX_OUTPUT_PORT_TYPE
+QC <= 18.DB_MAX_OUTPUT_PORT_TYPE
+MXMN <= 114.DB_MAX_OUTPUT_PORT_TYPE
+QA <= 16.DB_MAX_OUTPUT_PORT_TYPE
+QB <= 17.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Practica_4|74191:inst1|f74191:sub|inhb:55
+1 <= 5.DB_MAX_OUTPUT_PORT_TYPE
+2 => 5.IN0
+3 => 4.IN0
+
+
+|Practica_4|FF_META:inst17
+OUTPUT <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLRN => inst1.ACLR
+CLRN => inst.ACLR
+CLK => inst1.CLK
+CLK => inst.CLK
+D => inst.DATAIN
+
+
+|Practica_4|7447:inst12
+OG <= 87.DB_MAX_OUTPUT_PORT_TYPE
+C => 25.IN0
+LTN => 25.IN1
+LTN => 27.IN1
+LTN => 29.IN1
+LTN => 13.IN5
+LTN => 38.IN3
+BIN => 37.IN0
+B => 27.IN0
+D => 14.IN0
+A => 29.IN0
+RBIN => 15.IN0
+OF <= 86.DB_MAX_OUTPUT_PORT_TYPE
+OE <= 85.DB_MAX_OUTPUT_PORT_TYPE
+RBON <= 13.DB_MAX_OUTPUT_PORT_TYPE
+OD <= 84.DB_MAX_OUTPUT_PORT_TYPE
+OC <= 83.DB_MAX_OUTPUT_PORT_TYPE
+OB <= 82.DB_MAX_OUTPUT_PORT_TYPE
+OA <= 81.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Practica_4|7447:inst13
+OG <= 87.DB_MAX_OUTPUT_PORT_TYPE
+C => 25.IN0
+LTN => 25.IN1
+LTN => 27.IN1
+LTN => 29.IN1
+LTN => 13.IN5
+LTN => 38.IN3
+BIN => 37.IN0
+B => 27.IN0
+D => 14.IN0
+A => 29.IN0
+RBIN => 15.IN0
+OF <= 86.DB_MAX_OUTPUT_PORT_TYPE
+OE <= 85.DB_MAX_OUTPUT_PORT_TYPE
+RBON <= 13.DB_MAX_OUTPUT_PORT_TYPE
+OD <= 84.DB_MAX_OUTPUT_PORT_TYPE
+OC <= 83.DB_MAX_OUTPUT_PORT_TYPE
+OB <= 82.DB_MAX_OUTPUT_PORT_TYPE
+OA <= 81.DB_MAX_OUTPUT_PORT_TYPE
+
+
