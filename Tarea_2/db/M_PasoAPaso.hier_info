@@ -1,0 +1,43 @@
+|M_PasoAPaso
+CLK_OUTPUT <= 7456:inst.QC
+CLK_INPUT => 7456:inst.CLKA
+A <= SM_MPP:inst1.A
+Reset => SM_MPP:inst1.reset
+Enable => SM_MPP:inst1.Enable
+Up_Down => SM_MPP:inst1.Up_Down
+Half_Full => SM_MPP:inst1.Half_Full
+B <= SM_MPP:inst1.B
+C <= SM_MPP:inst1.C
+D <= SM_MPP:inst1.D
+
+
+|M_PasoAPaso|7456:inst
+QA <= 5.DB_MAX_OUTPUT_PORT_TYPE
+CLR => 10.IN0
+CLKA => 23.IN0
+QC <= 16.DB_MAX_OUTPUT_PORT_TYPE
+CLKB => 24.IN0
+QB <= 15.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|M_PasoAPaso|SM_MPP:inst1
+clock => fstate~1.DATAIN
+reset => fstate~3.DATAIN
+Enable => process_1.IN0
+Enable => process_1.IN0
+Up_Down => process_1.IN1
+Up_Down => process_1.IN1
+Half_Full => process_1.IN1
+Half_Full => process_1.IN1
+Half_Full => Selector8.IN4
+Half_Full => Selector9.IN4
+Half_Full => Selector10.IN4
+Half_Full => Selector11.IN4
+Half_Full => process_1.IN1
+Half_Full => process_1.IN1
+A <= Selector11.DB_MAX_OUTPUT_PORT_TYPE
+B <= Selector9.DB_MAX_OUTPUT_PORT_TYPE
+C <= Selector8.DB_MAX_OUTPUT_PORT_TYPE
+D <= Selector10.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,49 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "CLK_OUTPUT",
+					"strict" : false
+				},
+				{
+					"name" : "A",
+					"strict" : false
+				},
+				{
+					"name" : "B",
+					"strict" : false
+				},
+				{
+					"name" : "C",
+					"strict" : false
+				},
+				{
+					"name" : "D",
+					"strict" : false
+				},
+				{
+					"name" : "Half_Full",
+					"strict" : false
+				},
+				{
+					"name" : "Enable",
+					"strict" : false
+				},
+				{
+					"name" : "Up_Down",
+					"strict" : false
+				},
+				{
+					"name" : "Reset",
+					"strict" : false
+				},
+				{
+					"name" : "CLK_INPUT",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

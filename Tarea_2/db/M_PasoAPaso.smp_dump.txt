@@ -1,0 +1,11 @@
+
+State Machine - |M_PasoAPaso|SM_MPP:inst1|fstate
+Name fstate.Q8 fstate.Q7 fstate.Q6 fstate.Q5 fstate.Q4 fstate.Q3 fstate.Q2 fstate.Q1 
+fstate.Q1 0 0 0 0 0 0 0 0 
+fstate.Q2 0 0 0 0 0 0 1 1 
+fstate.Q3 0 0 0 0 0 1 0 1 
+fstate.Q4 0 0 0 0 1 0 0 1 
+fstate.Q5 0 0 0 1 0 0 0 1 
+fstate.Q6 0 0 1 0 0 0 0 1 
+fstate.Q7 0 1 0 0 0 0 0 1 
+fstate.Q8 1 0 0 0 0 0 0 1 
