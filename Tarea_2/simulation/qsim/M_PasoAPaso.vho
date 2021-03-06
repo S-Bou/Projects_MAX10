@@ -16,7 +16,7 @@
 -- PROGRAM "Quartus Prime"
 -- VERSION "Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition"
 
--- DATE "02/28/2021 11:49:35"
+-- DATE "03/06/2021 18:40:40"
 
 -- 
 -- Device: Altera 10M50DAF484C6GES Package FBGA484
@@ -172,41 +172,41 @@ SIGNAL \Half_Full~input_o\ : std_logic;
 SIGNAL \inst|16~clkctrl_outclk\ : std_logic;
 SIGNAL \Enable~input_o\ : std_logic;
 SIGNAL \Up_Down~input_o\ : std_logic;
-SIGNAL \inst8|process_1~0_combout\ : std_logic;
-SIGNAL \inst8|Selector2~0_combout\ : std_logic;
-SIGNAL \inst8|Selector6~0_combout\ : std_logic;
-SIGNAL \inst8|Selector5~0_combout\ : std_logic;
-SIGNAL \inst8|Selector5~1_combout\ : std_logic;
+SIGNAL \inst1|process_1~0_combout\ : std_logic;
+SIGNAL \inst1|Selector2~0_combout\ : std_logic;
+SIGNAL \inst1|Selector6~0_combout\ : std_logic;
+SIGNAL \inst1|Selector5~0_combout\ : std_logic;
+SIGNAL \inst1|Selector5~1_combout\ : std_logic;
 SIGNAL \Reset~input_o\ : std_logic;
-SIGNAL \inst8|fstate.Q6~q\ : std_logic;
-SIGNAL \inst8|Selector6~1_combout\ : std_logic;
-SIGNAL \inst8|Selector6~2_combout\ : std_logic;
-SIGNAL \inst8|fstate.Q7~q\ : std_logic;
-SIGNAL \inst8|Selector7~0_combout\ : std_logic;
-SIGNAL \inst8|Selector7~1_combout\ : std_logic;
-SIGNAL \inst8|fstate.Q8~q\ : std_logic;
-SIGNAL \inst8|Selector0~1_combout\ : std_logic;
-SIGNAL \inst8|Selector0~0_combout\ : std_logic;
-SIGNAL \inst8|Selector0~2_combout\ : std_logic;
-SIGNAL \inst8|fstate.Q1~q\ : std_logic;
-SIGNAL \inst8|Selector1~0_combout\ : std_logic;
-SIGNAL \inst8|Selector1~1_combout\ : std_logic;
-SIGNAL \inst8|fstate.Q2~q\ : std_logic;
-SIGNAL \inst8|Selector2~2_combout\ : std_logic;
-SIGNAL \inst8|Selector2~1_combout\ : std_logic;
-SIGNAL \inst8|Selector2~3_combout\ : std_logic;
-SIGNAL \inst8|fstate.Q3~q\ : std_logic;
-SIGNAL \inst8|Selector3~0_combout\ : std_logic;
-SIGNAL \inst8|Selector3~1_combout\ : std_logic;
-SIGNAL \inst8|fstate.Q4~q\ : std_logic;
-SIGNAL \inst8|Selector4~1_combout\ : std_logic;
-SIGNAL \inst8|Selector4~0_combout\ : std_logic;
-SIGNAL \inst8|Selector4~2_combout\ : std_logic;
-SIGNAL \inst8|fstate.Q5~q\ : std_logic;
-SIGNAL \inst8|Selector11~0_combout\ : std_logic;
-SIGNAL \inst8|Selector9~0_combout\ : std_logic;
-SIGNAL \inst8|Selector8~0_combout\ : std_logic;
-SIGNAL \inst8|Selector10~0_combout\ : std_logic;
+SIGNAL \inst1|fstate.Q6~q\ : std_logic;
+SIGNAL \inst1|Selector6~1_combout\ : std_logic;
+SIGNAL \inst1|Selector6~2_combout\ : std_logic;
+SIGNAL \inst1|fstate.Q7~q\ : std_logic;
+SIGNAL \inst1|Selector7~0_combout\ : std_logic;
+SIGNAL \inst1|Selector7~1_combout\ : std_logic;
+SIGNAL \inst1|fstate.Q8~q\ : std_logic;
+SIGNAL \inst1|Selector0~1_combout\ : std_logic;
+SIGNAL \inst1|Selector0~0_combout\ : std_logic;
+SIGNAL \inst1|Selector0~2_combout\ : std_logic;
+SIGNAL \inst1|fstate.Q1~q\ : std_logic;
+SIGNAL \inst1|Selector1~0_combout\ : std_logic;
+SIGNAL \inst1|Selector1~1_combout\ : std_logic;
+SIGNAL \inst1|fstate.Q2~q\ : std_logic;
+SIGNAL \inst1|Selector2~2_combout\ : std_logic;
+SIGNAL \inst1|Selector2~1_combout\ : std_logic;
+SIGNAL \inst1|Selector2~3_combout\ : std_logic;
+SIGNAL \inst1|fstate.Q3~q\ : std_logic;
+SIGNAL \inst1|Selector3~0_combout\ : std_logic;
+SIGNAL \inst1|Selector3~1_combout\ : std_logic;
+SIGNAL \inst1|fstate.Q4~q\ : std_logic;
+SIGNAL \inst1|Selector4~1_combout\ : std_logic;
+SIGNAL \inst1|Selector4~0_combout\ : std_logic;
+SIGNAL \inst1|Selector4~2_combout\ : std_logic;
+SIGNAL \inst1|fstate.Q5~q\ : std_logic;
+SIGNAL \inst1|Selector11~0_combout\ : std_logic;
+SIGNAL \inst1|Selector9~0_combout\ : std_logic;
+SIGNAL \inst1|Selector8~0_combout\ : std_logic;
+SIGNAL \inst1|Selector10~0_combout\ : std_logic;
 SIGNAL \ALT_INV_CLK_INPUT~inputclkctrl_outclk\ : std_logic;
 SIGNAL \inst|ALT_INV_5~clkctrl_outclk\ : std_logic;
 
@@ -283,7 +283,7 @@ GENERIC MAP (
 	open_drain_output => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \inst8|Selector11~0_combout\,
+	i => \inst1|Selector11~0_combout\,
 	devoe => ww_devoe,
 	o => \A~output_o\);
 
@@ -295,7 +295,7 @@ GENERIC MAP (
 	open_drain_output => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \inst8|Selector9~0_combout\,
+	i => \inst1|Selector9~0_combout\,
 	devoe => ww_devoe,
 	o => \B~output_o\);
 
@@ -307,7 +307,7 @@ GENERIC MAP (
 	open_drain_output => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \inst8|Selector8~0_combout\,
+	i => \inst1|Selector8~0_combout\,
 	devoe => ww_devoe,
 	o => \C~output_o\);
 
@@ -319,7 +319,7 @@ GENERIC MAP (
 	open_drain_output => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \inst8|Selector10~0_combout\,
+	i => \inst1|Selector10~0_combout\,
 	devoe => ww_devoe,
 	o => \D~output_o\);
 
@@ -642,9 +642,9 @@ PORT MAP (
 	o => \Up_Down~input_o\);
 
 -- Location: LCCOMB_X47_Y50_N30
-\inst8|process_1~0\ : fiftyfivenm_lcell_comb
+\inst1|process_1~0\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst8|process_1~0_combout\ = (\Half_Full~input_o\ & \Enable~input_o\)
+-- \inst1|process_1~0_combout\ = (\Half_Full~input_o\ & \Enable~input_o\)
 
 -- pragma translate_off
 GENERIC MAP (
@@ -654,12 +654,12 @@ GENERIC MAP (
 PORT MAP (
 	dataa => \Half_Full~input_o\,
 	datac => \Enable~input_o\,
-	combout => \inst8|process_1~0_combout\);
+	combout => \inst1|process_1~0_combout\);
 
 -- Location: LCCOMB_X47_Y50_N20
-\inst8|Selector2~0\ : fiftyfivenm_lcell_comb
+\inst1|Selector2~0\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst8|Selector2~0_combout\ = (!\Half_Full~input_o\ & \Enable~input_o\)
+-- \inst1|Selector2~0_combout\ = (!\Half_Full~input_o\ & \Enable~input_o\)
 
 -- pragma translate_off
 GENERIC MAP (
@@ -669,12 +669,12 @@ GENERIC MAP (
 PORT MAP (
 	dataa => \Half_Full~input_o\,
 	datac => \Enable~input_o\,
-	combout => \inst8|Selector2~0_combout\);
+	combout => \inst1|Selector2~0_combout\);
 
 -- Location: LCCOMB_X46_Y50_N30
-\inst8|Selector6~0\ : fiftyfivenm_lcell_comb
+\inst1|Selector6~0\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst8|Selector6~0_combout\ = (\inst8|Selector2~0_combout\ & ((\Up_Down~input_o\ & (\inst8|fstate.Q5~q\)) # (!\Up_Down~input_o\ & ((!\inst8|fstate.Q1~q\)))))
+-- \inst1|Selector6~0_combout\ = (\inst1|Selector2~0_combout\ & ((\Up_Down~input_o\ & (\inst1|fstate.Q5~q\)) # (!\Up_Down~input_o\ & ((!\inst1|fstate.Q1~q\)))))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -682,16 +682,16 @@ GENERIC MAP (
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \inst8|Selector2~0_combout\,
+	dataa => \inst1|Selector2~0_combout\,
 	datab => \Up_Down~input_o\,
-	datac => \inst8|fstate.Q5~q\,
-	datad => \inst8|fstate.Q1~q\,
-	combout => \inst8|Selector6~0_combout\);
+	datac => \inst1|fstate.Q5~q\,
+	datad => \inst1|fstate.Q1~q\,
+	combout => \inst1|Selector6~0_combout\);
 
 -- Location: LCCOMB_X47_Y50_N24
-\inst8|Selector5~0\ : fiftyfivenm_lcell_comb
+\inst1|Selector5~0\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst8|Selector5~0_combout\ = (\inst8|process_1~0_combout\ & (\Up_Down~input_o\ & ((\inst8|fstate.Q5~q\)))) # (!\inst8|process_1~0_combout\ & (((\inst8|fstate.Q6~q\))))
+-- \inst1|Selector5~0_combout\ = (\inst1|process_1~0_combout\ & (\Up_Down~input_o\ & ((\inst1|fstate.Q5~q\)))) # (!\inst1|process_1~0_combout\ & (((\inst1|fstate.Q6~q\))))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -699,16 +699,16 @@ GENERIC MAP (
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \inst8|process_1~0_combout\,
+	dataa => \inst1|process_1~0_combout\,
 	datab => \Up_Down~input_o\,
-	datac => \inst8|fstate.Q6~q\,
-	datad => \inst8|fstate.Q5~q\,
-	combout => \inst8|Selector5~0_combout\);
+	datac => \inst1|fstate.Q6~q\,
+	datad => \inst1|fstate.Q5~q\,
+	combout => \inst1|Selector5~0_combout\);
 
 -- Location: LCCOMB_X47_Y50_N26
-\inst8|Selector5~1\ : fiftyfivenm_lcell_comb
+\inst1|Selector5~1\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst8|Selector5~1_combout\ = (\inst8|Selector5~0_combout\) # ((\inst8|fstate.Q7~q\ & (!\Up_Down~input_o\ & \inst8|process_1~0_combout\)))
+-- \inst1|Selector5~1_combout\ = (\inst1|Selector5~0_combout\) # ((\inst1|fstate.Q7~q\ & (!\Up_Down~input_o\ & \inst1|process_1~0_combout\)))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -716,11 +716,11 @@ GENERIC MAP (
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \inst8|fstate.Q7~q\,
+	dataa => \inst1|fstate.Q7~q\,
 	datab => \Up_Down~input_o\,
-	datac => \inst8|process_1~0_combout\,
-	datad => \inst8|Selector5~0_combout\,
-	combout => \inst8|Selector5~1_combout\);
+	datac => \inst1|process_1~0_combout\,
+	datad => \inst1|Selector5~0_combout\,
+	combout => \inst1|Selector5~1_combout\);
 
 -- Location: IOIBUF_X51_Y54_N1
 \Reset~input\ : fiftyfivenm_io_ibuf
@@ -735,7 +735,7 @@ PORT MAP (
 	o => \Reset~input_o\);
 
 -- Location: FF_X47_Y50_N27
-\inst8|fstate.Q6\ : dffeas
+\inst1|fstate.Q6\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
 	is_wysiwyg => "true",
@@ -743,16 +743,16 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \inst|16~clkctrl_outclk\,
-	d => \inst8|Selector5~1_combout\,
+	d => \inst1|Selector5~1_combout\,
 	clrn => \Reset~input_o\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	q => \inst8|fstate.Q6~q\);
+	q => \inst1|fstate.Q6~q\);
 
 -- Location: LCCOMB_X47_Y50_N4
-\inst8|Selector6~1\ : fiftyfivenm_lcell_comb
+\inst1|Selector6~1\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst8|Selector6~1_combout\ = (\inst8|process_1~0_combout\ & ((\Up_Down~input_o\ & (\inst8|fstate.Q6~q\)) # (!\Up_Down~input_o\ & ((\inst8|fstate.Q8~q\)))))
+-- \inst1|Selector6~1_combout\ = (\inst1|process_1~0_combout\ & ((\Up_Down~input_o\ & (\inst1|fstate.Q6~q\)) # (!\Up_Down~input_o\ & ((\inst1|fstate.Q8~q\)))))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -760,16 +760,16 @@ GENERIC MAP (
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \inst8|process_1~0_combout\,
+	dataa => \inst1|process_1~0_combout\,
 	datab => \Up_Down~input_o\,
-	datac => \inst8|fstate.Q6~q\,
-	datad => \inst8|fstate.Q8~q\,
-	combout => \inst8|Selector6~1_combout\);
+	datac => \inst1|fstate.Q6~q\,
+	datad => \inst1|fstate.Q8~q\,
+	combout => \inst1|Selector6~1_combout\);
 
 -- Location: LCCOMB_X46_Y50_N10
-\inst8|Selector6~2\ : fiftyfivenm_lcell_comb
+\inst1|Selector6~2\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst8|Selector6~2_combout\ = (\inst8|Selector6~0_combout\) # ((\inst8|Selector6~1_combout\) # ((!\Enable~input_o\ & \inst8|fstate.Q7~q\)))
+-- \inst1|Selector6~2_combout\ = (\inst1|Selector6~0_combout\) # ((\inst1|Selector6~1_combout\) # ((!\Enable~input_o\ & \inst1|fstate.Q7~q\)))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -777,14 +777,14 @@ GENERIC MAP (
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \inst8|Selector6~0_combout\,
+	dataa => \inst1|Selector6~0_combout\,
 	datab => \Enable~input_o\,
-	datac => \inst8|fstate.Q7~q\,
-	datad => \inst8|Selector6~1_combout\,
-	combout => \inst8|Selector6~2_combout\);
+	datac => \inst1|fstate.Q7~q\,
+	datad => \inst1|Selector6~1_combout\,
+	combout => \inst1|Selector6~2_combout\);
 
 -- Location: FF_X46_Y50_N11
-\inst8|fstate.Q7\ : dffeas
+\inst1|fstate.Q7\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
 	is_wysiwyg => "true",
@@ -792,16 +792,16 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \inst|16~clkctrl_outclk\,
-	d => \inst8|Selector6~2_combout\,
+	d => \inst1|Selector6~2_combout\,
 	clrn => \Reset~input_o\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	q => \inst8|fstate.Q7~q\);
+	q => \inst1|fstate.Q7~q\);
 
 -- Location: LCCOMB_X47_Y50_N6
-\inst8|Selector7~0\ : fiftyfivenm_lcell_comb
+\inst1|Selector7~0\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst8|Selector7~0_combout\ = (\inst8|process_1~0_combout\ & (!\Up_Down~input_o\ & ((!\inst8|fstate.Q1~q\)))) # (!\inst8|process_1~0_combout\ & (((\inst8|fstate.Q8~q\))))
+-- \inst1|Selector7~0_combout\ = (\inst1|process_1~0_combout\ & (!\Up_Down~input_o\ & ((!\inst1|fstate.Q1~q\)))) # (!\inst1|process_1~0_combout\ & (((\inst1|fstate.Q8~q\))))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -809,16 +809,16 @@ GENERIC MAP (
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \inst8|process_1~0_combout\,
+	dataa => \inst1|process_1~0_combout\,
 	datab => \Up_Down~input_o\,
-	datac => \inst8|fstate.Q8~q\,
-	datad => \inst8|fstate.Q1~q\,
-	combout => \inst8|Selector7~0_combout\);
+	datac => \inst1|fstate.Q8~q\,
+	datad => \inst1|fstate.Q1~q\,
+	combout => \inst1|Selector7~0_combout\);
 
 -- Location: LCCOMB_X47_Y50_N2
-\inst8|Selector7~1\ : fiftyfivenm_lcell_comb
+\inst1|Selector7~1\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst8|Selector7~1_combout\ = (\inst8|Selector7~0_combout\) # ((\inst8|fstate.Q7~q\ & (\Up_Down~input_o\ & \inst8|process_1~0_combout\)))
+-- \inst1|Selector7~1_combout\ = (\inst1|Selector7~0_combout\) # ((\inst1|fstate.Q7~q\ & (\Up_Down~input_o\ & \inst1|process_1~0_combout\)))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -826,14 +826,14 @@ GENERIC MAP (
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \inst8|fstate.Q7~q\,
+	dataa => \inst1|fstate.Q7~q\,
 	datab => \Up_Down~input_o\,
-	datac => \inst8|process_1~0_combout\,
-	datad => \inst8|Selector7~0_combout\,
-	combout => \inst8|Selector7~1_combout\);
+	datac => \inst1|process_1~0_combout\,
+	datad => \inst1|Selector7~0_combout\,
+	combout => \inst1|Selector7~1_combout\);
 
 -- Location: FF_X47_Y50_N3
-\inst8|fstate.Q8\ : dffeas
+\inst1|fstate.Q8\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
 	is_wysiwyg => "true",
@@ -841,16 +841,16 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \inst|16~clkctrl_outclk\,
-	d => \inst8|Selector7~1_combout\,
+	d => \inst1|Selector7~1_combout\,
 	clrn => \Reset~input_o\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	q => \inst8|fstate.Q8~q\);
+	q => \inst1|fstate.Q8~q\);
 
 -- Location: LCCOMB_X46_Y50_N6
-\inst8|Selector0~1\ : fiftyfivenm_lcell_comb
+\inst1|Selector0~1\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst8|Selector0~1_combout\ = (\inst8|process_1~0_combout\ & ((\Up_Down~input_o\ & ((\inst8|fstate.Q8~q\))) # (!\Up_Down~input_o\ & (\inst8|fstate.Q2~q\))))
+-- \inst1|Selector0~1_combout\ = (\inst1|process_1~0_combout\ & ((\Up_Down~input_o\ & ((\inst1|fstate.Q8~q\))) # (!\Up_Down~input_o\ & (\inst1|fstate.Q2~q\))))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -859,15 +859,15 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	dataa => \Up_Down~input_o\,
-	datab => \inst8|process_1~0_combout\,
-	datac => \inst8|fstate.Q2~q\,
-	datad => \inst8|fstate.Q8~q\,
-	combout => \inst8|Selector0~1_combout\);
+	datab => \inst1|process_1~0_combout\,
+	datac => \inst1|fstate.Q2~q\,
+	datad => \inst1|fstate.Q8~q\,
+	combout => \inst1|Selector0~1_combout\);
 
 -- Location: LCCOMB_X46_Y50_N20
-\inst8|Selector0~0\ : fiftyfivenm_lcell_comb
+\inst1|Selector0~0\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst8|Selector0~0_combout\ = (\inst8|Selector2~0_combout\ & ((\Up_Down~input_o\ & (\inst8|fstate.Q7~q\)) # (!\Up_Down~input_o\ & ((\inst8|fstate.Q3~q\)))))
+-- \inst1|Selector0~0_combout\ = (\inst1|Selector2~0_combout\ & ((\Up_Down~input_o\ & (\inst1|fstate.Q7~q\)) # (!\Up_Down~input_o\ & ((\inst1|fstate.Q3~q\)))))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -875,16 +875,16 @@ GENERIC MAP (
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \inst8|fstate.Q7~q\,
+	dataa => \inst1|fstate.Q7~q\,
 	datab => \Up_Down~input_o\,
-	datac => \inst8|Selector2~0_combout\,
-	datad => \inst8|fstate.Q3~q\,
-	combout => \inst8|Selector0~0_combout\);
+	datac => \inst1|Selector2~0_combout\,
+	datad => \inst1|fstate.Q3~q\,
+	combout => \inst1|Selector0~0_combout\);
 
 -- Location: LCCOMB_X46_Y50_N12
-\inst8|Selector0~2\ : fiftyfivenm_lcell_comb
+\inst1|Selector0~2\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst8|Selector0~2_combout\ = (!\inst8|Selector0~1_combout\ & (!\inst8|Selector0~0_combout\ & ((\Enable~input_o\) # (\inst8|fstate.Q1~q\))))
+-- \inst1|Selector0~2_combout\ = (!\inst1|Selector0~1_combout\ & (!\inst1|Selector0~0_combout\ & ((\Enable~input_o\) # (\inst1|fstate.Q1~q\))))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -892,14 +892,14 @@ GENERIC MAP (
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \inst8|Selector0~1_combout\,
+	dataa => \inst1|Selector0~1_combout\,
 	datab => \Enable~input_o\,
-	datac => \inst8|fstate.Q1~q\,
-	datad => \inst8|Selector0~0_combout\,
-	combout => \inst8|Selector0~2_combout\);
+	datac => \inst1|fstate.Q1~q\,
+	datad => \inst1|Selector0~0_combout\,
+	combout => \inst1|Selector0~2_combout\);
 
 -- Location: FF_X46_Y50_N13
-\inst8|fstate.Q1\ : dffeas
+\inst1|fstate.Q1\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
 	is_wysiwyg => "true",
@@ -907,16 +907,16 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \inst|16~clkctrl_outclk\,
-	d => \inst8|Selector0~2_combout\,
+	d => \inst1|Selector0~2_combout\,
 	clrn => \Reset~input_o\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	q => \inst8|fstate.Q1~q\);
+	q => \inst1|fstate.Q1~q\);
 
 -- Location: LCCOMB_X46_Y50_N28
-\inst8|Selector1~0\ : fiftyfivenm_lcell_comb
+\inst1|Selector1~0\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst8|Selector1~0_combout\ = (\inst8|process_1~0_combout\ & (\Up_Down~input_o\ & ((!\inst8|fstate.Q1~q\)))) # (!\inst8|process_1~0_combout\ & (((\inst8|fstate.Q2~q\))))
+-- \inst1|Selector1~0_combout\ = (\inst1|process_1~0_combout\ & (\Up_Down~input_o\ & ((!\inst1|fstate.Q1~q\)))) # (!\inst1|process_1~0_combout\ & (((\inst1|fstate.Q2~q\))))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -925,15 +925,15 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	dataa => \Up_Down~input_o\,
-	datab => \inst8|process_1~0_combout\,
-	datac => \inst8|fstate.Q2~q\,
-	datad => \inst8|fstate.Q1~q\,
-	combout => \inst8|Selector1~0_combout\);
+	datab => \inst1|process_1~0_combout\,
+	datac => \inst1|fstate.Q2~q\,
+	datad => \inst1|fstate.Q1~q\,
+	combout => \inst1|Selector1~0_combout\);
 
 -- Location: LCCOMB_X46_Y50_N26
-\inst8|Selector1~1\ : fiftyfivenm_lcell_comb
+\inst1|Selector1~1\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst8|Selector1~1_combout\ = (\inst8|Selector1~0_combout\) # ((!\Up_Down~input_o\ & (\inst8|process_1~0_combout\ & \inst8|fstate.Q3~q\)))
+-- \inst1|Selector1~1_combout\ = (\inst1|Selector1~0_combout\) # ((!\Up_Down~input_o\ & (\inst1|process_1~0_combout\ & \inst1|fstate.Q3~q\)))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -942,13 +942,13 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	dataa => \Up_Down~input_o\,
-	datab => \inst8|process_1~0_combout\,
-	datac => \inst8|fstate.Q3~q\,
-	datad => \inst8|Selector1~0_combout\,
-	combout => \inst8|Selector1~1_combout\);
+	datab => \inst1|process_1~0_combout\,
+	datac => \inst1|fstate.Q3~q\,
+	datad => \inst1|Selector1~0_combout\,
+	combout => \inst1|Selector1~1_combout\);
 
 -- Location: FF_X46_Y50_N27
-\inst8|fstate.Q2\ : dffeas
+\inst1|fstate.Q2\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
 	is_wysiwyg => "true",
@@ -956,16 +956,16 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \inst|16~clkctrl_outclk\,
-	d => \inst8|Selector1~1_combout\,
+	d => \inst1|Selector1~1_combout\,
 	clrn => \Reset~input_o\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	q => \inst8|fstate.Q2~q\);
+	q => \inst1|fstate.Q2~q\);
 
 -- Location: LCCOMB_X46_Y50_N14
-\inst8|Selector2~2\ : fiftyfivenm_lcell_comb
+\inst1|Selector2~2\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst8|Selector2~2_combout\ = (\inst8|process_1~0_combout\ & ((\Up_Down~input_o\ & (\inst8|fstate.Q2~q\)) # (!\Up_Down~input_o\ & ((\inst8|fstate.Q4~q\)))))
+-- \inst1|Selector2~2_combout\ = (\inst1|process_1~0_combout\ & ((\Up_Down~input_o\ & (\inst1|fstate.Q2~q\)) # (!\Up_Down~input_o\ & ((\inst1|fstate.Q4~q\)))))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -974,15 +974,15 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	dataa => \Up_Down~input_o\,
-	datab => \inst8|process_1~0_combout\,
-	datac => \inst8|fstate.Q2~q\,
-	datad => \inst8|fstate.Q4~q\,
-	combout => \inst8|Selector2~2_combout\);
+	datab => \inst1|process_1~0_combout\,
+	datac => \inst1|fstate.Q2~q\,
+	datad => \inst1|fstate.Q4~q\,
+	combout => \inst1|Selector2~2_combout\);
 
 -- Location: LCCOMB_X46_Y50_N16
-\inst8|Selector2~1\ : fiftyfivenm_lcell_comb
+\inst1|Selector2~1\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst8|Selector2~1_combout\ = (\inst8|Selector2~0_combout\ & ((\Up_Down~input_o\ & ((!\inst8|fstate.Q1~q\))) # (!\Up_Down~input_o\ & (\inst8|fstate.Q5~q\))))
+-- \inst1|Selector2~1_combout\ = (\inst1|Selector2~0_combout\ & ((\Up_Down~input_o\ & ((!\inst1|fstate.Q1~q\))) # (!\Up_Down~input_o\ & (\inst1|fstate.Q5~q\))))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -990,16 +990,16 @@ GENERIC MAP (
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \inst8|Selector2~0_combout\,
+	dataa => \inst1|Selector2~0_combout\,
 	datab => \Up_Down~input_o\,
-	datac => \inst8|fstate.Q5~q\,
-	datad => \inst8|fstate.Q1~q\,
-	combout => \inst8|Selector2~1_combout\);
+	datac => \inst1|fstate.Q5~q\,
+	datad => \inst1|fstate.Q1~q\,
+	combout => \inst1|Selector2~1_combout\);
 
 -- Location: LCCOMB_X46_Y50_N0
-\inst8|Selector2~3\ : fiftyfivenm_lcell_comb
+\inst1|Selector2~3\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst8|Selector2~3_combout\ = (\inst8|Selector2~2_combout\) # ((\inst8|Selector2~1_combout\) # ((!\Enable~input_o\ & \inst8|fstate.Q3~q\)))
+-- \inst1|Selector2~3_combout\ = (\inst1|Selector2~2_combout\) # ((\inst1|Selector2~1_combout\) # ((!\Enable~input_o\ & \inst1|fstate.Q3~q\)))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -1008,13 +1008,13 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	dataa => \Enable~input_o\,
-	datab => \inst8|Selector2~2_combout\,
-	datac => \inst8|fstate.Q3~q\,
-	datad => \inst8|Selector2~1_combout\,
-	combout => \inst8|Selector2~3_combout\);
+	datab => \inst1|Selector2~2_combout\,
+	datac => \inst1|fstate.Q3~q\,
+	datad => \inst1|Selector2~1_combout\,
+	combout => \inst1|Selector2~3_combout\);
 
 -- Location: FF_X46_Y50_N1
-\inst8|fstate.Q3\ : dffeas
+\inst1|fstate.Q3\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
 	is_wysiwyg => "true",
@@ -1022,16 +1022,16 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \inst|16~clkctrl_outclk\,
-	d => \inst8|Selector2~3_combout\,
+	d => \inst1|Selector2~3_combout\,
 	clrn => \Reset~input_o\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	q => \inst8|fstate.Q3~q\);
+	q => \inst1|fstate.Q3~q\);
 
 -- Location: LCCOMB_X46_Y50_N4
-\inst8|Selector3~0\ : fiftyfivenm_lcell_comb
+\inst1|Selector3~0\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst8|Selector3~0_combout\ = (\inst8|process_1~0_combout\ & (\Up_Down~input_o\ & ((\inst8|fstate.Q3~q\)))) # (!\inst8|process_1~0_combout\ & (((\inst8|fstate.Q4~q\))))
+-- \inst1|Selector3~0_combout\ = (\inst1|process_1~0_combout\ & (\Up_Down~input_o\ & ((\inst1|fstate.Q3~q\)))) # (!\inst1|process_1~0_combout\ & (((\inst1|fstate.Q4~q\))))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -1040,15 +1040,15 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	dataa => \Up_Down~input_o\,
-	datab => \inst8|process_1~0_combout\,
-	datac => \inst8|fstate.Q4~q\,
-	datad => \inst8|fstate.Q3~q\,
-	combout => \inst8|Selector3~0_combout\);
+	datab => \inst1|process_1~0_combout\,
+	datac => \inst1|fstate.Q4~q\,
+	datad => \inst1|fstate.Q3~q\,
+	combout => \inst1|Selector3~0_combout\);
 
 -- Location: LCCOMB_X46_Y50_N8
-\inst8|Selector3~1\ : fiftyfivenm_lcell_comb
+\inst1|Selector3~1\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst8|Selector3~1_combout\ = (\inst8|Selector3~0_combout\) # ((!\Up_Down~input_o\ & (\inst8|process_1~0_combout\ & \inst8|fstate.Q5~q\)))
+-- \inst1|Selector3~1_combout\ = (\inst1|Selector3~0_combout\) # ((!\Up_Down~input_o\ & (\inst1|process_1~0_combout\ & \inst1|fstate.Q5~q\)))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -1057,13 +1057,13 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	dataa => \Up_Down~input_o\,
-	datab => \inst8|process_1~0_combout\,
-	datac => \inst8|Selector3~0_combout\,
-	datad => \inst8|fstate.Q5~q\,
-	combout => \inst8|Selector3~1_combout\);
+	datab => \inst1|process_1~0_combout\,
+	datac => \inst1|Selector3~0_combout\,
+	datad => \inst1|fstate.Q5~q\,
+	combout => \inst1|Selector3~1_combout\);
 
 -- Location: FF_X46_Y50_N9
-\inst8|fstate.Q4\ : dffeas
+\inst1|fstate.Q4\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
 	is_wysiwyg => "true",
@@ -1071,16 +1071,16 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \inst|16~clkctrl_outclk\,
-	d => \inst8|Selector3~1_combout\,
+	d => \inst1|Selector3~1_combout\,
 	clrn => \Reset~input_o\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	q => \inst8|fstate.Q4~q\);
+	q => \inst1|fstate.Q4~q\);
 
 -- Location: LCCOMB_X46_Y50_N2
-\inst8|Selector4~1\ : fiftyfivenm_lcell_comb
+\inst1|Selector4~1\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst8|Selector4~1_combout\ = (\inst8|process_1~0_combout\ & ((\Up_Down~input_o\ & (\inst8|fstate.Q4~q\)) # (!\Up_Down~input_o\ & ((\inst8|fstate.Q6~q\)))))
+-- \inst1|Selector4~1_combout\ = (\inst1|process_1~0_combout\ & ((\Up_Down~input_o\ & (\inst1|fstate.Q4~q\)) # (!\Up_Down~input_o\ & ((\inst1|fstate.Q6~q\)))))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -1089,15 +1089,15 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	dataa => \Up_Down~input_o\,
-	datab => \inst8|process_1~0_combout\,
-	datac => \inst8|fstate.Q4~q\,
-	datad => \inst8|fstate.Q6~q\,
-	combout => \inst8|Selector4~1_combout\);
+	datab => \inst1|process_1~0_combout\,
+	datac => \inst1|fstate.Q4~q\,
+	datad => \inst1|fstate.Q6~q\,
+	combout => \inst1|Selector4~1_combout\);
 
 -- Location: LCCOMB_X46_Y50_N24
-\inst8|Selector4~0\ : fiftyfivenm_lcell_comb
+\inst1|Selector4~0\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst8|Selector4~0_combout\ = (\inst8|Selector2~0_combout\ & ((\Up_Down~input_o\ & ((\inst8|fstate.Q3~q\))) # (!\Up_Down~input_o\ & (\inst8|fstate.Q7~q\))))
+-- \inst1|Selector4~0_combout\ = (\inst1|Selector2~0_combout\ & ((\Up_Down~input_o\ & ((\inst1|fstate.Q3~q\))) # (!\Up_Down~input_o\ & (\inst1|fstate.Q7~q\))))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -1105,16 +1105,16 @@ GENERIC MAP (
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \inst8|fstate.Q7~q\,
+	dataa => \inst1|fstate.Q7~q\,
 	datab => \Up_Down~input_o\,
-	datac => \inst8|Selector2~0_combout\,
-	datad => \inst8|fstate.Q3~q\,
-	combout => \inst8|Selector4~0_combout\);
+	datac => \inst1|Selector2~0_combout\,
+	datad => \inst1|fstate.Q3~q\,
+	combout => \inst1|Selector4~0_combout\);
 
 -- Location: LCCOMB_X46_Y50_N22
-\inst8|Selector4~2\ : fiftyfivenm_lcell_comb
+\inst1|Selector4~2\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst8|Selector4~2_combout\ = (\inst8|Selector4~1_combout\) # ((\inst8|Selector4~0_combout\) # ((!\Enable~input_o\ & \inst8|fstate.Q5~q\)))
+-- \inst1|Selector4~2_combout\ = (\inst1|Selector4~1_combout\) # ((\inst1|Selector4~0_combout\) # ((!\Enable~input_o\ & \inst1|fstate.Q5~q\)))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -1123,13 +1123,13 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	dataa => \Enable~input_o\,
-	datab => \inst8|Selector4~1_combout\,
-	datac => \inst8|fstate.Q5~q\,
-	datad => \inst8|Selector4~0_combout\,
-	combout => \inst8|Selector4~2_combout\);
+	datab => \inst1|Selector4~1_combout\,
+	datac => \inst1|fstate.Q5~q\,
+	datad => \inst1|Selector4~0_combout\,
+	combout => \inst1|Selector4~2_combout\);
 
 -- Location: FF_X46_Y50_N23
-\inst8|fstate.Q5\ : dffeas
+\inst1|fstate.Q5\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
 	is_wysiwyg => "true",
@@ -1137,16 +1137,16 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \inst|16~clkctrl_outclk\,
-	d => \inst8|Selector4~2_combout\,
+	d => \inst1|Selector4~2_combout\,
 	clrn => \Reset~input_o\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	q => \inst8|fstate.Q5~q\);
+	q => \inst1|fstate.Q5~q\);
 
 -- Location: LCCOMB_X47_Y50_N16
-\inst8|Selector11~0\ : fiftyfivenm_lcell_comb
+\inst1|Selector11~0\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst8|Selector11~0_combout\ = (\inst8|fstate.Q5~q\) # ((\inst8|fstate.Q3~q\) # ((\Half_Full~input_o\ & \inst8|fstate.Q4~q\)))
+-- \inst1|Selector11~0_combout\ = (\inst1|fstate.Q5~q\) # ((\inst1|fstate.Q3~q\) # ((\Half_Full~input_o\ & \inst1|fstate.Q4~q\)))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -1155,15 +1155,15 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	dataa => \Half_Full~input_o\,
-	datab => \inst8|fstate.Q5~q\,
-	datac => \inst8|fstate.Q4~q\,
-	datad => \inst8|fstate.Q3~q\,
-	combout => \inst8|Selector11~0_combout\);
+	datab => \inst1|fstate.Q5~q\,
+	datac => \inst1|fstate.Q4~q\,
+	datad => \inst1|fstate.Q3~q\,
+	combout => \inst1|Selector11~0_combout\);
 
 -- Location: LCCOMB_X47_Y50_N12
-\inst8|Selector9~0\ : fiftyfivenm_lcell_comb
+\inst1|Selector9~0\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst8|Selector9~0_combout\ = (\inst8|fstate.Q7~q\) # (((\Half_Full~input_o\ & \inst8|fstate.Q8~q\)) # (!\inst8|fstate.Q1~q\))
+-- \inst1|Selector9~0_combout\ = (\inst1|fstate.Q7~q\) # (((\Half_Full~input_o\ & \inst1|fstate.Q8~q\)) # (!\inst1|fstate.Q1~q\))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -1171,16 +1171,16 @@ GENERIC MAP (
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \inst8|fstate.Q7~q\,
+	dataa => \inst1|fstate.Q7~q\,
 	datab => \Half_Full~input_o\,
-	datac => \inst8|fstate.Q8~q\,
-	datad => \inst8|fstate.Q1~q\,
-	combout => \inst8|Selector9~0_combout\);
+	datac => \inst1|fstate.Q8~q\,
+	datad => \inst1|fstate.Q1~q\,
+	combout => \inst1|Selector9~0_combout\);
 
 -- Location: LCCOMB_X47_Y50_N28
-\inst8|Selector8~0\ : fiftyfivenm_lcell_comb
+\inst1|Selector8~0\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst8|Selector8~0_combout\ = (\inst8|fstate.Q5~q\) # ((\inst8|fstate.Q7~q\) # ((\Half_Full~input_o\ & \inst8|fstate.Q6~q\)))
+-- \inst1|Selector8~0_combout\ = (\inst1|fstate.Q5~q\) # ((\inst1|fstate.Q7~q\) # ((\Half_Full~input_o\ & \inst1|fstate.Q6~q\)))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -1189,15 +1189,15 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	dataa => \Half_Full~input_o\,
-	datab => \inst8|fstate.Q5~q\,
-	datac => \inst8|fstate.Q6~q\,
-	datad => \inst8|fstate.Q7~q\,
-	combout => \inst8|Selector8~0_combout\);
+	datab => \inst1|fstate.Q5~q\,
+	datac => \inst1|fstate.Q6~q\,
+	datad => \inst1|fstate.Q7~q\,
+	combout => \inst1|Selector8~0_combout\);
 
 -- Location: LCCOMB_X47_Y50_N18
-\inst8|Selector10~0\ : fiftyfivenm_lcell_comb
+\inst1|Selector10~0\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst8|Selector10~0_combout\ = (\inst8|fstate.Q3~q\) # (((\Half_Full~input_o\ & \inst8|fstate.Q2~q\)) # (!\inst8|fstate.Q1~q\))
+-- \inst1|Selector10~0_combout\ = (\inst1|fstate.Q3~q\) # (((\Half_Full~input_o\ & \inst1|fstate.Q2~q\)) # (!\inst1|fstate.Q1~q\))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -1205,11 +1205,11 @@ GENERIC MAP (
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \inst8|fstate.Q3~q\,
+	dataa => \inst1|fstate.Q3~q\,
 	datab => \Half_Full~input_o\,
-	datac => \inst8|fstate.Q2~q\,
-	datad => \inst8|fstate.Q1~q\,
-	combout => \inst8|Selector10~0_combout\);
+	datac => \inst1|fstate.Q2~q\,
+	datad => \inst1|fstate.Q1~q\,
+	combout => \inst1|Selector10~0_combout\);
 
 -- Location: UNVM_X0_Y40_N40
 \~QUARTUS_CREATED_UNVM~\ : fiftyfivenm_unvm

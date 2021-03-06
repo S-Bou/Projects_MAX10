@@ -1,0 +1,33 @@
+|Encoder_P
+y0 => d.IN1
+y1 => a.IN1
+y1 => d.IN1
+y2 => b.IN0
+y2 => d.IN1
+y2 => a.IN0
+y3 => a.IN0
+y3 => b.IN1
+y3 => d.IN1
+y4 => c.IN0
+y4 => d.IN1
+y4 => a.IN1
+y4 => a.IN1
+y4 => b.IN0
+y5 => a.IN1
+y5 => c.IN1
+y5 => d.IN1
+y5 => b.IN1
+y6 => b.IN1
+y6 => c.IN1
+y6 => d.IN0
+y6 => a.IN1
+y7 => a.IN1
+y7 => b.IN1
+y7 => c.IN1
+y7 => d.IN1
+a << a.DB_MAX_OUTPUT_PORT_TYPE
+b << b.DB_MAX_OUTPUT_PORT_TYPE
+c << c.DB_MAX_OUTPUT_PORT_TYPE
+d << d.DB_MAX_OUTPUT_PORT_TYPE
+
+

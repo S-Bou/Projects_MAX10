@@ -1,0 +1,8 @@
+
+State Machine - |AntiRebotes|SM1:inst666|fstate
+Name fstate.Q4 fstate.Q3 fstate.Q2 fstate.Q1 fstate.Q0 
+fstate.Q0 0 0 0 0 0 
+fstate.Q1 0 0 0 1 1 
+fstate.Q2 0 0 1 0 1 
+fstate.Q3 0 1 0 0 1 
+fstate.Q4 1 0 0 0 1 

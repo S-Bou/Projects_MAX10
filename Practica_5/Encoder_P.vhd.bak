@@ -1,0 +1,12 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity Encoder_P is
+	port(y0, y1, y2, y3, y4, y5, y6, y7: in std_logic;
+		  a, b, c, d: out std_logic);
+end Encoder_P;
+		  
+Architecture Codificador of Encoder_P is 
+begin
+
+end Codificador;		  

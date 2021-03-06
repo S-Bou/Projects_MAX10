@@ -1,5 +1,5 @@
 Analysis & Synthesis report for AntiRebotes
-Sun Feb 28 13:17:34 2021
+Sun Feb 28 19:06:54 2021
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -13,10 +13,12 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
-  9. Post-Synthesis Netlist Statistics for Top Partition
- 10. Elapsed Time Per Partition
- 11. Analysis & Synthesis Messages
+  8. State Machine - |AntiRebotes|SM1:inst666|fstate
+  9. General Register Statistics
+ 10. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 11. Post-Synthesis Netlist Statistics for Top Partition
+ 12. Elapsed Time Per Partition
+ 13. Analysis & Synthesis Messages
 
 
 
@@ -42,16 +44,16 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Feb 28 13:17:34 2021       ;
+; Analysis & Synthesis Status        ; Successful - Sun Feb 28 19:06:54 2021       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; AntiRebotes                                 ;
 ; Top-level Entity Name              ; AntiRebotes                                 ;
 ; Family                             ; MAX 10                                      ;
-; Total logic elements               ; 0                                           ;
-;     Total combinational functions  ; 0                                           ;
-;     Dedicated logic registers      ; 0                                           ;
-; Total registers                    ; 0                                           ;
-; Total pins                         ; 1                                           ;
+; Total logic elements               ; 9                                           ;
+;     Total combinational functions  ; 7                                           ;
+;     Dedicated logic registers      ; 7                                           ;
+; Total registers                    ; 7                                           ;
+; Total pins                         ; 8                                           ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -156,10 +158,11 @@ refer to the applicable agreement for further details.
 ; Maximum allowed            ; 6           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
+; Maximum used               ; 6           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
+;     Processors 2-6         ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -168,49 +171,68 @@ refer to the applicable agreement for further details.
 +----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------+---------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                       ; Library ;
 +----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------+---------+
+; FF_META.bdf                      ; yes             ; User Block Diagram/Schematic File  ; D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_3/FF_META.bdf     ;         ;
 ; AntiRebotes.bdf                  ; yes             ; User Block Diagram/Schematic File  ; D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_3/AntiRebotes.bdf ;         ;
+; sm1.vhd                          ; yes             ; Auto-Found VHDL File               ; D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_3/sm1.vhd         ;         ;
 +----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------+---------+
 
 
-+---------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary             ;
-+---------------------------------------------+-----------+
-; Resource                                    ; Usage     ;
-+---------------------------------------------+-----------+
-;                                             ;           ;
-; Total combinational functions               ; 0         ;
-; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 0         ;
-;     -- 3 input functions                    ; 0         ;
-;     -- <=2 input functions                  ; 0         ;
-;                                             ;           ;
-; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 0         ;
-;     -- arithmetic mode                      ; 0         ;
-;                                             ;           ;
-; Total registers                             ; 0         ;
-;     -- Dedicated logic registers            ; 0         ;
-;     -- I/O registers                        ; 0         ;
-;                                             ;           ;
-; I/O pins                                    ; 1         ;
-;                                             ;           ;
-; Embedded Multiplier 9-bit elements          ; 0         ;
-;                                             ;           ;
-; Maximum fan-out node                        ; pin_name1 ;
-; Maximum fan-out                             ; 1         ;
-; Total fan-out                               ; 1         ;
-; Average fan-out                             ; 0.50      ;
-+---------------------------------------------+-----------+
++----------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                    ;
++---------------------------------------------+------------------+
+; Resource                                    ; Usage            ;
++---------------------------------------------+------------------+
+; Estimated Total logic elements              ; 9                ;
+;                                             ;                  ;
+; Total combinational functions               ; 7                ;
+; Logic element usage by number of LUT inputs ;                  ;
+;     -- 4 input functions                    ; 0                ;
+;     -- 3 input functions                    ; 0                ;
+;     -- <=2 input functions                  ; 7                ;
+;                                             ;                  ;
+; Logic elements by mode                      ;                  ;
+;     -- normal mode                          ; 7                ;
+;     -- arithmetic mode                      ; 0                ;
+;                                             ;                  ;
+; Total registers                             ; 7                ;
+;     -- Dedicated logic registers            ; 7                ;
+;     -- I/O registers                        ; 0                ;
+;                                             ;                  ;
+; I/O pins                                    ; 8                ;
+;                                             ;                  ;
+; Embedded Multiplier 9-bit elements          ; 0                ;
+;                                             ;                  ;
+; Maximum fan-out node                        ; Reset_KEY1~input ;
+; Maximum fan-out                             ; 9                ;
+; Total fan-out                               ; 48               ;
+; Average fan-out                             ; 1.60             ;
++---------------------------------------------+------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                ;
-+----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name ; Entity Name ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------+--------------+
-; |AntiRebotes               ; 0 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 1    ; 0            ; 0          ; |AntiRebotes        ; AntiRebotes ; work         ;
-+----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------+--------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                      ;
++----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------------+-------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name       ; Entity Name ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------------+-------------+--------------+
+; |AntiRebotes               ; 7 (0)               ; 7 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 8    ; 0            ; 0          ; |AntiRebotes              ; AntiRebotes ; work         ;
+;    |FF_META:inst|          ; 0 (0)               ; 2 (2)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |AntiRebotes|FF_META:inst ; FF_META     ; work         ;
+;    |SM1:inst666|           ; 7 (7)               ; 5 (5)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |AntiRebotes|SM1:inst666  ; SM1         ; work         ;
++----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
+Encoding Type:  One-Hot
++-----------------------------------------------------------------------+
+; State Machine - |AntiRebotes|SM1:inst666|fstate                       ;
++-----------+-----------+-----------+-----------+-----------+-----------+
+; Name      ; fstate.Q4 ; fstate.Q3 ; fstate.Q2 ; fstate.Q1 ; fstate.Q0 ;
++-----------+-----------+-----------+-----------+-----------+-----------+
+; fstate.Q0 ; 0         ; 0         ; 0         ; 0         ; 0         ;
+; fstate.Q1 ; 0         ; 0         ; 0         ; 1         ; 1         ;
+; fstate.Q2 ; 0         ; 0         ; 1         ; 0         ; 1         ;
+; fstate.Q3 ; 0         ; 1         ; 0         ; 0         ; 1         ;
+; fstate.Q4 ; 1         ; 0         ; 0         ; 0         ; 1         ;
++-----------+-----------+-----------+-----------+-----------+-----------+
 
 
 +------------------------------------------------------+
@@ -218,26 +240,41 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 0     ;
+; Total registers                              ; 7     ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Clear ; 2     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Clock Enable       ; 5     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                       ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output             ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------+
+; 3:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; No         ; |AntiRebotes|SM1:inst666|reg_fstate.Q0 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------+
+
+
 +-----------------------------------------------------+
 ; Post-Synthesis Netlist Statistics for Top Partition ;
-+-------------------+---------------------------------+
-; Type              ; Count                           ;
-+-------------------+---------------------------------+
-; boundary_port     ; 1                               ;
-;                   ;                                 ;
-; Max LUT depth     ; 0.00                            ;
-; Average LUT depth ; 0.00                            ;
-+-------------------+---------------------------------+
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 8                           ;
+; cycloneiii_ff         ; 7                           ;
+;     CLR               ; 2                           ;
+;     ENA               ; 5                           ;
+; cycloneiii_lcell_comb ; 7                           ;
+;     normal            ; 7                           ;
+;         2 data inputs ; 7                           ;
+;                       ;                             ;
+; Max LUT depth         ; 1.00                        ;
+; Average LUT depth     ; 0.82                        ;
++-----------------------+-----------------------------+
 
 
 +-------------------------------+
@@ -255,26 +292,32 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Sun Feb 28 13:17:25 2021
+    Info: Processing started: Sun Feb 28 19:06:44 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off AntiRebotes -c AntiRebotes
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file ff_meta.bdf
+    Info (12023): Found entity 1: FF_META
 Info (12021): Found 1 design units, including 1 entities, in source file antirebotes.bdf
     Info (12023): Found entity 1: AntiRebotes
 Info (12127): Elaborating entity "AntiRebotes" for the top level hierarchy
-Warning (275009): Pin "pin_name1" not connected
-Warning (12158): Entity "AntiRebotes" contains only dangling pins
+Warning (275011): Block or symbol "SM1" of instance "inst666" overlaps another block or symbol
+Warning (12125): Using design file sm1.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: SM1-BEHAVIOR File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_3/sm1.vhd Line: 33
+    Info (12023): Found entity 1: SM1 File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_3/sm1.vhd Line: 21
+Info (12128): Elaborating entity "SM1" for hierarchy "SM1:inst666"
+Info (12128): Elaborating entity "FF_META" for hierarchy "FF_META:inst"
+Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 1 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "pin_name1"
-Info (21057): Implemented 1 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 1 input pins
-    Info (21059): Implemented 0 output pins
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 4743 megabytes
-    Info: Processing ended: Sun Feb 28 13:17:34 2021
-    Info: Elapsed time: 00:00:09
-    Info: Total CPU time (on all processors): 00:00:20
+Info (21057): Implemented 20 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 3 input pins
+    Info (21059): Implemented 5 output pins
+    Info (21061): Implemented 12 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 3 warnings
+    Info: Peak virtual memory: 4796 megabytes
+    Info: Processing ended: Sun Feb 28 19:06:54 2021
+    Info: Elapsed time: 00:00:10
+    Info: Total CPU time (on all processors): 00:00:21
 
 

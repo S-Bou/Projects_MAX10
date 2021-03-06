@@ -2,7 +2,40 @@
 	"partitions" : [
 		{
 			"name" : "Top",
-			"pins" : []
+			"pins" : [
+				{
+					"name" : "L9",
+					"strict" : false
+				},
+				{
+					"name" : "L8",
+					"strict" : false
+				},
+				{
+					"name" : "L7",
+					"strict" : false
+				},
+				{
+					"name" : "L6",
+					"strict" : false
+				},
+				{
+					"name" : "OUT_SIN",
+					"strict" : false
+				},
+				{
+					"name" : "Reset_KEY1",
+					"strict" : false
+				},
+				{
+					"name" : "CLK",
+					"strict" : false
+				},
+				{
+					"name" : "Pulse_KEY0",
+					"strict" : false
+				}
+			]
 		}
 	]
 }
