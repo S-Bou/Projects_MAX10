@@ -1,14 +1,14 @@
-Fitter Status : Successful - Sun Feb 28 12:33:04 2021
+Fitter Status : Successful - Sat Mar 06 19:33:26 2021
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : M_PasoAPaso
 Top-level Entity Name : M_PasoAPaso
 Family : MAX 10
 Device : 10M50DAF484C6GES
 Timing Models : Preliminary
-Total logic elements : 36 / 49,760 ( < 1 % )
-    Total combinational functions : 34 / 49,760 ( < 1 % )
-    Dedicated logic registers : 15 / 49,760 ( < 1 % )
-Total registers : 15
+Total logic elements : 59 / 49,760 ( < 1 % )
+    Total combinational functions : 52 / 49,760 ( < 1 % )
+    Dedicated logic registers : 33 / 49,760 ( < 1 % )
+Total registers : 33
 Total pins : 10 / 360 ( 3 % )
 Total virtual pins : 0
 Total memory bits : 0 / 1,677,312 ( 0 % )

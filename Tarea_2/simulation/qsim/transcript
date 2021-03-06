@@ -1,7 +1,7 @@
 # do M_PasoAPaso.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:49:35 on Feb 28,2021
+# Start time: 20:12:43 on Mar 06,2021
 # vcom -work work M_PasoAPaso.vho 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -16,20 +16,20 @@
 # -- Loading package altera_primitives_components
 # -- Compiling entity M_PasoAPaso
 # -- Compiling architecture structure of M_PasoAPaso
-# End time: 11:49:36 on Feb 28,2021, Elapsed time: 0:00:01
+# End time: 20:12:43 on Mar 06,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:49:36 on Feb 28,2021
+# Start time: 20:12:43 on Mar 06,2021
 # vcom -work work WaveformMPP.vwf.vht 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity M_PasoAPaso_vhd_vec_tst
 # -- Compiling architecture M_PasoAPaso_arch of M_PasoAPaso_vhd_vec_tst
-# End time: 11:49:36 on Feb 28,2021, Elapsed time: 0:00:00
+# End time: 20:12:43 on Mar 06,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vsim -novopt -c -t 1ps -L fiftyfivenm -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.M_PasoAPaso_vhd_vec_tst 
-# Start time: 11:49:36 on Feb 28,2021
+# Start time: 20:12:43 on Mar 06,2021
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -50,6 +50,14 @@
 # Loading altera.dffeas(vital_dffeas)
 # Loading fiftyfivenm.fiftyfivenm_unvm(behavior)
 # Loading fiftyfivenm.fiftyfivenm_adcblock(behavior)
+# ** Warning: Design size of 14879 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# Expect performance to be adversely affected.
 # after#35
-# End time: 11:49:36 on Feb 28,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
+# Simulation time: 8400000 ps
+# Simulation time: 8400000 ps
+# Simulation time: 8400000 ps
+# Simulation time: 8400000 ps
+# Simulation time: 8400000 ps
+# Simulation time: 8400000 ps
+# End time: 20:13:00 on Mar 06,2021, Elapsed time: 0:00:17
+# Errors: 0, Warnings: 1

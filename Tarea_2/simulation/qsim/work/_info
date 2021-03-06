@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dD:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_2/simulation/qsim
 Ehard_block
-Z1 w1614509375
+Z1 w1615057962
 Z2 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
 Z3 DPx11 fiftyfivenm 21 fiftyfivenm_atom_pack 0 22 7d5Xo;QBOkc31OfQTzSXV0
 Z4 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
@@ -25,9 +25,9 @@ V8_BbEmGd;OHS6h@;gFc7W3
 !s100 ROH=D<N4CT6aCZ<37A[_?0
 Z10 OV;C;10.5b;63
 32
-Z11 !s110 1614509376
+Z11 !s110 1615057963
 !i10b 1
-Z12 !s108 1614509375.000000
+Z12 !s108 1615057963.000000
 Z13 !s90 -work|work|M_PasoAPaso.vho|
 Z14 !s107 M_PasoAPaso.vho|
 !i113 1
@@ -92,10 +92,10 @@ R5
 R6
 R18
 DEx4 work 11 m_pasoapaso 0 22 @95ReiSZh5In2]i8IW7>N0
-l220
+l276
 L118
-Vj7bGkaU=2Uk@RI98?lolG1
-!s100 Z21^:j?loPQf<ENYBoZfK0
+V2Gk[9fM3Ez8iF>MQSPBZQ2
+!s100 30H0FMPlGCN^4hYa[Q?KQ1
 R10
 32
 R11
@@ -107,7 +107,7 @@ R14
 R15
 R16
 Em_pasoapaso_vhd_vec_tst
-Z19 w1614509374
+Z19 w1615057961
 R5
 R6
 R0
@@ -121,27 +121,27 @@ R10
 32
 R11
 !i10b 1
-Z22 !s108 1614509376.000000
-Z23 !s90 -work|work|WaveformMPP.vwf.vht|
-Z24 !s107 WaveformMPP.vwf.vht|
+R12
+Z22 !s90 -work|work|WaveformMPP.vwf.vht|
+Z23 !s107 WaveformMPP.vwf.vht|
 !i113 1
 R15
 R16
 Am_pasoapaso_arch
 R5
 R6
-Z25 DEx4 work 23 m_pasoapaso_vhd_vec_tst 0 22 4CdN=dkPinRY;9m?>ZZ942
+Z24 DEx4 work 23 m_pasoapaso_vhd_vec_tst 0 22 4CdN=dkPinRY;9m?>ZZ942
 l60
 L33
-Z26 VZ3mVJnOh_IHfFAg_6Jg[83
-Z27 !s100 cG80lVTQMX]?6J<aAA`lI2
+V59n0m@TP_R^FJ[6T[eKUX0
+!s100 U8DMgeK:BKDLlMJc0ZPBV1
 R10
 32
 R11
 !i10b 1
+R12
 R22
 R23
-R24
 !i113 1
 R15
 R16

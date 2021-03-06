@@ -30,6 +30,10 @@ quit -f
 
 
 
+
+
+
+
 </modelsim_script>
 <modelsim_script_timing>onerror {exit -code 1}
 vlib work
@@ -48,6 +52,10 @@ proc simTimestamp {} {
 after 2500 simTimestamp
 run -all
 quit -f
+
+
+
+
 
 
 
@@ -88,7 +96,7 @@ HEADER
 	VERSION = 1;
 	TIME_UNIT = ns;
 	DATA_OFFSET = 0.0;
-	DATA_DURATION = 25000.0;
+	DATA_DURATION = 100000.0;
 	SIMULATION_TIME = 0.0;
 	GRID_PHASE = 0.0;
 	GRID_PERIOD = 1000.0;
@@ -102,16 +110,6 @@ SIGNAL("CLK_INPUT")
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("CLK_OUTPUT")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
 	PARENT = "";
 }
 
@@ -152,6 +150,16 @@ SIGNAL("Half_Full")
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("CLK_OUTPUT")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
 	PARENT = "";
 }
 
@@ -202,20 +210,10 @@ TRANSITION_LIST("CLK_INPUT")
 		REPEAT = 1;
 		NODE
 		{
-			REPEAT = 1250;
-			LEVEL 0 FOR 10.0;
-			LEVEL 1 FOR 10.0;
+			REPEAT = 50000;
+			LEVEL 0 FOR 1.0;
+			LEVEL 1 FOR 1.0;
 		}
-	}
-}
-
-TRANSITION_LIST("CLK_OUTPUT")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 999.0;
-		LEVEL 0 FOR 24001.0;
 	}
 }
 
@@ -224,7 +222,7 @@ TRANSITION_LIST("Reset")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 25000.0;
+		LEVEL 1 FOR 100000.0;
 	}
 }
 
@@ -233,7 +231,7 @@ TRANSITION_LIST("Enable")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 25000.0;
+		LEVEL 1 FOR 100000.0;
 	}
 }
 
@@ -242,7 +240,7 @@ TRANSITION_LIST("Up_Down")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 25000.0;
+		LEVEL 0 FOR 100000.0;
 	}
 }
 
@@ -251,7 +249,16 @@ TRANSITION_LIST("Half_Full")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 25000.0;
+		LEVEL 0 FOR 100000.0;
+	}
+}
+
+TRANSITION_LIST("CLK_OUTPUT")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 100000.0;
 	}
 }
 
@@ -260,8 +267,8 @@ TRANSITION_LIST("A")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 999.0;
-		LEVEL 0 FOR 24001.0;
+		LEVEL X FOR 99.0;
+		LEVEL 0 FOR 99901.0;
 	}
 }
 
@@ -270,8 +277,8 @@ TRANSITION_LIST("B")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 999.0;
-		LEVEL 0 FOR 24001.0;
+		LEVEL X FOR 99.0;
+		LEVEL 0 FOR 99901.0;
 	}
 }
 
@@ -280,8 +287,8 @@ TRANSITION_LIST("C")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 999.0;
-		LEVEL 0 FOR 24001.0;
+		LEVEL X FOR 99.0;
+		LEVEL 0 FOR 99901.0;
 	}
 }
 
@@ -290,8 +297,8 @@ TRANSITION_LIST("D")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 999.0;
-		LEVEL 0 FOR 24001.0;
+		LEVEL X FOR 99.0;
+		LEVEL 0 FOR 99901.0;
 	}
 }
 

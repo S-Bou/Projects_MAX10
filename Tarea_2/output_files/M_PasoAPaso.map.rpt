@@ -1,5 +1,5 @@
 Analysis & Synthesis report for M_PasoAPaso
-Sun Feb 28 12:32:56 2021
+Sat Mar 06 19:33:18 2021
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -44,15 +44,15 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Feb 28 12:32:56 2021       ;
+; Analysis & Synthesis Status        ; Successful - Sat Mar 06 19:33:18 2021       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; M_PasoAPaso                                 ;
 ; Top-level Entity Name              ; M_PasoAPaso                                 ;
 ; Family                             ; MAX 10                                      ;
-; Total logic elements               ; 33                                          ;
-;     Total combinational functions  ; 33                                          ;
-;     Dedicated logic registers      ; 15                                          ;
-; Total registers                    ; 15                                          ;
+; Total logic elements               ; 51                                          ;
+;     Total combinational functions  ; 51                                          ;
+;     Dedicated logic registers      ; 33                                          ;
+; Total registers                    ; 33                                          ;
 ; Total pins                         ; 10                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
@@ -182,20 +182,20 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+---------------+
 ; Resource                                    ; Usage         ;
 +---------------------------------------------+---------------+
-; Estimated Total logic elements              ; 33            ;
+; Estimated Total logic elements              ; 51            ;
 ;                                             ;               ;
-; Total combinational functions               ; 33            ;
+; Total combinational functions               ; 51            ;
 ; Logic element usage by number of LUT inputs ;               ;
 ;     -- 4 input functions                    ; 24            ;
 ;     -- 3 input functions                    ; 0             ;
-;     -- <=2 input functions                  ; 9             ;
+;     -- <=2 input functions                  ; 27            ;
 ;                                             ;               ;
 ; Logic elements by mode                      ;               ;
-;     -- normal mode                          ; 33            ;
+;     -- normal mode                          ; 51            ;
 ;     -- arithmetic mode                      ; 0             ;
 ;                                             ;               ;
-; Total registers                             ; 15            ;
-;     -- Dedicated logic registers            ; 15            ;
+; Total registers                             ; 33            ;
+;     -- Dedicated logic registers            ; 33            ;
 ;     -- I/O registers                        ; 0             ;
 ;                                             ;               ;
 ; I/O pins                                    ; 10            ;
@@ -204,8 +204,8 @@ refer to the applicable agreement for further details.
 ;                                             ;               ;
 ; Maximum fan-out node                        ; Up_Down~input ;
 ; Maximum fan-out                             ; 16            ;
-; Total fan-out                               ; 167           ;
-; Average fan-out                             ; 2.46          ;
+; Total fan-out                               ; 239           ;
+; Average fan-out                             ; 2.30          ;
 +---------------------------------------------+---------------+
 
 
@@ -214,7 +214,10 @@ refer to the applicable agreement for further details.
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name       ; Entity Name ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------------+-------------+--------------+
-; |M_PasoAPaso               ; 33 (0)              ; 15 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 10   ; 0            ; 0          ; |M_PasoAPaso              ; M_PasoAPaso ; work         ;
+; |M_PasoAPaso               ; 51 (0)              ; 33 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 10   ; 0            ; 0          ; |M_PasoAPaso              ; M_PasoAPaso ; work         ;
+;    |7456:inst3|            ; 7 (7)               ; 7 (7)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |M_PasoAPaso|7456:inst3   ; 7456        ; work         ;
+;    |7456:inst4|            ; 7 (7)               ; 7 (7)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |M_PasoAPaso|7456:inst4   ; 7456        ; work         ;
+;    |7456:inst5|            ; 4 (4)               ; 4 (4)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |M_PasoAPaso|7456:inst5   ; 7456        ; work         ;
 ;    |7456:inst|             ; 7 (7)               ; 7 (7)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |M_PasoAPaso|7456:inst    ; 7456        ; work         ;
 ;    |SM_MPP:inst1|          ; 26 (26)             ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |M_PasoAPaso|SM_MPP:inst1 ; SM_MPP      ; work         ;
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------------+-------------+--------------+
@@ -243,7 +246,7 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 15    ;
+; Total registers                              ; 33    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 8     ;
@@ -268,16 +271,16 @@ Encoding Type:  One-Hot
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 10                          ;
-; cycloneiii_ff         ; 15                          ;
+; cycloneiii_ff         ; 33                          ;
 ;     CLR               ; 8                           ;
-;     plain             ; 7                           ;
-; cycloneiii_lcell_comb ; 33                          ;
-;     normal            ; 33                          ;
-;         2 data inputs ; 9                           ;
+;     plain             ; 25                          ;
+; cycloneiii_lcell_comb ; 51                          ;
+;     normal            ; 51                          ;
+;         2 data inputs ; 27                          ;
 ;         4 data inputs ; 24                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 3.00                        ;
-; Average LUT depth     ; 2.04                        ;
+; Average LUT depth     ; 1.62                        ;
 +-----------------------+-----------------------------+
 
 
@@ -296,15 +299,15 @@ Encoding Type:  One-Hot
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Sun Feb 28 12:32:46 2021
+    Info: Processing started: Sat Mar 06 19:33:08 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off M_PasoAPaso -c M_PasoAPaso
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file m_pasoapaso.bdf
     Info (12023): Found entity 1: M_PasoAPaso
 Info (12127): Elaborating entity "M_PasoAPaso" for the top level hierarchy
-Info (12128): Elaborating entity "7456" for hierarchy "7456:inst"
-Info (12130): Elaborated megafunction instantiation "7456:inst"
+Info (12128): Elaborating entity "7456" for hierarchy "7456:inst5"
+Info (12130): Elaborated megafunction instantiation "7456:inst5"
 Warning (12125): Using design file sm_mpp.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
     Info (12022): Found design unit 1: SM_MPP-BEHAVIOR File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_2/sm_mpp.vhd Line: 35
     Info (12023): Found entity 1: SM_MPP File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_2/sm_mpp.vhd Line: 21
@@ -312,14 +315,14 @@ Info (12128): Elaborating entity "SM_MPP" for hierarchy "SM_MPP:inst1"
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 43 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 61 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 5 input pins
     Info (21059): Implemented 5 output pins
-    Info (21061): Implemented 33 logic cells
+    Info (21061): Implemented 51 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 4801 megabytes
-    Info: Processing ended: Sun Feb 28 12:32:56 2021
+    Info: Peak virtual memory: 4798 megabytes
+    Info: Processing ended: Sat Mar 06 19:33:18 2021
     Info: Elapsed time: 00:00:10
-    Info: Total CPU time (on all processors): 00:00:20
+    Info: Total CPU time (on all processors): 00:00:21
 
 
