@@ -1,4 +1,107 @@
-|seg7
+|Selector_Datos
+SW[0] => compar_4:MU1.A[0]
+SW[0] => mux4to4:MU2.a[0]
+SW[1] => compar_4:MU1.A[1]
+SW[1] => mux4to4:MU2.a[1]
+SW[2] => compar_4:MU1.A[2]
+SW[2] => mux4to4:MU2.a[2]
+SW[3] => compar_4:MU1.A[3]
+SW[3] => mux4to4:MU2.a[3]
+SW[4] => compar_4:MU1.B[0]
+SW[4] => mux4to4:MU2.b[0]
+SW[5] => compar_4:MU1.B[1]
+SW[5] => mux4to4:MU2.b[1]
+SW[6] => compar_4:MU1.B[2]
+SW[6] => mux4to4:MU2.b[2]
+SW[7] => compar_4:MU1.B[3]
+SW[7] => mux4to4:MU2.b[3]
+HEX0[0] << seg7:MU3.sg[0]
+HEX0[1] << seg7:MU3.sg[1]
+HEX0[2] << seg7:MU3.sg[2]
+HEX0[3] << seg7:MU3.sg[3]
+HEX0[4] << seg7:MU3.sg[4]
+HEX0[5] << seg7:MU3.sg[5]
+HEX0[6] << seg7:MU3.sg[6]
+
+
+|Selector_Datos|compar_4:MU1
+A[0] => Equal0.IN3
+A[0] => LessThan0.IN4
+A[0] => LessThan1.IN4
+A[1] => Equal0.IN2
+A[1] => LessThan0.IN3
+A[1] => LessThan1.IN3
+A[2] => Equal0.IN1
+A[2] => LessThan0.IN2
+A[2] => LessThan1.IN2
+A[3] => Equal0.IN0
+A[3] => LessThan0.IN1
+A[3] => LessThan1.IN1
+B[0] => Equal0.IN7
+B[0] => LessThan0.IN8
+B[0] => LessThan1.IN8
+B[1] => Equal0.IN6
+B[1] => LessThan0.IN7
+B[1] => LessThan1.IN7
+B[2] => Equal0.IN5
+B[2] => LessThan0.IN6
+B[2] => LessThan1.IN6
+B[3] => Equal0.IN4
+B[3] => LessThan0.IN5
+B[3] => LessThan1.IN5
+AeqB <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+AgtB <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
+AltB <= LessThan1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Selector_Datos|mux4to4:MU2
+a[0] => mux2to1:M1:0:Muxes.w0
+a[1] => mux2to1:M1:1:Muxes.w0
+a[2] => mux2to1:M1:2:Muxes.w0
+a[3] => mux2to1:M1:3:Muxes.w0
+b[0] => mux2to1:M1:0:Muxes.w1
+b[1] => mux2to1:M1:1:Muxes.w1
+b[2] => mux2to1:M1:2:Muxes.w1
+b[3] => mux2to1:M1:3:Muxes.w1
+S => mux2to1:M1:0:Muxes.s
+S => mux2to1:M1:1:Muxes.s
+S => mux2to1:M1:2:Muxes.s
+S => mux2to1:M1:3:Muxes.s
+m[0] <= mux2to1:M1:0:Muxes.f
+m[1] <= mux2to1:M1:1:Muxes.f
+m[2] <= mux2to1:M1:2:Muxes.f
+m[3] <= mux2to1:M1:3:Muxes.f
+
+
+|Selector_Datos|mux4to4:MU2|mux2to1:\M1:0:Muxes
+w0 => f.DATAB
+w1 => f.DATAA
+s => f.OUTPUTSELECT
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Selector_Datos|mux4to4:MU2|mux2to1:\M1:1:Muxes
+w0 => f.DATAB
+w1 => f.DATAA
+s => f.OUTPUTSELECT
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Selector_Datos|mux4to4:MU2|mux2to1:\M1:2:Muxes
+w0 => f.DATAB
+w1 => f.DATAA
+s => f.OUTPUTSELECT
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Selector_Datos|mux4to4:MU2|mux2to1:\M1:3:Muxes
+w0 => f.DATAB
+w1 => f.DATAA
+s => f.OUTPUTSELECT
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Selector_Datos|seg7:MU3
 bcd[0] => Mux0.IN19
 bcd[0] => Mux1.IN19
 bcd[0] => Mux2.IN19

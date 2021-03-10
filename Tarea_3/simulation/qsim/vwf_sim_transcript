@@ -7,7 +7,7 @@ Note: if both ModelSim-Altera and ModelSim executables are available, ModelSim-A
 
 **** Generating the ModelSim Testbench ****
 
-quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off AntiRebotes -c AntiRebotes --vector_source="D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_3/WaveformT3.vwf" --testbench_file="D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_3/simulation/qsim/WaveformT3.vwf.vht"
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off AntiRebotes -c AntiRebotes --vector_source="D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_3/WaveformPR.vwf" --testbench_file="D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_3/simulation/qsim/WaveformPR.vwf.vht"
 
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
@@ -25,8 +25,8 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: the sole purpose of programming logic devices manufactured by
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details.
-    Info: Processing started: Tue Mar 09 11:37:21 2021
-Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off AntiRebotes -c AntiRebotes --vector_source=D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_3/WaveformT3.vwf --testbench_file=D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_3/simulation/qsim/WaveformT3.vwf.vht
+    Info: Processing started: Wed Mar 10 22:07:15 2021
+Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off AntiRebotes -c AntiRebotes --vector_source=D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_3/WaveformPR.vwf --testbench_file=D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_3/simulation/qsim/WaveformPR.vwf.vht
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 
 Completed successfully. 
@@ -51,14 +51,14 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: the sole purpose of programming logic devices manufactured by
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details.
-    Info: Processing started: Tue Mar 09 11:37:22 2021
+    Info: Processing started: Wed Mar 10 22:07:16 2021
 Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_3/simulation/qsim/ AntiRebotes -c AntiRebotes
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (204019): Generated file AntiRebotes.vho in folder "D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_3/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 4632 megabytes
-    Info: Processing ended: Tue Mar 09 11:37:22 2021
-    Info: Elapsed time: 00:00:00
+    Info: Processing ended: Wed Mar 10 22:07:17 2021
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
 Completed successfully. 
@@ -81,9 +81,8 @@ Reading D:/Programas/intelFPGA_lite/Quartus_II_18.1/modelsim_ase/tcl/vsim/pref.t
 # do AntiRebotes.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:37:23 on Mar 09,2021
+# Start time: 22:07:17 on Mar 10,2021
 # vcom -work work AntiRebotes.vho 
-
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
@@ -95,35 +94,36 @@ Reading D:/Programas/intelFPGA_lite/Quartus_II_18.1/modelsim_ase/tcl/vsim/pref.t
 # -- Compiling architecture structure of hard_block
 # -- Loading package dffeas_pack
 # -- Loading package altera_primitives_components
-# -- Compiling entity AntiRebotes
-# -- Compiling architecture structure of AntiRebotes
-# End time: 11:37:23 on Mar 09,2021, Elapsed time: 0:00:00
+# -- Compiling entity EjemploKeys
+# -- Compiling architecture structure of EjemploKeys
+
+# End time: 22:07:17 on Mar 10,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:37:23 on Mar 09,2021
-# vcom -work work WaveformT3.vwf.vht 
-
+# Start time: 22:07:17 on Mar 10,2021
+# vcom -work work WaveformPR.vwf.vht 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Compiling entity AntiRebotes_vhd_vec_tst
-# -- Compiling architecture AntiRebotes_arch of AntiRebotes_vhd_vec_tst
-# End time: 11:37:23 on Mar 09,2021, Elapsed time: 0:00:00
+# -- Compiling entity EjemploKeys_vhd_vec_tst
+# -- Compiling architecture EjemploKeys_arch of EjemploKeys_vhd_vec_tst
+
+# End time: 22:07:18 on Mar 10,2021, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 
-# vsim -novopt -c -t 1ps -L fiftyfivenm -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.AntiRebotes_vhd_vec_tst 
-# Start time: 11:37:23 on Mar 09,2021
+# vsim -novopt -c -t 1ps -L fiftyfivenm -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.EjemploKeys_vhd_vec_tst 
+# Start time: 22:07:18 on Mar 10,2021
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
-# Loading work.antirebotes_vhd_vec_tst(antirebotes_arch)
+# Loading work.ejemplokeys_vhd_vec_tst(ejemplokeys_arch)
 # Loading ieee.vital_timing(body)
 # Loading ieee.vital_primitives(body)
 # Loading altera.dffeas_pack
 # Loading altera.altera_primitives_components
 # Loading fiftyfivenm.fiftyfivenm_atom_pack(body)
 # Loading fiftyfivenm.fiftyfivenm_components
-# Loading work.antirebotes(structure)
+# Loading work.ejemplokeys(structure)
 # Loading work.hard_block(structure)
 # Loading fiftyfivenm.fiftyfivenm_io_obuf(behavior)
 # Loading fiftyfivenm.fiftyfivenm_io_ibuf(behavior)
@@ -133,30 +133,24 @@ Reading D:/Programas/intelFPGA_lite/Quartus_II_18.1/modelsim_ase/tcl/vsim/pref.t
 # Loading altera.dffeas(vital_dffeas)
 # Loading fiftyfivenm.fiftyfivenm_unvm(behavior)
 # Loading fiftyfivenm.fiftyfivenm_adcblock(behavior)
+# ** Warning: Design size of 12741 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# Expect performance to be adversely affected.
 # after#35
 
-# End time: 11:37:24 on Mar 09,2021, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
+# End time: 22:07:20 on Mar 10,2021, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 1
 
 Completed successfully. 
 
 **** Converting ModelSim VCD to vector waveform ****
 
-Reading D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_3/WaveformT3.vwf...
+Reading D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_3/WaveformPR.vwf...
 
 Reading D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_3/simulation/qsim/AntiRebotes.msim.vcd...
 
 Processing channel transitions... 
 
-Warning: SM1:inst7|fstate.Q0 - signal not found in VCD.
-
-Warning: SM1:inst7|fstate.Q1 - signal not found in VCD.
-
-Warning: SM1:inst7|fstate.Q2 - signal not found in VCD.
-
-Warning: SM1:inst7|fstate.Q3 - signal not found in VCD.
-
-Writing the resulting VWF to D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_3/simulation/qsim/AntiRebotes_20210309113724.sim.vwf
+Writing the resulting VWF to D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_3/simulation/qsim/AntiRebotes_20210310220721.sim.vwf
 
 Finished VCD to VWF conversion.
 

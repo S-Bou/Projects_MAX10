@@ -1,14 +1,120 @@
-|AntiRebotes
+|EjemploKeys
+a <= 7447:inst4.OA
+Reset => AntiRebotes:inst999.Reset
+Input_K0 => AntiRebotes:inst999.Input
+Clock => AntiRebotes:inst999.CLK
+Clock => 74191:inst2.CLK
+b <= 7447:inst4.OB
+c <= 7447:inst4.OC
+d <= 7447:inst4.OD
+e <= 7447:inst4.OE
+f <= 7447:inst4.OF
+g <= 7447:inst4.OG
+c1 <= 7447:inst555.OC
+Input_K1 => 74191:inst33.CLK
+d1 <= 7447:inst555.OD
+e1 <= 7447:inst555.OE
+f1 <= 7447:inst555.OF
+g1 <= 7447:inst555.OG
+a1 <= 7447:inst555.OA
+b1 <= 7447:inst555.OB
+
+
+|EjemploKeys|7447:inst4
+OG <= 87.DB_MAX_OUTPUT_PORT_TYPE
+C => 25.IN0
+LTN => 25.IN1
+LTN => 27.IN1
+LTN => 29.IN1
+LTN => 13.IN5
+LTN => 38.IN3
+BIN => 37.IN0
+B => 27.IN0
+D => 14.IN0
+A => 29.IN0
+RBIN => 15.IN0
+OF <= 86.DB_MAX_OUTPUT_PORT_TYPE
+OE <= 85.DB_MAX_OUTPUT_PORT_TYPE
+RBON <= 13.DB_MAX_OUTPUT_PORT_TYPE
+OD <= 84.DB_MAX_OUTPUT_PORT_TYPE
+OC <= 83.DB_MAX_OUTPUT_PORT_TYPE
+OB <= 82.DB_MAX_OUTPUT_PORT_TYPE
+OA <= 81.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|EjemploKeys|74191:inst2
+clk => f74191:sub.clk
+gn => f74191:sub.gn
+ldn => f74191:sub.ldn
+dnup => f74191:sub.dnup
+d => f74191:sub.d
+c => f74191:sub.c
+b => f74191:sub.b
+a => f74191:sub.a
+qd <= f74191:sub.qd
+qc <= f74191:sub.qc
+qb <= f74191:sub.qb
+qa <= f74191:sub.qa
+mxmn <= f74191:sub.mxmn
+rcon <= f74191:sub.rcon
+
+
+|EjemploKeys|74191:inst2|f74191:sub
+QD <= 19.DB_MAX_OUTPUT_PORT_TYPE
+D => 105.IN0
+D => 111.IN0
+LDN => 105.IN1
+LDN => 91.IN1
+LDN => 69.IN1
+LDN => 60.IN1
+LDN => 59.IN1
+LDN => 71.IN1
+LDN => 98.IN1
+LDN => 112.IN1
+CLK => 19.CLK
+CLK => 18.CLK
+CLK => 17.CLK
+CLK => 16.CLK
+C => 91.IN0
+C => 97.IN0
+B => 69.IN0
+B => 70.IN0
+A => 60.IN0
+A => 61.IN0
+GN => 116.DATAIN
+DNUP => 67.IN0
+DNUP => 63.IN1
+DNUP => 76.IN0
+DNUP => 73.IN1
+DNUP => 87.IN0
+DNUP => 86.IN1
+DNUP => 103.IN0
+DNUP => 100.IN1
+RCON <= 102.DB_MAX_OUTPUT_PORT_TYPE
+QC <= 18.DB_MAX_OUTPUT_PORT_TYPE
+MXMN <= 114.DB_MAX_OUTPUT_PORT_TYPE
+QA <= 16.DB_MAX_OUTPUT_PORT_TYPE
+QB <= 17.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|EjemploKeys|74191:inst2|f74191:sub|inhb:55
+1 <= 5.DB_MAX_OUTPUT_PORT_TYPE
+2 => 5.IN0
+3 => 4.IN0
+
+
+|EjemploKeys|AntiRebotes:inst999
 OUT_Sin <= inst4.DB_MAX_OUTPUT_PORT_TYPE
 CLK => SM1:inst10.clock
 CLK => FF_META:inst.CLK
 CLK => LPM_COUNTER:inst1.clock
 CLK => inst3.CLK
-Reset_KEY1 => SM1:inst10.reset
-Pulse_KEY0 => FF_META:inst.D
+Reset => SM1:inst10.reset
+Input => FF_META:inst.D
 TimeEnd <= LPM_COUNTER:inst1.cout
 StartTIM <= SM1:inst10.StartTimer
 xDev_n <= SM1:inst10.xDeb_n
+Cnt_E <= SM1:inst10.Cnt_E
 q[10] <= LPM_COUNTER:inst1.q[0]
 q[9] <= LPM_COUNTER:inst1.q[1]
 q[8] <= LPM_COUNTER:inst1.q[2]
@@ -22,7 +128,7 @@ q[1] <= LPM_COUNTER:inst1.q[9]
 q[0] <= LPM_COUNTER:inst1.q[10]
 
 
-|AntiRebotes|SM1:inst10
+|EjemploKeys|AntiRebotes:inst999|SM1:inst10
 clock => fstate~1.DATAIN
 reset => reg_fstate.Q0.OUTPUTSELECT
 reset => reg_fstate.Q1.OUTPUTSELECT
@@ -35,27 +141,25 @@ Pulse => Selector0.IN2
 Pulse => Selector3.IN3
 Pulse => Selector4.IN3
 Pulse => Selector4.IN1
-Pulse => Selector1.IN2
+Pulse => Selector1.IN1
 Pulse => Selector2.IN1
 TimeEnd => Selector0.IN3
 TimeEnd => Selector2.IN3
-TimeEnd => Selector1.IN1
+TimeEnd => Selector1.IN2
 TimeEnd => Selector3.IN1
 xDeb_n <= xDeb_n.DB_MAX_OUTPUT_PORT_TYPE
 StartTimer <= StartTimer.DB_MAX_OUTPUT_PORT_TYPE
 Cnt_E <= Cnt_E.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|AntiRebotes|FF_META:inst
+|EjemploKeys|AntiRebotes:inst999|FF_META:inst
 OUTPUT <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-CLRN => inst1.ACLR
-CLRN => inst.ACLR
 CLK => inst1.CLK
 CLK => inst.CLK
 D => inst.DATAIN
 
 
-|AntiRebotes|LPM_COUNTER:inst1
+|EjemploKeys|AntiRebotes:inst999|LPM_COUNTER:inst1
 clock => cntr_rei:auto_generated.clock
 clk_en => ~NO_FANOUT~
 cnt_en => cntr_rei:auto_generated.cnt_en
@@ -110,7 +214,7 @@ eq[14] <= <GND>
 eq[15] <= <GND>
 
 
-|AntiRebotes|LPM_COUNTER:inst1|cntr_rei:auto_generated
+|EjemploKeys|AntiRebotes:inst999|LPM_COUNTER:inst1|cntr_rei:auto_generated
 clock => counter_reg_bit[10].CLK
 clock => counter_reg_bit[9].CLK
 clock => counter_reg_bit[8].CLK
@@ -140,7 +244,7 @@ sclr => _.IN0
 sclr => _.IN0
 
 
-|AntiRebotes|LPM_COUNTER:inst1|cntr_rei:auto_generated|cmpr_usb:cmpr1
+|EjemploKeys|AntiRebotes:inst999|LPM_COUNTER:inst1|cntr_rei:auto_generated|cmpr_usb:cmpr1
 aeb <= aeb_result_wire[0].DB_MAX_OUTPUT_PORT_TYPE
 dataa[0] => data_wire[2].IN0
 dataa[1] => data_wire[2].IN0
@@ -164,5 +268,88 @@ datab[7] => data_wire[5].IN1
 datab[8] => data_wire[6].IN1
 datab[9] => data_wire[6].IN1
 datab[10] => data_wire[7].IN1
+
+
+|EjemploKeys|7447:inst555
+OG <= 87.DB_MAX_OUTPUT_PORT_TYPE
+C => 25.IN0
+LTN => 25.IN1
+LTN => 27.IN1
+LTN => 29.IN1
+LTN => 13.IN5
+LTN => 38.IN3
+BIN => 37.IN0
+B => 27.IN0
+D => 14.IN0
+A => 29.IN0
+RBIN => 15.IN0
+OF <= 86.DB_MAX_OUTPUT_PORT_TYPE
+OE <= 85.DB_MAX_OUTPUT_PORT_TYPE
+RBON <= 13.DB_MAX_OUTPUT_PORT_TYPE
+OD <= 84.DB_MAX_OUTPUT_PORT_TYPE
+OC <= 83.DB_MAX_OUTPUT_PORT_TYPE
+OB <= 82.DB_MAX_OUTPUT_PORT_TYPE
+OA <= 81.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|EjemploKeys|74191:inst33
+clk => f74191:sub.clk
+gn => f74191:sub.gn
+ldn => f74191:sub.ldn
+dnup => f74191:sub.dnup
+d => f74191:sub.d
+c => f74191:sub.c
+b => f74191:sub.b
+a => f74191:sub.a
+qd <= f74191:sub.qd
+qc <= f74191:sub.qc
+qb <= f74191:sub.qb
+qa <= f74191:sub.qa
+mxmn <= f74191:sub.mxmn
+rcon <= f74191:sub.rcon
+
+
+|EjemploKeys|74191:inst33|f74191:sub
+QD <= 19.DB_MAX_OUTPUT_PORT_TYPE
+D => 105.IN0
+D => 111.IN0
+LDN => 105.IN1
+LDN => 91.IN1
+LDN => 69.IN1
+LDN => 60.IN1
+LDN => 59.IN1
+LDN => 71.IN1
+LDN => 98.IN1
+LDN => 112.IN1
+CLK => 19.CLK
+CLK => 18.CLK
+CLK => 17.CLK
+CLK => 16.CLK
+C => 91.IN0
+C => 97.IN0
+B => 69.IN0
+B => 70.IN0
+A => 60.IN0
+A => 61.IN0
+GN => 116.DATAIN
+DNUP => 67.IN0
+DNUP => 63.IN1
+DNUP => 76.IN0
+DNUP => 73.IN1
+DNUP => 87.IN0
+DNUP => 86.IN1
+DNUP => 103.IN0
+DNUP => 100.IN1
+RCON <= 102.DB_MAX_OUTPUT_PORT_TYPE
+QC <= 18.DB_MAX_OUTPUT_PORT_TYPE
+MXMN <= 114.DB_MAX_OUTPUT_PORT_TYPE
+QA <= 16.DB_MAX_OUTPUT_PORT_TYPE
+QB <= 17.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|EjemploKeys|74191:inst33|f74191:sub|inhb:55
+1 <= 5.DB_MAX_OUTPUT_PORT_TYPE
+2 => 5.IN0
+3 => 4.IN0
 
 

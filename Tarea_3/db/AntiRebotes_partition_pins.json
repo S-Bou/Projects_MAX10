@@ -4,75 +4,75 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "OUT_Sin",
+					"name" : "a",
 					"strict" : false
 				},
 				{
-					"name" : "TimeEnd",
+					"name" : "b",
 					"strict" : false
 				},
 				{
-					"name" : "StartTIM",
+					"name" : "c",
 					"strict" : false
 				},
 				{
-					"name" : "xDev_n",
+					"name" : "d",
 					"strict" : false
 				},
 				{
-					"name" : "q[0]",
+					"name" : "e",
 					"strict" : false
 				},
 				{
-					"name" : "q[1]",
+					"name" : "f",
 					"strict" : false
 				},
 				{
-					"name" : "q[2]",
+					"name" : "g",
 					"strict" : false
 				},
 				{
-					"name" : "q[3]",
+					"name" : "c1",
 					"strict" : false
 				},
 				{
-					"name" : "q[4]",
+					"name" : "d1",
 					"strict" : false
 				},
 				{
-					"name" : "q[5]",
+					"name" : "e1",
 					"strict" : false
 				},
 				{
-					"name" : "q[6]",
+					"name" : "f1",
 					"strict" : false
 				},
 				{
-					"name" : "q[7]",
+					"name" : "g1",
 					"strict" : false
 				},
 				{
-					"name" : "q[8]",
+					"name" : "a1",
 					"strict" : false
 				},
 				{
-					"name" : "q[9]",
+					"name" : "b1",
 					"strict" : false
 				},
 				{
-					"name" : "q[10]",
+					"name" : "Clock",
 					"strict" : false
 				},
 				{
-					"name" : "Reset_KEY1",
+					"name" : "Reset",
 					"strict" : false
 				},
 				{
-					"name" : "CLK",
+					"name" : "Input_K1",
 					"strict" : false
 				},
 				{
-					"name" : "Pulse_KEY0",
+					"name" : "Input_K0",
 					"strict" : false
 				}
 			]

@@ -1,8 +1,8 @@
 /*<simulation_settings>
-<ftestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off AntiRebotes -c AntiRebotes --vector_source="D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_3/WaveformT3.vwf" --testbench_file="D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_3/simulation/qsim/WaveformT3.vwf.vht"</ftestbench_cmd>
-<ttestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off AntiRebotes -c AntiRebotes --vector_source="D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_3/WaveformT3.vwf" --testbench_file="D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_3/simulation/qsim/WaveformT3.vwf.vht"</ttestbench_cmd>
-<fnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_3/simulation/qsim/" AntiRebotes -c AntiRebotes</fnetlist_cmd>
-<tnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=vhdl --output_directory="D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_3/simulation/qsim/" AntiRebotes -c AntiRebotes</tnetlist_cmd>
+<ftestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off AntiRebotes -c AntiRebotes --vector_source="C:/Users/bouyo/Downloads/Tarea3/Tarea_3/WaveformT3.vwf" --testbench_file="C:/Users/bouyo/Downloads/Tarea3/Tarea_3/simulation/qsim/WaveformT3.vwf.vht"</ftestbench_cmd>
+<ttestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off AntiRebotes -c AntiRebotes --vector_source="C:/Users/bouyo/Downloads/Tarea3/Tarea_3/WaveformT3.vwf" --testbench_file="C:/Users/bouyo/Downloads/Tarea3/Tarea_3/simulation/qsim/WaveformT3.vwf.vht"</ttestbench_cmd>
+<fnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="C:/Users/bouyo/Downloads/Tarea3/Tarea_3/simulation/qsim/" AntiRebotes -c AntiRebotes</fnetlist_cmd>
+<tnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=vhdl --output_directory="C:/Users/bouyo/Downloads/Tarea3/Tarea_3/simulation/qsim/" AntiRebotes -c AntiRebotes</tnetlist_cmd>
 <modelsim_script>onerror {exit -code 1}
 vlib work
 vcom -work work AntiRebotes.vho
@@ -20,14 +20,6 @@ proc simTimestamp {} {
 after 2500 simTimestamp
 run -all
 quit -f
-
-
-
-
-
-
-
-
 </modelsim_script>
 <modelsim_script_timing>onerror {exit -code 1}
 vlib work
@@ -46,14 +38,6 @@ proc simTimestamp {} {
 after 2500 simTimestamp
 run -all
 quit -f
-
-
-
-
-
-
-
-
 </modelsim_script_timing>
 <hdl_lang>vhdl</hdl_lang>
 </simulation_settings>*/
@@ -121,126 +105,6 @@ SIGNAL("Pulse_KEY0")
 	PARENT = "";
 }
 
-SIGNAL("q")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = BUS;
-	WIDTH = 11;
-	LSB_INDEX = 0;
-	DIRECTION = OUTPUT;
-	PARENT = "";
-}
-
-SIGNAL("q[10]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "q";
-}
-
-SIGNAL("q[9]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "q";
-}
-
-SIGNAL("q[8]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "q";
-}
-
-SIGNAL("q[7]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "q";
-}
-
-SIGNAL("q[6]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "q";
-}
-
-SIGNAL("q[5]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "q";
-}
-
-SIGNAL("q[4]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "q";
-}
-
-SIGNAL("q[3]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "q";
-}
-
-SIGNAL("q[2]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "q";
-}
-
-SIGNAL("q[1]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "q";
-}
-
-SIGNAL("q[0]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "q";
-}
-
 SIGNAL("OUT_Sin")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
@@ -271,51 +135,6 @@ SIGNAL("TimeEnd")
 	PARENT = "";
 }
 
-SIGNAL("SM1:inst7|fstate.Q0")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = REGISTERED;
-	PARENT = "";
-}
-
-SIGNAL("SM1:inst7|fstate.Q1")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = REGISTERED;
-	PARENT = "";
-}
-
-SIGNAL("SM1:inst7|fstate.Q2")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = REGISTERED;
-	PARENT = "";
-}
-
-SIGNAL("SM1:inst7|fstate.Q3")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = REGISTERED;
-	PARENT = "";
-}
-
-GROUP("SM")
-{
-	MEMBERS = "SM1:inst7|fstate.Q0", "SM1:inst7|fstate.Q1", "SM1:inst7|fstate.Q2", "SM1:inst7|fstate.Q3";
-}
-
 SIGNAL("xDev_n")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
@@ -324,6 +143,176 @@ SIGNAL("xDev_n")
 	LSB_INDEX = -1;
 	DIRECTION = OUTPUT;
 	PARENT = "";
+}
+
+SIGNAL("SM1:inst10|fstate.Q0")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = BURIED;
+	PARENT = "";
+}
+
+SIGNAL("SM1:inst10|fstate.Q1")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = REGISTERED;
+	PARENT = "";
+}
+
+SIGNAL("SM1:inst10|fstate.Q2")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = REGISTERED;
+	PARENT = "";
+}
+
+SIGNAL("SM1:inst10|fstate.Q3")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = REGISTERED;
+	PARENT = "";
+}
+
+SIGNAL("q[0]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+SIGNAL("q[1]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+SIGNAL("q[2]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+SIGNAL("q[3]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+SIGNAL("q[4]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+SIGNAL("q[5]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+SIGNAL("q[6]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+SIGNAL("q[7]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+SIGNAL("q[8]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+SIGNAL("q[9]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+SIGNAL("q[10]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+SIGNAL("Cnt_E")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+GROUP("STATES")
+{
+	MEMBERS = "SM1:inst10|fstate.Q3", "SM1:inst10|fstate.Q2", "SM1:inst10|fstate.Q1", "SM1:inst10|fstate.Q0";
+}
+
+GROUP("COUNTER")
+{
+	MEMBERS = "q[0]", "q[1]", "q[2]", "q[3]", "q[4]", "q[5]", "q[6]", "q[7]", "q[8]", "q[9]", "q[10]";
 }
 
 TRANSITION_LIST("CLK")
@@ -374,116 +363,6 @@ TRANSITION_LIST("Pulse_KEY0")
 	}
 }
 
-TRANSITION_LIST("q[10]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 999.0;
-		LEVEL 0 FOR 99001.0;
-	}
-}
-
-TRANSITION_LIST("q[9]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 999.0;
-		LEVEL 0 FOR 99001.0;
-	}
-}
-
-TRANSITION_LIST("q[8]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 999.0;
-		LEVEL 0 FOR 99001.0;
-	}
-}
-
-TRANSITION_LIST("q[7]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 999.0;
-		LEVEL 0 FOR 99001.0;
-	}
-}
-
-TRANSITION_LIST("q[6]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 999.0;
-		LEVEL 0 FOR 99001.0;
-	}
-}
-
-TRANSITION_LIST("q[5]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 999.0;
-		LEVEL 0 FOR 99001.0;
-	}
-}
-
-TRANSITION_LIST("q[4]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 999.0;
-		LEVEL 0 FOR 99001.0;
-	}
-}
-
-TRANSITION_LIST("q[3]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 999.0;
-		LEVEL 0 FOR 99001.0;
-	}
-}
-
-TRANSITION_LIST("q[2]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 999.0;
-		LEVEL 0 FOR 99001.0;
-	}
-}
-
-TRANSITION_LIST("q[1]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 999.0;
-		LEVEL 0 FOR 99001.0;
-	}
-}
-
-TRANSITION_LIST("q[0]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 999.0;
-		LEVEL 0 FOR 99001.0;
-	}
-}
-
 TRANSITION_LIST("OUT_Sin")
 {
 	NODE
@@ -511,43 +390,151 @@ TRANSITION_LIST("TimeEnd")
 	}
 }
 
-TRANSITION_LIST("SM1:inst7|fstate.Q0")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL U FOR 100000.0;
-	}
-}
-
-TRANSITION_LIST("SM1:inst7|fstate.Q1")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL U FOR 100000.0;
-	}
-}
-
-TRANSITION_LIST("SM1:inst7|fstate.Q2")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL U FOR 100000.0;
-	}
-}
-
-TRANSITION_LIST("SM1:inst7|fstate.Q3")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL U FOR 100000.0;
-	}
-}
-
 TRANSITION_LIST("xDev_n")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 100000.0;
+	}
+}
+
+TRANSITION_LIST("SM1:inst10|fstate.Q0")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL U FOR 100000.0;
+	}
+}
+
+TRANSITION_LIST("SM1:inst10|fstate.Q1")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL U FOR 100000.0;
+	}
+}
+
+TRANSITION_LIST("SM1:inst10|fstate.Q2")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL U FOR 100000.0;
+	}
+}
+
+TRANSITION_LIST("SM1:inst10|fstate.Q3")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL U FOR 100000.0;
+	}
+}
+
+TRANSITION_LIST("q[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 100000.0;
+	}
+}
+
+TRANSITION_LIST("q[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 100000.0;
+	}
+}
+
+TRANSITION_LIST("q[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 100000.0;
+	}
+}
+
+TRANSITION_LIST("q[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 100000.0;
+	}
+}
+
+TRANSITION_LIST("q[4]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 100000.0;
+	}
+}
+
+TRANSITION_LIST("q[5]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 100000.0;
+	}
+}
+
+TRANSITION_LIST("q[6]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 100000.0;
+	}
+}
+
+TRANSITION_LIST("q[7]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 100000.0;
+	}
+}
+
+TRANSITION_LIST("q[8]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 100000.0;
+	}
+}
+
+TRANSITION_LIST("q[9]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 100000.0;
+	}
+}
+
+TRANSITION_LIST("q[10]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 100000.0;
+	}
+}
+
+TRANSITION_LIST("Cnt_E")
 {
 	NODE
 	{
@@ -585,139 +572,10 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "q";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 3;
-	TREE_LEVEL = 0;
-	CHILDREN = 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "q[0]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 4;
-	TREE_LEVEL = 1;
-	PARENT = 3;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "q[1]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 5;
-	TREE_LEVEL = 1;
-	PARENT = 3;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "q[2]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 6;
-	TREE_LEVEL = 1;
-	PARENT = 3;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "q[3]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 7;
-	TREE_LEVEL = 1;
-	PARENT = 3;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "q[4]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 8;
-	TREE_LEVEL = 1;
-	PARENT = 3;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "q[5]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 9;
-	TREE_LEVEL = 1;
-	PARENT = 3;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "q[6]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 10;
-	TREE_LEVEL = 1;
-	PARENT = 3;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "q[7]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 11;
-	TREE_LEVEL = 1;
-	PARENT = 3;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "q[8]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 12;
-	TREE_LEVEL = 1;
-	PARENT = 3;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "q[9]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 13;
-	TREE_LEVEL = 1;
-	PARENT = 3;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "q[10]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 14;
-	TREE_LEVEL = 1;
-	PARENT = 3;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "OUT_Sin";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 15;
-	TREE_LEVEL = 0;
-}
-
-DISPLAY_LINE
-{
 	CHANNEL = "StartTIM";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
-	TREE_INDEX = 16;
+	TREE_INDEX = 3;
 	TREE_LEVEL = 0;
 }
 
@@ -726,13 +584,142 @@ DISPLAY_LINE
 	CHANNEL = "TimeEnd";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
-	TREE_INDEX = 17;
+	TREE_INDEX = 4;
 	TREE_LEVEL = 0;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "SM";
+	CHANNEL = "Cnt_E";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 5;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "COUNTER";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 6;
+	TREE_LEVEL = 0;
+	CHILDREN = 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "q[10]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 7;
+	TREE_LEVEL = 1;
+	PARENT = 6;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "q[9]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 8;
+	TREE_LEVEL = 1;
+	PARENT = 6;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "q[8]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 9;
+	TREE_LEVEL = 1;
+	PARENT = 6;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "q[7]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 10;
+	TREE_LEVEL = 1;
+	PARENT = 6;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "q[6]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 11;
+	TREE_LEVEL = 1;
+	PARENT = 6;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "q[5]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 12;
+	TREE_LEVEL = 1;
+	PARENT = 6;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "q[4]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 13;
+	TREE_LEVEL = 1;
+	PARENT = 6;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "q[3]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 14;
+	TREE_LEVEL = 1;
+	PARENT = 6;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "q[2]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 15;
+	TREE_LEVEL = 1;
+	PARENT = 6;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "q[1]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 16;
+	TREE_LEVEL = 1;
+	PARENT = 6;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "q[0]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 17;
+	TREE_LEVEL = 1;
+	PARENT = 6;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "STATES";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 18;
@@ -742,7 +729,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "SM1:inst7|fstate.Q0";
+	CHANNEL = "SM1:inst10|fstate.Q3";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 19;
@@ -752,7 +739,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "SM1:inst7|fstate.Q1";
+	CHANNEL = "SM1:inst10|fstate.Q2";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 20;
@@ -762,7 +749,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "SM1:inst7|fstate.Q2";
+	CHANNEL = "SM1:inst10|fstate.Q1";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 21;
@@ -772,7 +759,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "SM1:inst7|fstate.Q3";
+	CHANNEL = "SM1:inst10|fstate.Q0";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 22;
@@ -786,6 +773,15 @@ DISPLAY_LINE
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 23;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "OUT_Sin";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 24;
 	TREE_LEVEL = 0;
 }
 

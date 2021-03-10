@@ -1,7 +1,7 @@
 # do AntiRebotes.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:37:23 on Mar 09,2021
+# Start time: 22:07:17 on Mar 10,2021
 # vcom -work work AntiRebotes.vho 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -14,33 +14,33 @@
 # -- Compiling architecture structure of hard_block
 # -- Loading package dffeas_pack
 # -- Loading package altera_primitives_components
-# -- Compiling entity AntiRebotes
-# -- Compiling architecture structure of AntiRebotes
-# End time: 11:37:23 on Mar 09,2021, Elapsed time: 0:00:00
+# -- Compiling entity EjemploKeys
+# -- Compiling architecture structure of EjemploKeys
+# End time: 22:07:17 on Mar 10,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:37:23 on Mar 09,2021
-# vcom -work work WaveformT3.vwf.vht 
+# Start time: 22:07:17 on Mar 10,2021
+# vcom -work work WaveformPR.vwf.vht 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Compiling entity AntiRebotes_vhd_vec_tst
-# -- Compiling architecture AntiRebotes_arch of AntiRebotes_vhd_vec_tst
-# End time: 11:37:23 on Mar 09,2021, Elapsed time: 0:00:00
+# -- Compiling entity EjemploKeys_vhd_vec_tst
+# -- Compiling architecture EjemploKeys_arch of EjemploKeys_vhd_vec_tst
+# End time: 22:07:18 on Mar 10,2021, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
-# vsim -novopt -c -t 1ps -L fiftyfivenm -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.AntiRebotes_vhd_vec_tst 
-# Start time: 11:37:23 on Mar 09,2021
+# vsim -novopt -c -t 1ps -L fiftyfivenm -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.EjemploKeys_vhd_vec_tst 
+# Start time: 22:07:18 on Mar 10,2021
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
-# Loading work.antirebotes_vhd_vec_tst(antirebotes_arch)
+# Loading work.ejemplokeys_vhd_vec_tst(ejemplokeys_arch)
 # Loading ieee.vital_timing(body)
 # Loading ieee.vital_primitives(body)
 # Loading altera.dffeas_pack
 # Loading altera.altera_primitives_components
 # Loading fiftyfivenm.fiftyfivenm_atom_pack(body)
 # Loading fiftyfivenm.fiftyfivenm_components
-# Loading work.antirebotes(structure)
+# Loading work.ejemplokeys(structure)
 # Loading work.hard_block(structure)
 # Loading fiftyfivenm.fiftyfivenm_io_obuf(behavior)
 # Loading fiftyfivenm.fiftyfivenm_io_ibuf(behavior)
@@ -50,6 +50,8 @@
 # Loading altera.dffeas(vital_dffeas)
 # Loading fiftyfivenm.fiftyfivenm_unvm(behavior)
 # Loading fiftyfivenm.fiftyfivenm_adcblock(behavior)
+# ** Warning: Design size of 12741 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# Expect performance to be adversely affected.
 # after#35
-# End time: 11:37:24 on Mar 09,2021, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
+# End time: 22:07:20 on Mar 10,2021, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 1

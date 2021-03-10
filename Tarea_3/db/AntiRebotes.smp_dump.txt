@@ -1,5 +1,5 @@
 
-State Machine - |AntiRebotes|SM1:inst10|fstate
+State Machine - |EjemploKeys|AntiRebotes:inst999|SM1:inst10|fstate
 Name fstate.Q3 fstate.Q2 fstate.Q1 fstate.Q0 
 fstate.Q0 0 0 0 0 
 fstate.Q1 0 0 1 1 

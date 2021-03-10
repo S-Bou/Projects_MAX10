@@ -1,5 +1,5 @@
 EDA Netlist Writer report for AntiRebotes
-Tue Mar 09 11:37:22 2021
+Wed Mar 10 22:07:17 2021
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -36,9 +36,9 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Tue Mar 09 11:37:22 2021 ;
+; EDA Netlist Writer Status ; Successful - Wed Mar 10 22:07:17 2021 ;
 ; Revision Name             ; AntiRebotes                           ;
-; Top-level Entity Name     ; AntiRebotes                           ;
+; Top-level Entity Name     ; EjemploKeys                           ;
 ; Family                    ; MAX 10                                ;
 ; Simulation Files Creation ; Successful                            ;
 +---------------------------+---------------------------------------+
@@ -93,14 +93,14 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: the sole purpose of programming logic devices manufactured by
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details.
-    Info: Processing started: Tue Mar 09 11:37:22 2021
+    Info: Processing started: Wed Mar 10 22:07:16 2021
 Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_3/simulation/qsim/ AntiRebotes -c AntiRebotes
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (204019): Generated file AntiRebotes.vho in folder "D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_3/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 4632 megabytes
-    Info: Processing ended: Tue Mar 09 11:37:22 2021
-    Info: Elapsed time: 00:00:00
+    Info: Processing ended: Wed Mar 10 22:07:17 2021
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
 

@@ -18,7 +18,7 @@
 -- the top level entity of the current Quartus project .The user can use this   
 -- testbench to simulate his design using a third-party simulation tool .       
 -- *****************************************************************************
--- Generated on "03/09/2021 11:37:21"
+-- Generated on "03/10/2021 11:53:37"
                                                              
 -- Vhdl Test Bench(with test vectors) for design  :          AntiRebotes
 -- 
@@ -34,6 +34,7 @@ ARCHITECTURE AntiRebotes_arch OF AntiRebotes_vhd_vec_tst IS
 -- constants                                                 
 -- signals                                                   
 SIGNAL CLK : STD_LOGIC;
+SIGNAL Cnt_E : STD_LOGIC;
 SIGNAL OUT_Sin : STD_LOGIC;
 SIGNAL Pulse_KEY0 : STD_LOGIC;
 SIGNAL q : STD_LOGIC_VECTOR(0 TO 10);
@@ -44,6 +45,7 @@ SIGNAL xDev_n : STD_LOGIC;
 COMPONENT AntiRebotes
 	PORT (
 	CLK : IN STD_LOGIC;
+	Cnt_E : OUT STD_LOGIC;
 	OUT_Sin : OUT STD_LOGIC;
 	Pulse_KEY0 : IN STD_LOGIC;
 	q : OUT STD_LOGIC_VECTOR(0 TO 10);
@@ -58,6 +60,7 @@ BEGIN
 	PORT MAP (
 -- list connections between master ports and signals
 	CLK => CLK,
+	Cnt_E => Cnt_E,
 	OUT_Sin => OUT_Sin,
 	Pulse_KEY0 => Pulse_KEY0,
 	q => q,
