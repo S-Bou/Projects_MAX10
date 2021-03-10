@@ -3,7 +3,7 @@ $comment
 		vcd file Codificador.msim.vcd -direction
 $end
 $date
-	Mon Mar 01 19:30:57 2021
+	Mon Mar 08 19:18:20 2021
 $end
 $version
 	ModelSim Version 10.5b

@@ -25,7 +25,7 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: the sole purpose of programming logic devices manufactured by
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details.
-    Info: Processing started: Sat Feb 20 12:09:21 2021
+    Info: Processing started: Mon Mar 08 12:57:53 2021
 Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off Adder_4b -c Adder_4b --vector_source=D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_1/Waveform_A4B.vwf --testbench_file=D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_1/simulation/qsim/Waveform_A4B.vwf.vht
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 
@@ -51,13 +51,13 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: the sole purpose of programming logic devices manufactured by
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details.
-    Info: Processing started: Sat Feb 20 12:09:22 2021
+    Info: Processing started: Mon Mar 08 12:57:54 2021
 Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_1/simulation/qsim/ Adder_4b -c Adder_4b
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (204019): Generated file Adder_4b.vho in folder "D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_1/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 4632 megabytes
-    Info: Processing ended: Sat Feb 20 12:09:22 2021
+    Info: Processing ended: Mon Mar 08 12:57:54 2021
     Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:01
 
@@ -75,13 +75,15 @@ d:/programas/intelfpga_lite/quartus_ii_18.1/modelsim_ase/win32aloem//vsim -c -do
 
 Reading D:/Programas/intelFPGA_lite/Quartus_II_18.1/modelsim_ase/tcl/vsim/pref.tcl
 
+
 # 10.5b
 
-
 # do Adder_4b.do
+
 # ** Warning: (vlib-34) Library already exists at "work".
+
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:09:23 on Feb 20,2021
+# Start time: 12:57:56 on Mar 08,2021
 # vcom -work work Adder_4b.vho 
 # -- Loading package STANDARD
 
@@ -95,22 +97,22 @@ Reading D:/Programas/intelFPGA_lite/Quartus_II_18.1/modelsim_ase/tcl/vsim/pref.t
 # -- Compiling architecture structure of hard_block
 # -- Compiling entity Adder_4b
 # -- Compiling architecture structure of Adder_4b
-# End time: 12:09:23 on Feb 20,2021, Elapsed time: 0:00:00
+# End time: 12:57:57 on Mar 08,2021, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
+
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:09:23 on Feb 20,2021
+# Start time: 12:57:57 on Mar 08,2021
 # vcom -work work Waveform_A4B.vwf.vht 
 # -- Loading package STANDARD
-
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity Adder_4b_vhd_vec_tst
 # -- Compiling architecture Adder_4b_arch of Adder_4b_vhd_vec_tst
-# End time: 12:09:23 on Feb 20,2021, Elapsed time: 0:00:00
+# End time: 12:57:57 on Mar 08,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 
 # vsim -c -t 1ps -L fiftyfivenm -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.Adder_4b_vhd_vec_tst 
-# Start time: 12:09:23 on Feb 20,2021
+# Start time: 12:57:58 on Mar 08,2021
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -128,7 +130,7 @@ Reading D:/Programas/intelFPGA_lite/Quartus_II_18.1/modelsim_ase/tcl/vsim/pref.t
 # Loading fiftyfivenm.fiftyfivenm_adcblock(behavior)
 # after#33
 
-# End time: 12:09:24 on Feb 20,2021, Elapsed time: 0:00:01
+# End time: 12:57:58 on Mar 08,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 
 Completed successfully. 
@@ -141,7 +143,7 @@ Reading D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_1/simulation/qsim/Adder
 
 Processing channel transitions... 
 
-Writing the resulting VWF to D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_1/simulation/qsim/Adder_4b_20210220120924.sim.vwf
+Writing the resulting VWF to D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_1/simulation/qsim/Adder_4b_20210308125759.sim.vwf
 
 Finished VCD to VWF conversion.
 

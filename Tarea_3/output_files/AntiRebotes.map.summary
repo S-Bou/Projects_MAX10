@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Sun Feb 28 19:06:54 2021
+Analysis & Synthesis Status : Successful - Tue Mar 09 11:36:47 2021
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : AntiRebotes
 Top-level Entity Name : AntiRebotes
 Family : MAX 10
-Total logic elements : 9
-    Total combinational functions : 7
-    Dedicated logic registers : 7
-Total registers : 7
-Total pins : 8
+Total logic elements : 33
+    Total combinational functions : 31
+    Dedicated logic registers : 18
+Total registers : 18
+Total pins : 18
 Total virtual pins : 0
 Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0

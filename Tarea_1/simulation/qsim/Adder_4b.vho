@@ -16,7 +16,7 @@
 -- PROGRAM "Quartus Prime"
 -- VERSION "Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition"
 
--- DATE "02/20/2021 12:09:22"
+-- DATE "03/08/2021 12:57:54"
 
 -- 
 -- Device: Altera 10M50DAF484C6GES Package FBGA484
@@ -145,7 +145,7 @@ END Adder_4b;
 -- Sg	=>  Location: PIN_B17,	 I/O Standard: 2.5 V,	 Current Strength: Default
 -- A[2]	=>  Location: PIN_B14,	 I/O Standard: 2.5 V,	 Current Strength: Default
 -- B[2]	=>  Location: PIN_A12,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- Cin	=>  Location: PIN_B19,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- Cin	=>  Location: PIN_C10,	 I/O Standard: 2.5 V,	 Current Strength: Default
 -- A[0]	=>  Location: PIN_A13,	 I/O Standard: 2.5 V,	 Current Strength: Default
 -- B[0]	=>  Location: PIN_D12,	 I/O Standard: 2.5 V,	 Current Strength: Default
 -- A[1]	=>  Location: PIN_A14,	 I/O Standard: 2.5 V,	 Current Strength: Default
@@ -222,11 +222,13 @@ SIGNAL \Sd~output_o\ : std_logic;
 SIGNAL \Se~output_o\ : std_logic;
 SIGNAL \Sf~output_o\ : std_logic;
 SIGNAL \Sg~output_o\ : std_logic;
-SIGNAL \A[2]~input_o\ : std_logic;
+SIGNAL \A[3]~input_o\ : std_logic;
 SIGNAL \B[2]~input_o\ : std_logic;
+SIGNAL \A[2]~input_o\ : std_logic;
+SIGNAL \inst|inst2|inst2~0_combout\ : std_logic;
 SIGNAL \B[0]~input_o\ : std_logic;
-SIGNAL \A[0]~input_o\ : std_logic;
 SIGNAL \Cin~input_o\ : std_logic;
+SIGNAL \A[0]~input_o\ : std_logic;
 SIGNAL \inst|inst|inst2~1_combout\ : std_logic;
 SIGNAL \A[1]~input_o\ : std_logic;
 SIGNAL \inst|inst|inst2~0_combout\ : std_logic;
@@ -234,8 +236,6 @@ SIGNAL \B[1]~input_o\ : std_logic;
 SIGNAL \inst|inst1|inst2~0_combout\ : std_logic;
 SIGNAL \inst|inst2|inst2~1_combout\ : std_logic;
 SIGNAL \B[3]~input_o\ : std_logic;
-SIGNAL \A[3]~input_o\ : std_logic;
-SIGNAL \inst|inst2|inst2~0_combout\ : std_logic;
 SIGNAL \inst|inst3|inst2~0_combout\ : std_logic;
 SIGNAL \inst1|81~combout\ : std_logic;
 SIGNAL \inst1|82~0_combout\ : std_logic;
@@ -251,9 +251,9 @@ SIGNAL \inst5|84~0_combout\ : std_logic;
 SIGNAL \inst5|85~combout\ : std_logic;
 SIGNAL \inst5|86~0_combout\ : std_logic;
 SIGNAL \inst5|87~combout\ : std_logic;
-SIGNAL \inst|inst|inst1|inst~0_combout\ : std_logic;
 SIGNAL \inst|inst1|inst1|inst~combout\ : std_logic;
 SIGNAL \inst|inst2|inst1|inst~0_combout\ : std_logic;
+SIGNAL \inst|inst|inst1|inst~0_combout\ : std_logic;
 SIGNAL \inst|inst3|inst1|inst~combout\ : std_logic;
 SIGNAL \inst6|81~0_combout\ : std_logic;
 SIGNAL \inst6|82~0_combout\ : std_logic;
@@ -311,7 +311,7 @@ PORT MAP (
 	devclrn => ww_devclrn,
 	devpor => ww_devpor);
 
--- Location: LCCOMB_X44_Y47_N24
+-- Location: LCCOMB_X44_Y42_N24
 \~QUARTUS_CREATED_GND~I\ : fiftyfivenm_lcell_comb
 -- Equation(s):
 -- \~QUARTUS_CREATED_GND~I_combout\ = GND
@@ -636,8 +636,8 @@ PORT MAP (
 	devoe => ww_devoe,
 	o => \Sg~output_o\);
 
--- Location: IOIBUF_X56_Y54_N1
-\A[2]~input\ : fiftyfivenm_io_ibuf
+-- Location: IOIBUF_X69_Y54_N1
+\A[3]~input\ : fiftyfivenm_io_ibuf
 -- pragma translate_off
 GENERIC MAP (
 	bus_hold => "false",
@@ -645,8 +645,8 @@ GENERIC MAP (
 	simulate_z_as => "z")
 -- pragma translate_on
 PORT MAP (
-	i => ww_A(2),
-	o => \A[2]~input_o\);
+	i => ww_A(3),
+	o => \A[3]~input_o\);
 
 -- Location: IOIBUF_X54_Y54_N22
 \B[2]~input\ : fiftyfivenm_io_ibuf
@@ -660,6 +660,33 @@ PORT MAP (
 	i => ww_B(2),
 	o => \B[2]~input_o\);
 
+-- Location: IOIBUF_X56_Y54_N1
+\A[2]~input\ : fiftyfivenm_io_ibuf
+-- pragma translate_off
+GENERIC MAP (
+	bus_hold => "false",
+	listen_to_nsleep_signal => "false",
+	simulate_z_as => "z")
+-- pragma translate_on
+PORT MAP (
+	i => ww_A(2),
+	o => \A[2]~input_o\);
+
+-- Location: LCCOMB_X71_Y50_N24
+\inst|inst2|inst2~0\ : fiftyfivenm_lcell_comb
+-- Equation(s):
+-- \inst|inst2|inst2~0_combout\ = (\B[2]~input_o\ & \A[2]~input_o\)
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1100000011000000",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	datab => \B[2]~input_o\,
+	datac => \A[2]~input_o\,
+	combout => \inst|inst2|inst2~0_combout\);
+
 -- Location: IOIBUF_X51_Y54_N1
 \B[0]~input\ : fiftyfivenm_io_ibuf
 -- pragma translate_off
@@ -671,6 +698,18 @@ GENERIC MAP (
 PORT MAP (
 	i => ww_B(0),
 	o => \B[0]~input_o\);
+
+-- Location: IOIBUF_X51_Y54_N29
+\Cin~input\ : fiftyfivenm_io_ibuf
+-- pragma translate_off
+GENERIC MAP (
+	bus_hold => "false",
+	listen_to_nsleep_signal => "false",
+	simulate_z_as => "z")
+-- pragma translate_on
+PORT MAP (
+	i => ww_Cin,
+	o => \Cin~input_o\);
 
 -- Location: IOIBUF_X54_Y54_N15
 \A[0]~input\ : fiftyfivenm_io_ibuf
@@ -684,32 +723,20 @@ PORT MAP (
 	i => ww_A(0),
 	o => \A[0]~input_o\);
 
--- Location: IOIBUF_X69_Y54_N15
-\Cin~input\ : fiftyfivenm_io_ibuf
--- pragma translate_off
-GENERIC MAP (
-	bus_hold => "false",
-	listen_to_nsleep_signal => "false",
-	simulate_z_as => "z")
--- pragma translate_on
-PORT MAP (
-	i => ww_Cin,
-	o => \Cin~input_o\);
-
 -- Location: LCCOMB_X70_Y50_N10
 \inst|inst|inst2~1\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst|inst|inst2~1_combout\ = (\B[0]~input_o\ & ((\A[0]~input_o\) # (\Cin~input_o\)))
+-- \inst|inst|inst2~1_combout\ = (\B[0]~input_o\ & ((\Cin~input_o\) # (\A[0]~input_o\)))
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1010101010001000",
+	lut_mask => "1010101010100000",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
 	dataa => \B[0]~input_o\,
-	datab => \A[0]~input_o\,
-	datad => \Cin~input_o\,
+	datac => \Cin~input_o\,
+	datad => \A[0]~input_o\,
 	combout => \inst|inst|inst2~1_combout\);
 
 -- Location: IOIBUF_X58_Y54_N29
@@ -727,16 +754,16 @@ PORT MAP (
 -- Location: LCCOMB_X70_Y50_N8
 \inst|inst|inst2~0\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst|inst|inst2~0_combout\ = (\A[0]~input_o\ & \Cin~input_o\)
+-- \inst|inst|inst2~0_combout\ = (\Cin~input_o\ & \A[0]~input_o\)
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1100110000000000",
+	lut_mask => "1111000000000000",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	datab => \A[0]~input_o\,
-	datad => \Cin~input_o\,
+	datac => \Cin~input_o\,
+	datad => \A[0]~input_o\,
 	combout => \inst|inst|inst2~0_combout\);
 
 -- Location: IOIBUF_X54_Y54_N29
@@ -751,7 +778,7 @@ PORT MAP (
 	i => ww_B(1),
 	o => \B[1]~input_o\);
 
--- Location: LCCOMB_X70_Y50_N4
+-- Location: LCCOMB_X70_Y50_N12
 \inst|inst1|inst2~0\ : fiftyfivenm_lcell_comb
 -- Equation(s):
 -- \inst|inst1|inst2~0_combout\ = (\A[1]~input_o\ & ((\inst|inst|inst2~1_combout\) # ((\inst|inst|inst2~0_combout\) # (\B[1]~input_o\)))) # (!\A[1]~input_o\ & (\B[1]~input_o\ & ((\inst|inst|inst2~1_combout\) # (\inst|inst|inst2~0_combout\))))
@@ -768,19 +795,19 @@ PORT MAP (
 	datad => \B[1]~input_o\,
 	combout => \inst|inst1|inst2~0_combout\);
 
--- Location: LCCOMB_X71_Y53_N10
+-- Location: LCCOMB_X71_Y50_N26
 \inst|inst2|inst2~1\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst|inst2|inst2~1_combout\ = (\inst|inst1|inst2~0_combout\ & ((\A[2]~input_o\) # (\B[2]~input_o\)))
+-- \inst|inst2|inst2~1_combout\ = (\inst|inst1|inst2~0_combout\ & ((\B[2]~input_o\) # (\A[2]~input_o\)))
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1110111000000000",
+	lut_mask => "1111110000000000",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \A[2]~input_o\,
 	datab => \B[2]~input_o\,
+	datac => \A[2]~input_o\,
 	datad => \inst|inst1|inst2~0_combout\,
 	combout => \inst|inst2|inst2~1_combout\);
 
@@ -796,51 +823,24 @@ PORT MAP (
 	i => ww_B(3),
 	o => \B[3]~input_o\);
 
--- Location: IOIBUF_X69_Y54_N1
-\A[3]~input\ : fiftyfivenm_io_ibuf
--- pragma translate_off
-GENERIC MAP (
-	bus_hold => "false",
-	listen_to_nsleep_signal => "false",
-	simulate_z_as => "z")
--- pragma translate_on
-PORT MAP (
-	i => ww_A(3),
-	o => \A[3]~input_o\);
-
--- Location: LCCOMB_X71_Y53_N24
-\inst|inst2|inst2~0\ : fiftyfivenm_lcell_comb
--- Equation(s):
--- \inst|inst2|inst2~0_combout\ = (\B[2]~input_o\ & \A[2]~input_o\)
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "1100110000000000",
-	sum_lutc_input => "datac")
--- pragma translate_on
-PORT MAP (
-	datab => \B[2]~input_o\,
-	datad => \A[2]~input_o\,
-	combout => \inst|inst2|inst2~0_combout\);
-
--- Location: LCCOMB_X71_Y53_N28
+-- Location: LCCOMB_X71_Y50_N12
 \inst|inst3|inst2~0\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst|inst3|inst2~0_combout\ = (\B[3]~input_o\ & ((\inst|inst2|inst2~1_combout\) # ((\A[3]~input_o\) # (\inst|inst2|inst2~0_combout\)))) # (!\B[3]~input_o\ & (\A[3]~input_o\ & ((\inst|inst2|inst2~1_combout\) # (\inst|inst2|inst2~0_combout\))))
+-- \inst|inst3|inst2~0_combout\ = (\A[3]~input_o\ & ((\inst|inst2|inst2~0_combout\) # ((\inst|inst2|inst2~1_combout\) # (\B[3]~input_o\)))) # (!\A[3]~input_o\ & (\B[3]~input_o\ & ((\inst|inst2|inst2~0_combout\) # (\inst|inst2|inst2~1_combout\))))
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1111110011101000",
+	lut_mask => "1111111010101000",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \inst|inst2|inst2~1_combout\,
-	datab => \B[3]~input_o\,
-	datac => \A[3]~input_o\,
-	datad => \inst|inst2|inst2~0_combout\,
+	dataa => \A[3]~input_o\,
+	datab => \inst|inst2|inst2~0_combout\,
+	datac => \inst|inst2|inst2~1_combout\,
+	datad => \B[3]~input_o\,
 	combout => \inst|inst3|inst2~0_combout\);
 
--- Location: LCCOMB_X70_Y50_N22
+-- Location: LCCOMB_X70_Y50_N6
 \inst1|81\ : fiftyfivenm_lcell_comb
 -- Equation(s):
 -- \inst1|81~combout\ = (\A[2]~input_o\ & (((\A[1]~input_o\ & \A[3]~input_o\)) # (!\A[0]~input_o\))) # (!\A[2]~input_o\ & ((\A[1]~input_o\ & ((\A[3]~input_o\))) # (!\A[1]~input_o\ & (\A[0]~input_o\ & !\A[3]~input_o\))))
@@ -894,33 +894,33 @@ PORT MAP (
 -- Location: LCCOMB_X70_Y50_N20
 \inst1|84~0\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst1|84~0_combout\ = (\A[2]~input_o\ & (\A[1]~input_o\ $ (!\A[0]~input_o\))) # (!\A[2]~input_o\ & (!\A[1]~input_o\ & \A[0]~input_o\))
+-- \inst1|84~0_combout\ = (\A[0]~input_o\ & (\A[1]~input_o\ $ (!\A[2]~input_o\))) # (!\A[0]~input_o\ & (!\A[1]~input_o\ & \A[2]~input_o\))
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1010010100001010",
+	lut_mask => "1100001100001100",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \A[2]~input_o\,
+	datab => \A[0]~input_o\,
 	datac => \A[1]~input_o\,
-	datad => \A[0]~input_o\,
+	datad => \A[2]~input_o\,
 	combout => \inst1|84~0_combout\);
 
 -- Location: LCCOMB_X70_Y50_N14
 \inst1|85\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst1|85~combout\ = (\A[0]~input_o\) # ((\A[2]~input_o\ & !\A[1]~input_o\))
+-- \inst1|85~combout\ = (\A[0]~input_o\) # ((!\A[1]~input_o\ & \A[2]~input_o\))
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1111111100001010",
+	lut_mask => "1100111111001100",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \A[2]~input_o\,
+	datab => \A[0]~input_o\,
 	datac => \A[1]~input_o\,
-	datad => \A[0]~input_o\,
+	datad => \A[2]~input_o\,
 	combout => \inst1|85~combout\);
 
 -- Location: LCCOMB_X70_Y50_N24
@@ -957,10 +957,10 @@ PORT MAP (
 	datad => \A[3]~input_o\,
 	combout => \inst1|87~combout\);
 
--- Location: LCCOMB_X71_Y53_N6
+-- Location: LCCOMB_X71_Y50_N22
 \inst5|81\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst5|81~combout\ = (\B[1]~input_o\ & ((\B[3]~input_o\) # ((\B[2]~input_o\ & !\B[0]~input_o\)))) # (!\B[1]~input_o\ & ((\B[2]~input_o\ & ((!\B[0]~input_o\))) # (!\B[2]~input_o\ & (!\B[3]~input_o\ & \B[0]~input_o\))))
+-- \inst5|81~combout\ = (\B[3]~input_o\ & ((\B[1]~input_o\) # ((\B[2]~input_o\ & !\B[0]~input_o\)))) # (!\B[3]~input_o\ & ((\B[2]~input_o\ & ((!\B[0]~input_o\))) # (!\B[2]~input_o\ & (!\B[1]~input_o\ & \B[0]~input_o\))))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -968,129 +968,113 @@ GENERIC MAP (
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \B[1]~input_o\,
-	datab => \B[3]~input_o\,
+	dataa => \B[3]~input_o\,
+	datab => \B[1]~input_o\,
 	datac => \B[2]~input_o\,
 	datad => \B[0]~input_o\,
 	combout => \inst5|81~combout\);
 
--- Location: LCCOMB_X71_Y53_N8
+-- Location: LCCOMB_X71_Y50_N8
 \inst5|82~0\ : fiftyfivenm_lcell_comb
 -- Equation(s):
 -- \inst5|82~0_combout\ = (\B[1]~input_o\ & ((\B[3]~input_o\) # ((\B[2]~input_o\ & !\B[0]~input_o\)))) # (!\B[1]~input_o\ & (((\B[2]~input_o\ & \B[0]~input_o\))))
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1101100010101000",
+	lut_mask => "1011100011001000",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \B[1]~input_o\,
-	datab => \B[3]~input_o\,
+	dataa => \B[3]~input_o\,
+	datab => \B[1]~input_o\,
 	datac => \B[2]~input_o\,
 	datad => \B[0]~input_o\,
 	combout => \inst5|82~0_combout\);
 
--- Location: LCCOMB_X71_Y53_N18
+-- Location: LCCOMB_X71_Y50_N2
 \inst5|83\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst5|83~combout\ = (\B[2]~input_o\ & (((\B[3]~input_o\)))) # (!\B[2]~input_o\ & (\B[1]~input_o\ & ((!\B[0]~input_o\))))
+-- \inst5|83~combout\ = (\B[2]~input_o\ & (\B[3]~input_o\)) # (!\B[2]~input_o\ & (((\B[1]~input_o\ & !\B[0]~input_o\))))
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1100000011001010",
+	lut_mask => "1010000010101100",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \B[1]~input_o\,
-	datab => \B[3]~input_o\,
+	dataa => \B[3]~input_o\,
+	datab => \B[1]~input_o\,
 	datac => \B[2]~input_o\,
 	datad => \B[0]~input_o\,
 	combout => \inst5|83~combout\);
 
--- Location: LCCOMB_X71_Y53_N20
+-- Location: LCCOMB_X71_Y50_N4
 \inst5|84~0\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst5|84~0_combout\ = (\B[1]~input_o\ & (\B[0]~input_o\ & \B[2]~input_o\)) # (!\B[1]~input_o\ & (\B[0]~input_o\ $ (\B[2]~input_o\)))
+-- \inst5|84~0_combout\ = (\B[0]~input_o\ & (\B[2]~input_o\ $ (!\B[1]~input_o\))) # (!\B[0]~input_o\ & (\B[2]~input_o\ & !\B[1]~input_o\))
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1001010010010100",
+	lut_mask => "1010000001011010",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \B[1]~input_o\,
-	datab => \B[0]~input_o\,
+	dataa => \B[0]~input_o\,
 	datac => \B[2]~input_o\,
+	datad => \B[1]~input_o\,
 	combout => \inst5|84~0_combout\);
 
--- Location: LCCOMB_X71_Y53_N30
+-- Location: LCCOMB_X71_Y50_N30
 \inst5|85\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst5|85~combout\ = (\B[0]~input_o\) # ((!\B[1]~input_o\ & \B[2]~input_o\))
+-- \inst5|85~combout\ = (\B[0]~input_o\) # ((\B[2]~input_o\ & !\B[1]~input_o\))
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1101110011011100",
+	lut_mask => "1010101011111010",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \B[1]~input_o\,
-	datab => \B[0]~input_o\,
+	dataa => \B[0]~input_o\,
 	datac => \B[2]~input_o\,
+	datad => \B[1]~input_o\,
 	combout => \inst5|85~combout\);
 
--- Location: LCCOMB_X71_Y53_N16
+-- Location: LCCOMB_X71_Y50_N0
 \inst5|86~0\ : fiftyfivenm_lcell_comb
 -- Equation(s):
 -- \inst5|86~0_combout\ = (\B[1]~input_o\ & (((\B[0]~input_o\) # (!\B[2]~input_o\)))) # (!\B[1]~input_o\ & (!\B[3]~input_o\ & (!\B[2]~input_o\ & \B[0]~input_o\)))
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1010101100001010",
+	lut_mask => "1100110100001100",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \B[1]~input_o\,
-	datab => \B[3]~input_o\,
+	dataa => \B[3]~input_o\,
+	datab => \B[1]~input_o\,
 	datac => \B[2]~input_o\,
 	datad => \B[0]~input_o\,
 	combout => \inst5|86~0_combout\);
 
--- Location: LCCOMB_X71_Y53_N26
+-- Location: LCCOMB_X71_Y50_N10
 \inst5|87\ : fiftyfivenm_lcell_comb
 -- Equation(s):
 -- \inst5|87~combout\ = (\B[1]~input_o\ & (((\B[2]~input_o\ & \B[0]~input_o\)))) # (!\B[1]~input_o\ & (!\B[3]~input_o\ & (!\B[2]~input_o\)))
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1010000100000001",
+	lut_mask => "1100000100000001",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \B[1]~input_o\,
-	datab => \B[3]~input_o\,
+	dataa => \B[3]~input_o\,
+	datab => \B[1]~input_o\,
 	datac => \B[2]~input_o\,
 	datad => \B[0]~input_o\,
 	combout => \inst5|87~combout\);
 
--- Location: LCCOMB_X70_Y50_N30
-\inst|inst|inst1|inst~0\ : fiftyfivenm_lcell_comb
--- Equation(s):
--- \inst|inst|inst1|inst~0_combout\ = \B[0]~input_o\ $ (\A[0]~input_o\ $ (\Cin~input_o\))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "1001100101100110",
-	sum_lutc_input => "datac")
--- pragma translate_on
-PORT MAP (
-	dataa => \B[0]~input_o\,
-	datab => \A[0]~input_o\,
-	datad => \Cin~input_o\,
-	combout => \inst|inst|inst1|inst~0_combout\);
-
--- Location: LCCOMB_X70_Y50_N12
+-- Location: LCCOMB_X70_Y50_N4
 \inst|inst1|inst1|inst\ : fiftyfivenm_lcell_comb
 -- Equation(s):
 -- \inst|inst1|inst1|inst~combout\ = \A[1]~input_o\ $ (\B[1]~input_o\ $ (((\inst|inst|inst2~1_combout\) # (\inst|inst|inst2~0_combout\))))
@@ -1107,156 +1091,172 @@ PORT MAP (
 	datad => \B[1]~input_o\,
 	combout => \inst|inst1|inst1|inst~combout\);
 
--- Location: LCCOMB_X71_Y53_N22
+-- Location: LCCOMB_X71_Y50_N14
 \inst|inst2|inst1|inst~0\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst|inst2|inst1|inst~0_combout\ = \A[2]~input_o\ $ (\B[2]~input_o\ $ (\inst|inst1|inst2~0_combout\))
+-- \inst|inst2|inst1|inst~0_combout\ = \B[2]~input_o\ $ (\A[2]~input_o\ $ (\inst|inst1|inst2~0_combout\))
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1001100101100110",
+	lut_mask => "1100001100111100",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \A[2]~input_o\,
 	datab => \B[2]~input_o\,
+	datac => \A[2]~input_o\,
 	datad => \inst|inst1|inst2~0_combout\,
 	combout => \inst|inst2|inst1|inst~0_combout\);
 
--- Location: LCCOMB_X71_Y53_N12
+-- Location: LCCOMB_X70_Y50_N30
+\inst|inst|inst1|inst~0\ : fiftyfivenm_lcell_comb
+-- Equation(s):
+-- \inst|inst|inst1|inst~0_combout\ = \B[0]~input_o\ $ (\Cin~input_o\ $ (\A[0]~input_o\))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1010010101011010",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	dataa => \B[0]~input_o\,
+	datac => \Cin~input_o\,
+	datad => \A[0]~input_o\,
+	combout => \inst|inst|inst1|inst~0_combout\);
+
+-- Location: LCCOMB_X71_Y50_N28
 \inst|inst3|inst1|inst\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst|inst3|inst1|inst~combout\ = \B[3]~input_o\ $ (\A[3]~input_o\ $ (((\inst|inst2|inst2~1_combout\) # (\inst|inst2|inst2~0_combout\))))
+-- \inst|inst3|inst1|inst~combout\ = \A[3]~input_o\ $ (\B[3]~input_o\ $ (((\inst|inst2|inst2~0_combout\) # (\inst|inst2|inst2~1_combout\))))
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1100001110010110",
+	lut_mask => "1010100101010110",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \inst|inst2|inst2~1_combout\,
-	datab => \B[3]~input_o\,
-	datac => \A[3]~input_o\,
-	datad => \inst|inst2|inst2~0_combout\,
+	dataa => \A[3]~input_o\,
+	datab => \inst|inst2|inst2~0_combout\,
+	datac => \inst|inst2|inst2~1_combout\,
+	datad => \B[3]~input_o\,
 	combout => \inst|inst3|inst1|inst~combout\);
 
--- Location: LCCOMB_X66_Y53_N0
+-- Location: LCCOMB_X69_Y53_N16
 \inst6|81~0\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst6|81~0_combout\ = (\inst|inst|inst1|inst~0_combout\ & ((\inst|inst1|inst1|inst~combout\ & ((\inst|inst3|inst1|inst~combout\))) # (!\inst|inst1|inst1|inst~combout\ & (!\inst|inst2|inst1|inst~0_combout\ & !\inst|inst3|inst1|inst~combout\)))) # 
--- (!\inst|inst|inst1|inst~0_combout\ & ((\inst|inst2|inst1|inst~0_combout\) # ((\inst|inst1|inst1|inst~combout\ & \inst|inst3|inst1|inst~combout\))))
+-- \inst6|81~0_combout\ = (\inst|inst1|inst1|inst~combout\ & ((\inst|inst3|inst1|inst~combout\) # ((\inst|inst2|inst1|inst~0_combout\ & !\inst|inst|inst1|inst~0_combout\)))) # (!\inst|inst1|inst1|inst~combout\ & ((\inst|inst2|inst1|inst~0_combout\ & 
+-- (!\inst|inst|inst1|inst~0_combout\)) # (!\inst|inst2|inst1|inst~0_combout\ & (\inst|inst|inst1|inst~0_combout\ & !\inst|inst3|inst1|inst~combout\))))
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1101110001010010",
+	lut_mask => "1010111000011100",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \inst|inst|inst1|inst~0_combout\,
-	datab => \inst|inst1|inst1|inst~combout\,
-	datac => \inst|inst2|inst1|inst~0_combout\,
+	dataa => \inst|inst1|inst1|inst~combout\,
+	datab => \inst|inst2|inst1|inst~0_combout\,
+	datac => \inst|inst|inst1|inst~0_combout\,
 	datad => \inst|inst3|inst1|inst~combout\,
 	combout => \inst6|81~0_combout\);
 
--- Location: LCCOMB_X66_Y53_N2
+-- Location: LCCOMB_X69_Y53_N10
 \inst6|82~0\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst6|82~0_combout\ = (\inst|inst1|inst1|inst~combout\ & ((\inst|inst3|inst1|inst~combout\) # ((!\inst|inst|inst1|inst~0_combout\ & \inst|inst2|inst1|inst~0_combout\)))) # (!\inst|inst1|inst1|inst~combout\ & (\inst|inst|inst1|inst~0_combout\ & 
--- (\inst|inst2|inst1|inst~0_combout\)))
+-- \inst6|82~0_combout\ = (\inst|inst1|inst1|inst~combout\ & ((\inst|inst3|inst1|inst~combout\) # ((\inst|inst2|inst1|inst~0_combout\ & !\inst|inst|inst1|inst~0_combout\)))) # (!\inst|inst1|inst1|inst~combout\ & (\inst|inst2|inst1|inst~0_combout\ & 
+-- (\inst|inst|inst1|inst~0_combout\)))
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1110110001100000",
+	lut_mask => "1110101001001000",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \inst|inst|inst1|inst~0_combout\,
-	datab => \inst|inst1|inst1|inst~combout\,
-	datac => \inst|inst2|inst1|inst~0_combout\,
+	dataa => \inst|inst1|inst1|inst~combout\,
+	datab => \inst|inst2|inst1|inst~0_combout\,
+	datac => \inst|inst|inst1|inst~0_combout\,
 	datad => \inst|inst3|inst1|inst~combout\,
 	combout => \inst6|82~0_combout\);
 
--- Location: LCCOMB_X66_Y53_N20
+-- Location: LCCOMB_X69_Y53_N12
 \inst6|83\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst6|83~combout\ = (\inst|inst2|inst1|inst~0_combout\ & (((\inst|inst3|inst1|inst~combout\)))) # (!\inst|inst2|inst1|inst~0_combout\ & (!\inst|inst|inst1|inst~0_combout\ & (\inst|inst1|inst1|inst~combout\)))
+-- \inst6|83~combout\ = (\inst|inst2|inst1|inst~0_combout\ & (((\inst|inst3|inst1|inst~combout\)))) # (!\inst|inst2|inst1|inst~0_combout\ & (\inst|inst1|inst1|inst~combout\ & (!\inst|inst|inst1|inst~0_combout\)))
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1111010000000100",
+	lut_mask => "1100111000000010",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \inst|inst|inst1|inst~0_combout\,
-	datab => \inst|inst1|inst1|inst~combout\,
-	datac => \inst|inst2|inst1|inst~0_combout\,
+	dataa => \inst|inst1|inst1|inst~combout\,
+	datab => \inst|inst2|inst1|inst~0_combout\,
+	datac => \inst|inst|inst1|inst~0_combout\,
 	datad => \inst|inst3|inst1|inst~combout\,
 	combout => \inst6|83~combout\);
 
--- Location: LCCOMB_X66_Y53_N6
+-- Location: LCCOMB_X69_Y53_N14
 \inst6|84~0\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst6|84~0_combout\ = (\inst|inst|inst1|inst~0_combout\ & (\inst|inst1|inst1|inst~combout\ $ (!\inst|inst2|inst1|inst~0_combout\))) # (!\inst|inst|inst1|inst~0_combout\ & (!\inst|inst1|inst1|inst~combout\ & \inst|inst2|inst1|inst~0_combout\))
+-- \inst6|84~0_combout\ = (\inst|inst1|inst1|inst~combout\ & (\inst|inst2|inst1|inst~0_combout\ & \inst|inst|inst1|inst~0_combout\)) # (!\inst|inst1|inst1|inst~combout\ & (\inst|inst2|inst1|inst~0_combout\ $ (\inst|inst|inst1|inst~0_combout\)))
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1001001010010010",
+	lut_mask => "1001010010010100",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \inst|inst|inst1|inst~0_combout\,
-	datab => \inst|inst1|inst1|inst~combout\,
-	datac => \inst|inst2|inst1|inst~0_combout\,
+	dataa => \inst|inst1|inst1|inst~combout\,
+	datab => \inst|inst2|inst1|inst~0_combout\,
+	datac => \inst|inst|inst1|inst~0_combout\,
 	combout => \inst6|84~0_combout\);
 
--- Location: LCCOMB_X66_Y53_N16
+-- Location: LCCOMB_X69_Y53_N8
 \inst6|85\ : fiftyfivenm_lcell_comb
 -- Equation(s):
 -- \inst6|85~combout\ = (\inst|inst|inst1|inst~0_combout\) # ((!\inst|inst1|inst1|inst~combout\ & \inst|inst2|inst1|inst~0_combout\))
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1011101010111010",
+	lut_mask => "1111010011110100",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \inst|inst|inst1|inst~0_combout\,
-	datab => \inst|inst1|inst1|inst~combout\,
-	datac => \inst|inst2|inst1|inst~0_combout\,
+	dataa => \inst|inst1|inst1|inst~combout\,
+	datab => \inst|inst2|inst1|inst~0_combout\,
+	datac => \inst|inst|inst1|inst~0_combout\,
 	combout => \inst6|85~combout\);
 
--- Location: LCCOMB_X66_Y53_N26
+-- Location: LCCOMB_X69_Y53_N2
 \inst6|86~0\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst6|86~0_combout\ = (\inst|inst|inst1|inst~0_combout\ & ((\inst|inst1|inst1|inst~combout\) # ((!\inst|inst2|inst1|inst~0_combout\ & !\inst|inst3|inst1|inst~combout\)))) # (!\inst|inst|inst1|inst~0_combout\ & (\inst|inst1|inst1|inst~combout\ & 
--- (!\inst|inst2|inst1|inst~0_combout\)))
+-- \inst6|86~0_combout\ = (\inst|inst1|inst1|inst~combout\ & (((\inst|inst|inst1|inst~0_combout\)) # (!\inst|inst2|inst1|inst~0_combout\))) # (!\inst|inst1|inst1|inst~combout\ & (!\inst|inst2|inst1|inst~0_combout\ & (\inst|inst|inst1|inst~0_combout\ & 
+-- !\inst|inst3|inst1|inst~combout\)))
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1000110010001110",
+	lut_mask => "1010001010110010",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \inst|inst|inst1|inst~0_combout\,
-	datab => \inst|inst1|inst1|inst~combout\,
-	datac => \inst|inst2|inst1|inst~0_combout\,
+	dataa => \inst|inst1|inst1|inst~combout\,
+	datab => \inst|inst2|inst1|inst~0_combout\,
+	datac => \inst|inst|inst1|inst~0_combout\,
 	datad => \inst|inst3|inst1|inst~combout\,
 	combout => \inst6|86~0_combout\);
 
--- Location: LCCOMB_X66_Y53_N12
+-- Location: LCCOMB_X69_Y53_N28
 \inst6|87\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \inst6|87~combout\ = (\inst|inst1|inst1|inst~combout\ & (\inst|inst|inst1|inst~0_combout\ & (\inst|inst2|inst1|inst~0_combout\))) # (!\inst|inst1|inst1|inst~combout\ & (((!\inst|inst2|inst1|inst~0_combout\ & !\inst|inst3|inst1|inst~combout\))))
+-- \inst6|87~combout\ = (\inst|inst1|inst1|inst~combout\ & (\inst|inst2|inst1|inst~0_combout\ & (\inst|inst|inst1|inst~0_combout\))) # (!\inst|inst1|inst1|inst~combout\ & (!\inst|inst2|inst1|inst~0_combout\ & ((!\inst|inst3|inst1|inst~combout\))))
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1000000010000011",
+	lut_mask => "1000000010010001",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	dataa => \inst|inst|inst1|inst~0_combout\,
-	datab => \inst|inst1|inst1|inst~combout\,
-	datac => \inst|inst2|inst1|inst~0_combout\,
+	dataa => \inst|inst1|inst1|inst~combout\,
+	datab => \inst|inst2|inst1|inst~0_combout\,
+	datac => \inst|inst|inst1|inst~0_combout\,
 	datad => \inst|inst3|inst1|inst~combout\,
 	combout => \inst6|87~combout\);
 

@@ -25,7 +25,7 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: the sole purpose of programming logic devices manufactured by
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details.
-    Info: Processing started: Sat Mar 06 20:12:40 2021
+    Info: Processing started: Mon Mar 08 10:56:44 2021
 Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off M_PasoAPaso -c M_PasoAPaso --vector_source=D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_2/WaveformMPP.vwf --testbench_file=D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_2/simulation/qsim/WaveformMPP.vwf.vht
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 
@@ -51,13 +51,13 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: the sole purpose of programming logic devices manufactured by
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details.
-    Info: Processing started: Sat Mar 06 20:12:41 2021
+    Info: Processing started: Mon Mar 08 10:56:45 2021
 Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_2/simulation/qsim/ M_PasoAPaso -c M_PasoAPaso
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (204019): Generated file M_PasoAPaso.vho in folder "D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_2/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4634 megabytes
-    Info: Processing ended: Sat Mar 06 20:12:42 2021
+    Info: Peak virtual memory: 4632 megabytes
+    Info: Processing ended: Mon Mar 08 10:56:46 2021
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
@@ -79,10 +79,13 @@ Reading D:/Programas/intelFPGA_lite/Quartus_II_18.1/modelsim_ase/tcl/vsim/pref.t
 
 
 # do M_PasoAPaso.do
+
 # ** Warning: (vlib-34) Library already exists at "work".
+
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:12:43 on Mar 06,2021
+# Start time: 10:56:49 on Mar 08,2021
 # vcom -work work M_PasoAPaso.vho 
+
 # -- Loading package STANDARD
 
 # -- Loading package TEXTIO
@@ -93,26 +96,28 @@ Reading D:/Programas/intelFPGA_lite/Quartus_II_18.1/modelsim_ase/tcl/vsim/pref.t
 # -- Loading package fiftyfivenm_components
 # -- Compiling entity hard_block
 # -- Compiling architecture structure of hard_block
+
 # -- Loading package dffeas_pack
 # -- Loading package altera_primitives_components
 # -- Compiling entity M_PasoAPaso
 # -- Compiling architecture structure of M_PasoAPaso
-# End time: 20:12:43 on Mar 06,2021, Elapsed time: 0:00:00
+
+# End time: 10:56:50 on Mar 08,2021, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:12:43 on Mar 06,2021
+# Start time: 10:56:50 on Mar 08,2021
 # vcom -work work WaveformMPP.vwf.vht 
 # -- Loading package STANDARD
-
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity M_PasoAPaso_vhd_vec_tst
 # -- Compiling architecture M_PasoAPaso_arch of M_PasoAPaso_vhd_vec_tst
-# End time: 20:12:43 on Mar 06,2021, Elapsed time: 0:00:00
+
+# End time: 10:56:50 on Mar 08,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 
 # vsim -novopt -c -t 1ps -L fiftyfivenm -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.M_PasoAPaso_vhd_vec_tst 
-# Start time: 20:12:43 on Mar 06,2021
+# Start time: 10:56:52 on Mar 08,2021
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -135,21 +140,22 @@ Reading D:/Programas/intelFPGA_lite/Quartus_II_18.1/modelsim_ase/tcl/vsim/pref.t
 # Loading fiftyfivenm.fiftyfivenm_adcblock(behavior)
 # ** Warning: Design size of 14879 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
 # Expect performance to be adversely affected.
+
 # after#35
 
-# Simulation time: 8400000 ps
+# Simulation time: 7885000 ps
 
-# Simulation time: 8400000 ps
+# Simulation time: 7885000 ps
 
-# Simulation time: 8400000 ps
+# Simulation time: 7885000 ps
 
-# Simulation time: 8400000 ps
+# Simulation time: 7885000 ps
 
-# Simulation time: 8400000 ps
+# Simulation time: 7885000 ps
 
-# Simulation time: 8400000 ps
+# Simulation time: 7885000 ps
 
-# End time: 20:13:00 on Mar 06,2021, Elapsed time: 0:00:17
+# End time: 10:57:09 on Mar 08,2021, Elapsed time: 0:00:17
 # Errors: 0, Warnings: 1
 
 Completed successfully. 
@@ -162,7 +168,7 @@ Reading D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_2/simulation/qsim/M_Pas
 
 Processing channel transitions... 
 
-Writing the resulting VWF to D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_2/simulation/qsim/M_PasoAPaso_20210306201300.sim.vwf
+Writing the resulting VWF to D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_2/simulation/qsim/M_PasoAPaso_20210308105710.sim.vwf
 
 Finished VCD to VWF conversion.
 

@@ -1,7 +1,7 @@
 # do AntiRebotes.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:08:35 on Feb 28,2021
+# Start time: 11:37:23 on Mar 09,2021
 # vcom -work work AntiRebotes.vho 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -16,20 +16,20 @@
 # -- Loading package altera_primitives_components
 # -- Compiling entity AntiRebotes
 # -- Compiling architecture structure of AntiRebotes
-# End time: 19:08:35 on Feb 28,2021, Elapsed time: 0:00:00
+# End time: 11:37:23 on Mar 09,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:08:35 on Feb 28,2021
+# Start time: 11:37:23 on Mar 09,2021
 # vcom -work work WaveformT3.vwf.vht 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity AntiRebotes_vhd_vec_tst
 # -- Compiling architecture AntiRebotes_arch of AntiRebotes_vhd_vec_tst
-# End time: 19:08:36 on Feb 28,2021, Elapsed time: 0:00:01
+# End time: 11:37:23 on Mar 09,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vsim -novopt -c -t 1ps -L fiftyfivenm -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.AntiRebotes_vhd_vec_tst 
-# Start time: 19:08:36 on Feb 28,2021
+# Start time: 11:37:23 on Mar 09,2021
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -42,14 +42,14 @@
 # Loading fiftyfivenm.fiftyfivenm_components
 # Loading work.antirebotes(structure)
 # Loading work.hard_block(structure)
-# Loading fiftyfivenm.fiftyfivenm_lcell_comb(vital_lcell_comb)
 # Loading fiftyfivenm.fiftyfivenm_io_obuf(behavior)
 # Loading fiftyfivenm.fiftyfivenm_io_ibuf(behavior)
 # Loading fiftyfivenm.fiftyfivenm_clkctrl(vital_clkctrl)
 # Loading fiftyfivenm.fiftyfivenm_ena_reg(behave)
+# Loading fiftyfivenm.fiftyfivenm_lcell_comb(vital_lcell_comb)
 # Loading altera.dffeas(vital_dffeas)
 # Loading fiftyfivenm.fiftyfivenm_unvm(behavior)
 # Loading fiftyfivenm.fiftyfivenm_adcblock(behavior)
 # after#35
-# End time: 19:08:36 on Feb 28,2021, Elapsed time: 0:00:00
+# End time: 11:37:24 on Mar 09,2021, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0

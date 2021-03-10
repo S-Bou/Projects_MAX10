@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dD:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_3/simulation/qsim
 Eantirebotes
-Z1 w1614535715
+Z1 w1615286242
 Z2 DPx11 fiftyfivenm 21 fiftyfivenm_atom_pack 0 22 7d5Xo;QBOkc31OfQTzSXV0
 Z3 DPx11 fiftyfivenm 22 fiftyfivenm_components 0 22 IfY7Mh2WPBc;@7U@3<I^[0
 Z4 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
@@ -23,13 +23,13 @@ Z10 8AntiRebotes.vho
 Z11 FAntiRebotes.vho
 l0
 L90
-V3mUQhfT<4KT_WZP2cA:?I0
-!s100 aIPi_PeiAcM?H85fFm^aR0
+V8TA5Fe<>IO2FPTXe6IJPm3
+!s100 g2Z`LV>VN:AG@BWD0CgoG0
 Z12 OV;C;10.5b;63
 32
-Z13 !s110 1614535715
+Z13 !s110 1615286243
 !i10b 1
-Z14 !s108 1614535715.000000
+Z14 !s108 1615286243.000000
 Z15 !s90 -work|work|AntiRebotes.vho|
 Z16 !s107 AntiRebotes.vho|
 !i113 1
@@ -44,11 +44,11 @@ R6
 R7
 R8
 R9
-DEx4 work 11 antirebotes 0 22 3mUQhfT<4KT_WZP2cA:?I0
-l173
-L114
-V954bADzn23hCgGPNNP@kB0
-!s100 _N;f=4YoP4HWD3l;XEnbO2
+DEx4 work 11 antirebotes 0 22 8TA5Fe<>IO2FPTXe6IJPm3
+l226
+L124
+V`jT<0WS3^KNB3]K2BlEBi0
+!s100 BL]_gAYI1OB4:eBD[a;G@0
 R12
 32
 R13
@@ -60,7 +60,7 @@ R16
 R17
 R18
 Eantirebotes_vhd_vec_tst
-Z19 w1614535714
+Z19 w1615286241
 R7
 R8
 R0
@@ -86,8 +86,8 @@ R8
 Z24 DEx4 work 23 antirebotes_vhd_vec_tst 0 22 380fL4Zo6YGk_^k7;O`L;0
 l56
 L33
-VXPKRd0?ceNk^VReSMCTIP2
-!s100 i5`3bhR0iTO_lk;_]i8a60
+Z25 VgCBF>AbTBDfNkDEHhia1z3
+Z26 !s100 2]E=PC5;_HV]G5WcXgdgP2
 R12
 32
 R13

@@ -7,7 +7,7 @@
 vlib work
 vcom -work work Practica_1_B.vho
 vcom -work work Waveform_1.vwf.vht
-vsim -c -t 1ps -L fiftyfivenm -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.Practica_1_B_vhd_vec_tst
+vsim -novopt -c -t 1ps -L fiftyfivenm -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.Practica_1_B_vhd_vec_tst
 vcd file -direction Practica_1_B.msim.vcd
 vcd add -internal Practica_1_B_vhd_vec_tst/*
 vcd add -internal Practica_1_B_vhd_vec_tst/i1/*
@@ -27,7 +27,7 @@ quit -f
 vlib work
 vcom -work work Practica_1_B.vho
 vcom -work work Waveform_1.vwf.vht
-vsim -c -t 1ps -sdfmax Practica_1_B_vhd_vec_tst/i1=Practica_1_B_vhd.sdo -L fiftyfivenm -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.Practica_1_B_vhd_vec_tst
+vsim -novopt -c -t 1ps -sdfmax Practica_1_B_vhd_vec_tst/i1=Practica_1_B_vhd.sdo -L fiftyfivenm -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.Practica_1_B_vhd_vec_tst
 vcd file -direction Practica_1_B.msim.vcd
 vcd add -internal Practica_1_B_vhd_vec_tst/*
 vcd add -internal Practica_1_B_vhd_vec_tst/i1/*
@@ -52,9 +52,9 @@ the Block Editor! File corruption is VERY likely to occur.
 */
 
 /*
-Copyright (C) 2020  Intel Corporation. All rights reserved.
+Copyright (C) 2018  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
-and other software and tools, and any partner logic 
+and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
@@ -64,8 +64,7 @@ the Intel FPGA IP License Agreement, or other applicable license
 agreement, including, without limitation, that your use is for
 the sole purpose of programming logic devices manufactured by
 Intel and sold by Intel or its authorized distributors.  Please
-refer to the applicable agreement for further details, at
-https://fpgasoftware.intel.com/eula.
+refer to the applicable agreement for further details.
 */
 
 HEADER
@@ -78,46 +77,6 @@ HEADER
 	GRID_PHASE = 0.0;
 	GRID_PERIOD = 10.0;
 	GRID_DUTY_CYCLE = 50;
-}
-
-SIGNAL("a")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "";
-}
-
-SIGNAL("b")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "";
-}
-
-SIGNAL("c")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "";
-}
-
-SIGNAL("d")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "";
 }
 
 SIGNAL("D0")
@@ -200,7 +159,17 @@ SIGNAL("D7")
 	PARENT = "";
 }
 
-SIGNAL("e")
+GROUP("NUM_A")
+{
+	MEMBERS = "D0", "D1", "D2", "D3";
+}
+
+GROUP("NUM_B")
+{
+	MEMBERS = "D4", "D5", "D6", "D7";
+}
+
+SIGNAL("g")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -220,7 +189,7 @@ SIGNAL("f")
 	PARENT = "";
 }
 
-SIGNAL("g")
+SIGNAL("e")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -230,55 +199,49 @@ SIGNAL("g")
 	PARENT = "";
 }
 
-GROUP("Outputs")
+SIGNAL("d")
 {
-	MEMBERS = "a", "b", "c", "d", "e", "f", "g";
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "";
 }
 
-GROUP("NUM_A")
+SIGNAL("c")
 {
-	MEMBERS = "D0", "D1", "D2", "D3";
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "";
 }
 
-GROUP("NUM_B")
+SIGNAL("b")
 {
-	MEMBERS = "D4", "D5", "D6", "D7";
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "";
 }
 
-TRANSITION_LIST("a")
+SIGNAL("a")
 {
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 1000.0;
-	}
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "";
 }
 
-TRANSITION_LIST("b")
+GROUP("Out")
 {
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("c")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("d")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 1000.0;
-	}
+	MEMBERS = "g", "f", "e", "d", "c", "b", "a";
 }
 
 TRANSITION_LIST("D0")
@@ -286,9 +249,8 @@ TRANSITION_LIST("D0")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 60.0;
-		LEVEL 0 FOR 930.0;
+		LEVEL 1 FOR 190.0;
+		LEVEL 0 FOR 810.0;
 	}
 }
 
@@ -297,7 +259,9 @@ TRANSITION_LIST("D1")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 0 FOR 90.0;
+		LEVEL 1 FOR 100.0;
+		LEVEL 0 FOR 810.0;
 	}
 }
 
@@ -306,7 +270,8 @@ TRANSITION_LIST("D2")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 1 FOR 60.0;
+		LEVEL 0 FOR 940.0;
 	}
 }
 
@@ -315,7 +280,9 @@ TRANSITION_LIST("D3")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 0 FOR 190.0;
+		LEVEL 1 FOR 160.0;
+		LEVEL 0 FOR 650.0;
 	}
 }
 
@@ -324,7 +291,9 @@ TRANSITION_LIST("D4")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 0 FOR 90.0;
+		LEVEL 1 FOR 100.0;
+		LEVEL 0 FOR 810.0;
 	}
 }
 
@@ -333,8 +302,11 @@ TRANSITION_LIST("D5")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 70.0;
-		LEVEL 0 FOR 930.0;
+		LEVEL 0 FOR 60.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 100.0;
+		LEVEL 1 FOR 160.0;
+		LEVEL 0 FOR 650.0;
 	}
 }
 
@@ -343,7 +315,8 @@ TRANSITION_LIST("D6")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 1 FOR 60.0;
+		LEVEL 0 FOR 940.0;
 	}
 }
 
@@ -352,11 +325,13 @@ TRANSITION_LIST("D7")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 0 FOR 190.0;
+		LEVEL 1 FOR 160.0;
+		LEVEL 0 FOR 650.0;
 	}
 }
 
-TRANSITION_LIST("e")
+TRANSITION_LIST("g")
 {
 	NODE
 	{
@@ -374,7 +349,43 @@ TRANSITION_LIST("f")
 	}
 }
 
-TRANSITION_LIST("g")
+TRANSITION_LIST("e")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("d")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("c")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("b")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("a")
 {
 	NODE
 	{
@@ -385,17 +396,17 @@ TRANSITION_LIST("g")
 
 DISPLAY_LINE
 {
-	CHANNEL = "Outputs";
-	EXPAND_STATUS = EXPANDED;
+	CHANNEL = "NUM_A";
+	EXPAND_STATUS = COLLAPSED;
 	RADIX = Unsigned;
 	TREE_INDEX = 0;
 	TREE_LEVEL = 0;
-	CHILDREN = 1, 2, 3, 4, 5, 6, 7;
+	CHILDREN = 1, 2, 3, 4;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "a";
+	CHANNEL = "D3";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Unsigned;
 	TREE_INDEX = 1;
@@ -405,7 +416,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "b";
+	CHANNEL = "D2";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Unsigned;
 	TREE_INDEX = 2;
@@ -415,7 +426,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "c";
+	CHANNEL = "D1";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Unsigned;
 	TREE_INDEX = 3;
@@ -425,7 +436,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "d";
+	CHANNEL = "D0";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Unsigned;
 	TREE_INDEX = 4;
@@ -435,92 +446,12 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "e";
+	CHANNEL = "NUM_B";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Unsigned;
 	TREE_INDEX = 5;
-	TREE_LEVEL = 1;
-	PARENT = 0;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "f";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 6;
-	TREE_LEVEL = 1;
-	PARENT = 0;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "g";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 7;
-	TREE_LEVEL = 1;
-	PARENT = 0;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "NUM_A";
-	EXPAND_STATUS = EXPANDED;
-	RADIX = Unsigned;
-	TREE_INDEX = 8;
 	TREE_LEVEL = 0;
-	CHILDREN = 9, 10, 11, 12;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "D3";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 9;
-	TREE_LEVEL = 1;
-	PARENT = 8;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "D2";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 10;
-	TREE_LEVEL = 1;
-	PARENT = 8;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "D1";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 11;
-	TREE_LEVEL = 1;
-	PARENT = 8;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "D0";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 12;
-	TREE_LEVEL = 1;
-	PARENT = 8;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "NUM_B";
-	EXPAND_STATUS = EXPANDED;
-	RADIX = Unsigned;
-	TREE_INDEX = 13;
-	TREE_LEVEL = 0;
-	CHILDREN = 14, 15, 16, 17;
+	CHILDREN = 6, 7, 8, 9;
 }
 
 DISPLAY_LINE
@@ -528,9 +459,9 @@ DISPLAY_LINE
 	CHANNEL = "D7";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Unsigned;
-	TREE_INDEX = 14;
+	TREE_INDEX = 6;
 	TREE_LEVEL = 1;
-	PARENT = 13;
+	PARENT = 5;
 }
 
 DISPLAY_LINE
@@ -538,9 +469,9 @@ DISPLAY_LINE
 	CHANNEL = "D6";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Unsigned;
-	TREE_INDEX = 15;
+	TREE_INDEX = 7;
 	TREE_LEVEL = 1;
-	PARENT = 13;
+	PARENT = 5;
 }
 
 DISPLAY_LINE
@@ -548,9 +479,9 @@ DISPLAY_LINE
 	CHANNEL = "D5";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Unsigned;
-	TREE_INDEX = 16;
+	TREE_INDEX = 8;
 	TREE_LEVEL = 1;
-	PARENT = 13;
+	PARENT = 5;
 }
 
 DISPLAY_LINE
@@ -558,9 +489,89 @@ DISPLAY_LINE
 	CHANNEL = "D4";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Unsigned;
+	TREE_INDEX = 9;
+	TREE_LEVEL = 1;
+	PARENT = 5;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Out";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Unsigned;
+	TREE_INDEX = 10;
+	TREE_LEVEL = 0;
+	CHILDREN = 11, 12, 13, 14, 15, 16, 17;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "g";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Unsigned;
+	TREE_INDEX = 11;
+	TREE_LEVEL = 1;
+	PARENT = 10;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "f";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Unsigned;
+	TREE_INDEX = 12;
+	TREE_LEVEL = 1;
+	PARENT = 10;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "e";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Unsigned;
+	TREE_INDEX = 13;
+	TREE_LEVEL = 1;
+	PARENT = 10;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "d";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Unsigned;
+	TREE_INDEX = 14;
+	TREE_LEVEL = 1;
+	PARENT = 10;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "c";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Unsigned;
+	TREE_INDEX = 15;
+	TREE_LEVEL = 1;
+	PARENT = 10;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "b";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Unsigned;
+	TREE_INDEX = 16;
+	TREE_LEVEL = 1;
+	PARENT = 10;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "a";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Unsigned;
 	TREE_INDEX = 17;
 	TREE_LEVEL = 1;
-	PARENT = 13;
+	PARENT = 10;
 }
 
 TIME_BAR

@@ -10,7 +10,7 @@ z2
 cModel Technology
 Z0 dD:/Programas/intelFPGA_lite/Projects_MAX10/Practica_2/simulation/qsim
 Ehard_block
-Z1 w1613763467
+Z1 w1615205712
 Z2 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
 Z3 DPx11 fiftyfivenm 21 fiftyfivenm_atom_pack 0 22 7d5Xo;QBOkc31OfQTzSXV0
 Z4 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
@@ -26,9 +26,9 @@ V8_BbEmGd;OHS6h@;gFc7W3
 !s100 ROH=D<N4CT6aCZ<37A[_?0
 Z10 OV;C;10.5b;63
 32
-Z11 !s110 1613763468
+Z11 !s110 1615205713
 !i10b 1
-Z12 !s108 1613763468.000000
+Z12 !s108 1615205713.000000
 Z13 !s90 -work|work|Practica_2.vho|
 Z14 !s107 Practica_2.vho|
 !i113 1
@@ -108,7 +108,7 @@ R14
 R15
 R16
 Epractica_2_vhd_vec_tst
-Z19 w1613763466
+Z19 w1615205711
 R5
 R6
 R0

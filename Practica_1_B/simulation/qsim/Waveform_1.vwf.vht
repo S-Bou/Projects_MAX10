@@ -1,6 +1,6 @@
--- Copyright (C) 2020  Intel Corporation. All rights reserved.
+-- Copyright (C) 2018  Intel Corporation. All rights reserved.
 -- Your use of Intel Corporation's design tools, logic functions 
--- and other software and tools, and any partner logic 
+-- and other software and tools, and its AMPP partner logic 
 -- functions, and any output files from any of the foregoing 
 -- (including device programming or simulation files), and any 
 -- associated documentation or information are expressly subject 
@@ -10,8 +10,7 @@
 -- agreement, including, without limitation, that your use is for
 -- the sole purpose of programming logic devices manufactured by
 -- Intel and sold by Intel or its authorized distributors.  Please
--- refer to the applicable agreement for further details, at
--- https://fpgasoftware.intel.com/eula.
+-- refer to the applicable agreement for further details.
 
 -- *****************************************************************************
 -- This file contains a Vhdl test bench with test vectors .The test vectors     
@@ -19,7 +18,7 @@
 -- the top level entity of the current Quartus project .The user can use this   
 -- testbench to simulate his design using a third-party simulation tool .       
 -- *****************************************************************************
--- Generated on "02/15/2021 08:18:25"
+-- Generated on "03/07/2021 10:06:45"
                                                              
 -- Vhdl Test Bench(with test vectors) for design  :          Practica_1_B
 -- 
@@ -93,12 +92,18 @@ BEGIN
 t_prcs_D3: PROCESS
 BEGIN
 	D3 <= '0';
+	WAIT FOR 190000 ps;
+	D3 <= '1';
+	WAIT FOR 160000 ps;
+	D3 <= '0';
 WAIT;
 END PROCESS t_prcs_D3;
 
 -- D2
 t_prcs_D2: PROCESS
 BEGIN
+	D2 <= '1';
+	WAIT FOR 60000 ps;
 	D2 <= '0';
 WAIT;
 END PROCESS t_prcs_D2;
@@ -107,16 +112,18 @@ END PROCESS t_prcs_D2;
 t_prcs_D1: PROCESS
 BEGIN
 	D1 <= '0';
+	WAIT FOR 90000 ps;
+	D1 <= '1';
+	WAIT FOR 100000 ps;
+	D1 <= '0';
 WAIT;
 END PROCESS t_prcs_D1;
 
 -- D0
 t_prcs_D0: PROCESS
 BEGIN
-	D0 <= '0';
-	WAIT FOR 10000 ps;
 	D0 <= '1';
-	WAIT FOR 60000 ps;
+	WAIT FOR 190000 ps;
 	D0 <= '0';
 WAIT;
 END PROCESS t_prcs_D0;
@@ -125,12 +132,18 @@ END PROCESS t_prcs_D0;
 t_prcs_D7: PROCESS
 BEGIN
 	D7 <= '0';
+	WAIT FOR 190000 ps;
+	D7 <= '1';
+	WAIT FOR 160000 ps;
+	D7 <= '0';
 WAIT;
 END PROCESS t_prcs_D7;
 
 -- D6
 t_prcs_D6: PROCESS
 BEGIN
+	D6 <= '1';
+	WAIT FOR 60000 ps;
 	D6 <= '0';
 WAIT;
 END PROCESS t_prcs_D6;
@@ -138,8 +151,14 @@ END PROCESS t_prcs_D6;
 -- D5
 t_prcs_D5: PROCESS
 BEGIN
+	D5 <= '0';
+	WAIT FOR 60000 ps;
 	D5 <= '1';
-	WAIT FOR 70000 ps;
+	WAIT FOR 30000 ps;
+	D5 <= '0';
+	WAIT FOR 100000 ps;
+	D5 <= '1';
+	WAIT FOR 160000 ps;
 	D5 <= '0';
 WAIT;
 END PROCESS t_prcs_D5;
@@ -147,6 +166,10 @@ END PROCESS t_prcs_D5;
 -- D4
 t_prcs_D4: PROCESS
 BEGIN
+	D4 <= '0';
+	WAIT FOR 90000 ps;
+	D4 <= '1';
+	WAIT FOR 100000 ps;
 	D4 <= '0';
 WAIT;
 END PROCESS t_prcs_D4;

@@ -1,6 +1,6 @@
 Determining the location of the ModelSim executable...
 
-Using: d:/programas/intelfpga_lite/20.1/modelsim_ase/win32aloem/
+Using: d:/programas/intelfpga_lite/quartus_ii_18.1/modelsim_ase/win32aloem/
 
 To specify a ModelSim executable directory, select: Tools -> Options -> EDA Tool Options
 Note: if both ModelSim-Altera and ModelSim executables are available, ModelSim-Altera will be used.
@@ -11,10 +11,10 @@ quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_setting
 
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
-    Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Copyright (C) 2020  Intel Corporation. All rights reserved.
+    Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+    Info: Copyright (C) 2018  Intel Corporation. All rights reserved.
     Info: Your use of Intel Corporation's design tools, logic functions 
-    Info: and other software and tools, and any partner logic 
+    Info: and other software and tools, and its AMPP partner logic 
     Info: functions, and any output files from any of the foregoing 
     Info: (including device programming or simulation files), and any 
     Info: associated documentation or information are expressly subject 
@@ -24,9 +24,8 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: agreement, including, without limitation, that your use is for
     Info: the sole purpose of programming logic devices manufactured by
     Info: Intel and sold by Intel or its authorized distributors.  Please
-    Info: refer to the applicable agreement for further details, at
-    Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Thu Feb 11 12:07:52 2021
+    Info: refer to the applicable agreement for further details.
+    Info: Processing started: Sun Mar 07 10:33:24 2021
 Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off Practica_1 -c Practica_1 --vector_source=D:/Programas/intelFPGA_lite/Projects_MAX10/Practica_1/Cronograma_P1.vwf --testbench_file=D:/Programas/intelFPGA_lite/Projects_MAX10/Practica_1/simulation/qsim/Cronograma_P1.vwf.vt
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 
@@ -34,16 +33,16 @@ Completed successfully.
 
 Completed successfully. 
 
-**** Generating the timing simulation netlist ****
+**** Generating the functional simulation netlist ****
 
-quartus_eda --write_settings_files=off --simulation --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=verilog --output_directory="D:/Programas/intelFPGA_lite/Projects_MAX10/Practica_1/simulation/qsim/" Practica_1 -c Practica_1
+quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="D:/Programas/intelFPGA_lite/Projects_MAX10/Practica_1/simulation/qsim/" Practica_1 -c Practica_1
 
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
-    Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Copyright (C) 2020  Intel Corporation. All rights reserved.
+    Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+    Info: Copyright (C) 2018  Intel Corporation. All rights reserved.
     Info: Your use of Intel Corporation's design tools, logic functions 
-    Info: and other software and tools, and any partner logic 
+    Info: and other software and tools, and its AMPP partner logic 
     Info: functions, and any output files from any of the foregoing 
     Info: (including device programming or simulation files), and any 
     Info: associated documentation or information are expressly subject 
@@ -53,16 +52,14 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: agreement, including, without limitation, that your use is for
     Info: the sole purpose of programming logic devices manufactured by
     Info: Intel and sold by Intel or its authorized distributors.  Please
-    Info: refer to the applicable agreement for further details, at
-    Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Thu Feb 11 12:07:53 2021
-Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=verilog --output_directory=D:/Programas/intelFPGA_lite/Projects_MAX10/Practica_1/simulation/qsim/ Practica_1 -c Practica_1
+    Info: refer to the applicable agreement for further details.
+    Info: Processing started: Sun Mar 07 10:33:25 2021
+Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=D:/Programas/intelFPGA_lite/Projects_MAX10/Practica_1/simulation/qsim/ Practica_1 -c Practica_1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Warning (10905): Generated the EDA functional simulation netlist because it is the only supported netlist type for this device.
 Info (204019): Generated file Practica_1.vo in folder "D:/Programas/intelFPGA_lite/Projects_MAX10/Practica_1/simulation/qsim//" for EDA simulation tool
-Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 4647 megabytes
-    Info: Processing ended: Thu Feb 11 12:07:54 2021
+Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 4633 megabytes
+    Info: Processing ended: Sun Mar 07 10:33:26 2021
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
@@ -76,17 +73,17 @@ Completed successfully.
 
 **** Running the ModelSim simulation ****
 
-d:/programas/intelfpga_lite/20.1/modelsim_ase/win32aloem//vsim -c -do Practica_1.do
+d:/programas/intelfpga_lite/quartus_ii_18.1/modelsim_ase/win32aloem//vsim -c -do Practica_1.do
 
-Reading pref.tcl
+Reading D:/Programas/intelFPGA_lite/Quartus_II_18.1/modelsim_ase/tcl/vsim/pref.tcl
 
-# 2020.1
+# 10.5b
 
 # do Practica_1.do
 
 # ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 12:07:54 on Feb 11,2021
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 10:33:26 on Mar 07,2021
 # vlog -work work Practica_1.vo 
 # -- Compiling module Practica_1
 # -- Compiling module hard_block
@@ -94,20 +91,20 @@ Reading pref.tcl
 # Top level modules:
 # 	Practica_1
 
-# End time: 12:07:55 on Feb 11,2021, Elapsed time: 0:00:01
+# End time: 10:33:27 on Mar 07,2021, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 12:07:55 on Feb 11,2021
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 10:33:27 on Mar 07,2021
 # vlog -work work Cronograma_P1.vwf.vt 
 # -- Compiling module Practica_1_vlg_vec_tst
 # 
 # Top level modules:
 # 	Practica_1_vlg_vec_tst
-# End time: 12:07:55 on Feb 11,2021, Elapsed time: 0:00:00
+# End time: 10:33:27 on Mar 07,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 
-# vsim -c -t 1ps -L fiftyfivenm_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.Practica_1_vlg_vec_tst 
-# Start time: 12:07:55 on Feb 11,2021
+# vsim -novopt -c -t 1ps -L fiftyfivenm_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.Practica_1_vlg_vec_tst 
+# Start time: 10:33:27 on Mar 07,2021
 # Loading work.Practica_1_vlg_vec_tst
 # Loading work.Practica_1
 # Loading work.hard_block
@@ -116,16 +113,16 @@ Reading pref.tcl
 # Loading fiftyfivenm_ver.fiftyfivenm_io_ibuf
 # Loading fiftyfivenm_ver.fiftyfivenm_unvm
 # Loading fiftyfivenm_ver.fiftyfivenm_adcblock
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\~QUARTUS_CREATED_ADC1~ '.  Expected 8, found 7.
-#    Time: 0 ps  Iteration: 0  Instance: /Practica_1_vlg_vec_tst/i1/\~QUARTUS_CREATED_ADC1~  File: Practica_1.vo Line: 197
-# ** Warning: (vsim-3722) Practica_1.vo(197): [TFMPC] - Missing connection for port 'clk_dft'.
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\~QUARTUS_CREATED_ADC2~ '.  Expected 8, found 7.
-#    Time: 0 ps  Iteration: 0  Instance: /Practica_1_vlg_vec_tst/i1/\~QUARTUS_CREATED_ADC2~  File: Practica_1.vo Line: 220
-# ** Warning: (vsim-3722) Practica_1.vo(220): [TFMPC] - Missing connection for port 'clk_dft'.
+# ** Warning: (vsim-3017) Practica_1.vo(194): [TFMPC] - Too few port connections. Expected 8, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /Practica_1_vlg_vec_tst/i1/\~QUARTUS_CREATED_ADC1~  File: /build/swbuild/SJ/nightly/18.1std/625/l64/work/modelsim/eda/sim_lib/fiftyfivenm_atoms.v
+# ** Warning: (vsim-3722) Practica_1.vo(194): [TFMPC] - Missing connection for port 'clk_dft'.
+# ** Warning: (vsim-3017) Practica_1.vo(217): [TFMPC] - Too few port connections. Expected 8, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /Practica_1_vlg_vec_tst/i1/\~QUARTUS_CREATED_ADC2~  File: /build/swbuild/SJ/nightly/18.1std/625/l64/work/modelsim/eda/sim_lib/fiftyfivenm_atoms.v
+# ** Warning: (vsim-3722) Practica_1.vo(217): [TFMPC] - Missing connection for port 'clk_dft'.
 # after#26
-# ** Note: $finish    : Cronograma_P1.vwf.vt(49)
+# ** Note: $finish    : Cronograma_P1.vwf.vt(48)
 #    Time: 400 ns  Iteration: 0  Instance: /Practica_1_vlg_vec_tst
-# End time: 12:07:55 on Feb 11,2021, Elapsed time: 0:00:00
+# End time: 10:33:27 on Mar 07,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 4
 
 Completed successfully. 
@@ -138,7 +135,7 @@ Reading D:/Programas/intelFPGA_lite/Projects_MAX10/Practica_1/simulation/qsim/Pr
 
 Processing channel transitions... 
 
-Writing the resulting VWF to D:/Programas/intelFPGA_lite/Projects_MAX10/Practica_1/simulation/qsim/Practica_1_20210211120755.sim.vwf
+Writing the resulting VWF to D:/Programas/intelFPGA_lite/Projects_MAX10/Practica_1/simulation/qsim/Practica_1_20210307103327.sim.vwf
 
 Finished VCD to VWF conversion.
 

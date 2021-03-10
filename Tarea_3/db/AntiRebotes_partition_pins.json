@@ -4,23 +4,63 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "L9",
+					"name" : "OUT_Sin",
 					"strict" : false
 				},
 				{
-					"name" : "L8",
+					"name" : "TimeEnd",
 					"strict" : false
 				},
 				{
-					"name" : "L7",
+					"name" : "StartTIM",
 					"strict" : false
 				},
 				{
-					"name" : "L6",
+					"name" : "xDev_n",
 					"strict" : false
 				},
 				{
-					"name" : "OUT_SIN",
+					"name" : "q[0]",
+					"strict" : false
+				},
+				{
+					"name" : "q[1]",
+					"strict" : false
+				},
+				{
+					"name" : "q[2]",
+					"strict" : false
+				},
+				{
+					"name" : "q[3]",
+					"strict" : false
+				},
+				{
+					"name" : "q[4]",
+					"strict" : false
+				},
+				{
+					"name" : "q[5]",
+					"strict" : false
+				},
+				{
+					"name" : "q[6]",
+					"strict" : false
+				},
+				{
+					"name" : "q[7]",
+					"strict" : false
+				},
+				{
+					"name" : "q[8]",
+					"strict" : false
+				},
+				{
+					"name" : "q[9]",
+					"strict" : false
+				},
+				{
+					"name" : "q[10]",
 					"strict" : false
 				},
 				{

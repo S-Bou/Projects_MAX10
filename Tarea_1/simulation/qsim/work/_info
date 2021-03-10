@@ -10,7 +10,7 @@ z2
 cModel Technology
 Z0 dD:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_1/simulation/qsim
 Eadder_4b
-Z1 w1613819362
+Z1 w1615204674
 Z2 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
 Z3 DPx11 fiftyfivenm 21 fiftyfivenm_atom_pack 0 22 7d5Xo;QBOkc31OfQTzSXV0
 Z4 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
@@ -26,9 +26,9 @@ VV7N@_ZXmE^Z8GC_?jLW`<0
 !s100 [OkIY@[AR<8:N8hTbG][O1
 Z10 OV;C;10.5b;63
 32
-Z11 !s110 1613819363
+Z11 !s110 1615204677
 !i10b 1
-Z12 !s108 1613819363.000000
+Z12 !s108 1615204676.000000
 Z13 !s90 -work|work|Adder_4b.vho|
 Z14 !s107 Adder_4b.vho|
 !i113 1
@@ -44,8 +44,8 @@ R7
 DEx4 work 8 adder_4b 0 22 V7N@_ZXmE^Z8GC_?jLW`<0
 l273
 L157
-V`4U>B;m[NQXWZ1`9lHA_<0
-!s100 >nEgL`4Eh2aR1QFh6DNc>3
+VhzWSJ6jJ;Z0AT?F;hj2Fe1
+!s100 HEHn6QDS3P7H1bD?P:j_30
 R10
 32
 R11
@@ -57,7 +57,7 @@ R14
 R15
 R16
 Eadder_4b_vhd_vec_tst
-Z17 w1613819361
+Z17 w1615204673
 R5
 R6
 R0
@@ -71,27 +71,27 @@ R10
 32
 R11
 !i10b 1
-R12
-Z20 !s90 -work|work|Waveform_A4B.vwf.vht|
-Z21 !s107 Waveform_A4B.vwf.vht|
+Z20 !s108 1615204677.000000
+Z21 !s90 -work|work|Waveform_A4B.vwf.vht|
+Z22 !s107 Waveform_A4B.vwf.vht|
 !i113 1
 R15
 R16
 Aadder_4b_arch
 R5
 R6
-Z22 DEx4 work 20 adder_4b_vhd_vec_tst 0 22 2HOZ1VR`CVl;AZCJ<BL4k3
+Z23 DEx4 work 20 adder_4b_vhd_vec_tst 0 22 2HOZ1VR`CVl;AZCJ<BL4k3
 l92
 L33
-VkSePM86IJK>Eoa[WDS]mV2
-!s100 H:5z68m>fL5ANKQAbPlXN2
+Z24 VkSePM86IJK>Eoa[WDS]mV2
+Z25 !s100 H:5z68m>fL5ANKQAbPlXN2
 R10
 32
 R11
 !i10b 1
-R12
 R20
 R21
+R22
 !i113 1
 R15
 R16

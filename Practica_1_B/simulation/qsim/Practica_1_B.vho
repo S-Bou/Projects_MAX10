@@ -1,6 +1,6 @@
--- Copyright (C) 2020  Intel Corporation. All rights reserved.
+-- Copyright (C) 2018  Intel Corporation. All rights reserved.
 -- Your use of Intel Corporation's design tools, logic functions 
--- and other software and tools, and any partner logic 
+-- and other software and tools, and its AMPP partner logic 
 -- functions, and any output files from any of the foregoing 
 -- (including device programming or simulation files), and any 
 -- associated documentation or information are expressly subject 
@@ -10,14 +10,13 @@
 -- agreement, including, without limitation, that your use is for
 -- the sole purpose of programming logic devices manufactured by
 -- Intel and sold by Intel or its authorized distributors.  Please
--- refer to the applicable agreement for further details, at
--- https://fpgasoftware.intel.com/eula.
+-- refer to the applicable agreement for further details.
 
 -- VENDOR "Altera"
 -- PROGRAM "Quartus Prime"
--- VERSION "Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition"
+-- VERSION "Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition"
 
--- DATE "02/15/2021 08:18:26"
+-- DATE "03/07/2021 10:06:46"
 
 -- 
 -- Device: Altera 10M50DAF484C6GES Package FBGA484
@@ -652,9 +651,7 @@ PORT MAP (
 GENERIC MAP (
 	addr_range1_end_addr => -1,
 	addr_range1_offset => -1,
-	addr_range2_end_addr => -1,
 	addr_range2_offset => -1,
-	addr_range3_offset => -1,
 	is_compressed_image => "false",
 	is_dual_boot => "false",
 	is_eram_skip => "false",

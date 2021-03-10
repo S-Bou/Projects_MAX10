@@ -18,7 +18,7 @@
 -- the top level entity of the current Quartus project .The user can use this   
 -- testbench to simulate his design using a third-party simulation tool .       
 -- *****************************************************************************
--- Generated on "03/06/2021 18:39:10"
+-- Generated on "03/09/2021 11:37:21"
                                                              
 -- Vhdl Test Bench(with test vectors) for design  :          AntiRebotes
 -- 
@@ -34,23 +34,23 @@ ARCHITECTURE AntiRebotes_arch OF AntiRebotes_vhd_vec_tst IS
 -- constants                                                 
 -- signals                                                   
 SIGNAL CLK : STD_LOGIC;
-SIGNAL L6 : STD_LOGIC;
-SIGNAL L7 : STD_LOGIC;
-SIGNAL L8 : STD_LOGIC;
-SIGNAL L9 : STD_LOGIC;
-SIGNAL OUT_SIN : STD_LOGIC;
+SIGNAL OUT_Sin : STD_LOGIC;
 SIGNAL Pulse_KEY0 : STD_LOGIC;
+SIGNAL q : STD_LOGIC_VECTOR(0 TO 10);
 SIGNAL Reset_KEY1 : STD_LOGIC;
+SIGNAL StartTIM : STD_LOGIC;
+SIGNAL TimeEnd : STD_LOGIC;
+SIGNAL xDev_n : STD_LOGIC;
 COMPONENT AntiRebotes
 	PORT (
 	CLK : IN STD_LOGIC;
-	L6 : OUT STD_LOGIC;
-	L7 : OUT STD_LOGIC;
-	L8 : OUT STD_LOGIC;
-	L9 : OUT STD_LOGIC;
-	OUT_SIN : OUT STD_LOGIC;
+	OUT_Sin : OUT STD_LOGIC;
 	Pulse_KEY0 : IN STD_LOGIC;
-	Reset_KEY1 : IN STD_LOGIC
+	q : OUT STD_LOGIC_VECTOR(0 TO 10);
+	Reset_KEY1 : IN STD_LOGIC;
+	StartTIM : OUT STD_LOGIC;
+	TimeEnd : OUT STD_LOGIC;
+	xDev_n : OUT STD_LOGIC
 	);
 END COMPONENT;
 BEGIN
@@ -58,13 +58,13 @@ BEGIN
 	PORT MAP (
 -- list connections between master ports and signals
 	CLK => CLK,
-	L6 => L6,
-	L7 => L7,
-	L8 => L8,
-	L9 => L9,
-	OUT_SIN => OUT_SIN,
+	OUT_Sin => OUT_Sin,
 	Pulse_KEY0 => Pulse_KEY0,
-	Reset_KEY1 => Reset_KEY1
+	q => q,
+	Reset_KEY1 => Reset_KEY1,
+	StartTIM => StartTIM,
+	TimeEnd => TimeEnd,
+	xDev_n => xDev_n
 	);
 
 -- CLK
@@ -72,29 +72,56 @@ t_prcs_CLK: PROCESS
 BEGIN
 LOOP
 	CLK <= '0';
-	WAIT FOR 1000000 ps;
+	WAIT FOR 10000 ps;
 	CLK <= '1';
-	WAIT FOR 1000000 ps;
+	WAIT FOR 10000 ps;
 	IF (NOW >= 100000000 ps) THEN WAIT; END IF;
 END LOOP;
 END PROCESS t_prcs_CLK;
-
--- Pulse_KEY0
-t_prcs_Pulse_KEY0: PROCESS
-BEGIN
-LOOP
-	Pulse_KEY0 <= '0';
-	WAIT FOR 100000 ps;
-	Pulse_KEY0 <= '1';
-	WAIT FOR 9900000 ps;
-	IF (NOW >= 100000000 ps) THEN WAIT; END IF;
-END LOOP;
-END PROCESS t_prcs_Pulse_KEY0;
 
 -- Reset_KEY1
 t_prcs_Reset_KEY1: PROCESS
 BEGIN
 	Reset_KEY1 <= '1';
+	WAIT FOR 2000000 ps;
+	Reset_KEY1 <= '0';
 WAIT;
 END PROCESS t_prcs_Reset_KEY1;
+
+-- Pulse_KEY0
+t_prcs_Pulse_KEY0: PROCESS
+BEGIN
+	Pulse_KEY0 <= '1';
+	WAIT FOR 17920000 ps;
+	Pulse_KEY0 <= '0';
+	WAIT FOR 640000 ps;
+	Pulse_KEY0 <= '1';
+	WAIT FOR 640000 ps;
+	Pulse_KEY0 <= '0';
+	WAIT FOR 640000 ps;
+	Pulse_KEY0 <= '1';
+	WAIT FOR 640000 ps;
+	Pulse_KEY0 <= '0';
+	WAIT FOR 640000 ps;
+	Pulse_KEY0 <= '1';
+	WAIT FOR 640000 ps;
+	Pulse_KEY0 <= '0';
+	WAIT FOR 28800000 ps;
+	Pulse_KEY0 <= '1';
+	WAIT FOR 640000 ps;
+	Pulse_KEY0 <= '0';
+	WAIT FOR 640000 ps;
+	Pulse_KEY0 <= '1';
+	WAIT FOR 640000 ps;
+	Pulse_KEY0 <= '0';
+	WAIT FOR 640000 ps;
+	Pulse_KEY0 <= '1';
+	WAIT FOR 640000 ps;
+	Pulse_KEY0 <= '0';
+	WAIT FOR 640000 ps;
+	Pulse_KEY0 <= '1';
+	WAIT FOR 40960000 ps;
+	Pulse_KEY0 <= '0';
+WAIT;
+END PROCESS t_prcs_Pulse_KEY0;
 END AntiRebotes_arch;

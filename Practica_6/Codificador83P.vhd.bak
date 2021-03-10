@@ -1,0 +1,33 @@
+library ieee; use ieee.std_logic_1164.all;
+
+entity Codificador83P is
+port (input: in std_logic_vector(7 downto 0);
+      sieteseg: out std_logic_vector(6 downto 0);
+		isvalid: out std_logic);
+end Codificador83P;
+
+Architecture main of Codificador83P is
+signal bcd: std_logic_vector(2 downto 0);
+begin
+	bdc<= "000" when input(0)= "1",
+			"001" when input(1)= "1",
+		   "010" when input(2)= "1",
+		   "011" when input(3)= "1",
+			"100" when input(4)= "1",
+			"101" when input(5)= "1",
+			"110" when input(6)= "1",
+			"111" when others;
+				 
+	isvalid <= '0' when input = "0x00" else '1';
+				 
+	whit bcd select		 
+		sieteseg<= "01111111" when "000",
+					  "01111111" when "001",
+					  "01111111" when "010",
+					  "01111111" when "011",
+					  "01111111" when "100",
+					  "01111111" when "101",
+					  "01111111" when "110",
+					  "01111111" when others;
+end main;					  
+				 

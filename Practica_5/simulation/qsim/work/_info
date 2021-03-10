@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dD:/Programas/intelFPGA_lite/Projects_MAX10/Practica_5/simulation/qsim
 Eencoder_p
-Z1 w1614623456
+Z1 w1615227495
 Z2 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
 Z3 DPx11 fiftyfivenm 21 fiftyfivenm_atom_pack 0 22 7d5Xo;QBOkc31OfQTzSXV0
 Z4 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
@@ -25,9 +25,9 @@ VUYXeLCATLUE;Fz^N[9YJ>2
 !s100 ?obfYbCLWkS>alW`@3P=>1
 Z10 OV;C;10.5b;63
 32
-Z11 !s110 1614623456
+Z11 !s110 1615227498
 !i10b 1
-Z12 !s108 1614623456.000000
+Z12 !s108 1615227497.000000
 Z13 !s90 -work|work|Codificador.vho|
 Z14 !s107 Codificador.vho|
 !i113 1
@@ -56,7 +56,7 @@ R14
 R15
 R16
 Eencoder_p_vhd_vec_tst
-Z17 w1614623455
+Z17 w1615227493
 R5
 R6
 R0
@@ -70,27 +70,27 @@ R10
 32
 R11
 !i10b 1
-R12
-Z20 !s90 -work|work|WaveformP5.vwf.vht|
-Z21 !s107 WaveformP5.vwf.vht|
+Z20 !s108 1615227498.000000
+Z21 !s90 -work|work|WaveformP5.vwf.vht|
+Z22 !s107 WaveformP5.vwf.vht|
 !i113 1
 R15
 R16
 Aencoder_p_arch
 R5
 R6
-Z22 DEx4 work 21 encoder_p_vhd_vec_tst 0 22 H5jI:DnEfm`=ZhGK_93jl3
+Z23 DEx4 work 21 encoder_p_vhd_vec_tst 0 22 H5jI:DnEfm`=ZhGK_93jl3
 l64
 L33
-Z23 V3=8_iEiDzNjXMdAlH?g0?2
-Z24 !s100 IZQ>h>M^BdB5joPSmkaNF1
+Z24 V3=8_iEiDzNjXMdAlH?g0?2
+Z25 !s100 IZQ>h>M^BdB5joPSmkaNF1
 R10
 32
 R11
 !i10b 1
-R12
 R20
 R21
+R22
 !i113 1
 R15
 R16

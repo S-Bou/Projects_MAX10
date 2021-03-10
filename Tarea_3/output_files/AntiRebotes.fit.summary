@@ -1,15 +1,15 @@
-Fitter Status : Successful - Sun Feb 28 19:07:03 2021
+Fitter Status : Successful - Tue Mar 09 11:37:05 2021
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : AntiRebotes
 Top-level Entity Name : AntiRebotes
 Family : MAX 10
 Device : 10M50DAF484C6GES
 Timing Models : Preliminary
-Total logic elements : 9 / 49,760 ( < 1 % )
-    Total combinational functions : 8 / 49,760 ( < 1 % )
-    Dedicated logic registers : 7 / 49,760 ( < 1 % )
-Total registers : 7
-Total pins : 8 / 360 ( 2 % )
+Total logic elements : 32 / 49,760 ( < 1 % )
+    Total combinational functions : 31 / 49,760 ( < 1 % )
+    Dedicated logic registers : 18 / 49,760 ( < 1 % )
+Total registers : 18
+Total pins : 18 / 360 ( 5 % )
 Total virtual pins : 0
 Total memory bits : 0 / 1,677,312 ( 0 % )
 Embedded Multiplier 9-bit elements : 0 / 288 ( 0 % )

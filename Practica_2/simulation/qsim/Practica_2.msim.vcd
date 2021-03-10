@@ -3,7 +3,7 @@ $comment
 		vcd file Practica_2.msim.vcd -direction
 $end
 $date
-	Fri Feb 19 20:37:49 2021
+	Mon Mar 08 13:15:14 2021
 $end
 $version
 	ModelSim Version 10.5b

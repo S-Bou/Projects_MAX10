@@ -1,0 +1,36 @@
+|Codificador83P
+input[0] => Equal0.IN7
+input[1] => bcd.DATAA
+input[1] => Equal0.IN6
+input[2] => bcd.OUTPUTSELECT
+input[2] => bcd.DATAA
+input[2] => Equal0.IN5
+input[3] => bcd.OUTPUTSELECT
+input[3] => bcd.OUTPUTSELECT
+input[3] => bcd.OUTPUTSELECT
+input[3] => bcd.OUTPUTSELECT
+input[3] => bcd.DATAA
+input[3] => Equal0.IN4
+input[4] => bcd.OUTPUTSELECT
+input[4] => bcd.OUTPUTSELECT
+input[4] => bcd.OUTPUTSELECT
+input[4] => Equal0.IN3
+input[5] => bcd.OUTPUTSELECT
+input[5] => bcd.OUTPUTSELECT
+input[5] => bcd.OUTPUTSELECT
+input[5] => Equal0.IN2
+input[6] => bcd[2].OUTPUTSELECT
+input[6] => bcd[1].OUTPUTSELECT
+input[6] => bcd[0].OUTPUTSELECT
+input[6] => Equal0.IN1
+input[7] => Equal0.IN0
+sieteseg[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+sieteseg[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+sieteseg[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+sieteseg[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+sieteseg[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+sieteseg[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+sieteseg[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+isvalid <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+

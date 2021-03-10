@@ -1,11 +1,11 @@
 vendor_name = ModelSim
 source_file = 1, D:/Programas/intelFPGA_lite/Projects_MAX10/Practica_1_B/Practica_1_B.bdf
 source_file = 1, D:/Programas/intelFPGA_lite/Projects_MAX10/Practica_1_B/Waveform_1.vwf
-source_file = 1, d:/programas/intelfpga_lite/quartus_ii_v20.1/quartus/libraries/others/maxplus2/7447.bdf
-source_file = 1, d:/programas/intelfpga_lite/quartus_ii_v20.1/quartus/libraries/others/maxplus2/74157.bdf
-source_file = 1, d:/programas/intelfpga_lite/quartus_ii_v20.1/quartus/libraries/others/maxplus2/7485.tdf
-source_file = 1, d:/programas/intelfpga_lite/quartus_ii_v20.1/quartus/libraries/megafunctions/aglobal.inc
-source_file = 1, d:/programas/intelfpga_lite/quartus_ii_v20.1/quartus/libraries/others/maxplus2/f7485.bdf
+source_file = 1, d:/programas/intelfpga_lite/quartus_ii_18.1/quartus/libraries/others/maxplus2/7447.bdf
+source_file = 1, d:/programas/intelfpga_lite/quartus_ii_18.1/quartus/libraries/others/maxplus2/74157.bdf
+source_file = 1, d:/programas/intelfpga_lite/quartus_ii_18.1/quartus/libraries/others/maxplus2/7485.tdf
+source_file = 1, d:/programas/intelfpga_lite/quartus_ii_18.1/quartus/libraries/megafunctions/aglobal.inc
+source_file = 1, d:/programas/intelfpga_lite/quartus_ii_18.1/quartus/libraries/others/maxplus2/f7485.bdf
 design_name = hard_block
 design_name = Practica_1_B
 instance = comp, \~QUARTUS_CREATED_GND~I\, ~QUARTUS_CREATED_GND~I, Practica_1_B, 1

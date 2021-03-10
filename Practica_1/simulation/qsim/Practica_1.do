@@ -1,11 +1,11 @@
 onerror {exit -code 1}
 vlib work
-vcom -work work Practica_1.vho
-vcom -work work Cronograma_P1.vwf.vht
-vsim -c -t 1ps -sdfmax Practica_1_vhd_vec_tst/i1=Practica_1_vhd.sdo -L fiftyfivenm -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.Practica_1_vhd_vec_tst
+vlog -work work Practica_1.vo
+vlog -work work Cronograma_P1.vwf.vt
+vsim -novopt -c -t 1ps -L fiftyfivenm_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.Practica_1_vlg_vec_tst
 vcd file -direction Practica_1.msim.vcd
-vcd add -internal Practica_1_vhd_vec_tst/*
-vcd add -internal Practica_1_vhd_vec_tst/i1/*
+vcd add -internal Practica_1_vlg_vec_tst/*
+vcd add -internal Practica_1_vlg_vec_tst/i1/*
 proc simTimestamp {} {
     echo "Simulation time: $::now ps"
     if { [string equal running [runStatus]] } {
@@ -15,3 +15,4 @@ proc simTimestamp {} {
 after 2500 simTimestamp
 run -all
 quit -f
+
