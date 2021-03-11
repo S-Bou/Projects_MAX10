@@ -1,7 +1,7 @@
 # do AntiRebotes.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:07:17 on Mar 10,2021
+# Start time: 09:16:14 on Mar 11,2021
 # vcom -work work AntiRebotes.vho 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -16,20 +16,20 @@
 # -- Loading package altera_primitives_components
 # -- Compiling entity EjemploKeys
 # -- Compiling architecture structure of EjemploKeys
-# End time: 22:07:17 on Mar 10,2021, Elapsed time: 0:00:00
+# End time: 09:16:14 on Mar 11,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:07:17 on Mar 10,2021
+# Start time: 09:16:14 on Mar 11,2021
 # vcom -work work WaveformPR.vwf.vht 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity EjemploKeys_vhd_vec_tst
 # -- Compiling architecture EjemploKeys_arch of EjemploKeys_vhd_vec_tst
-# End time: 22:07:18 on Mar 10,2021, Elapsed time: 0:00:01
+# End time: 09:16:14 on Mar 11,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vsim -novopt -c -t 1ps -L fiftyfivenm -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.EjemploKeys_vhd_vec_tst 
-# Start time: 22:07:18 on Mar 10,2021
+# Start time: 09:16:14 on Mar 11,2021
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -50,8 +50,9 @@
 # Loading altera.dffeas(vital_dffeas)
 # Loading fiftyfivenm.fiftyfivenm_unvm(behavior)
 # Loading fiftyfivenm.fiftyfivenm_adcblock(behavior)
-# ** Warning: Design size of 12741 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# ** Warning: Design size of 13001 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
 # Expect performance to be adversely affected.
 # after#35
-# End time: 22:07:20 on Mar 10,2021, Elapsed time: 0:00:02
+# Simulation time: 33030000 ps
+# End time: 09:16:18 on Mar 11,2021, Elapsed time: 0:00:04
 # Errors: 0, Warnings: 1

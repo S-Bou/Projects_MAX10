@@ -60,7 +60,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "Clock",
+					"name" : "KEY1",
 					"strict" : false
 				},
 				{
@@ -68,11 +68,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "Input_K1",
+					"name" : "Clock",
 					"strict" : false
 				},
 				{
-					"name" : "Input_K0",
+					"name" : "KEY0",
 					"strict" : false
 				}
 			]

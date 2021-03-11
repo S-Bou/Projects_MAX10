@@ -1,11 +1,11 @@
-Fitter Status : Successful - Wed Mar 10 20:59:41 2021
+Fitter Status : Successful - Thu Mar 11 09:02:26 2021
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : AntiRebotes
 Top-level Entity Name : EjemploKeys
 Family : MAX 10
 Device : 10M50DAF484C6GES
 Timing Models : Preliminary
-Total logic elements : 52 / 49,760 ( < 1 % )
+Total logic elements : 54 / 49,760 ( < 1 % )
     Total combinational functions : 52 / 49,760 ( < 1 % )
     Dedicated logic registers : 26 / 49,760 ( < 1 % )
 Total registers : 26

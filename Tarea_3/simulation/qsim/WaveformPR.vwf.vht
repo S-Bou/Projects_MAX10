@@ -18,7 +18,7 @@
 -- the top level entity of the current Quartus project .The user can use this   
 -- testbench to simulate his design using a third-party simulation tool .       
 -- *****************************************************************************
--- Generated on "03/10/2021 22:07:16"
+-- Generated on "03/11/2021 09:16:13"
                                                              
 -- Vhdl Test Bench(with test vectors) for design  :          EjemploKeys
 -- 
@@ -48,8 +48,8 @@ SIGNAL f : STD_LOGIC;
 SIGNAL f1 : STD_LOGIC;
 SIGNAL g : STD_LOGIC;
 SIGNAL g1 : STD_LOGIC;
-SIGNAL Input_K0 : STD_LOGIC;
-SIGNAL Input_K1 : STD_LOGIC;
+SIGNAL KEY0 : STD_LOGIC;
+SIGNAL KEY1 : STD_LOGIC;
 SIGNAL Reset : STD_LOGIC;
 COMPONENT EjemploKeys
 	PORT (
@@ -68,8 +68,8 @@ COMPONENT EjemploKeys
 	f1 : OUT STD_LOGIC;
 	g : OUT STD_LOGIC;
 	g1 : OUT STD_LOGIC;
-	Input_K0 : IN STD_LOGIC;
-	Input_K1 : IN STD_LOGIC;
+	KEY0 : IN STD_LOGIC;
+	KEY1 : IN STD_LOGIC;
 	Reset : IN STD_LOGIC
 	);
 END COMPONENT;
@@ -92,8 +92,8 @@ BEGIN
 	f1 => f1,
 	g => g,
 	g1 => g1,
-	Input_K0 => Input_K0,
-	Input_K1 => Input_K1,
+	KEY0 => KEY0,
+	KEY1 => KEY1,
 	Reset => Reset
 	);
 
@@ -109,60 +109,72 @@ LOOP
 END LOOP;
 END PROCESS t_prcs_Clock;
 
--- Input_K0
-t_prcs_Input_K0: PROCESS
-BEGIN
-	Input_K0 <= '0';
-	WAIT FOR 1000000 ps;
-	Input_K0 <= '1';
-	WAIT FOR 1000000 ps;
-	Input_K0 <= '0';
-	WAIT FOR 1000000 ps;
-	Input_K0 <= '1';
-	WAIT FOR 1000000 ps;
-	Input_K0 <= '0';
-	WAIT FOR 1000000 ps;
-	Input_K0 <= '1';
-	WAIT FOR 1000000 ps;
-	Input_K0 <= '0';
-	WAIT FOR 18000000 ps;
-	Input_K0 <= '1';
-	WAIT FOR 1000000 ps;
-	Input_K0 <= '0';
-	WAIT FOR 1000000 ps;
-	Input_K0 <= '1';
-	WAIT FOR 1000000 ps;
-	Input_K0 <= '0';
-	WAIT FOR 1000000 ps;
-	Input_K0 <= '1';
-	WAIT FOR 1000000 ps;
-	Input_K0 <= '0';
-WAIT;
-END PROCESS t_prcs_Input_K0;
-
--- Input_K1
-t_prcs_Input_K1: PROCESS
-BEGIN
-	Input_K1 <= '0';
-	WAIT FOR 1000000 ps;
-	Input_K1 <= '1';
-	WAIT FOR 1000000 ps;
-	Input_K1 <= '0';
-	WAIT FOR 1000000 ps;
-	Input_K1 <= '1';
-	WAIT FOR 1000000 ps;
-	Input_K1 <= '0';
-	WAIT FOR 1000000 ps;
-	Input_K1 <= '1';
-	WAIT FOR 1000000 ps;
-	Input_K1 <= '0';
-WAIT;
-END PROCESS t_prcs_Input_K1;
-
 -- Reset
 t_prcs_Reset: PROCESS
 BEGIN
-	Reset <= '1';
+	Reset <= '0';
 WAIT;
 END PROCESS t_prcs_Reset;
+
+-- KEY0
+t_prcs_KEY0: PROCESS
+BEGIN
+	KEY0 <= '1';
+	WAIT FOR 2000000 ps;
+	KEY0 <= '0';
+	WAIT FOR 1000000 ps;
+	KEY0 <= '1';
+	WAIT FOR 1000000 ps;
+	KEY0 <= '0';
+	WAIT FOR 1000000 ps;
+	KEY0 <= '1';
+	WAIT FOR 1000000 ps;
+	KEY0 <= '0';
+	WAIT FOR 1000000 ps;
+	KEY0 <= '1';
+	WAIT FOR 4000000 ps;
+	KEY0 <= '0';
+	WAIT FOR 1000000 ps;
+	KEY0 <= '1';
+	WAIT FOR 5000000 ps;
+	KEY0 <= '0';
+	WAIT FOR 1000000 ps;
+	KEY0 <= '1';
+	WAIT FOR 4000000 ps;
+	KEY0 <= '0';
+	WAIT FOR 1000000 ps;
+	KEY0 <= '1';
+WAIT;
+END PROCESS t_prcs_KEY0;
+
+-- KEY1
+t_prcs_KEY1: PROCESS
+BEGIN
+	KEY1 <= '1';
+	WAIT FOR 2000000 ps;
+	KEY1 <= '0';
+	WAIT FOR 1000000 ps;
+	KEY1 <= '1';
+	WAIT FOR 1000000 ps;
+	KEY1 <= '0';
+	WAIT FOR 1000000 ps;
+	KEY1 <= '1';
+	WAIT FOR 1000000 ps;
+	KEY1 <= '0';
+	WAIT FOR 1000000 ps;
+	KEY1 <= '1';
+	WAIT FOR 4000000 ps;
+	KEY1 <= '0';
+	WAIT FOR 1000000 ps;
+	KEY1 <= '1';
+	WAIT FOR 5000000 ps;
+	KEY1 <= '0';
+	WAIT FOR 1000000 ps;
+	KEY1 <= '1';
+	WAIT FOR 4000000 ps;
+	KEY1 <= '0';
+	WAIT FOR 1000000 ps;
+	KEY1 <= '1';
+WAIT;
+END PROCESS t_prcs_KEY1;
 END EjemploKeys_arch;

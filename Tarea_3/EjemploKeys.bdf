@@ -23,23 +23,7 @@ refer to the applicable agreement for further details.
 	(input)
 	(rect 0 144 168 160)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "Reset" (rect 5 0 35 12)(font "Arial" ))
-	(pt 168 8)
-	(drawing
-		(line (pt 84 12)(pt 109 12))
-		(line (pt 84 4)(pt 109 4))
-		(line (pt 113 8)(pt 168 8))
-		(line (pt 84 12)(pt 84 4))
-		(line (pt 109 4)(pt 113 8))
-		(line (pt 109 12)(pt 113 8))
-	)
-	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
-)
-(pin
-	(input)
-	(rect 0 160 168 176)
-	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "Input_K0" (rect 5 0 48 17)(font "Intel Clear" ))
+	(text "Reset" (rect 5 0 34 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -55,7 +39,23 @@ refer to the applicable agreement for further details.
 	(input)
 	(rect 0 176 168 192)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "Clock" (rect 5 0 33 17)(font "Intel Clear" ))
+	(text "Clock" (rect 5 0 32 17)(font "Intel Clear" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+)
+(pin
+	(input)
+	(rect 0 160 168 176)
+	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
+	(text "KEY0" (rect 5 0 31 17)(font "Intel Clear" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -71,7 +71,7 @@ refer to the applicable agreement for further details.
 	(input)
 	(rect 0 464 168 480)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "Input_K1" (rect 5 0 48 17)(font "Intel Clear" ))
+	(text "KEY1" (rect 5 0 31 17)(font "Intel Clear" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -890,6 +890,21 @@ refer to the applicable agreement for further details.
 		(line (pt 8 8)(pt 24 8))
 	)
 )
+(symbol
+	(rect 432 88 464 104)
+	(text "VCC" (rect 7 0 27 10)(font "Arial" (font_size 6)))
+	(text "inst1" (rect 3 5 25 22)(font "Intel Clear" )(invisible))
+	(port
+		(pt 16 16)
+		(output)
+		(text "1" (rect 19 7 24 19)(font "Courier New" (bold))(invisible))
+		(text "1" (rect 19 7 24 19)(font "Courier New" (bold))(invisible))
+		(line (pt 16 16)(pt 16 8))
+	)
+	(drawing
+		(line (pt 8 8)(pt 24 8))
+	)
+)
 (connector
 	(pt 480 168)
 	(pt 448 168)
@@ -999,10 +1014,6 @@ refer to the applicable agreement for further details.
 	(pt 448 288)
 )
 (connector
-	(pt 208 264)
-	(pt 480 264)
-)
-(connector
 	(pt 480 464)
 	(pt 480 472)
 )
@@ -1087,36 +1098,12 @@ refer to the applicable agreement for further details.
 	(pt 448 200)
 )
 (connector
-	(pt 448 152)
-	(pt 448 168)
-)
-(connector
-	(pt 208 184)
-	(pt 208 264)
-)
-(connector
 	(pt 168 152)
 	(pt 264 152)
 )
 (connector
-	(pt 408 152)
-	(pt 448 152)
-)
-(connector
 	(pt 448 152)
 	(pt 480 152)
-)
-(connector
-	(pt 168 168)
-	(pt 264 168)
-)
-(connector
-	(pt 168 184)
-	(pt 208 184)
-)
-(connector
-	(pt 208 184)
-	(pt 264 184)
 )
 (connector
 	(pt 256 408)
@@ -1163,11 +1150,6 @@ refer to the applicable agreement for further details.
 	(pt 256 376)
 )
 (connector
-	(text "<<__$DEF_ALIAS5874>>" (rect 106 456 224 473)(font "Intel Clear" )(invisible))
-	(pt 168 472)
-	(pt 272 472)
-)
-(connector
 	(pt 232 336)
 	(pt 232 360)
 )
@@ -1179,6 +1161,39 @@ refer to the applicable agreement for further details.
 	(pt 256 360)
 	(pt 272 360)
 )
+(connector
+	(pt 448 104)
+	(pt 448 152)
+)
+(connector
+	(pt 448 152)
+	(pt 448 168)
+)
+(connector
+	(pt 168 184)
+	(pt 264 184)
+)
+(connector
+	(pt 480 264)
+	(pt 424 264)
+)
+(connector
+	(pt 424 264)
+	(pt 424 152)
+)
+(connector
+	(pt 424 152)
+	(pt 408 152)
+)
+(connector
+	(text "<<__$DEF_ALIAS5874>>" (rect 106 456 224 473)(font "Intel Clear" )(invisible))
+	(pt 168 472)
+	(pt 272 472)
+)
+(connector
+	(pt 168 168)
+	(pt 264 168)
+)
 (junction (pt 448 200))
 (junction (pt 448 216))
 (junction (pt 448 232))
@@ -1188,9 +1203,8 @@ refer to the applicable agreement for further details.
 (junction (pt 512 456))
 (junction (pt 512 472))
 (junction (pt 256 456))
-(junction (pt 448 152))
-(junction (pt 208 184))
 (junction (pt 256 408))
 (junction (pt 256 424))
 (junction (pt 256 440))
 (junction (pt 256 360))
+(junction (pt 448 152))

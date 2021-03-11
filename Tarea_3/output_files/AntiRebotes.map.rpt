@@ -1,5 +1,5 @@
 Analysis & Synthesis report for AntiRebotes
-Wed Mar 10 20:59:31 2021
+Thu Mar 11 09:02:17 2021
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -46,7 +46,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Mar 10 20:59:31 2021       ;
+; Analysis & Synthesis Status        ; Successful - Thu Mar 11 09:02:17 2021       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; AntiRebotes                                 ;
 ; Top-level Entity Name              ; EjemploKeys                                 ;
@@ -223,9 +223,9 @@ refer to the applicable agreement for further details.
 ; Embedded Multiplier 9-bit elements          ; 0           ;
 ;                                             ;             ;
 ; Maximum fan-out node                        ; Clock~input ;
-; Maximum fan-out                             ; 22          ;
-; Total fan-out                               ; 276         ;
-; Average fan-out                             ; 2.42        ;
+; Maximum fan-out                             ; 18          ;
+; Total fan-out                               ; 272         ;
+; Average fan-out                             ; 2.39        ;
 +---------------------------------------------+-------------+
 
 
@@ -272,7 +272,7 @@ Encoding Type:  One-Hot
 ; Total registers                              ; 26    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 11    ;
-; Number of registers using Asynchronous Clear ; 4     ;
+; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 11    ;
 ; Number of registers using Preset             ; 0     ;
@@ -341,9 +341,8 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; boundary_port         ; 18                          ;
 ; cycloneiii_ff         ; 26                          ;
-;     CLR               ; 4                           ;
 ;     ENA SLD           ; 11                          ;
-;     plain             ; 11                          ;
+;     plain             ; 15                          ;
 ; cycloneiii_lcell_comb ; 52                          ;
 ;     arith             ; 11                          ;
 ;         2 data inputs ; 11                          ;
@@ -374,7 +373,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Wed Mar 10 20:59:21 2021
+    Info: Processing started: Thu Mar 11 09:02:07 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off AntiRebotes -c AntiRebotes
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
@@ -411,8 +410,6 @@ Info (12128): Elaborating entity "cntr_rei" for hierarchy "AntiRebotes:inst999|L
 Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr_usb.tdf
     Info (12023): Found entity 1: cmpr_usb File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_3/db/cmpr_usb.tdf Line: 22
 Info (12128): Elaborating entity "cmpr_usb" for hierarchy "AntiRebotes:inst999|LPM_COUNTER:inst1|cntr_rei:auto_generated|cmpr_usb:cmpr1" File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_3/db/cntr_rei.tdf Line: 92
-Info (12128): Elaborating entity "74191" for hierarchy "74191:inst33"
-Info (12130): Elaborated megafunction instantiation "74191:inst33"
 Info (13014): Ignored 6 buffer(s)
     Info (13015): Ignored 6 CARRY buffer(s)
 Info (286030): Timing-Driven Synthesis is running
@@ -423,9 +420,9 @@ Info (21057): Implemented 72 device resources after synthesis - the final resour
     Info (21059): Implemented 14 output pins
     Info (21061): Implemented 54 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 4809 megabytes
-    Info: Processing ended: Wed Mar 10 20:59:31 2021
+    Info: Peak virtual memory: 4805 megabytes
+    Info: Processing ended: Thu Mar 11 09:02:17 2021
     Info: Elapsed time: 00:00:10
-    Info: Total CPU time (on all processors): 00:00:20
+    Info: Total CPU time (on all processors): 00:00:21
 
 
