@@ -1,8 +1,8 @@
 /*<simulation_settings>
-<ftestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off AntiRebotes -c AntiRebotes --vector_source="D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_3/WaveformPR.vwf" --testbench_file="D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_3/simulation/qsim/WaveformPR.vwf.vht"</ftestbench_cmd>
-<ttestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off AntiRebotes -c AntiRebotes --vector_source="D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_3/WaveformPR.vwf" --testbench_file="D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_3/simulation/qsim/WaveformPR.vwf.vht"</ttestbench_cmd>
-<fnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_3/simulation/qsim/" AntiRebotes -c AntiRebotes</fnetlist_cmd>
-<tnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=vhdl --output_directory="D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_3/simulation/qsim/" AntiRebotes -c AntiRebotes</tnetlist_cmd>
+<ftestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off AntiRebotes -c AntiRebotes --vector_source="C:/intelFPGA_lite/Projects_MAX10/Tarea_3/WaveformPR.vwf" --testbench_file="C:/intelFPGA_lite/Projects_MAX10/Tarea_3/simulation/qsim/WaveformPR.vwf.vht"</ftestbench_cmd>
+<ttestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off AntiRebotes -c AntiRebotes --vector_source="C:/intelFPGA_lite/Projects_MAX10/Tarea_3/WaveformPR.vwf" --testbench_file="C:/intelFPGA_lite/Projects_MAX10/Tarea_3/simulation/qsim/WaveformPR.vwf.vht"</ttestbench_cmd>
+<fnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="C:/intelFPGA_lite/Projects_MAX10/Tarea_3/simulation/qsim/" AntiRebotes -c AntiRebotes</fnetlist_cmd>
+<tnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=vhdl --output_directory="C:/intelFPGA_lite/Projects_MAX10/Tarea_3/simulation/qsim/" AntiRebotes -c AntiRebotes</tnetlist_cmd>
 <modelsim_script>onerror {exit -code 1}
 vlib work
 vcom -work work AntiRebotes.vho
@@ -20,10 +20,6 @@ proc simTimestamp {} {
 after 2500 simTimestamp
 run -all
 quit -f
-
-
-
-
 </modelsim_script>
 <modelsim_script_timing>onerror {exit -code 1}
 vlib work
@@ -42,10 +38,6 @@ proc simTimestamp {} {
 after 2500 simTimestamp
 run -all
 quit -f
-
-
-
-
 </modelsim_script_timing>
 <hdl_lang>vhdl</hdl_lang>
 </simulation_settings>*/
@@ -323,26 +315,6 @@ SIGNAL("74191:inst33|f74191:sub|19")
 	PARENT = "";
 }
 
-GROUP("7Seg_SIN")
-{
-	MEMBERS = "a", "b", "c", "d", "e", "f", "g";
-}
-
-GROUP("7Seg_N")
-{
-	MEMBERS = "a1", "b1", "c1", "d1", "e1", "f1", "g1";
-}
-
-GROUP("COUNT_SIN")
-{
-	MEMBERS = "74191:inst2|f74191:sub|16", "74191:inst2|f74191:sub|17", "74191:inst2|f74191:sub|18", "74191:inst2|f74191:sub|19";
-}
-
-GROUP("COUNT_N")
-{
-	MEMBERS = "74191:inst33|f74191:sub|16", "74191:inst33|f74191:sub|17", "74191:inst33|f74191:sub|18", "74191:inst33|f74191:sub|19";
-}
-
 SIGNAL("KEY0")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
@@ -361,6 +333,26 @@ SIGNAL("KEY1")
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
 	PARENT = "";
+}
+
+GROUP("7Seg_SIN")
+{
+	MEMBERS = "a", "b", "c", "d", "e", "f", "g";
+}
+
+GROUP("7Seg_N")
+{
+	MEMBERS = "a1", "b1", "c1", "d1", "e1", "f1", "g1";
+}
+
+GROUP("COUNT_SIN")
+{
+	MEMBERS = "74191:inst2|f74191:sub|16", "74191:inst2|f74191:sub|17", "74191:inst2|f74191:sub|18", "74191:inst2|f74191:sub|19";
+}
+
+GROUP("COUNT_N")
+{
+	MEMBERS = "74191:inst33|f74191:sub|16", "74191:inst33|f74191:sub|17", "74191:inst33|f74191:sub|18", "74191:inst33|f74191:sub|19";
 }
 
 TRANSITION_LIST("a")
@@ -670,7 +662,7 @@ DISPLAY_LINE
 DISPLAY_LINE
 {
 	CHANNEL = "COUNT_SIN";
-	EXPAND_STATUS = EXPANDED;
+	EXPAND_STATUS = COLLAPSED;
 	RADIX = Unsigned;
 	TREE_INDEX = 3;
 	TREE_LEVEL = 0;
@@ -809,7 +801,7 @@ DISPLAY_LINE
 DISPLAY_LINE
 {
 	CHANNEL = "COUNT_N";
-	EXPAND_STATUS = EXPANDED;
+	EXPAND_STATUS = COLLAPSED;
 	RADIX = Unsigned;
 	TREE_INDEX = 17;
 	TREE_LEVEL = 0;

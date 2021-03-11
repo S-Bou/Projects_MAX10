@@ -99,7 +99,7 @@ R24
 R18
 R19
 Eejemplokeys
-Z25 w1615450574
+Z25 w1615459302
 R2
 R3
 R4
@@ -108,7 +108,7 @@ R6
 R7
 R8
 R9
-R0
+Z26 dC:/intelFPGA_lite/Projects_MAX10/Tarea_3/simulation/qsim
 R11
 R12
 l0
@@ -117,9 +117,9 @@ VnfX:^737c?0H7=B7F?L4Z3
 !s100 2lYYK@FW[?f]OFMCom]BX1
 R13
 32
-Z26 !s110 1615450574
+Z27 !s110 1615459307
 !i10b 1
-Z27 !s108 1615450574.000000
+Z28 !s108 1615459307.000000
 R16
 R17
 !i113 1
@@ -141,50 +141,50 @@ VGaa:KQSODPi3N0FLC1WiP0
 !s100 g>83Ib4i1BP[[AgbC18Q41
 R13
 32
-R26
-!i10b 1
 R27
+!i10b 1
+R28
 R16
 R17
 !i113 1
 R18
 R19
 Eejemplokeys_vhd_vec_tst
-Z28 w1615450573
+Z29 w1615459299
 R7
 R8
-R0
-Z29 8WaveformPR.vwf.vht
-Z30 FWaveformPR.vwf.vht
+R26
+Z30 8WaveformPR.vwf.vht
+Z31 FWaveformPR.vwf.vht
 l0
 L31
 V^o=4>`9AmG<49PAAbM2kf0
 !s100 0`j]]Smf^e7:S]16TdJNW3
 R13
 32
-R26
+Z32 !s110 1615459308
 !i10b 1
-R27
-Z31 !s90 -work|work|WaveformPR.vwf.vht|
-Z32 !s107 WaveformPR.vwf.vht|
+R28
+Z33 !s90 -work|work|WaveformPR.vwf.vht|
+Z34 !s107 WaveformPR.vwf.vht|
 !i113 1
 R18
 R19
 Aejemplokeys_arch
 R7
 R8
-Z33 DEx4 work 23 ejemplokeys_vhd_vec_tst 0 22 ^o=4>`9AmG<49PAAbM2kf0
+Z35 DEx4 work 23 ejemplokeys_vhd_vec_tst 0 22 ^o=4>`9AmG<49PAAbM2kf0
 l76
 L33
-Z34 V=Nl^Lofg_L7DjnQkRNORA3
-Z35 !s100 nk9DH1j8[RcTkoM]]oTQD1
+Z36 V=Nl^Lofg_L7DjnQkRNORA3
+Z37 !s100 nk9DH1j8[RcTkoM]]oTQD1
 R13
 32
-R26
-!i10b 1
-R27
-R31
 R32
+!i10b 1
+R28
+R33
+R34
 !i113 1
 R18
 R19
@@ -196,7 +196,7 @@ R6
 R7
 R8
 R3
-R0
+R26
 R11
 R12
 l0
@@ -205,9 +205,9 @@ V8_BbEmGd;OHS6h@;gFc7W3
 !s100 ROH=D<N4CT6aCZ<37A[_?0
 R13
 32
-R26
-!i10b 1
 R27
+!i10b 1
+R28
 R16
 R17
 !i113 1
@@ -227,9 +227,9 @@ Vg=W`CQ>24lhYF71zFSkY43
 !s100 zW6ML5NVY?Ai`]`n2XhME3
 R13
 32
-R26
-!i10b 1
 R27
+!i10b 1
+R28
 R16
 R17
 !i113 1

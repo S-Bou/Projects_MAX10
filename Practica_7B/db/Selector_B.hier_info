@@ -1,0 +1,141 @@
+|Selector_B
+HEX0[0] <= seg7:inst3.sg[0]
+HEX0[1] <= seg7:inst3.sg[1]
+HEX0[2] <= seg7:inst3.sg[2]
+HEX0[3] <= seg7:inst3.sg[3]
+HEX0[4] <= seg7:inst3.sg[4]
+HEX0[5] <= seg7:inst3.sg[5]
+HEX0[6] <= seg7:inst3.sg[6]
+SW[0] => compar_4:inst.A[0]
+SW[0] => mux4to4:inst2.a[0]
+SW[1] => compar_4:inst.A[1]
+SW[1] => mux4to4:inst2.a[1]
+SW[2] => compar_4:inst.A[2]
+SW[2] => mux4to4:inst2.a[2]
+SW[3] => compar_4:inst.A[3]
+SW[3] => mux4to4:inst2.a[3]
+SW[4] => compar_4:inst.B[0]
+SW[4] => mux4to4:inst2.b[0]
+SW[5] => compar_4:inst.B[1]
+SW[5] => mux4to4:inst2.b[1]
+SW[6] => compar_4:inst.B[2]
+SW[6] => mux4to4:inst2.b[2]
+SW[7] => compar_4:inst.B[3]
+SW[7] => mux4to4:inst2.b[3]
+
+
+|Selector_B|seg7:inst3
+bcd[0] => Mux0.IN19
+bcd[0] => Mux1.IN19
+bcd[0] => Mux2.IN19
+bcd[0] => Mux3.IN19
+bcd[0] => Mux4.IN19
+bcd[0] => Mux5.IN19
+bcd[0] => Mux6.IN19
+bcd[1] => Mux0.IN18
+bcd[1] => Mux1.IN18
+bcd[1] => Mux2.IN18
+bcd[1] => Mux3.IN18
+bcd[1] => Mux4.IN18
+bcd[1] => Mux5.IN18
+bcd[1] => Mux6.IN18
+bcd[2] => Mux0.IN17
+bcd[2] => Mux1.IN17
+bcd[2] => Mux2.IN17
+bcd[2] => Mux3.IN17
+bcd[2] => Mux4.IN17
+bcd[2] => Mux5.IN17
+bcd[2] => Mux6.IN17
+bcd[3] => Mux0.IN16
+bcd[3] => Mux1.IN16
+bcd[3] => Mux2.IN16
+bcd[3] => Mux3.IN16
+bcd[3] => Mux4.IN16
+bcd[3] => Mux5.IN16
+bcd[3] => Mux6.IN16
+sg[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+sg[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+sg[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+sg[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+sg[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+sg[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+sg[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Selector_B|mux4to4:inst2
+a[0] => mux2to1:M1:0:Muxes.w0
+a[1] => mux2to1:M1:1:Muxes.w0
+a[2] => mux2to1:M1:2:Muxes.w0
+a[3] => mux2to1:M1:3:Muxes.w0
+b[0] => mux2to1:M1:0:Muxes.w1
+b[1] => mux2to1:M1:1:Muxes.w1
+b[2] => mux2to1:M1:2:Muxes.w1
+b[3] => mux2to1:M1:3:Muxes.w1
+S => mux2to1:M1:0:Muxes.s
+S => mux2to1:M1:1:Muxes.s
+S => mux2to1:M1:2:Muxes.s
+S => mux2to1:M1:3:Muxes.s
+m[0] <= mux2to1:M1:0:Muxes.f
+m[1] <= mux2to1:M1:1:Muxes.f
+m[2] <= mux2to1:M1:2:Muxes.f
+m[3] <= mux2to1:M1:3:Muxes.f
+
+
+|Selector_B|mux4to4:inst2|mux2to1:\M1:0:Muxes
+w0 => f.DATAB
+w1 => f.DATAA
+s => f.OUTPUTSELECT
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Selector_B|mux4to4:inst2|mux2to1:\M1:1:Muxes
+w0 => f.DATAB
+w1 => f.DATAA
+s => f.OUTPUTSELECT
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Selector_B|mux4to4:inst2|mux2to1:\M1:2:Muxes
+w0 => f.DATAB
+w1 => f.DATAA
+s => f.OUTPUTSELECT
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Selector_B|mux4to4:inst2|mux2to1:\M1:3:Muxes
+w0 => f.DATAB
+w1 => f.DATAA
+s => f.OUTPUTSELECT
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Selector_B|compar_4:inst
+A[0] => Equal0.IN3
+A[0] => LessThan0.IN4
+A[0] => LessThan1.IN4
+A[1] => Equal0.IN2
+A[1] => LessThan0.IN3
+A[1] => LessThan1.IN3
+A[2] => Equal0.IN1
+A[2] => LessThan0.IN2
+A[2] => LessThan1.IN2
+A[3] => Equal0.IN0
+A[3] => LessThan0.IN1
+A[3] => LessThan1.IN1
+B[0] => Equal0.IN7
+B[0] => LessThan0.IN8
+B[0] => LessThan1.IN8
+B[1] => Equal0.IN6
+B[1] => LessThan0.IN7
+B[1] => LessThan1.IN7
+B[2] => Equal0.IN5
+B[2] => LessThan0.IN6
+B[2] => LessThan1.IN6
+B[3] => Equal0.IN4
+B[3] => LessThan0.IN5
+B[3] => LessThan1.IN5
+AeqB <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+AgtB <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
+AltB <= LessThan1.DB_MAX_OUTPUT_PORT_TYPE
+
+
