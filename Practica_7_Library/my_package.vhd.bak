@@ -1,0 +1,36 @@
+library ieee; use ieee.std_logic_1164.all;
+
+	package compar_4_package is
+		component compar_4
+			port(A, B: in std_logic_vector(3 downto 0);
+				  AeqB, AgtB, AltB: out std_logic);
+		end component;
+	end compar_4_package;
+----------------------------------------------------
+library ieee; use ieee.std_logic_1164.all;
+
+	package mux2to1_package is
+		component mux2to1
+			port(w0, w1, s: in std_logic;
+			     f: out std_logic);
+	   end component;
+	end mux2to1_package;
+----------------------------------------------------	
+library ieee; use ieee.std_logic_1164.all;	
+
+	package mux4to4_package is
+		component mux4to4
+			port(a, b: in std_logic_vector(3 downto0);
+		        s: in std_logic;
+				  m: out std_logic_vector(3 doento 0));
+	   end component;
+	end mux4to4_package;
+----------------------------------------------------
+library ieee; use ieee.std_logic_1164.all;
+
+		package seg7_package is
+			component seg7
+				port(bcd: in std_logic_vector(3 downto 0);
+				     sg: out std_logic_vector(6 downto 0));
+			end component;
+		end seg7_package;

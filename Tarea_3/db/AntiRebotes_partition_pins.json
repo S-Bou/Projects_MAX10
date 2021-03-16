@@ -60,7 +60,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "KEY1",
+					"name" : "EXT_KEY",
 					"strict" : false
 				},
 				{
@@ -69,10 +69,6 @@
 				},
 				{
 					"name" : "Clock",
-					"strict" : false
-				},
-				{
-					"name" : "KEY0",
 					"strict" : false
 				}
 			]

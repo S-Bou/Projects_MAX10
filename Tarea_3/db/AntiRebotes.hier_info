@@ -1,7 +1,8 @@
 |EjemploKeys
 a <= 7447:inst4.OA
 Reset => AntiRebotes:inst999.Reset
-KEY0 => AntiRebotes:inst999.Input
+EXT_KEY => AntiRebotes:inst999.Input
+EXT_KEY => 74191:inst33.CLK
 Clock => AntiRebotes:inst999.CLK
 b <= 7447:inst4.OB
 c <= 7447:inst4.OC
@@ -10,7 +11,6 @@ e <= 7447:inst4.OE
 f <= 7447:inst4.OF
 g <= 7447:inst4.OG
 c1 <= 7447:inst555.OC
-KEY1 => 74191:inst33.CLK
 d1 <= 7447:inst555.OD
 e1 <= 7447:inst555.OE
 f1 <= 7447:inst555.OF

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for AntiRebotes
-Thu Mar 11 10:44:53 2021
+Thu Mar 11 18:20:53 2021
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -46,7 +46,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Mar 11 10:44:53 2021       ;
+; Analysis & Synthesis Status        ; Successful - Thu Mar 11 18:20:53 2021       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; AntiRebotes                                 ;
 ; Top-level Entity Name              ; EjemploKeys                                 ;
@@ -55,7 +55,7 @@ refer to the applicable agreement for further details.
 ;     Total combinational functions  ; 52                                          ;
 ;     Dedicated logic registers      ; 26                                          ;
 ; Total registers                    ; 26                                          ;
-; Total pins                         ; 18                                          ;
+; Total pins                         ; 17                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -156,45 +156,46 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 4           ;
-; Maximum allowed            ; 2           ;
+; Number detected on machine ; 12          ;
+; Maximum allowed            ; 6           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 2           ;
+; Maximum used               ; 6           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
 ;     Processor 2            ;   0.0%      ;
+;     Processors 3-6         ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                             ;
-+----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                   ; Library ;
-+----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------------+---------+
-; FF_META.bdf                      ; yes             ; User Block Diagram/Schematic File  ; C:/intelFPGA_lite/Projects_MAX10/Tarea_3/FF_META.bdf                           ;         ;
-; AntiRebotes.bdf                  ; yes             ; User Block Diagram/Schematic File  ; C:/intelFPGA_lite/Projects_MAX10/Tarea_3/AntiRebotes.bdf                       ;         ;
-; EjemploKeys.bdf                  ; yes             ; User Block Diagram/Schematic File  ; C:/intelFPGA_lite/Projects_MAX10/Tarea_3/EjemploKeys.bdf                       ;         ;
-; 7447.bdf                         ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/others/maxplus2/7447.bdf              ;         ;
-; 74191.tdf                        ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/others/maxplus2/74191.tdf             ;         ;
-; aglobal.inc                      ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/aglobal.inc             ;         ;
-; f74191.bdf                       ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/others/maxplus2/f74191.bdf            ;         ;
-; inhb.bdf                         ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/others/maxplus2/inhb.bdf              ;         ;
-; sm1.vhd                          ; yes             ; Auto-Found VHDL File               ; C:/intelFPGA_lite/Projects_MAX10/Tarea_3/sm1.vhd                               ;         ;
-; lpm_counter.tdf                  ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_counter.tdf         ;         ;
-; lpm_constant.inc                 ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_constant.inc        ;         ;
-; lpm_decode.inc                   ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_decode.inc          ;         ;
-; lpm_add_sub.inc                  ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_add_sub.inc         ;         ;
-; cmpconst.inc                     ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/cmpconst.inc            ;         ;
-; lpm_compare.inc                  ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_compare.inc         ;         ;
-; lpm_counter.inc                  ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_counter.inc         ;         ;
-; dffeea.inc                       ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/dffeea.inc              ;         ;
-; alt_counter_stratix.inc          ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/alt_counter_stratix.inc ;         ;
-; aglobal181.inc                   ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/aglobal181.inc          ;         ;
-; db/cntr_rei.tdf                  ; yes             ; Auto-Generated Megafunction        ; C:/intelFPGA_lite/Projects_MAX10/Tarea_3/db/cntr_rei.tdf                       ;         ;
-; db/cmpr_usb.tdf                  ; yes             ; Auto-Generated Megafunction        ; C:/intelFPGA_lite/Projects_MAX10/Tarea_3/db/cmpr_usb.tdf                       ;         ;
-+----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------------+---------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                  ;
++----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                                        ; Library ;
++----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------------------------------------+---------+
+; FF_META.bdf                      ; yes             ; User Block Diagram/Schematic File  ; D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_3/FF_META.bdf                                      ;         ;
+; AntiRebotes.bdf                  ; yes             ; User Block Diagram/Schematic File  ; D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_3/AntiRebotes.bdf                                  ;         ;
+; EjemploKeys.bdf                  ; yes             ; User Block Diagram/Schematic File  ; D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_3/EjemploKeys.bdf                                  ;         ;
+; 7447.bdf                         ; yes             ; Megafunction                       ; d:/programas/intelfpga_lite/quartus_ii_18.1/quartus/libraries/others/maxplus2/7447.bdf              ;         ;
+; 74191.tdf                        ; yes             ; Megafunction                       ; d:/programas/intelfpga_lite/quartus_ii_18.1/quartus/libraries/others/maxplus2/74191.tdf             ;         ;
+; aglobal.inc                      ; yes             ; Megafunction                       ; d:/programas/intelfpga_lite/quartus_ii_18.1/quartus/libraries/megafunctions/aglobal.inc             ;         ;
+; f74191.bdf                       ; yes             ; Megafunction                       ; d:/programas/intelfpga_lite/quartus_ii_18.1/quartus/libraries/others/maxplus2/f74191.bdf            ;         ;
+; inhb.bdf                         ; yes             ; Megafunction                       ; d:/programas/intelfpga_lite/quartus_ii_18.1/quartus/libraries/others/maxplus2/inhb.bdf              ;         ;
+; sm1.vhd                          ; yes             ; Auto-Found VHDL File               ; D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_3/sm1.vhd                                          ;         ;
+; lpm_counter.tdf                  ; yes             ; Megafunction                       ; d:/programas/intelfpga_lite/quartus_ii_18.1/quartus/libraries/megafunctions/lpm_counter.tdf         ;         ;
+; lpm_constant.inc                 ; yes             ; Megafunction                       ; d:/programas/intelfpga_lite/quartus_ii_18.1/quartus/libraries/megafunctions/lpm_constant.inc        ;         ;
+; lpm_decode.inc                   ; yes             ; Megafunction                       ; d:/programas/intelfpga_lite/quartus_ii_18.1/quartus/libraries/megafunctions/lpm_decode.inc          ;         ;
+; lpm_add_sub.inc                  ; yes             ; Megafunction                       ; d:/programas/intelfpga_lite/quartus_ii_18.1/quartus/libraries/megafunctions/lpm_add_sub.inc         ;         ;
+; cmpconst.inc                     ; yes             ; Megafunction                       ; d:/programas/intelfpga_lite/quartus_ii_18.1/quartus/libraries/megafunctions/cmpconst.inc            ;         ;
+; lpm_compare.inc                  ; yes             ; Megafunction                       ; d:/programas/intelfpga_lite/quartus_ii_18.1/quartus/libraries/megafunctions/lpm_compare.inc         ;         ;
+; lpm_counter.inc                  ; yes             ; Megafunction                       ; d:/programas/intelfpga_lite/quartus_ii_18.1/quartus/libraries/megafunctions/lpm_counter.inc         ;         ;
+; dffeea.inc                       ; yes             ; Megafunction                       ; d:/programas/intelfpga_lite/quartus_ii_18.1/quartus/libraries/megafunctions/dffeea.inc              ;         ;
+; alt_counter_stratix.inc          ; yes             ; Megafunction                       ; d:/programas/intelfpga_lite/quartus_ii_18.1/quartus/libraries/megafunctions/alt_counter_stratix.inc ;         ;
+; aglobal181.inc                   ; yes             ; Megafunction                       ; d:/programas/intelfpga_lite/quartus_ii_18.1/quartus/libraries/megafunctions/aglobal181.inc          ;         ;
+; db/cntr_rei.tdf                  ; yes             ; Auto-Generated Megafunction        ; D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_3/db/cntr_rei.tdf                                  ;         ;
+; db/cmpr_usb.tdf                  ; yes             ; Auto-Generated Megafunction        ; D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_3/db/cmpr_usb.tdf                                  ;         ;
++----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------------+
@@ -218,14 +219,14 @@ refer to the applicable agreement for further details.
 ;     -- Dedicated logic registers            ; 26          ;
 ;     -- I/O registers                        ; 0           ;
 ;                                             ;             ;
-; I/O pins                                    ; 18          ;
+; I/O pins                                    ; 17          ;
 ;                                             ;             ;
 ; Embedded Multiplier 9-bit elements          ; 0           ;
 ;                                             ;             ;
 ; Maximum fan-out node                        ; Clock~input ;
 ; Maximum fan-out                             ; 18          ;
-; Total fan-out                               ; 272         ;
-; Average fan-out                             ; 2.39        ;
+; Total fan-out                               ; 271         ;
+; Average fan-out                             ; 2.42        ;
 +---------------------------------------------+-------------+
 
 
@@ -234,7 +235,7 @@ refer to the applicable agreement for further details.
 +------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-------------------------------------------------------------------------------------------+-------------+--------------+
 ; Compilation Hierarchy Node         ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                                                       ; Entity Name ; Library Name ;
 +------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-------------------------------------------------------------------------------------------+-------------+--------------+
-; |EjemploKeys                       ; 52 (1)              ; 26 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 18   ; 0            ; 0          ; |EjemploKeys                                                                              ; EjemploKeys ; work         ;
+; |EjemploKeys                       ; 52 (1)              ; 26 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 17   ; 0            ; 0          ; |EjemploKeys                                                                              ; EjemploKeys ; work         ;
 ;    |74191:inst2|                   ; 3 (0)               ; 4 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |EjemploKeys|74191:inst2                                                                  ; 74191       ; work         ;
 ;       |f74191:sub|                 ; 3 (3)               ; 4 (4)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |EjemploKeys|74191:inst2|f74191:sub                                                       ; f74191      ; work         ;
 ;    |74191:inst33|                  ; 3 (0)               ; 4 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |EjemploKeys|74191:inst33                                                                 ; 74191       ; work         ;
@@ -339,7 +340,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 18                          ;
+; boundary_port         ; 17                          ;
 ; cycloneiii_ff         ; 26                          ;
 ;     ENA SLD           ; 11                          ;
 ;     plain             ; 15                          ;
@@ -354,7 +355,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;         4 data inputs ; 22                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 4.10                        ;
-; Average LUT depth     ; 2.10                        ;
+; Average LUT depth     ; 2.12                        ;
 +-----------------------+-----------------------------+
 
 
@@ -363,7 +364,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:00     ;
 +----------------+--------------+
 
 
@@ -373,10 +374,10 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Thu Mar 11 10:44:27 2021
+    Info: Processing started: Thu Mar 11 18:20:43 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off AntiRebotes -c AntiRebotes
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file ff_meta.bdf
     Info (12023): Found entity 1: FF_META
 Info (12021): Found 1 design units, including 1 entities, in source file antirebotes.bdf
@@ -388,15 +389,15 @@ Info (12128): Elaborating entity "7447" for hierarchy "7447:inst4"
 Info (12130): Elaborated megafunction instantiation "7447:inst4"
 Info (12128): Elaborating entity "74191" for hierarchy "74191:inst2"
 Info (12130): Elaborated megafunction instantiation "74191:inst2"
-Info (12128): Elaborating entity "f74191" for hierarchy "74191:inst2|f74191:sub" File: c:/intelfpga_lite/18.1/quartus/libraries/others/maxplus2/74191.tdf Line: 33
+Info (12128): Elaborating entity "f74191" for hierarchy "74191:inst2|f74191:sub" File: d:/programas/intelfpga_lite/quartus_ii_18.1/quartus/libraries/others/maxplus2/74191.tdf Line: 33
 Warning (275008): Primitive "VCC" of instance "125" not used
-Info (12131): Elaborated megafunction instantiation "74191:inst2|f74191:sub", which is child of megafunction instantiation "74191:inst2" File: c:/intelfpga_lite/18.1/quartus/libraries/others/maxplus2/74191.tdf Line: 33
+Info (12131): Elaborated megafunction instantiation "74191:inst2|f74191:sub", which is child of megafunction instantiation "74191:inst2" File: d:/programas/intelfpga_lite/quartus_ii_18.1/quartus/libraries/others/maxplus2/74191.tdf Line: 33
 Info (12128): Elaborating entity "inhb" for hierarchy "74191:inst2|f74191:sub|inhb:55"
 Info (12131): Elaborated megafunction instantiation "74191:inst2|f74191:sub|inhb:55", which is child of megafunction instantiation "74191:inst2"
 Info (12128): Elaborating entity "AntiRebotes" for hierarchy "AntiRebotes:inst999"
 Warning (12125): Using design file sm1.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
-    Info (12022): Found design unit 1: SM1-BEHAVIOR File: C:/intelFPGA_lite/Projects_MAX10/Tarea_3/sm1.vhd Line: 33
-    Info (12023): Found entity 1: SM1 File: C:/intelFPGA_lite/Projects_MAX10/Tarea_3/sm1.vhd Line: 21
+    Info (12022): Found design unit 1: SM1-BEHAVIOR File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_3/sm1.vhd Line: 33
+    Info (12023): Found entity 1: SM1 File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_3/sm1.vhd Line: 21
 Info (12128): Elaborating entity "SM1" for hierarchy "AntiRebotes:inst999|SM1:inst10"
 Info (12128): Elaborating entity "FF_META" for hierarchy "AntiRebotes:inst999|FF_META:inst"
 Info (12128): Elaborating entity "LPM_COUNTER" for hierarchy "AntiRebotes:inst999|LPM_COUNTER:inst1"
@@ -405,24 +406,24 @@ Info (12133): Instantiated megafunction "AntiRebotes:inst999|LPM_COUNTER:inst1" 
     Info (12134): Parameter "LPM_MODULUS" = "1250"
     Info (12134): Parameter "LPM_WIDTH" = "11"
 Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_rei.tdf
-    Info (12023): Found entity 1: cntr_rei File: C:/intelFPGA_lite/Projects_MAX10/Tarea_3/db/cntr_rei.tdf Line: 27
-Info (12128): Elaborating entity "cntr_rei" for hierarchy "AntiRebotes:inst999|LPM_COUNTER:inst1|cntr_rei:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_counter.tdf Line: 258
+    Info (12023): Found entity 1: cntr_rei File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_3/db/cntr_rei.tdf Line: 27
+Info (12128): Elaborating entity "cntr_rei" for hierarchy "AntiRebotes:inst999|LPM_COUNTER:inst1|cntr_rei:auto_generated" File: d:/programas/intelfpga_lite/quartus_ii_18.1/quartus/libraries/megafunctions/lpm_counter.tdf Line: 258
 Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr_usb.tdf
-    Info (12023): Found entity 1: cmpr_usb File: C:/intelFPGA_lite/Projects_MAX10/Tarea_3/db/cmpr_usb.tdf Line: 22
-Info (12128): Elaborating entity "cmpr_usb" for hierarchy "AntiRebotes:inst999|LPM_COUNTER:inst1|cntr_rei:auto_generated|cmpr_usb:cmpr1" File: C:/intelFPGA_lite/Projects_MAX10/Tarea_3/db/cntr_rei.tdf Line: 92
+    Info (12023): Found entity 1: cmpr_usb File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_3/db/cmpr_usb.tdf Line: 22
+Info (12128): Elaborating entity "cmpr_usb" for hierarchy "AntiRebotes:inst999|LPM_COUNTER:inst1|cntr_rei:auto_generated|cmpr_usb:cmpr1" File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_3/db/cntr_rei.tdf Line: 92
 Info (13014): Ignored 6 buffer(s)
     Info (13015): Ignored 6 CARRY buffer(s)
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 72 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 4 input pins
+Info (21057): Implemented 71 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 3 input pins
     Info (21059): Implemented 14 output pins
     Info (21061): Implemented 54 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 4797 megabytes
-    Info: Processing ended: Thu Mar 11 10:44:53 2021
-    Info: Elapsed time: 00:00:26
-    Info: Total CPU time (on all processors): 00:00:45
+    Info: Peak virtual memory: 4827 megabytes
+    Info: Processing ended: Thu Mar 11 18:20:53 2021
+    Info: Elapsed time: 00:00:10
+    Info: Total CPU time (on all processors): 00:00:21
 
 

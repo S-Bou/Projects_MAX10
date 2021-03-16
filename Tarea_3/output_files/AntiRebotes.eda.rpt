@@ -1,5 +1,5 @@
 EDA Netlist Writer report for AntiRebotes
-Thu Mar 11 11:41:42 2021
+Thu Mar 11 18:26:23 2021
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -36,7 +36,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Thu Mar 11 11:41:42 2021 ;
+; EDA Netlist Writer Status ; Successful - Thu Mar 11 18:26:23 2021 ;
 ; Revision Name             ; AntiRebotes                           ;
 ; Top-level Entity Name     ; EjemploKeys                           ;
 ; Family                    ; MAX 10                                ;
@@ -65,13 +65,13 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------------------------------------------+------------------------+
 
 
-+---------------------------------------------------------------------------+
-; Simulation Generated Files                                                ;
-+---------------------------------------------------------------------------+
-; Generated Files                                                           ;
-+---------------------------------------------------------------------------+
-; C:/intelFPGA_lite/Projects_MAX10/Tarea_3/simulation/qsim//AntiRebotes.vho ;
-+---------------------------------------------------------------------------+
++-------------------------------------------------------------------------------------+
+; Simulation Generated Files                                                          ;
++-------------------------------------------------------------------------------------+
+; Generated Files                                                                     ;
++-------------------------------------------------------------------------------------+
+; D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_3/simulation/qsim//AntiRebotes.vho ;
++-------------------------------------------------------------------------------------+
 
 
 +-----------------------------+
@@ -93,14 +93,14 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: the sole purpose of programming logic devices manufactured by
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details.
-    Info: Processing started: Thu Mar 11 11:41:40 2021
-Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=C:/intelFPGA_lite/Projects_MAX10/Tarea_3/simulation/qsim/ AntiRebotes -c AntiRebotes
+    Info: Processing started: Thu Mar 11 18:26:23 2021
+Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_3/simulation/qsim/ AntiRebotes -c AntiRebotes
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (204019): Generated file AntiRebotes.vho in folder "C:/intelFPGA_lite/Projects_MAX10/Tarea_3/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file AntiRebotes.vho in folder "D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_3/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4631 megabytes
-    Info: Processing ended: Thu Mar 11 11:41:42 2021
-    Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:02
+    Info: Peak virtual memory: 4635 megabytes
+    Info: Processing ended: Thu Mar 11 18:26:23 2021
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:01
 
 

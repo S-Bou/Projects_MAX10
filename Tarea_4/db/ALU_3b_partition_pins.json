@@ -1,0 +1,29 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "Sum",
+					"strict" : false
+				},
+				{
+					"name" : "Cout",
+					"strict" : false
+				},
+				{
+					"name" : "Afa",
+					"strict" : false
+				},
+				{
+					"name" : "Bfa",
+					"strict" : false
+				},
+				{
+					"name" : "Cin",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

@@ -63,7 +63,7 @@ Eantirebotes_vhd_vec_tst
 Z20 w1615373617
 R7
 R8
-R10
+R0
 Z21 8WaveformT3.vwf.vht
 Z22 FWaveformT3.vwf.vht
 l0
@@ -72,11 +72,11 @@ V380fL4Zo6YGk_^k7;O`L;0
 !s100 9AI`HgU9e37bUgQc>R5h01
 R13
 32
-R14
+Z23 !s110 1615483229
 !i10b 1
-R15
-Z23 !s90 -work|work|WaveformT3.vwf.vht|
-Z24 !s107 WaveformT3.vwf.vht|
+Z24 !s108 1615483228.000000
+Z25 !s90 -work|work|WaveformT3.vwf.vht|
+Z26 !s107 WaveformT3.vwf.vht|
 !i113 1
 R18
 R19
@@ -90,16 +90,16 @@ V;ZM3h7R8jgmYbLHP5i6EF1
 !s100 68CBHPazL5S0=16I_JC[P0
 R13
 32
-R14
-!i10b 1
-R15
 R23
+!i10b 1
 R24
+R25
+R26
 !i113 1
 R18
 R19
 Eejemplokeys
-Z25 w1615459302
+Z27 w1615483583
 R2
 R3
 R4
@@ -108,18 +108,18 @@ R6
 R7
 R8
 R9
-Z26 dC:/intelFPGA_lite/Projects_MAX10/Tarea_3/simulation/qsim
+R0
 R11
 R12
 l0
 L90
-VnfX:^737c?0H7=B7F?L4Z3
-!s100 2lYYK@FW[?f]OFMCom]BX1
+VPLQ^3J:OHQ2aTYcjH[Ki]3
+!s100 I`>Cl3<L0bcVVIk4P6M1J1
 R13
 32
-Z27 !s110 1615459307
+Z28 !s110 1615483584
 !i10b 1
-Z28 !s108 1615459307.000000
+Z29 !s108 1615483584.000000
 R16
 R17
 !i113 1
@@ -134,37 +134,37 @@ R6
 R7
 R8
 R9
-DEx4 work 11 ejemplokeys 0 22 nfX:^737c?0H7=B7F?L4Z3
-l278
-L134
-VGaa:KQSODPi3N0FLC1WiP0
-!s100 g>83Ib4i1BP[[AgbC18Q41
+DEx4 work 11 ejemplokeys 0 22 PLQ^3J:OHQ2aTYcjH[Ki]3
+l275
+L132
+V=Aoh32hd[HPizA7F33zhb3
+!s100 EZ6TVfedI^<?:QKdnZ2zY1
 R13
 32
-R27
-!i10b 1
 R28
+!i10b 1
+R29
 R16
 R17
 !i113 1
 R18
 R19
 Eejemplokeys_vhd_vec_tst
-Z29 w1615459299
+Z30 w1615483582
 R7
 R8
-R26
-Z30 8WaveformPR.vwf.vht
-Z31 FWaveformPR.vwf.vht
+R0
+Z31 8WaveformPR.vwf.vht
+Z32 FWaveformPR.vwf.vht
 l0
 L31
 V^o=4>`9AmG<49PAAbM2kf0
 !s100 0`j]]Smf^e7:S]16TdJNW3
 R13
 32
-Z32 !s110 1615459308
-!i10b 1
 R28
+!i10b 1
+R29
 Z33 !s90 -work|work|WaveformPR.vwf.vht|
 Z34 !s107 WaveformPR.vwf.vht|
 !i113 1
@@ -174,29 +174,29 @@ Aejemplokeys_arch
 R7
 R8
 Z35 DEx4 work 23 ejemplokeys_vhd_vec_tst 0 22 ^o=4>`9AmG<49PAAbM2kf0
-l76
+l74
 L33
-Z36 V=Nl^Lofg_L7DjnQkRNORA3
-Z37 !s100 nk9DH1j8[RcTkoM]]oTQD1
+Z36 VPM5<4Fn8eUbQZkP:[2?Vo0
+Z37 !s100 KF[HdeNh:<[1^A:d@:EEZ0
 R13
 32
-R32
-!i10b 1
 R28
+!i10b 1
+R29
 R33
 R34
 !i113 1
 R18
 R19
 Ehard_block
-R25
+R27
 R4
 R2
 R6
 R7
 R8
 R3
-R26
+R0
 R11
 R12
 l0
@@ -205,9 +205,9 @@ V8_BbEmGd;OHS6h@;gFc7W3
 !s100 ROH=D<N4CT6aCZ<37A[_?0
 R13
 32
-R27
-!i10b 1
 R28
+!i10b 1
+R29
 R16
 R17
 !i113 1
@@ -227,9 +227,9 @@ Vg=W`CQ>24lhYF71zFSkY43
 !s100 zW6ML5NVY?Ai`]`n2XhME3
 R13
 32
-R27
-!i10b 1
 R28
+!i10b 1
+R29
 R16
 R17
 !i113 1

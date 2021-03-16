@@ -39,7 +39,7 @@ refer to the applicable agreement for further details.
 	(input)
 	(rect 64 96 232 112)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "Reset" (rect 5 0 35 12)(font "Arial" ))
+	(text "Reset" (rect 5 0 34 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -55,7 +55,7 @@ refer to the applicable agreement for further details.
 	(input)
 	(rect 64 160 232 176)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "Input" (rect 5 0 30 12)(font "Arial" ))
+	(text "Input" (rect 5 0 29 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -655,12 +655,21 @@ refer to the applicable agreement for further details.
 	(pt 960 360)
 )
 (connector
-	(pt 272 136)
-	(pt 272 184)
+	(text "Reset" (rect 234 88 261 105)(font "Intel Clear" ))
+	(pt 232 104)
+	(pt 264 104)
 )
 (connector
-	(pt 552 168)
 	(pt 440 168)
+	(pt 552 168)
+)
+(connector
+	(pt 232 168)
+	(pt 312 168)
+)
+(connector
+	(pt 272 136)
+	(pt 272 184)
 )
 (connector
 	(text "Clock" (rect 242 168 269 185)(font "Intel Clear" ))
@@ -668,17 +677,8 @@ refer to the applicable agreement for further details.
 	(pt 272 184)
 )
 (connector
-	(pt 232 168)
-	(pt 312 168)
-)
-(connector
 	(pt 272 184)
 	(pt 312 184)
-)
-(connector
-	(text "Reset" (rect 234 88 261 105)(font "Intel Clear" ))
-	(pt 232 104)
-	(pt 264 104)
 )
 (junction (pt 736 280))
 (junction (pt 728 136))
