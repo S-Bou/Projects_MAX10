@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ALU_3b
-Tue Mar 16 21:01:39 2021
+Wed Mar 17 11:13:54 2021
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -42,7 +42,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Mar 16 21:01:39 2021       ;
+; Analysis & Synthesis Status        ; Successful - Wed Mar 17 11:13:54 2021       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; ALU_3b                                      ;
 ; Top-level Entity Name              ; fulladder                                   ;
@@ -261,7 +261,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Tue Mar 16 21:01:27 2021
+    Info: Processing started: Wed Mar 17 11:13:42 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ALU_3b -c ALU_3b
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
@@ -269,9 +269,13 @@ Info (12021): Found 3 design units, including 1 entities, in source file halfadd
     Info (12022): Found design unit 1: halfadder-main File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/halfadder.vhd Line: 8
     Info (12022): Found design unit 2: halfadder_package File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/halfadder.vhd Line: 15
     Info (12023): Found entity 1: halfadder File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/halfadder.vhd Line: 3
-Info (12021): Found 2 design units, including 1 entities, in source file fulladder.vhd
+Info (12021): Found 3 design units, including 1 entities, in source file fulladder.vhd
     Info (12022): Found design unit 1: fulladder-main File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/fulladder.vhd Line: 9
+    Info (12022): Found design unit 2: fulladder_package File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/fulladder.vhd Line: 27
     Info (12023): Found entity 1: fulladder File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/fulladder.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file adder3b.vhd
+    Info (12022): Found design unit 1: adder3b-main File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/adder3b.vhd Line: 9
+    Info (12023): Found entity 1: adder3b File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/adder3b.vhd Line: 4
 Info (12127): Elaborating entity "fulladder" for the top level hierarchy
 Info (12128): Elaborating entity "halfadder" for hierarchy "halfadder:M1" File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/fulladder.vhd Line: 21
 Info (286030): Timing-Driven Synthesis is running
@@ -282,9 +286,9 @@ Info (21057): Implemented 7 device resources after synthesis - the final resourc
     Info (21059): Implemented 2 output pins
     Info (21061): Implemented 2 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4786 megabytes
-    Info: Processing ended: Tue Mar 16 21:01:39 2021
+    Info: Peak virtual memory: 4784 megabytes
+    Info: Processing ended: Wed Mar 17 11:13:54 2021
     Info: Elapsed time: 00:00:12
-    Info: Total CPU time (on all processors): 00:00:22
+    Info: Total CPU time (on all processors): 00:00:20
 
 

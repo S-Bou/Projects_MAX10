@@ -23,3 +23,10 @@ begin
 	Cout <= Fs2C or Ss2C;
 end main;	
 	
+library ieee; use ieee.std_logic_1164.all;
+package fulladder_package is
+	component fullsdder
+		port(Afa, Bfa, Cin: in std_logic;
+			  Sum, Cout: out std_logic);
+	end component;
+end fulladder_package;

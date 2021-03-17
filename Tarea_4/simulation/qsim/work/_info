@@ -1,0 +1,143 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/simulation/qsim
+Efulladder
+Z1 w1615974331
+Z2 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z3 DPx11 fiftyfivenm 21 fiftyfivenm_atom_pack 0 22 7d5Xo;QBOkc31OfQTzSXV0
+Z4 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z5 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z6 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z7 DPx11 fiftyfivenm 22 fiftyfivenm_components 0 22 IfY7Mh2WPBc;@7U@3<I^[0
+R0
+Z8 8ALU_3b.vho
+Z9 FALU_3b.vho
+l0
+L88
+Vl6baj4HBzJ=;[;OU2>_U92
+!s100 ;8ME<0Z3CHIJY2:LJ3j?O3
+Z10 OV;C;10.5b;63
+32
+Z11 !s110 1615974332
+!i10b 1
+Z12 !s108 1615974332.000000
+Z13 !s90 -work|work|ALU_3b.vho|
+Z14 !s107 ALU_3b.vho|
+!i113 1
+Z15 o-work work
+Z16 tExplicit 1 CvgOpt 0
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 9 fulladder 0 22 l6baj4HBzJ=;[;OU2>_U92
+l142
+L106
+V6GeWl9`oi<H4UDd0>SbT>1
+!s100 Vm0ei5NQ;i:Gz:c@NlMTF3
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+Efulladder_vhd_vec_tst
+Z17 w1615974330
+R5
+R6
+R0
+Z18 8WaveformFA.vwf.vht
+Z19 FWaveformFA.vwf.vht
+l0
+L31
+V=3zQ:Il7nc0OKHg@R>?^a2
+!s100 QBLb8[:Yoi^BQBdP6g07l3
+R10
+32
+R11
+!i10b 1
+R12
+Z20 !s90 -work|work|WaveformFA.vwf.vht|
+Z21 !s107 WaveformFA.vwf.vht|
+!i113 1
+R15
+R16
+Afulladder_arch
+R5
+R6
+Z22 DEx4 work 21 fulladder_vhd_vec_tst 0 22 =3zQ:Il7nc0OKHg@R>?^a2
+l50
+L33
+Z23 Vj@=OHlf;:`<RmLMEObmGe3
+Z24 !s100 2I9K4ADh829IRMAI:;:a@3
+R10
+32
+R11
+!i10b 1
+R12
+R20
+R21
+!i113 1
+R15
+R16
+Ehard_block
+R1
+R2
+R3
+R4
+R5
+R6
+R7
+R0
+R8
+R9
+l0
+L34
+V8_BbEmGd;OHS6h@;gFc7W3
+!s100 ROH=D<N4CT6aCZ<37A[_?0
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 10 hard_block 0 22 8_BbEmGd;OHS6h@;gFc7W3
+l75
+L53
+Vg=W`CQ>24lhYF71zFSkY43
+!s100 zW6ML5NVY?Ai`]`n2XhME3
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
