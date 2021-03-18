@@ -18,14 +18,14 @@ architecture main of fulladder is
    end component;			  
 
 begin
-	M1: halfadder port map(Aha=>Afa, Bha=>Bfa, s1=>Fs1S, s2=>Fs2C);
-	M2: halfadder port map(Aha=>Fs1S, Bha=>Cin, s1=>Sum, s2=>Ss2C);
+	HA1: halfadder port map(Aha=>Afa, Bha=>Bfa, s1=>Fs1S, s2=>Fs2C);
+	HA2: halfadder port map(Aha=>Fs1S, Bha=>Cin, s1=>Sum, s2=>Ss2C);
 	Cout <= Fs2C or Ss2C;
 end main;	
 	
 library ieee; use ieee.std_logic_1164.all;
 package fulladder_package is
-	component fullsdder
+	component fulladder
 		port(Afa, Bfa, Cin: in std_logic;
 			  Sum, Cout: out std_logic);
 	end component;

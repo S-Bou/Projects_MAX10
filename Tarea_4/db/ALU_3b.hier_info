@@ -1,25 +1,25 @@
-|fulladder
-Afa => halfadder:M1.Aha
-Bfa => halfadder:M1.Bha
-Cin => halfadder:M2.Bha
-Sum <= halfadder:M2.s1
-Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+|fullsubtractor
+Afs => halfsubtractor:HS1.Ahs
+Bfs => halfsubtractor:HS1.Bhs
+Bin => halfsubtractor:HS2.Bhs
+Diff <= halfsubtractor:HS2.s1
+Bout <= Bout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fulladder|halfadder:M1
-Aha => s1.IN0
-Aha => s2.IN0
-Bha => s1.IN1
-Bha => s2.IN1
+|fullsubtractor|halfsubtractor:HS1
+Ahs => s1.IN0
+Ahs => s2.IN0
+Bhs => s1.IN1
+Bhs => s2.IN1
 s1 <= s1.DB_MAX_OUTPUT_PORT_TYPE
 s2 <= s2.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|fulladder|halfadder:M2
-Aha => s1.IN0
-Aha => s2.IN0
-Bha => s1.IN1
-Bha => s2.IN1
+|fullsubtractor|halfsubtractor:HS2
+Ahs => s1.IN0
+Ahs => s2.IN0
+Bhs => s1.IN1
+Bhs => s2.IN1
 s1 <= s1.DB_MAX_OUTPUT_PORT_TYPE
 s2 <= s2.DB_MAX_OUTPUT_PORT_TYPE
 

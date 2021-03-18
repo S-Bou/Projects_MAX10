@@ -1,0 +1,20 @@
+library ieee; use ieee.std_logic_1164.all;
+
+entity halfsubstractor is
+	port(Ahs, Bhs: in std_logic;
+        s1, s2: out std_logic);
+end halfsubstractor;
+
+Architecture main of halfsubstractor is
+begin
+	S1 <= Ahs xor Bhs;
+	S2 <= not(Ahs) and Bhs;
+end main;	
+
+library ieee; use ieee.std_logic_1164.all;
+package halfsubstractor_package is
+	component halfsubstractor
+		port(Aha, Bha: in std_logic;
+			  s1, s2: out std_logic);
+	end component;
+end halfsubstractor_package;

@@ -8,8 +8,8 @@ z2
 !i10f 100
 cModel Technology
 Z0 dD:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/simulation/qsim
-Efulladder
-Z1 w1615974331
+Eadder3b
+Z1 w1616073479
 Z2 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
 Z3 DPx11 fiftyfivenm 21 fiftyfivenm_atom_pack 0 22 7d5Xo;QBOkc31OfQTzSXV0
 Z4 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
@@ -21,18 +21,104 @@ Z8 8ALU_3b.vho
 Z9 FALU_3b.vho
 l0
 L88
-Vl6baj4HBzJ=;[;OU2>_U92
-!s100 ;8ME<0Z3CHIJY2:LJ3j?O3
+V0jf9ifNjLA:oQXIAlWb162
+!s100 LVDigl?V=nkb]C>NVon8?0
 Z10 OV;C;10.5b;63
 32
-Z11 !s110 1615974332
+Z11 !s110 1616073480
 !i10b 1
-Z12 !s108 1615974332.000000
+Z12 !s108 1616073480.000000
 Z13 !s90 -work|work|ALU_3b.vho|
 Z14 !s107 ALU_3b.vho|
 !i113 1
 Z15 o-work work
 Z16 tExplicit 1 CvgOpt 0
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 7 adder3b 0 22 0jf9ifNjLA:oQXIAlWb162
+l156
+L111
+V]N@0bYZ`BWcO5FV`^JE:n0
+!s100 MIh:GlY?KhTnB^UQojM^?2
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+Eadder3b_vhd_vec_tst
+R1
+R5
+R6
+R0
+Z17 8WaveformA3B.vwf.vht
+Z18 FWaveformA3B.vwf.vht
+l0
+L31
+V8j2n6NPB=4oAhK_B?OiVl2
+!s100 _e4n@B@B1e3;om<8oRM782
+R10
+32
+R11
+!i10b 1
+R12
+Z19 !s90 -work|work|WaveformA3B.vwf.vht|
+Z20 !s107 WaveformA3B.vwf.vht|
+!i113 1
+R15
+R16
+Aadder3b_arch
+R5
+R6
+Z21 DEx4 work 19 adder3b_vhd_vec_tst 0 22 8j2n6NPB=4oAhK_B?OiVl2
+l48
+L33
+VaJz4B:3@GOKmY7B51d2M91
+!s100 [9]z`a9h<L_CWiK@CP6[a0
+R10
+32
+R11
+!i10b 1
+R12
+R19
+R20
+!i113 1
+R15
+R16
+Efulladder
+Z22 w1615974331
+R2
+R3
+R4
+R5
+R6
+R7
+R0
+R8
+R9
+l0
+L88
+Vl6baj4HBzJ=;[;OU2>_U92
+!s100 ;8ME<0Z3CHIJY2:LJ3j?O3
+R10
+32
+Z23 !s110 1615974332
+!i10b 1
+Z24 !s108 1615974332.000000
+R13
+R14
+!i113 1
+R15
+R16
 Astructure
 R2
 R3
@@ -47,50 +133,50 @@ V6GeWl9`oi<H4UDd0>SbT>1
 !s100 Vm0ei5NQ;i:Gz:c@NlMTF3
 R10
 32
-R11
+R23
 !i10b 1
-R12
+R24
 R13
 R14
 !i113 1
 R15
 R16
 Efulladder_vhd_vec_tst
-Z17 w1615974330
+Z25 w1615974330
 R5
 R6
 R0
-Z18 8WaveformFA.vwf.vht
-Z19 FWaveformFA.vwf.vht
+Z26 8WaveformFA.vwf.vht
+Z27 FWaveformFA.vwf.vht
 l0
 L31
 V=3zQ:Il7nc0OKHg@R>?^a2
 !s100 QBLb8[:Yoi^BQBdP6g07l3
 R10
 32
-R11
+R23
 !i10b 1
-R12
-Z20 !s90 -work|work|WaveformFA.vwf.vht|
-Z21 !s107 WaveformFA.vwf.vht|
+R24
+Z28 !s90 -work|work|WaveformFA.vwf.vht|
+Z29 !s107 WaveformFA.vwf.vht|
 !i113 1
 R15
 R16
 Afulladder_arch
 R5
 R6
-Z22 DEx4 work 21 fulladder_vhd_vec_tst 0 22 =3zQ:Il7nc0OKHg@R>?^a2
+DEx4 work 21 fulladder_vhd_vec_tst 0 22 =3zQ:Il7nc0OKHg@R>?^a2
 l50
 L33
-Z23 Vj@=OHlf;:`<RmLMEObmGe3
-Z24 !s100 2I9K4ADh829IRMAI:;:a@3
+Vj@=OHlf;:`<RmLMEObmGe3
+!s100 2I9K4ADh829IRMAI:;:a@3
 R10
 32
-R11
+R23
 !i10b 1
-R12
-R20
-R21
+R24
+R28
+R29
 !i113 1
 R15
 R16

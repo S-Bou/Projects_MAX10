@@ -7,7 +7,7 @@ Note: if both ModelSim-Altera and ModelSim executables are available, ModelSim-A
 
 **** Generating the ModelSim Testbench ****
 
-quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off ALU_3b -c ALU_3b --vector_source="D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/WaveformFA.vwf" --testbench_file="D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/simulation/qsim/WaveformFA.vwf.vht"
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off ALU_3b -c ALU_3b --vector_source="D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/WaveformA3B.vwf" --testbench_file="D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/simulation/qsim/WaveformA3B.vwf.vht"
 
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
@@ -25,8 +25,8 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: the sole purpose of programming logic devices manufactured by
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details.
-    Info: Processing started: Wed Mar 17 10:45:30 2021
-Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off ALU_3b -c ALU_3b --vector_source=D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/WaveformFA.vwf --testbench_file=D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/simulation/qsim/WaveformFA.vwf.vht
+    Info: Processing started: Thu Mar 18 14:17:58 2021
+Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off ALU_3b -c ALU_3b --vector_source=D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/WaveformA3B.vwf --testbench_file=D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/simulation/qsim/WaveformA3B.vwf.vht
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 
 Completed successfully. 
@@ -51,13 +51,13 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: the sole purpose of programming logic devices manufactured by
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details.
-    Info: Processing started: Wed Mar 17 10:45:30 2021
+    Info: Processing started: Thu Mar 18 14:17:59 2021
 Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/simulation/qsim/ ALU_3b -c ALU_3b
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (204019): Generated file ALU_3b.vho in folder "D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 4633 megabytes
-    Info: Processing ended: Wed Mar 17 10:45:31 2021
+    Info: Processing ended: Thu Mar 18 14:18:00 2021
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
@@ -81,7 +81,7 @@ Reading D:/Programas/intelFPGA_lite/Quartus_II_18.1/modelsim_ase/tcl/vsim/pref.t
 # do ALU_3b.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:45:32 on Mar 17,2021
+# Start time: 14:18:00 on Mar 18,2021
 # vcom -work work ALU_3b.vho 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -92,33 +92,34 @@ Reading D:/Programas/intelFPGA_lite/Quartus_II_18.1/modelsim_ase/tcl/vsim/pref.t
 # -- Loading package fiftyfivenm_components
 # -- Compiling entity hard_block
 # -- Compiling architecture structure of hard_block
-# -- Compiling entity fulladder
-# -- Compiling architecture structure of fulladder
+# -- Compiling entity adder3b
+# -- Compiling architecture structure of adder3b
 
-# End time: 10:45:32 on Mar 17,2021, Elapsed time: 0:00:00
+# End time: 14:18:00 on Mar 18,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:45:32 on Mar 17,2021
-# vcom -work work WaveformFA.vwf.vht 
+# Start time: 14:18:00 on Mar 18,2021
+# vcom -work work WaveformA3B.vwf.vht 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Compiling entity fulladder_vhd_vec_tst
-# -- Compiling architecture fulladder_arch of fulladder_vhd_vec_tst
-# End time: 10:45:32 on Mar 17,2021, Elapsed time: 0:00:00
+# -- Compiling entity adder3b_vhd_vec_tst
+# -- Compiling architecture adder3b_arch of adder3b_vhd_vec_tst
+
+# End time: 14:18:00 on Mar 18,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 
-# vsim -novopt -c -t 1ps -L fiftyfivenm -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.fulladder_vhd_vec_tst 
-# Start time: 10:45:32 on Mar 17,2021
+# vsim -novopt -c -t 1ps -L fiftyfivenm -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.adder3b_vhd_vec_tst 
+# Start time: 14:18:00 on Mar 18,2021
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
-# Loading work.fulladder_vhd_vec_tst(fulladder_arch)
+# Loading work.adder3b_vhd_vec_tst(adder3b_arch)
 # Loading ieee.vital_timing(body)
 # Loading ieee.vital_primitives(body)
 # Loading fiftyfivenm.fiftyfivenm_atom_pack(body)
 # Loading fiftyfivenm.fiftyfivenm_components
-# Loading work.fulladder(structure)
+# Loading work.adder3b(structure)
 # Loading work.hard_block(structure)
 # Loading fiftyfivenm.fiftyfivenm_lcell_comb(vital_lcell_comb)
 # Loading fiftyfivenm.fiftyfivenm_io_obuf(behavior)
@@ -127,20 +128,20 @@ Reading D:/Programas/intelFPGA_lite/Quartus_II_18.1/modelsim_ase/tcl/vsim/pref.t
 # Loading fiftyfivenm.fiftyfivenm_adcblock(behavior)
 # after#33
 
-# End time: 10:45:32 on Mar 17,2021, Elapsed time: 0:00:00
+# End time: 14:18:01 on Mar 18,2021, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 
 Completed successfully. 
 
 **** Converting ModelSim VCD to vector waveform ****
 
-Reading D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/WaveformFA.vwf...
+Reading D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/WaveformA3B.vwf...
 
 Reading D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/simulation/qsim/ALU_3b.msim.vcd...
 
 Processing channel transitions... 
 
-Writing the resulting VWF to D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/simulation/qsim/ALU_3b_20210317104533.sim.vwf
+Writing the resulting VWF to D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/simulation/qsim/ALU_3b_20210318141801.sim.vwf
 
 Finished VCD to VWF conversion.
 

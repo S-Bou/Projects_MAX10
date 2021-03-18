@@ -16,7 +16,7 @@
 -- PROGRAM "Quartus Prime"
 -- VERSION "Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition"
 
--- DATE "03/17/2021 10:45:31"
+-- DATE "03/18/2021 14:17:59"
 
 -- 
 -- Device: Altera 10M50DAF484C6GES Package FBGA484
@@ -85,25 +85,30 @@ LIBRARY IEEE;
 USE FIFTYFIVENM.FIFTYFIVENM_COMPONENTS.ALL;
 USE IEEE.STD_LOGIC_1164.ALL;
 
-ENTITY 	fulladder IS
+ENTITY 	adder3b IS
     PORT (
-	Afa : IN std_logic;
-	Bfa : IN std_logic;
-	Cin : IN std_logic;
-	Sum : OUT std_logic;
-	Cout : OUT std_logic
+	Aa3b : IN std_logic_vector(2 DOWNTO 0);
+	Ba3b : IN std_logic_vector(2 DOWNTO 0);
+	Cin3b : IN std_logic;
+	Sa3b : OUT std_logic_vector(3 DOWNTO 0)
 	);
-END fulladder;
+END adder3b;
 
 -- Design Ports Information
--- Sum	=>  Location: PIN_W3,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- Cout	=>  Location: PIN_U6,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- Afa	=>  Location: PIN_AA2,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- Bfa	=>  Location: PIN_AA1,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- Cin	=>  Location: PIN_Y5,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- Sa3b[0]	=>  Location: PIN_D5,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- Sa3b[1]	=>  Location: PIN_C4,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- Sa3b[2]	=>  Location: PIN_E8,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- Sa3b[3]	=>  Location: PIN_F7,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- Aa3b[0]	=>  Location: PIN_C5,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- Ba3b[0]	=>  Location: PIN_B3,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- Cin3b	=>  Location: PIN_A2,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- Ba3b[1]	=>  Location: PIN_B2,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- Aa3b[1]	=>  Location: PIN_B4,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- Aa3b[2]	=>  Location: PIN_A3,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- Ba3b[2]	=>  Location: PIN_B5,	 I/O Standard: 2.5 V,	 Current Strength: Default
 
 
-ARCHITECTURE structure OF fulladder IS
+ARCHITECTURE structure OF adder3b IS
 SIGNAL gnd : std_logic := '0';
 SIGNAL vcc : std_logic := '1';
 SIGNAL unknown : std_logic := 'X';
@@ -113,24 +118,33 @@ SIGNAL devpor : std_logic := '1';
 SIGNAL ww_devoe : std_logic;
 SIGNAL ww_devclrn : std_logic;
 SIGNAL ww_devpor : std_logic;
-SIGNAL ww_Afa : std_logic;
-SIGNAL ww_Bfa : std_logic;
-SIGNAL ww_Cin : std_logic;
-SIGNAL ww_Sum : std_logic;
-SIGNAL ww_Cout : std_logic;
+SIGNAL ww_Aa3b : std_logic_vector(2 DOWNTO 0);
+SIGNAL ww_Ba3b : std_logic_vector(2 DOWNTO 0);
+SIGNAL ww_Cin3b : std_logic;
+SIGNAL ww_Sa3b : std_logic_vector(3 DOWNTO 0);
 SIGNAL \~QUARTUS_CREATED_ADC1~_CHSEL_bus\ : std_logic_vector(4 DOWNTO 0);
 SIGNAL \~QUARTUS_CREATED_ADC2~_CHSEL_bus\ : std_logic_vector(4 DOWNTO 0);
 SIGNAL \~QUARTUS_CREATED_GND~I_combout\ : std_logic;
 SIGNAL \~QUARTUS_CREATED_UNVM~~busy\ : std_logic;
 SIGNAL \~QUARTUS_CREATED_ADC1~~eoc\ : std_logic;
 SIGNAL \~QUARTUS_CREATED_ADC2~~eoc\ : std_logic;
-SIGNAL \Sum~output_o\ : std_logic;
-SIGNAL \Cout~output_o\ : std_logic;
-SIGNAL \Afa~input_o\ : std_logic;
-SIGNAL \Cin~input_o\ : std_logic;
-SIGNAL \Bfa~input_o\ : std_logic;
-SIGNAL \M2|s1~0_combout\ : std_logic;
-SIGNAL \Cout~0_combout\ : std_logic;
+SIGNAL \Sa3b[0]~output_o\ : std_logic;
+SIGNAL \Sa3b[1]~output_o\ : std_logic;
+SIGNAL \Sa3b[2]~output_o\ : std_logic;
+SIGNAL \Sa3b[3]~output_o\ : std_logic;
+SIGNAL \Aa3b[0]~input_o\ : std_logic;
+SIGNAL \Cin3b~input_o\ : std_logic;
+SIGNAL \Ba3b[0]~input_o\ : std_logic;
+SIGNAL \FA0|M2|s1~0_combout\ : std_logic;
+SIGNAL \Ba3b[1]~input_o\ : std_logic;
+SIGNAL \Aa3b[1]~input_o\ : std_logic;
+SIGNAL \FA0|Cout~0_combout\ : std_logic;
+SIGNAL \FA1|M2|s1~combout\ : std_logic;
+SIGNAL \Aa3b[2]~input_o\ : std_logic;
+SIGNAL \Ba3b[2]~input_o\ : std_logic;
+SIGNAL \FA1|Cout~0_combout\ : std_logic;
+SIGNAL \FA2|M2|s1~combout\ : std_logic;
+SIGNAL \FA2|Cout~0_combout\ : std_logic;
 
 COMPONENT hard_block
     PORT (
@@ -141,11 +155,10 @@ END COMPONENT;
 
 BEGIN
 
-ww_Afa <= Afa;
-ww_Bfa <= Bfa;
-ww_Cin <= Cin;
-Sum <= ww_Sum;
-Cout <= ww_Cout;
+ww_Aa3b <= Aa3b;
+ww_Ba3b <= Ba3b;
+ww_Cin3b <= Cin3b;
+Sa3b <= ww_Sa3b;
 ww_devoe <= devoe;
 ww_devclrn <= devclrn;
 ww_devpor <= devpor;
@@ -159,7 +172,7 @@ PORT MAP (
 	devclrn => ww_devclrn,
 	devpor => ww_devpor);
 
--- Location: LCCOMB_X44_Y52_N8
+-- Location: LCCOMB_X44_Y42_N24
 \~QUARTUS_CREATED_GND~I\ : fiftyfivenm_lcell_comb
 -- Equation(s):
 -- \~QUARTUS_CREATED_GND~I_combout\ = GND
@@ -172,32 +185,56 @@ GENERIC MAP (
 PORT MAP (
 	combout => \~QUARTUS_CREATED_GND~I_combout\);
 
--- Location: IOOBUF_X18_Y0_N9
-\Sum~output\ : fiftyfivenm_io_obuf
+-- Location: IOOBUF_X24_Y39_N30
+\Sa3b[0]~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
 	bus_hold => "false",
 	open_drain_output => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \M2|s1~0_combout\,
+	i => \FA0|M2|s1~0_combout\,
 	devoe => ww_devoe,
-	o => \Sum~output_o\);
+	o => \Sa3b[0]~output_o\);
 
--- Location: IOOBUF_X16_Y0_N9
-\Cout~output\ : fiftyfivenm_io_obuf
+-- Location: IOOBUF_X24_Y39_N2
+\Sa3b[1]~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
 	bus_hold => "false",
 	open_drain_output => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \Cout~0_combout\,
+	i => \FA1|M2|s1~combout\,
 	devoe => ww_devoe,
-	o => \Cout~output_o\);
+	o => \Sa3b[1]~output_o\);
 
--- Location: IOIBUF_X18_Y0_N22
-\Afa~input\ : fiftyfivenm_io_ibuf
+-- Location: IOOBUF_X24_Y39_N9
+\Sa3b[2]~output\ : fiftyfivenm_io_obuf
+-- pragma translate_off
+GENERIC MAP (
+	bus_hold => "false",
+	open_drain_output => "false")
+-- pragma translate_on
+PORT MAP (
+	i => \FA2|M2|s1~combout\,
+	devoe => ww_devoe,
+	o => \Sa3b[2]~output_o\);
+
+-- Location: IOOBUF_X24_Y39_N16
+\Sa3b[3]~output\ : fiftyfivenm_io_obuf
+-- pragma translate_off
+GENERIC MAP (
+	bus_hold => "false",
+	open_drain_output => "false")
+-- pragma translate_on
+PORT MAP (
+	i => \FA2|Cout~0_combout\,
+	devoe => ww_devoe,
+	o => \Sa3b[3]~output_o\);
+
+-- Location: IOIBUF_X24_Y39_N22
+\Aa3b[0]~input\ : fiftyfivenm_io_ibuf
 -- pragma translate_off
 GENERIC MAP (
 	bus_hold => "false",
@@ -205,11 +242,11 @@ GENERIC MAP (
 	simulate_z_as => "z")
 -- pragma translate_on
 PORT MAP (
-	i => ww_Afa,
-	o => \Afa~input_o\);
+	i => ww_Aa3b(0),
+	o => \Aa3b[0]~input_o\);
 
--- Location: IOIBUF_X18_Y0_N1
-\Cin~input\ : fiftyfivenm_io_ibuf
+-- Location: IOIBUF_X26_Y39_N1
+\Cin3b~input\ : fiftyfivenm_io_ibuf
 -- pragma translate_off
 GENERIC MAP (
 	bus_hold => "false",
@@ -217,11 +254,11 @@ GENERIC MAP (
 	simulate_z_as => "z")
 -- pragma translate_on
 PORT MAP (
-	i => ww_Cin,
-	o => \Cin~input_o\);
+	i => ww_Cin3b,
+	o => \Cin3b~input_o\);
 
--- Location: IOIBUF_X18_Y0_N29
-\Bfa~input\ : fiftyfivenm_io_ibuf
+-- Location: IOIBUF_X26_Y39_N15
+\Ba3b[0]~input\ : fiftyfivenm_io_ibuf
 -- pragma translate_off
 GENERIC MAP (
 	bus_hold => "false",
@@ -229,13 +266,125 @@ GENERIC MAP (
 	simulate_z_as => "z")
 -- pragma translate_on
 PORT MAP (
-	i => ww_Bfa,
-	o => \Bfa~input_o\);
+	i => ww_Ba3b(0),
+	o => \Ba3b[0]~input_o\);
 
--- Location: LCCOMB_X18_Y1_N0
-\M2|s1~0\ : fiftyfivenm_lcell_comb
+-- Location: LCCOMB_X26_Y38_N8
+\FA0|M2|s1~0\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \M2|s1~0_combout\ = \Afa~input_o\ $ (\Cin~input_o\ $ (\Bfa~input_o\))
+-- \FA0|M2|s1~0_combout\ = \Aa3b[0]~input_o\ $ (\Cin3b~input_o\ $ (\Ba3b[0]~input_o\))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1001100101100110",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	dataa => \Aa3b[0]~input_o\,
+	datab => \Cin3b~input_o\,
+	datad => \Ba3b[0]~input_o\,
+	combout => \FA0|M2|s1~0_combout\);
+
+-- Location: IOIBUF_X22_Y39_N15
+\Ba3b[1]~input\ : fiftyfivenm_io_ibuf
+-- pragma translate_off
+GENERIC MAP (
+	bus_hold => "false",
+	listen_to_nsleep_signal => "false",
+	simulate_z_as => "z")
+-- pragma translate_on
+PORT MAP (
+	i => ww_Ba3b(1),
+	o => \Ba3b[1]~input_o\);
+
+-- Location: IOIBUF_X26_Y39_N22
+\Aa3b[1]~input\ : fiftyfivenm_io_ibuf
+-- pragma translate_off
+GENERIC MAP (
+	bus_hold => "false",
+	listen_to_nsleep_signal => "false",
+	simulate_z_as => "z")
+-- pragma translate_on
+PORT MAP (
+	i => ww_Aa3b(1),
+	o => \Aa3b[1]~input_o\);
+
+-- Location: LCCOMB_X26_Y38_N10
+\FA0|Cout~0\ : fiftyfivenm_lcell_comb
+-- Equation(s):
+-- \FA0|Cout~0_combout\ = (\Aa3b[0]~input_o\ & ((\Cin3b~input_o\) # (\Ba3b[0]~input_o\))) # (!\Aa3b[0]~input_o\ & (\Cin3b~input_o\ & \Ba3b[0]~input_o\))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1110111010001000",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	dataa => \Aa3b[0]~input_o\,
+	datab => \Cin3b~input_o\,
+	datad => \Ba3b[0]~input_o\,
+	combout => \FA0|Cout~0_combout\);
+
+-- Location: LCCOMB_X26_Y38_N4
+\FA1|M2|s1\ : fiftyfivenm_lcell_comb
+-- Equation(s):
+-- \FA1|M2|s1~combout\ = \Ba3b[1]~input_o\ $ (\Aa3b[1]~input_o\ $ (\FA0|Cout~0_combout\))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1001100101100110",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	dataa => \Ba3b[1]~input_o\,
+	datab => \Aa3b[1]~input_o\,
+	datad => \FA0|Cout~0_combout\,
+	combout => \FA1|M2|s1~combout\);
+
+-- Location: IOIBUF_X26_Y39_N8
+\Aa3b[2]~input\ : fiftyfivenm_io_ibuf
+-- pragma translate_off
+GENERIC MAP (
+	bus_hold => "false",
+	listen_to_nsleep_signal => "false",
+	simulate_z_as => "z")
+-- pragma translate_on
+PORT MAP (
+	i => ww_Aa3b(2),
+	o => \Aa3b[2]~input_o\);
+
+-- Location: IOIBUF_X26_Y39_N29
+\Ba3b[2]~input\ : fiftyfivenm_io_ibuf
+-- pragma translate_off
+GENERIC MAP (
+	bus_hold => "false",
+	listen_to_nsleep_signal => "false",
+	simulate_z_as => "z")
+-- pragma translate_on
+PORT MAP (
+	i => ww_Ba3b(2),
+	o => \Ba3b[2]~input_o\);
+
+-- Location: LCCOMB_X26_Y38_N6
+\FA1|Cout~0\ : fiftyfivenm_lcell_comb
+-- Equation(s):
+-- \FA1|Cout~0_combout\ = (\Ba3b[1]~input_o\ & ((\Aa3b[1]~input_o\) # (\FA0|Cout~0_combout\))) # (!\Ba3b[1]~input_o\ & (\Aa3b[1]~input_o\ & \FA0|Cout~0_combout\))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1110111010001000",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	dataa => \Ba3b[1]~input_o\,
+	datab => \Aa3b[1]~input_o\,
+	datad => \FA0|Cout~0_combout\,
+	combout => \FA1|Cout~0_combout\);
+
+-- Location: LCCOMB_X26_Y38_N16
+\FA2|M2|s1\ : fiftyfivenm_lcell_comb
+-- Equation(s):
+-- \FA2|M2|s1~combout\ = \Aa3b[2]~input_o\ $ (\Ba3b[2]~input_o\ $ (\FA1|Cout~0_combout\))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -243,15 +392,15 @@ GENERIC MAP (
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	datab => \Afa~input_o\,
-	datac => \Cin~input_o\,
-	datad => \Bfa~input_o\,
-	combout => \M2|s1~0_combout\);
+	datab => \Aa3b[2]~input_o\,
+	datac => \Ba3b[2]~input_o\,
+	datad => \FA1|Cout~0_combout\,
+	combout => \FA2|M2|s1~combout\);
 
--- Location: LCCOMB_X18_Y1_N18
-\Cout~0\ : fiftyfivenm_lcell_comb
+-- Location: LCCOMB_X26_Y38_N2
+\FA2|Cout~0\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \Cout~0_combout\ = (\Afa~input_o\ & ((\Cin~input_o\) # (\Bfa~input_o\))) # (!\Afa~input_o\ & (\Cin~input_o\ & \Bfa~input_o\))
+-- \FA2|Cout~0_combout\ = (\Aa3b[2]~input_o\ & ((\Ba3b[2]~input_o\) # (\FA1|Cout~0_combout\))) # (!\Aa3b[2]~input_o\ & (\Ba3b[2]~input_o\ & \FA1|Cout~0_combout\))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -259,10 +408,10 @@ GENERIC MAP (
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	datab => \Afa~input_o\,
-	datac => \Cin~input_o\,
-	datad => \Bfa~input_o\,
-	combout => \Cout~0_combout\);
+	datab => \Aa3b[2]~input_o\,
+	datac => \Ba3b[2]~input_o\,
+	datad => \FA1|Cout~0_combout\,
+	combout => \FA2|Cout~0_combout\);
 
 -- Location: UNVM_X0_Y40_N40
 \~QUARTUS_CREATED_UNVM~\ : fiftyfivenm_unvm
@@ -333,9 +482,13 @@ PORT MAP (
 	chsel => \~QUARTUS_CREATED_ADC2~_CHSEL_bus\,
 	eoc => \~QUARTUS_CREATED_ADC2~~eoc\);
 
-ww_Sum <= \Sum~output_o\;
+ww_Sa3b(0) <= \Sa3b[0]~output_o\;
 
-ww_Cout <= \Cout~output_o\;
+ww_Sa3b(1) <= \Sa3b[1]~output_o\;
+
+ww_Sa3b(2) <= \Sa3b[2]~output_o\;
+
+ww_Sa3b(3) <= \Sa3b[3]~output_o\;
 END structure;
 
 

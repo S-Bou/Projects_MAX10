@@ -1,7 +1,7 @@
-Analysis & Synthesis Status : Successful - Wed Mar 17 11:13:54 2021
+Analysis & Synthesis Status : Successful - Thu Mar 18 14:56:45 2021
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : ALU_3b
-Top-level Entity Name : fulladder
+Top-level Entity Name : fullsubtractor
 Family : MAX 10
 Total logic elements : 2
     Total combinational functions : 2

@@ -4,23 +4,23 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "Sum",
+					"name" : "Diff",
 					"strict" : false
 				},
 				{
-					"name" : "Cout",
+					"name" : "Bout",
 					"strict" : false
 				},
 				{
-					"name" : "Afa",
+					"name" : "Bin",
 					"strict" : false
 				},
 				{
-					"name" : "Bfa",
+					"name" : "Afs",
 					"strict" : false
 				},
 				{
-					"name" : "Cin",
+					"name" : "Bfs",
 					"strict" : false
 				}
 			]
