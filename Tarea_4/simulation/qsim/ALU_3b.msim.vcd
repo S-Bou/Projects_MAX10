@@ -3,7 +3,7 @@ $comment
 		vcd file ALU_3b.msim.vcd -direction
 $end
 $date
-	Thu Mar 18 14:18:01 2021
+	Fri Mar 19 13:18:04 2021
 $end
 $version
 	ModelSim Version 10.5b
@@ -12,259 +12,379 @@ $timescale
 	1ps
 $end
 
-$scope module adder3b_vhd_vec_tst $end
-$var wire 1 ! Aa3b [2] $end
-$var wire 1 " Aa3b [1] $end
-$var wire 1 # Aa3b [0] $end
-$var wire 1 $ Ba3b [2] $end
-$var wire 1 % Ba3b [1] $end
-$var wire 1 & Ba3b [0] $end
-$var wire 1 ' Cin3b $end
-$var wire 1 ( Sa3b [3] $end
-$var wire 1 ) Sa3b [2] $end
-$var wire 1 * Sa3b [1] $end
-$var wire 1 + Sa3b [0] $end
+$scope module alu_vhd_vec_tst $end
+$var wire 1 ! ledr [5] $end
+$var wire 1 " ledr [4] $end
+$var wire 1 # ledr [3] $end
+$var wire 1 $ ledr [2] $end
+$var wire 1 % ledr [1] $end
+$var wire 1 & ledr [0] $end
+$var wire 1 ' sel [1] $end
+$var wire 1 ( sel [0] $end
+$var wire 1 ) solAdd [3] $end
+$var wire 1 * solAdd [2] $end
+$var wire 1 + solAdd [1] $end
+$var wire 1 , solAdd [0] $end
+$var wire 1 - solCom [1] $end
+$var wire 1 . solCom [0] $end
+$var wire 1 / solMul [5] $end
+$var wire 1 0 solMul [4] $end
+$var wire 1 1 solMul [3] $end
+$var wire 1 2 solMul [2] $end
+$var wire 1 3 solMul [1] $end
+$var wire 1 4 solMul [0] $end
+$var wire 1 5 solSub [3] $end
+$var wire 1 6 solSub [2] $end
+$var wire 1 7 solSub [1] $end
+$var wire 1 8 solSub [0] $end
+$var wire 1 9 sw [9] $end
+$var wire 1 : sw [8] $end
+$var wire 1 ; sw [7] $end
+$var wire 1 < sw [6] $end
+$var wire 1 = sw [5] $end
+$var wire 1 > sw [4] $end
+$var wire 1 ? sw [3] $end
+$var wire 1 @ sw [2] $end
+$var wire 1 A sw [1] $end
+$var wire 1 B sw [0] $end
 
 $scope module i1 $end
-$var wire 1 , gnd $end
-$var wire 1 - vcc $end
-$var wire 1 . unknown $end
-$var wire 1 / devoe $end
-$var wire 1 0 devclrn $end
-$var wire 1 1 devpor $end
-$var wire 1 2 ww_devoe $end
-$var wire 1 3 ww_devclrn $end
-$var wire 1 4 ww_devpor $end
-$var wire 1 5 ww_Aa3b [2] $end
-$var wire 1 6 ww_Aa3b [1] $end
-$var wire 1 7 ww_Aa3b [0] $end
-$var wire 1 8 ww_Ba3b [2] $end
-$var wire 1 9 ww_Ba3b [1] $end
-$var wire 1 : ww_Ba3b [0] $end
-$var wire 1 ; ww_Cin3b $end
-$var wire 1 < ww_Sa3b [3] $end
-$var wire 1 = ww_Sa3b [2] $end
-$var wire 1 > ww_Sa3b [1] $end
-$var wire 1 ? ww_Sa3b [0] $end
-$var wire 1 @ \~QUARTUS_CREATED_ADC1~_CHSEL_bus\ [4] $end
-$var wire 1 A \~QUARTUS_CREATED_ADC1~_CHSEL_bus\ [3] $end
-$var wire 1 B \~QUARTUS_CREATED_ADC1~_CHSEL_bus\ [2] $end
-$var wire 1 C \~QUARTUS_CREATED_ADC1~_CHSEL_bus\ [1] $end
-$var wire 1 D \~QUARTUS_CREATED_ADC1~_CHSEL_bus\ [0] $end
-$var wire 1 E \~QUARTUS_CREATED_ADC2~_CHSEL_bus\ [4] $end
-$var wire 1 F \~QUARTUS_CREATED_ADC2~_CHSEL_bus\ [3] $end
-$var wire 1 G \~QUARTUS_CREATED_ADC2~_CHSEL_bus\ [2] $end
-$var wire 1 H \~QUARTUS_CREATED_ADC2~_CHSEL_bus\ [1] $end
-$var wire 1 I \~QUARTUS_CREATED_ADC2~_CHSEL_bus\ [0] $end
-$var wire 1 J \~QUARTUS_CREATED_GND~I_combout\ $end
-$var wire 1 K \~QUARTUS_CREATED_UNVM~~busy\ $end
-$var wire 1 L \~QUARTUS_CREATED_ADC1~~eoc\ $end
-$var wire 1 M \~QUARTUS_CREATED_ADC2~~eoc\ $end
-$var wire 1 N \Sa3b[0]~output_o\ $end
-$var wire 1 O \Sa3b[1]~output_o\ $end
-$var wire 1 P \Sa3b[2]~output_o\ $end
-$var wire 1 Q \Sa3b[3]~output_o\ $end
-$var wire 1 R \Aa3b[0]~input_o\ $end
-$var wire 1 S \Cin3b~input_o\ $end
-$var wire 1 T \Ba3b[0]~input_o\ $end
-$var wire 1 U \FA0|M2|s1~0_combout\ $end
-$var wire 1 V \Ba3b[1]~input_o\ $end
-$var wire 1 W \Aa3b[1]~input_o\ $end
-$var wire 1 X \FA0|Cout~0_combout\ $end
-$var wire 1 Y \FA1|M2|s1~combout\ $end
-$var wire 1 Z \Aa3b[2]~input_o\ $end
-$var wire 1 [ \Ba3b[2]~input_o\ $end
-$var wire 1 \ \FA1|Cout~0_combout\ $end
-$var wire 1 ] \FA2|M2|s1~combout\ $end
-$var wire 1 ^ \FA2|Cout~0_combout\ $end
+$var wire 1 C gnd $end
+$var wire 1 D vcc $end
+$var wire 1 E unknown $end
+$var wire 1 F devoe $end
+$var wire 1 G devclrn $end
+$var wire 1 H devpor $end
+$var wire 1 I ww_devoe $end
+$var wire 1 J ww_devclrn $end
+$var wire 1 K ww_devpor $end
+$var wire 1 L ww_sw [9] $end
+$var wire 1 M ww_sw [8] $end
+$var wire 1 N ww_sw [7] $end
+$var wire 1 O ww_sw [6] $end
+$var wire 1 P ww_sw [5] $end
+$var wire 1 Q ww_sw [4] $end
+$var wire 1 R ww_sw [3] $end
+$var wire 1 S ww_sw [2] $end
+$var wire 1 T ww_sw [1] $end
+$var wire 1 U ww_sw [0] $end
+$var wire 1 V ww_ledr [5] $end
+$var wire 1 W ww_ledr [4] $end
+$var wire 1 X ww_ledr [3] $end
+$var wire 1 Y ww_ledr [2] $end
+$var wire 1 Z ww_ledr [1] $end
+$var wire 1 [ ww_ledr [0] $end
+$var wire 1 \ \~QUARTUS_CREATED_ADC1~_CHSEL_bus\ [4] $end
+$var wire 1 ] \~QUARTUS_CREATED_ADC1~_CHSEL_bus\ [3] $end
+$var wire 1 ^ \~QUARTUS_CREATED_ADC1~_CHSEL_bus\ [2] $end
+$var wire 1 _ \~QUARTUS_CREATED_ADC1~_CHSEL_bus\ [1] $end
+$var wire 1 ` \~QUARTUS_CREATED_ADC1~_CHSEL_bus\ [0] $end
+$var wire 1 a \~QUARTUS_CREATED_ADC2~_CHSEL_bus\ [4] $end
+$var wire 1 b \~QUARTUS_CREATED_ADC2~_CHSEL_bus\ [3] $end
+$var wire 1 c \~QUARTUS_CREATED_ADC2~_CHSEL_bus\ [2] $end
+$var wire 1 d \~QUARTUS_CREATED_ADC2~_CHSEL_bus\ [1] $end
+$var wire 1 e \~QUARTUS_CREATED_ADC2~_CHSEL_bus\ [0] $end
+$var wire 1 f \Mux4~1clkctrl_INCLK_bus\ [3] $end
+$var wire 1 g \Mux4~1clkctrl_INCLK_bus\ [2] $end
+$var wire 1 h \Mux4~1clkctrl_INCLK_bus\ [1] $end
+$var wire 1 i \Mux4~1clkctrl_INCLK_bus\ [0] $end
+$var wire 1 j \Mux4~0clkctrl_INCLK_bus\ [3] $end
+$var wire 1 k \Mux4~0clkctrl_INCLK_bus\ [2] $end
+$var wire 1 l \Mux4~0clkctrl_INCLK_bus\ [1] $end
+$var wire 1 m \Mux4~0clkctrl_INCLK_bus\ [0] $end
+$var wire 1 n \sw[6]~input_o\ $end
+$var wire 1 o \sel[0]~input_o\ $end
+$var wire 1 p \sel[1]~input_o\ $end
+$var wire 1 q \solAdd[0]~input_o\ $end
+$var wire 1 r \solAdd[1]~input_o\ $end
+$var wire 1 s \solAdd[2]~input_o\ $end
+$var wire 1 t \solAdd[3]~input_o\ $end
+$var wire 1 u \solSub[0]~input_o\ $end
+$var wire 1 v \solSub[1]~input_o\ $end
+$var wire 1 w \solSub[2]~input_o\ $end
+$var wire 1 x \solSub[3]~input_o\ $end
+$var wire 1 y \solMul[0]~input_o\ $end
+$var wire 1 z \solMul[1]~input_o\ $end
+$var wire 1 { \solMul[2]~input_o\ $end
+$var wire 1 | \solMul[3]~input_o\ $end
+$var wire 1 } \solMul[4]~input_o\ $end
+$var wire 1 ~ \solMul[5]~input_o\ $end
+$var wire 1 !! \solCom[0]~input_o\ $end
+$var wire 1 "! \solCom[1]~input_o\ $end
+$var wire 1 #! \~QUARTUS_CREATED_GND~I_combout\ $end
+$var wire 1 $! \~QUARTUS_CREATED_UNVM~~busy\ $end
+$var wire 1 %! \~QUARTUS_CREATED_ADC1~~eoc\ $end
+$var wire 1 &! \~QUARTUS_CREATED_ADC2~~eoc\ $end
+$var wire 1 '! \sel[0]~output_o\ $end
+$var wire 1 (! \sel[1]~output_o\ $end
+$var wire 1 )! \solAdd[0]~output_o\ $end
+$var wire 1 *! \solAdd[1]~output_o\ $end
+$var wire 1 +! \solAdd[2]~output_o\ $end
+$var wire 1 ,! \solAdd[3]~output_o\ $end
+$var wire 1 -! \solSub[0]~output_o\ $end
+$var wire 1 .! \solSub[1]~output_o\ $end
+$var wire 1 /! \solSub[2]~output_o\ $end
+$var wire 1 0! \solSub[3]~output_o\ $end
+$var wire 1 1! \solMul[0]~output_o\ $end
+$var wire 1 2! \solMul[1]~output_o\ $end
+$var wire 1 3! \solMul[2]~output_o\ $end
+$var wire 1 4! \solMul[3]~output_o\ $end
+$var wire 1 5! \solMul[4]~output_o\ $end
+$var wire 1 6! \solMul[5]~output_o\ $end
+$var wire 1 7! \solCom[0]~output_o\ $end
+$var wire 1 8! \solCom[1]~output_o\ $end
+$var wire 1 9! \ledr[0]~output_o\ $end
+$var wire 1 :! \ledr[1]~output_o\ $end
+$var wire 1 ;! \ledr[2]~output_o\ $end
+$var wire 1 <! \ledr[3]~output_o\ $end
+$var wire 1 =! \ledr[4]~output_o\ $end
+$var wire 1 >! \ledr[5]~output_o\ $end
+$var wire 1 ?! \sw[8]~input_o\ $end
+$var wire 1 @! \sw[9]~input_o\ $end
+$var wire 1 A! \sw[0]~input_o\ $end
+$var wire 1 B! \sw[7]~input_o\ $end
+$var wire 1 C! \sw[3]~input_o\ $end
+$var wire 1 D! \A3B|FA0|HA2|s1~0_combout\ $end
+$var wire 1 E! \sw[1]~input_o\ $end
+$var wire 1 F! \sw[4]~input_o\ $end
+$var wire 1 G! \A3B|FA0|Cout~1_combout\ $end
+$var wire 1 H! \A3B|FA1|HA2|s1~combout\ $end
+$var wire 1 I! \sw[2]~input_o\ $end
+$var wire 1 J! \sw[5]~input_o\ $end
+$var wire 1 K! \S3B|FS2|HS1|s1~0_combout\ $end
+$var wire 1 L! \A3B|FA2|HA2|s1~combout\ $end
+$var wire 1 M! \A3B|FA1|Cout~0_combout\ $end
+$var wire 1 N! \A3B|FA2|Cout~1_combout\ $end
+$var wire 1 O! \S3B|FS0|Bout~combout\ $end
+$var wire 1 P! \S3B|FS1|HS2|s1~combout\ $end
+$var wire 1 Q! \S3B|FS2|HS2|s1~combout\ $end
+$var wire 1 R! \S3B|FS1|Bout~combout\ $end
+$var wire 1 S! \S3B|FS2|Bout~combout\ $end
+$var wire 1 T! \A3B|FA0|Cout~0_combout\ $end
+$var wire 1 U! \M3B|HA0|s1~combout\ $end
+$var wire 1 V! \M3B|comb~0_combout\ $end
+$var wire 1 W! \M3B|comb~1_combout\ $end
+$var wire 1 X! \M3B|comb~2_combout\ $end
+$var wire 1 Y! \M3B|HA1|s1~combout\ $end
+$var wire 1 Z! \M3B|FA0|HA2|s1~0_combout\ $end
+$var wire 1 [! \M3B|FA0|Cout~0_combout\ $end
+$var wire 1 \! \M3B|FA1|HA2|s1~4_combout\ $end
+$var wire 1 ]! \M3B|FA1|HA2|s1~5_combout\ $end
+$var wire 1 ^! \M3B|HA2|s1~combout\ $end
+$var wire 1 _! \A3B|FA2|Cout~0_combout\ $end
+$var wire 1 `! \M3B|FA1|Cout~0_combout\ $end
+$var wire 1 a! \M3B|FA1|Cout~1_combout\ $end
+$var wire 1 b! \M3B|FA2|HA2|s1~combout\ $end
+$var wire 1 c! \M3B|FA2|Cout~0_combout\ $end
+$var wire 1 d! \C3B|LessThan0~0_combout\ $end
+$var wire 1 e! \C3B|LessThan0~1_combout\ $end
+$var wire 1 f! \C3B|Sc2b[0]~0_combout\ $end
+$var wire 1 g! \C3B|Sc2b[1]~1_combout\ $end
+$var wire 1 h! \S3B|FS0|HS1|s1~0_combout\ $end
+$var wire 1 i! \Mux2~0_combout\ $end
+$var wire 1 j! \Mux2~1_combout\ $end
+$var wire 1 k! \Mux1~0_combout\ $end
+$var wire 1 l! \Mux1~1_combout\ $end
+$var wire 1 m! \Mux0~0_combout\ $end
+$var wire 1 n! \Mux0~1_combout\ $end
+$var wire 1 o! \Mux4~0_combout\ $end
+$var wire 1 p! \Mux4~0clkctrl_outclk\ $end
+$var wire 1 q! \ledr[2]$latch~combout\ $end
+$var wire 1 r! \Mux3~2_combout\ $end
+$var wire 1 s! \Mux3~3_combout\ $end
+$var wire 1 t! \Mux3~4_combout\ $end
+$var wire 1 u! \ledr[3]$latch~combout\ $end
+$var wire 1 v! \Mux4~1_combout\ $end
+$var wire 1 w! \Mux4~1clkctrl_outclk\ $end
+$var wire 1 x! \ledr[4]$latch~combout\ $end
+$var wire 1 y! \ledr[5]$latch~combout\ $end
 $upscope $end
 $upscope $end
 $enddefinitions $end
 #0
 $dumpvars
-0'
-0,
-1-
-x.
-1/
-10
-11
-12
-13
-14
-0;
-0J
-zK
-zL
-zM
-1N
-0O
-1P
-0Q
-1R
-0S
-0T
-1U
-1V
-1W
-0X
-0Y
-0Z
-0[
-1\
-1]
-0^
-0!
-1"
-1#
-0$
-1%
-0&
-05
-16
-17
-08
+0C
+1D
+xE
+1F
+1G
+1H
+1I
+1J
+1K
+0n
+0o
+1p
+1q
+0r
+1s
+0t
+1u
+1v
+1w
+1x
+0y
+1z
+1{
+0|
+0}
+0~
+1!!
+0"!
+0#!
+z$!
+z%!
+z&!
+0'!
+1(!
+1)!
+0*!
+1+!
+0,!
+1-!
+1.!
+1/!
+10!
+01!
+12!
+13!
+04!
+05!
+06!
+17!
+08!
+09!
+1:!
+1;!
+0<!
+0=!
+0>!
+0?!
+1@!
+0A!
+0B!
+1C!
+1D!
+1E!
+1F!
+0G!
+0H!
+0I!
+0J!
+0K!
+1L!
+1M!
+0N!
+1O!
+1P!
+1Q!
+1R!
+1S!
+0T!
+1U!
+1V!
+0W!
+0X!
+1Y!
+1Z!
+0[!
+0\!
+0]!
+0^!
+0_!
+0`!
+0a!
+0b!
+0c!
+0d!
+1e!
+1f!
+0g!
+1h!
+0i!
+0j!
+1k!
+1l!
+0m!
+1n!
+1o!
+1p!
+1q!
+1r!
+0s!
+0t!
+0u!
+1v!
+1w!
+0x!
+0y!
 19
 0:
+0;
 0<
-1=
-0>
+0=
+1>
 1?
 0@
-0A
+1A
 0B
-0C
-0D
-0E
-0F
-0G
-0H
-0I
+1'
 0(
-1)
-0*
-1+
-$end
-#8000000
-1!
-0"
-1$
-06
-15
-18
-1[
-1Z
-0W
-1Y
-0\
-1^
-1Q
-1O
-0]
-1<
-1>
-0P
-1*
-1(
-0=
 0)
-#16000000
-1"
-0#
-1&
-07
-16
-1:
-1T
-1W
-0R
-0Y
-1\
-0O
-1]
-0>
-1P
-0*
-1=
-1)
-#24000000
-1#
-0$
-0%
-17
-09
-08
-0[
-0V
-1R
-0U
-1X
-1Y
-0\
-0]
-0P
-1O
-0N
-1]
-0^
-0Y
-1\
-0=
-1>
-0?
-0O
-0Q
-1P
-0]
-1^
+1*
 0+
-1*
-0)
-0>
-0<
-1=
-1Q
-0P
-0*
-1)
-0(
-1<
-0=
-0)
-1(
-#32000000
-0#
-0"
-0&
-0!
-07
-06
-05
-0:
-0T
-0Z
-0W
-0R
-1Y
-0\
-1]
-0^
-0X
-0Q
-1P
-1O
-0Y
-0]
-0<
-1=
-1>
-0P
+1,
+15
+16
+17
+18
+0/
+00
+01
+12
+13
+04
+0-
+1.
+1L
+0M
+0N
 0O
-1*
-1)
-0(
-0=
-0>
-0*
-0)
+0P
+1Q
+1R
+0S
+1T
+0U
+0V
+0W
+0X
+1Y
+1Z
+0[
+1j
+1k
+1l
+1m
+1f
+1g
+1h
+1i
+0\
+0]
+0^
+0_
+0`
+0a
+0b
+0c
+0d
+0e
+0!
+0"
+0#
+1$
+1%
+0&
+$end
 #100000000

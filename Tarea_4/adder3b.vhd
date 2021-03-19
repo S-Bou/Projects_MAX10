@@ -11,10 +11,10 @@ architecture main of adder3b is
 	signal Co1Ci2: std_logic;
 	signal Co2Ci3: std_logic;
 
-	component fulladder
-		port(Afa, Bfa, Cin: in std_logic;
-	        Sum, Cout: out std_logic);
-	end component;
+	--component fulladder
+		--port(Afa, Bfa, Cin: in std_logic;
+	        --Sum, Cout: out std_logic);
+	--end component;
 begin
 	FA0: fulladder port map(Afa=>Aa3b(0), Bfa=>Ba3b(0), Cin=>Cin3b, Sum=>Sa3b(0), Cout=>Co1Ci2);
 	FA1: fulladder port map(Afa=>Aa3b(1), Bfa=>Ba3b(1), Cin=>Co1Ci2, Sum=>Sa3b(1), Cout=>Co2Ci3);

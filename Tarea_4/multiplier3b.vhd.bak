@@ -1,0 +1,10 @@
+library ieee; use ieee.std_logic_1164.all;
+
+entity multiplier3b is
+	port (Am3b, Bm3b: in std_logic_vector(2 downto 0);
+	      Pm6b: out std_logic_vector(5 downto 0));
+end multiplier3b;
+
+architercture main of multiplier3b is
+begin
+end main;			

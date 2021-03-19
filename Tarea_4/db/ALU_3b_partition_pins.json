@@ -4,23 +4,135 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "Diff",
+					"name" : "ledr[0]",
 					"strict" : false
 				},
 				{
-					"name" : "Bout",
+					"name" : "ledr[1]",
 					"strict" : false
 				},
 				{
-					"name" : "Bin",
+					"name" : "ledr[2]",
 					"strict" : false
 				},
 				{
-					"name" : "Afs",
+					"name" : "ledr[3]",
 					"strict" : false
 				},
 				{
-					"name" : "Bfs",
+					"name" : "ledr[4]",
+					"strict" : false
+				},
+				{
+					"name" : "ledr[5]",
+					"strict" : false
+				},
+				{
+					"name" : "sel[0]",
+					"strict" : false
+				},
+				{
+					"name" : "sel[1]",
+					"strict" : false
+				},
+				{
+					"name" : "solAdd[0]",
+					"strict" : false
+				},
+				{
+					"name" : "solAdd[1]",
+					"strict" : false
+				},
+				{
+					"name" : "solAdd[2]",
+					"strict" : false
+				},
+				{
+					"name" : "solAdd[3]",
+					"strict" : false
+				},
+				{
+					"name" : "solSub[0]",
+					"strict" : false
+				},
+				{
+					"name" : "solSub[1]",
+					"strict" : false
+				},
+				{
+					"name" : "solSub[2]",
+					"strict" : false
+				},
+				{
+					"name" : "solSub[3]",
+					"strict" : false
+				},
+				{
+					"name" : "solMul[0]",
+					"strict" : false
+				},
+				{
+					"name" : "solMul[1]",
+					"strict" : false
+				},
+				{
+					"name" : "solMul[2]",
+					"strict" : false
+				},
+				{
+					"name" : "solMul[3]",
+					"strict" : false
+				},
+				{
+					"name" : "solMul[4]",
+					"strict" : false
+				},
+				{
+					"name" : "solMul[5]",
+					"strict" : false
+				},
+				{
+					"name" : "solCom[0]",
+					"strict" : false
+				},
+				{
+					"name" : "solCom[1]",
+					"strict" : false
+				},
+				{
+					"name" : "sw[0]",
+					"strict" : false
+				},
+				{
+					"name" : "sw[3]",
+					"strict" : false
+				},
+				{
+					"name" : "sw[9]",
+					"strict" : false
+				},
+				{
+					"name" : "sw[7]",
+					"strict" : false
+				},
+				{
+					"name" : "sw[8]",
+					"strict" : false
+				},
+				{
+					"name" : "sw[5]",
+					"strict" : false
+				},
+				{
+					"name" : "sw[4]",
+					"strict" : false
+				},
+				{
+					"name" : "sw[1]",
+					"strict" : false
+				},
+				{
+					"name" : "sw[2]",
 					"strict" : false
 				}
 			]

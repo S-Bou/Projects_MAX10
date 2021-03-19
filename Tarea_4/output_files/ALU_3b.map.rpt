@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ALU_3b
-Thu Mar 18 14:56:45 2021
+Fri Mar 19 13:58:47 2021
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -13,10 +13,12 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
-  9. Post-Synthesis Netlist Statistics for Top Partition
- 10. Elapsed Time Per Partition
- 11. Analysis & Synthesis Messages
+  8. User-Specified and Inferred Latches
+  9. General Register Statistics
+ 10. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 11. Post-Synthesis Netlist Statistics for Top Partition
+ 12. Elapsed Time Per Partition
+ 13. Analysis & Synthesis Messages
 
 
 
@@ -42,16 +44,16 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Mar 18 14:56:45 2021       ;
+; Analysis & Synthesis Status        ; Successful - Fri Mar 19 13:58:47 2021       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; ALU_3b                                      ;
-; Top-level Entity Name              ; fullsubtractor                              ;
+; Top-level Entity Name              ; alu                                         ;
 ; Family                             ; MAX 10                                      ;
-; Total logic elements               ; 2                                           ;
-;     Total combinational functions  ; 2                                           ;
+; Total logic elements               ; 48                                          ;
+;     Total combinational functions  ; 48                                          ;
 ;     Dedicated logic registers      ; 0                                           ;
 ; Total registers                    ; 0                                           ;
-; Total pins                         ; 5                                           ;
+; Total pins                         ; 38                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -67,7 +69,7 @@ refer to the applicable agreement for further details.
 ; Option                                                           ; Setting            ; Default Value      ;
 +------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                           ; 10M50DAF484C6GES   ;                    ;
-; Top-level entity name                                            ; fullsubtractor     ; ALU_3b             ;
+; Top-level entity name                                            ; alu                ; ALU_3b             ;
 ; Family name                                                      ; MAX 10             ; Cyclone V          ;
 ; Use smart compilation                                            ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
@@ -156,10 +158,11 @@ refer to the applicable agreement for further details.
 ; Maximum allowed            ; 6           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
+; Maximum used               ; 6           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
+;     Processors 2-6         ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -168,52 +171,99 @@ refer to the applicable agreement for further details.
 +----------------------------------+-----------------+-----------------+-----------------------------------------------------------------------+---------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                          ; Library ;
 +----------------------------------+-----------------+-----------------+-----------------------------------------------------------------------+---------+
+; halfadder.vhd                    ; yes             ; User VHDL File  ; D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/halfadder.vhd      ;         ;
+; fulladder.vhd                    ; yes             ; User VHDL File  ; D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/fulladder.vhd      ;         ;
+; adder3b.vhd                      ; yes             ; User VHDL File  ; D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/adder3b.vhd        ;         ;
+; packages_ALU.vhd                 ; yes             ; User VHDL File  ; D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/packages_ALU.vhd   ;         ;
 ; halfsubtractor.vhd               ; yes             ; User VHDL File  ; D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/halfsubtractor.vhd ;         ;
 ; fullsubtractor.vhd               ; yes             ; User VHDL File  ; D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/fullsubtractor.vhd ;         ;
+; subtractor3b.vhd                 ; yes             ; User VHDL File  ; D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/subtractor3b.vhd   ;         ;
+; multiplier3b.vhd                 ; yes             ; User VHDL File  ; D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/multiplier3b.vhd   ;         ;
+; comparator3b.vhd                 ; yes             ; User VHDL File  ; D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/comparator3b.vhd   ;         ;
+; alu.vhd                          ; yes             ; User VHDL File  ; D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/alu.vhd            ;         ;
 +----------------------------------+-----------------+-----------------+-----------------------------------------------------------------------+---------+
 
 
-+---------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary             ;
-+---------------------------------------------+-----------+
-; Resource                                    ; Usage     ;
-+---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 2         ;
-;                                             ;           ;
-; Total combinational functions               ; 2         ;
-; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 0         ;
-;     -- 3 input functions                    ; 2         ;
-;     -- <=2 input functions                  ; 0         ;
-;                                             ;           ;
-; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 2         ;
-;     -- arithmetic mode                      ; 0         ;
-;                                             ;           ;
-; Total registers                             ; 0         ;
-;     -- Dedicated logic registers            ; 0         ;
-;     -- I/O registers                        ; 0         ;
-;                                             ;           ;
-; I/O pins                                    ; 5         ;
-;                                             ;           ;
-; Embedded Multiplier 9-bit elements          ; 0         ;
-;                                             ;           ;
-; Maximum fan-out node                        ; Bin~input ;
-; Maximum fan-out                             ; 2         ;
-; Total fan-out                               ; 13        ;
-; Average fan-out                             ; 1.08      ;
-+---------------------------------------------+-----------+
++-----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary               ;
++---------------------------------------------+-------------+
+; Resource                                    ; Usage       ;
++---------------------------------------------+-------------+
+; Estimated Total logic elements              ; 48          ;
+;                                             ;             ;
+; Total combinational functions               ; 48          ;
+; Logic element usage by number of LUT inputs ;             ;
+;     -- 4 input functions                    ; 22          ;
+;     -- 3 input functions                    ; 16          ;
+;     -- <=2 input functions                  ; 10          ;
+;                                             ;             ;
+; Logic elements by mode                      ;             ;
+;     -- normal mode                          ; 48          ;
+;     -- arithmetic mode                      ; 0           ;
+;                                             ;             ;
+; Total registers                             ; 0           ;
+;     -- Dedicated logic registers            ; 0           ;
+;     -- I/O registers                        ; 0           ;
+;                                             ;             ;
+; I/O pins                                    ; 38          ;
+;                                             ;             ;
+; Embedded Multiplier 9-bit elements          ; 0           ;
+;                                             ;             ;
+; Maximum fan-out node                        ; sw[4]~input ;
+; Maximum fan-out                             ; 14          ;
+; Total fan-out                               ; 236         ;
+; Average fan-out                             ; 1.66        ;
++---------------------------------------------+-------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                  ;
-+----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+------------------------------------+----------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                ; Entity Name    ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+------------------------------------+----------------+--------------+
-; |fullsubtractor            ; 2 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 5    ; 0            ; 0          ; |fullsubtractor                    ; fullsubtractor ; work         ;
-;    |halfsubtractor:HS2|    ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |fullsubtractor|halfsubtractor:HS2 ; halfsubtractor ; work         ;
-+----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+------------------------------------+----------------+--------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                              ;
++-------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-------------------------------------------------------------+----------------+--------------+
+; Compilation Hierarchy Node    ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                         ; Entity Name    ; Library Name ;
++-------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-------------------------------------------------------------+----------------+--------------+
+; |alu                          ; 48 (15)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 38   ; 0            ; 0          ; |alu                                                        ; alu            ; work         ;
+;    |adder3b:A3B|              ; 8 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |alu|adder3b:A3B                                            ; adder3b        ; work         ;
+;       |fulladder:FA0|         ; 3 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |alu|adder3b:A3B|fulladder:FA0                              ; fulladder      ; work         ;
+;          |halfadder:HA2|      ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |alu|adder3b:A3B|fulladder:FA0|halfadder:HA2                ; halfadder      ; work         ;
+;       |fulladder:FA1|         ; 2 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |alu|adder3b:A3B|fulladder:FA1                              ; fulladder      ; work         ;
+;          |halfadder:HA2|      ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |alu|adder3b:A3B|fulladder:FA1|halfadder:HA2                ; halfadder      ; work         ;
+;       |fulladder:FA2|         ; 3 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |alu|adder3b:A3B|fulladder:FA2                              ; fulladder      ; work         ;
+;          |halfadder:HA2|      ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |alu|adder3b:A3B|fulladder:FA2|halfadder:HA2                ; halfadder      ; work         ;
+;    |comparator3b:C3B|         ; 4 (4)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |alu|comparator3b:C3B                                       ; comparator3b   ; work         ;
+;    |multiplier3b:M3B|         ; 14 (3)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |alu|multiplier3b:M3B                                       ; multiplier3b   ; work         ;
+;       |fulladder:FA0|         ; 2 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |alu|multiplier3b:M3B|fulladder:FA0                         ; fulladder      ; work         ;
+;          |halfadder:HA2|      ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |alu|multiplier3b:M3B|fulladder:FA0|halfadder:HA2           ; halfadder      ; work         ;
+;       |fulladder:FA1|         ; 4 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |alu|multiplier3b:M3B|fulladder:FA1                         ; fulladder      ; work         ;
+;          |halfadder:HA2|      ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |alu|multiplier3b:M3B|fulladder:FA1|halfadder:HA2           ; halfadder      ; work         ;
+;       |fulladder:FA2|         ; 2 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |alu|multiplier3b:M3B|fulladder:FA2                         ; fulladder      ; work         ;
+;          |halfadder:HA2|      ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |alu|multiplier3b:M3B|fulladder:FA2|halfadder:HA2           ; halfadder      ; work         ;
+;       |halfadder:HA0|         ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |alu|multiplier3b:M3B|halfadder:HA0                         ; halfadder      ; work         ;
+;       |halfadder:HA1|         ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |alu|multiplier3b:M3B|halfadder:HA1                         ; halfadder      ; work         ;
+;       |halfadder:HA2|         ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |alu|multiplier3b:M3B|halfadder:HA2                         ; halfadder      ; work         ;
+;    |subtractor3b:S3B|         ; 7 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |alu|subtractor3b:S3B                                       ; subtractor3b   ; work         ;
+;       |fullsubtractor:FS0|    ; 2 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |alu|subtractor3b:S3B|fullsubtractor:FS0                    ; fullsubtractor ; work         ;
+;          |halfsubtractor:HS1| ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |alu|subtractor3b:S3B|fullsubtractor:FS0|halfsubtractor:HS1 ; halfsubtractor ; work         ;
+;       |fullsubtractor:FS1|    ; 2 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |alu|subtractor3b:S3B|fullsubtractor:FS1                    ; fullsubtractor ; work         ;
+;          |halfsubtractor:HS2| ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |alu|subtractor3b:S3B|fullsubtractor:FS1|halfsubtractor:HS2 ; halfsubtractor ; work         ;
+;       |fullsubtractor:FS2|    ; 3 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |alu|subtractor3b:S3B|fullsubtractor:FS2                    ; fullsubtractor ; work         ;
+;          |halfsubtractor:HS1| ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |alu|subtractor3b:S3B|fullsubtractor:FS2|halfsubtractor:HS1 ; halfsubtractor ; work         ;
+;          |halfsubtractor:HS2| ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |alu|subtractor3b:S3B|fullsubtractor:FS2|halfsubtractor:HS2 ; halfsubtractor ; work         ;
++-------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-------------------------------------------------------------+----------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++---------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                               ;
++----------------------------------------------------+---------------------+------------------------+
+; Latch Name                                         ; Latch Enable Signal ; Free of Timing Hazards ;
++----------------------------------------------------+---------------------+------------------------+
+; ledr[2]$latch                                      ; Mux4                ; yes                    ;
+; ledr[3]$latch                                      ; Mux4                ; yes                    ;
+; ledr[4]$latch                                      ; Mux4                ; yes                    ;
+; ledr[5]$latch                                      ; Mux4                ; yes                    ;
+; Number of user-specified and inferred latches = 4  ;                     ;                        ;
++----------------------------------------------------+---------------------+------------------------+
+Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
 +------------------------------------------------------+
@@ -231,18 +281,33 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 
 
++------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+; 1:1                ; 2 bits    ; 0 LEs         ; 0 LEs                ; 0 LEs                  ; No         ; |alu|Mux5                  ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |alu|Mux2                  ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |alu|Mux1                  ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+
+
 +-----------------------------------------------------+
 ; Post-Synthesis Netlist Statistics for Top Partition ;
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 5                           ;
-; cycloneiii_lcell_comb ; 2                           ;
-;     normal            ; 2                           ;
-;         3 data inputs ; 2                           ;
+; boundary_port         ; 38                          ;
+; cycloneiii_io_obuf    ; 18                          ;
+; cycloneiii_lcell_comb ; 49                          ;
+;     normal            ; 49                          ;
+;         0 data inputs ; 1                           ;
+;         2 data inputs ; 10                          ;
+;         3 data inputs ; 16                          ;
+;         4 data inputs ; 22                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 1.00                        ;
-; Average LUT depth     ; 1.00                        ;
+; Max LUT depth         ; 6.00                        ;
+; Average LUT depth     ; 3.01                        ;
 +-----------------------+-----------------------------+
 
 
@@ -261,7 +326,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Thu Mar 18 14:56:35 2021
+    Info: Processing started: Fri Mar 19 13:58:37 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ALU_3b -c ALU_3b
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
@@ -276,8 +341,11 @@ Info (12021): Found 3 design units, including 1 entities, in source file fulladd
 Info (12021): Found 2 design units, including 1 entities, in source file adder3b.vhd
     Info (12022): Found design unit 1: adder3b-main File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/adder3b.vhd Line: 10
     Info (12023): Found entity 1: adder3b File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/adder3b.vhd Line: 4
-Info (12021): Found 1 design units, including 0 entities, in source file packages_alu.vhd
+Info (12021): Found 4 design units, including 0 entities, in source file packages_alu.vhd
     Info (12022): Found design unit 1: adder3b_package File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/packages_ALU.vhd Line: 5
+    Info (12022): Found design unit 2: subtractor3b_package File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/packages_ALU.vhd Line: 16
+    Info (12022): Found design unit 3: multiplier3b_package File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/packages_ALU.vhd Line: 27
+    Info (12022): Found design unit 4: comparator3b_package File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/packages_ALU.vhd Line: 37
 Info (12021): Found 3 design units, including 1 entities, in source file halfsubtractor.vhd
     Info (12022): Found design unit 1: halfsubtractor-main File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/halfsubtractor.vhd Line: 8
     Info (12022): Found design unit 2: halfsubtractor_package File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/halfsubtractor.vhd Line: 15
@@ -286,18 +354,141 @@ Info (12021): Found 3 design units, including 1 entities, in source file fullsub
     Info (12022): Found design unit 1: fullsubtractor-main File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/fullsubtractor.vhd Line: 9
     Info (12022): Found design unit 2: fullsubtractor_package File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/fullsubtractor.vhd Line: 27
     Info (12023): Found entity 1: fullsubtractor File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/fullsubtractor.vhd Line: 4
-Info (12127): Elaborating entity "fullsubtractor" for the top level hierarchy
-Info (12128): Elaborating entity "halfsubtractor" for hierarchy "halfsubtractor:HS1" File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/fullsubtractor.vhd Line: 21
+Info (12021): Found 2 design units, including 1 entities, in source file subtractor3b.vhd
+    Info (12022): Found design unit 1: subtractor3b-main File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/subtractor3b.vhd Line: 10
+    Info (12023): Found entity 1: subtractor3b File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/subtractor3b.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file multiplier3b.vhd
+    Info (12022): Found design unit 1: multiplier3b-main File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/multiplier3b.vhd Line: 10
+    Info (12023): Found entity 1: multiplier3b File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/multiplier3b.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file comparator3b.vhd
+    Info (12022): Found design unit 1: comparator3b-main File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/comparator3b.vhd Line: 8
+    Info (12023): Found entity 1: comparator3b File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/comparator3b.vhd Line: 3
+Info (12021): Found 2 design units, including 1 entities, in source file alu.vhd
+    Info (12022): Found design unit 1: alu-main File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/alu.vhd Line: 17
+    Info (12023): Found entity 1: alu File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/alu.vhd Line: 7
+Info (12127): Elaborating entity "alu" for the top level hierarchy
+Warning (10492): VHDL Process Statement warning at alu.vhd(28): signal "solAdd" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/alu.vhd Line: 28
+Warning (10492): VHDL Process Statement warning at alu.vhd(29): signal "solSub" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/alu.vhd Line: 29
+Warning (10492): VHDL Process Statement warning at alu.vhd(30): signal "solMul" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/alu.vhd Line: 30
+Warning (10492): VHDL Process Statement warning at alu.vhd(31): signal "solCom" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/alu.vhd Line: 31
+Warning (10631): VHDL Process Statement warning at alu.vhd(25): inferring latch(es) for signal or variable "ledr", which holds its previous value in one or more paths through the process File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/alu.vhd Line: 25
+Warning (10873): Using initial value X (don't care) for net "ledr[9..6]" at alu.vhd(9) File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/alu.vhd Line: 9
+Info (10041): Inferred latch for "ledr[2]" at alu.vhd(25) File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/alu.vhd Line: 25
+Info (10041): Inferred latch for "ledr[3]" at alu.vhd(25) File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/alu.vhd Line: 25
+Info (10041): Inferred latch for "ledr[4]" at alu.vhd(25) File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/alu.vhd Line: 25
+Info (10041): Inferred latch for "ledr[5]" at alu.vhd(25) File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/alu.vhd Line: 25
+Info (12128): Elaborating entity "adder3b" for hierarchy "adder3b:A3B" File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/alu.vhd Line: 19
+Info (12128): Elaborating entity "fulladder" for hierarchy "adder3b:A3B|fulladder:FA0" File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/adder3b.vhd Line: 19
+Info (12128): Elaborating entity "halfadder" for hierarchy "adder3b:A3B|fulladder:FA0|halfadder:HA1" File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/fulladder.vhd Line: 21
+Info (12128): Elaborating entity "subtractor3b" for hierarchy "subtractor3b:S3B" File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/alu.vhd Line: 20
+Info (12128): Elaborating entity "fullsubtractor" for hierarchy "subtractor3b:S3B|fullsubtractor:FS0" File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/subtractor3b.vhd Line: 19
+Info (12128): Elaborating entity "halfsubtractor" for hierarchy "subtractor3b:S3B|fullsubtractor:FS0|halfsubtractor:HS1" File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/fullsubtractor.vhd Line: 21
+Info (12128): Elaborating entity "multiplier3b" for hierarchy "multiplier3b:M3B" File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/alu.vhd Line: 21
+Info (12128): Elaborating entity "comparator3b" for hierarchy "comparator3b:C3B" File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/alu.vhd Line: 22
+Warning (13034): The following nodes have both tri-state and non-tri-state drivers
+    Warning (13035): Inserted always-enabled tri-state buffer between "sel[0]" and its non-tri-state driver. File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/alu.vhd Line: 10
+    Warning (13035): Inserted always-enabled tri-state buffer between "sel[1]" and its non-tri-state driver. File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/alu.vhd Line: 10
+    Warning (13035): Inserted always-enabled tri-state buffer between "solAdd[0]" and its non-tri-state driver. File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/alu.vhd Line: 11
+    Warning (13035): Inserted always-enabled tri-state buffer between "solAdd[1]" and its non-tri-state driver. File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/alu.vhd Line: 11
+    Warning (13035): Inserted always-enabled tri-state buffer between "solAdd[2]" and its non-tri-state driver. File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/alu.vhd Line: 11
+    Warning (13035): Inserted always-enabled tri-state buffer between "solAdd[3]" and its non-tri-state driver. File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/alu.vhd Line: 11
+    Warning (13035): Inserted always-enabled tri-state buffer between "solSub[0]" and its non-tri-state driver. File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/alu.vhd Line: 12
+    Warning (13035): Inserted always-enabled tri-state buffer between "solSub[1]" and its non-tri-state driver. File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/alu.vhd Line: 12
+    Warning (13035): Inserted always-enabled tri-state buffer between "solSub[2]" and its non-tri-state driver. File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/alu.vhd Line: 12
+    Warning (13035): Inserted always-enabled tri-state buffer between "solSub[3]" and its non-tri-state driver. File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/alu.vhd Line: 12
+    Warning (13035): Inserted always-enabled tri-state buffer between "solMul[0]" and its non-tri-state driver. File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/alu.vhd Line: 13
+    Warning (13035): Inserted always-enabled tri-state buffer between "solMul[1]" and its non-tri-state driver. File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/alu.vhd Line: 13
+    Warning (13035): Inserted always-enabled tri-state buffer between "solMul[2]" and its non-tri-state driver. File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/alu.vhd Line: 13
+    Warning (13035): Inserted always-enabled tri-state buffer between "solMul[3]" and its non-tri-state driver. File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/alu.vhd Line: 13
+    Warning (13035): Inserted always-enabled tri-state buffer between "solMul[4]" and its non-tri-state driver. File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/alu.vhd Line: 13
+    Warning (13035): Inserted always-enabled tri-state buffer between "solMul[5]" and its non-tri-state driver. File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/alu.vhd Line: 13
+    Warning (13035): Inserted always-enabled tri-state buffer between "solCom[0]" and its non-tri-state driver. File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/alu.vhd Line: 14
+    Warning (13035): Inserted always-enabled tri-state buffer between "solCom[1]" and its non-tri-state driver. File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/alu.vhd Line: 14
+Info (13060): One or more bidirectional pins are fed by always enabled tri-state buffers
+    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidirectional pin "sel[0]" is moved to its source File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/alu.vhd Line: 10
+    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidirectional pin "sel[1]" is moved to its source File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/alu.vhd Line: 10
+    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidirectional pin "solAdd[0]" is moved to its source File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/alu.vhd Line: 11
+    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidirectional pin "solAdd[1]" is moved to its source File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/alu.vhd Line: 11
+    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidirectional pin "solAdd[2]" is moved to its source File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/alu.vhd Line: 11
+    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidirectional pin "solAdd[3]" is moved to its source File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/alu.vhd Line: 11
+    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidirectional pin "solSub[0]" is moved to its source File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/alu.vhd Line: 12
+    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidirectional pin "solSub[1]" is moved to its source File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/alu.vhd Line: 12
+    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidirectional pin "solSub[2]" is moved to its source File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/alu.vhd Line: 12
+    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidirectional pin "solSub[3]" is moved to its source File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/alu.vhd Line: 12
+    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidirectional pin "solMul[0]" is moved to its source File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/alu.vhd Line: 13
+    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidirectional pin "solMul[1]" is moved to its source File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/alu.vhd Line: 13
+    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidirectional pin "solMul[2]" is moved to its source File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/alu.vhd Line: 13
+    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidirectional pin "solMul[3]" is moved to its source File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/alu.vhd Line: 13
+    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidirectional pin "solMul[4]" is moved to its source File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/alu.vhd Line: 13
+    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidirectional pin "solMul[5]" is moved to its source File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/alu.vhd Line: 13
+    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidirectional pin "solCom[0]" is moved to its source File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/alu.vhd Line: 14
+    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidirectional pin "solCom[1]" is moved to its source File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/alu.vhd Line: 14
+Warning (13012): Latch ledr[2]$latch has unsafe behavior File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/alu.vhd Line: 25
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal sw[9] File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/alu.vhd Line: 8
+Warning (13012): Latch ledr[3]$latch has unsafe behavior File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/alu.vhd Line: 25
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal sw[9] File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/alu.vhd Line: 8
+Warning (13009): TRI or OPNDRN buffers permanently enabled
+    Warning (13010): Node "sel[0]~synth" File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/alu.vhd Line: 10
+    Warning (13010): Node "sel[1]~synth" File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/alu.vhd Line: 10
+    Warning (13010): Node "solAdd[0]~synth" File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/alu.vhd Line: 11
+    Warning (13010): Node "solAdd[1]~synth" File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/alu.vhd Line: 11
+    Warning (13010): Node "solAdd[2]~synth" File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/alu.vhd Line: 11
+    Warning (13010): Node "solAdd[3]~synth" File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/alu.vhd Line: 11
+    Warning (13010): Node "solSub[0]~synth" File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/alu.vhd Line: 12
+    Warning (13010): Node "solSub[1]~synth" File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/alu.vhd Line: 12
+    Warning (13010): Node "solSub[2]~synth" File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/alu.vhd Line: 12
+    Warning (13010): Node "solSub[3]~synth" File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/alu.vhd Line: 12
+    Warning (13010): Node "solMul[0]~synth" File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/alu.vhd Line: 13
+    Warning (13010): Node "solMul[1]~synth" File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/alu.vhd Line: 13
+    Warning (13010): Node "solMul[2]~synth" File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/alu.vhd Line: 13
+    Warning (13010): Node "solMul[3]~synth" File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/alu.vhd Line: 13
+    Warning (13010): Node "solMul[4]~synth" File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/alu.vhd Line: 13
+    Warning (13010): Node "solMul[5]~synth" File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/alu.vhd Line: 13
+    Warning (13010): Node "solCom[0]~synth" File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/alu.vhd Line: 14
+    Warning (13010): Node "solCom[1]~synth" File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/alu.vhd Line: 14
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "ledr[6]" is stuck at GND File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/alu.vhd Line: 9
+    Warning (13410): Pin "ledr[7]" is stuck at GND File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/alu.vhd Line: 9
+    Warning (13410): Pin "ledr[8]" is stuck at GND File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/alu.vhd Line: 9
+    Warning (13410): Pin "ledr[9]" is stuck at GND File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/alu.vhd Line: 9
 Info (286030): Timing-Driven Synthesis is running
+Warning (20013): Ignored 24 assignments for entity "DE10_LITE_Default" -- entity does not exist in design
+    Warning (20014): Assignment for entity set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -entity DE10_LITE_Default -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -entity DE10_LITE_Default -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -entity DE10_LITE_Default -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_PRESERVE_HIGH_SPEED_TILES ON -entity DE10_LITE_Default -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IGNORE_SOURCE_FILE_CHANGES OFF -entity DE10_LITE_Default -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_ALWAYS_USE_QXP_NETLIST OFF -entity DE10_LITE_Default -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_COLOR 16764057 -entity DE10_LITE_Default -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IMPORT_ASSIGNMENTS ON -entity DE10_LITE_Default -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IMPORT_EXISTING_ASSIGNMENTS REPLACE_CONFLICTING -entity DE10_LITE_Default -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IMPORT_EXISTING_LOGICLOCK_REGIONS UPDATE_CONFLICTING -entity DE10_LITE_Default -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IMPORT_PIN_ASSIGNMENTS ON -entity DE10_LITE_Default -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IMPORT_PROMOTE_ASSIGNMENTS ON -entity DE10_LITE_Default -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_TYPE STANDARD_PARTITION -entity DE10_LITE_Default -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name ALLOW_MULTIPLE_PERSONAS OFF -entity DE10_LITE_Default -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_ASD_REGION_ID 1 -entity DE10_LITE_Default -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name CROSS_BOUNDARY_OPTIMIZATIONS OFF -entity DE10_LITE_Default -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PROPAGATE_CONSTANTS_ON_INPUTS ON -entity DE10_LITE_Default -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PROPAGATE_INVERSIONS_ON_INPUTS ON -entity DE10_LITE_Default -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name REMOVE_LOGIC_ON_UNCONNECTED_OUTPUTS ON -entity DE10_LITE_Default -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name MERGE_EQUIVALENT_INPUTS ON -entity DE10_LITE_Default -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name MERGE_EQUIVALENT_BIDIRS ON -entity DE10_LITE_Default -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name ABSORB_PATHS_FROM_OUTPUTS_TO_INPUTS ON -entity DE10_LITE_Default -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_EXTRACT_HARD_BLOCK_NODES ON -entity DE10_LITE_Default -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_ENABLE_STRICT_PRESERVATION OFF -entity DE10_LITE_Default -section_id Top was ignored
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 7 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 3 input pins
-    Info (21059): Implemented 2 output pins
-    Info (21061): Implemented 2 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4784 megabytes
-    Info: Processing ended: Thu Mar 18 14:56:45 2021
+Warning (21074): Design contains 1 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "sw[6]" File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_4/alu.vhd Line: 8
+Info (21057): Implemented 86 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 10 input pins
+    Info (21059): Implemented 10 output pins
+    Info (21060): Implemented 18 bidirectional pins
+    Info (21061): Implemented 48 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 81 warnings
+    Info: Peak virtual memory: 4805 megabytes
+    Info: Processing ended: Fri Mar 19 13:58:47 2021
     Info: Elapsed time: 00:00:10
     Info: Total CPU time (on all processors): 00:00:21
 
