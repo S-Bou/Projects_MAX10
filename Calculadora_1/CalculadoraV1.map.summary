@@ -1,0 +1,16 @@
+Analysis & Synthesis Status : Successful - Sun Mar 21 14:29:14 2021
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : CalculadoraV1
+Top-level Entity Name : PROCESADOR_LCD4BITS_REVC
+Family : MAX 10
+Total logic elements : 839
+    Total combinational functions : 837
+    Dedicated logic registers : 120
+Total registers : 120
+Total pins : 346
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
+UFM blocks : 0
+ADC blocks : 0

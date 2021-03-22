@@ -1,0 +1,25 @@
+library ieee; use ieee.std_logic_1164.all;
+
+entity modxx is
+	generic(count: integer 0 to 255);
+	port(clk, reset, enable, rco: in std_logic;
+	     Q: out std_logic_vector(3 downto 0));
+end modxx;
+
+architecture behavior of modxx		  
+begin
+	process(clk, reset) begin
+		if reset = '0' then 
+			Q <= "0000";
+		else if (clk'event and clk = '1') then
+			if enable = '1' then
+				Q <= Q+1;
+				if (Q >= 10) then
+					rco <= '1';
+				else
+					rco <= '0';
+				end if;
+			end if;
+		end if;
+	end process;
+end behavior;

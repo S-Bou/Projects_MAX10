@@ -1,0 +1,16 @@
+Analysis & Synthesis Status : Successful - Mon Mar 22 20:37:22 2021
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : Crono
+Top-level Entity Name : crono
+Family : MAX 10
+Total logic elements : 80
+    Total combinational functions : 80
+    Dedicated logic registers : 35
+Total registers : 35
+Total pins : 45
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
+UFM blocks : 0
+ADC blocks : 0
