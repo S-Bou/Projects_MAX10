@@ -1,5 +1,5 @@
 Flow report for Crono
-Mon Mar 22 20:37:39 2021
+Thu Mar 25 11:10:31 2021
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,17 +40,17 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Mon Mar 22 20:37:36 2021       ;
+; Flow Status                        ; Successful - Thu Mar 25 11:10:27 2021       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; Crono                                       ;
 ; Top-level Entity Name              ; crono                                       ;
 ; Family                             ; MAX 10                                      ;
 ; Device                             ; 10M50DAF484C6GES                            ;
 ; Timing Models                      ; Preliminary                                 ;
-; Total logic elements               ; 82 / 49,760 ( < 1 % )                       ;
-;     Total combinational functions  ; 81 / 49,760 ( < 1 % )                       ;
-;     Dedicated logic registers      ; 35 / 49,760 ( < 1 % )                       ;
-; Total registers                    ; 35                                          ;
+; Total logic elements               ; 111 / 49,760 ( < 1 % )                      ;
+;     Total combinational functions  ; 110 / 49,760 ( < 1 % )                      ;
+;     Dedicated logic registers      ; 42 / 49,760 ( < 1 % )                       ;
+; Total registers                    ; 42                                          ;
 ; Total pins                         ; 45 / 360 ( 13 % )                           ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0 / 1,677,312 ( 0 % )                       ;
@@ -66,7 +66,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 03/22/2021 20:37:13 ;
+; Start date & time ; 03/25/2021 11:09:48 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Crono               ;
 +-------------------+---------------------+
@@ -77,7 +77,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 215938450624713.161644183315764        ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 215938450624713.161666698818124        ; --            ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --         ;
 ; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; crono       ; Top        ;
@@ -94,11 +94,11 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:09     ; 1.0                     ; 4801 MB             ; 00:00:20                           ;
-; Fitter               ; 00:00:09     ; 1.0                     ; 5767 MB             ; 00:00:13                           ;
-; Assembler            ; 00:00:03     ; 1.0                     ; 4681 MB             ; 00:00:03                           ;
-; Timing Analyzer      ; 00:00:03     ; 1.0                     ; 4835 MB             ; 00:00:02                           ;
-; Total                ; 00:00:24     ; --                      ; --                  ; 00:00:38                           ;
+; Analysis & Synthesis ; 00:00:13     ; 1.0                     ; 4801 MB             ; 00:00:23                           ;
+; Fitter               ; 00:00:18     ; 1.0                     ; 5767 MB             ; 00:00:14                           ;
+; Assembler            ; 00:00:04     ; 1.0                     ; 4683 MB             ; 00:00:03                           ;
+; Timing Analyzer      ; 00:00:03     ; 1.1                     ; 4836 MB             ; 00:00:02                           ;
+; Total                ; 00:00:38     ; --                      ; --                  ; 00:00:42                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

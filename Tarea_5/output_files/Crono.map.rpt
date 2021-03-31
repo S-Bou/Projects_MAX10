@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Crono
-Mon Mar 22 20:37:22 2021
+Thu Mar 25 11:10:01 2021
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -13,19 +13,18 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. Registers Removed During Synthesis
-  9. General Register Statistics
- 10. Parameter Settings for User Entity Instance: clk_div:DIV
- 11. Parameter Settings for User Entity Instance: modxx:MOD10_0
- 12. Parameter Settings for User Entity Instance: modxx:MOD10_1
- 13. Parameter Settings for User Entity Instance: modxx:MOD10_2
- 14. Parameter Settings for User Entity Instance: modxx:MOD10_3
- 15. Parameter Settings for User Entity Instance: modxx:MOD10_4
- 16. Parameter Settings for User Entity Instance: modxx:MOD10_5
- 17. Port Connectivity Checks: "modxx:MOD10_5"
- 18. Post-Synthesis Netlist Statistics for Top Partition
- 19. Elapsed Time Per Partition
- 20. Analysis & Synthesis Messages
+  8. General Register Statistics
+  9. Parameter Settings for User Entity Instance: clk_div:DIV
+ 10. Parameter Settings for User Entity Instance: modxx:MOD10_0
+ 11. Parameter Settings for User Entity Instance: modxx:MOD10_1
+ 12. Parameter Settings for User Entity Instance: modxx:MOD10_2
+ 13. Parameter Settings for User Entity Instance: modxx:MOD10_3
+ 14. Parameter Settings for User Entity Instance: modxx:MOD10_4
+ 15. Parameter Settings for User Entity Instance: modxx:MOD10_5
+ 16. Port Connectivity Checks: "modxx:MOD10_5"
+ 17. Post-Synthesis Netlist Statistics for Top Partition
+ 18. Elapsed Time Per Partition
+ 19. Analysis & Synthesis Messages
 
 
 
@@ -51,15 +50,15 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Mar 22 20:37:22 2021       ;
+; Analysis & Synthesis Status        ; Successful - Thu Mar 25 11:10:01 2021       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; Crono                                       ;
 ; Top-level Entity Name              ; crono                                       ;
 ; Family                             ; MAX 10                                      ;
-; Total logic elements               ; 80                                          ;
-;     Total combinational functions  ; 80                                          ;
-;     Dedicated logic registers      ; 35                                          ;
-; Total registers                    ; 35                                          ;
+; Total logic elements               ; 109                                         ;
+;     Total combinational functions  ; 109                                         ;
+;     Dedicated logic registers      ; 42                                          ;
+; Total registers                    ; 42                                          ;
 ; Total pins                         ; 45                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
@@ -164,12 +163,12 @@ refer to the applicable agreement for further details.
 ; Number detected on machine ; 12          ;
 ; Maximum allowed            ; 6           ;
 ;                            ;             ;
-; Average used               ; 1.00        ;
+; Average used               ; 1.01        ;
 ; Maximum used               ; 6           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-6         ;   0.0%      ;
+;     Processors 2-6         ;   0.1%      ;
 +----------------------------+-------------+
 
 
@@ -190,20 +189,20 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+------------+
 ; Resource                                    ; Usage      ;
 +---------------------------------------------+------------+
-; Estimated Total logic elements              ; 80         ;
+; Estimated Total logic elements              ; 109        ;
 ;                                             ;            ;
-; Total combinational functions               ; 80         ;
+; Total combinational functions               ; 109        ;
 ; Logic element usage by number of LUT inputs ;            ;
-;     -- 4 input functions                    ; 40         ;
-;     -- 3 input functions                    ; 17         ;
-;     -- <=2 input functions                  ; 23         ;
+;     -- 4 input functions                    ; 54         ;
+;     -- 3 input functions                    ; 28         ;
+;     -- <=2 input functions                  ; 27         ;
 ;                                             ;            ;
 ; Logic elements by mode                      ;            ;
-;     -- normal mode                          ; 62         ;
+;     -- normal mode                          ; 91         ;
 ;     -- arithmetic mode                      ; 18         ;
 ;                                             ;            ;
-; Total registers                             ; 35         ;
-;     -- Dedicated logic registers            ; 35         ;
+; Total registers                             ; 42         ;
+;     -- Dedicated logic registers            ; 42         ;
 ;     -- I/O registers                        ; 0          ;
 ;                                             ;            ;
 ; I/O pins                                    ; 45         ;
@@ -211,9 +210,9 @@ refer to the applicable agreement for further details.
 ; Embedded Multiplier 9-bit elements          ; 0          ;
 ;                                             ;            ;
 ; Maximum fan-out node                        ; rest~input ;
-; Maximum fan-out                             ; 35         ;
-; Total fan-out                               ; 439        ;
-; Average fan-out                             ; 2.14       ;
+; Maximum fan-out                             ; 42         ;
+; Total fan-out                               ; 577        ;
+; Average fan-out                             ; 2.39       ;
 +---------------------------------------------+------------+
 
 
@@ -222,29 +221,22 @@ refer to the applicable agreement for further details.
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-------------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name     ; Entity Name ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-------------------------+-------------+--------------+
-; |crono                     ; 80 (0)              ; 35 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 45   ; 0            ; 0          ; |crono                  ; crono       ; work         ;
+; |crono                     ; 109 (0)             ; 42 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 45   ; 0            ; 0          ; |crono                  ; crono       ; work         ;
 ;    |bcdto7seg:SEG7_0|      ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |crono|bcdto7seg:SEG7_0 ; bcdto7seg   ; work         ;
 ;    |bcdto7seg:SEG7_1|      ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |crono|bcdto7seg:SEG7_1 ; bcdto7seg   ; work         ;
 ;    |bcdto7seg:SEG7_2|      ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |crono|bcdto7seg:SEG7_2 ; bcdto7seg   ; work         ;
-;    |bcdto7seg:SEG7_3|      ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |crono|bcdto7seg:SEG7_3 ; bcdto7seg   ; work         ;
+;    |bcdto7seg:SEG7_3|      ; 8 (8)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |crono|bcdto7seg:SEG7_3 ; bcdto7seg   ; work         ;
+;    |bcdto7seg:SEG7_4|      ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |crono|bcdto7seg:SEG7_4 ; bcdto7seg   ; work         ;
+;    |bcdto7seg:SEG7_5|      ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |crono|bcdto7seg:SEG7_5 ; bcdto7seg   ; work         ;
 ;    |clk_div:DIV|           ; 34 (34)             ; 20 (20)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |crono|clk_div:DIV      ; clk_div     ; work         ;
 ;    |modxx:MOD10_0|         ; 5 (5)               ; 4 (4)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |crono|modxx:MOD10_0    ; modxx       ; work         ;
-;    |modxx:MOD10_1|         ; 5 (5)               ; 4 (4)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |crono|modxx:MOD10_1    ; modxx       ; work         ;
-;    |modxx:MOD10_2|         ; 5 (5)               ; 4 (4)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |crono|modxx:MOD10_2    ; modxx       ; work         ;
-;    |modxx:MOD10_3|         ; 3 (3)               ; 3 (3)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |crono|modxx:MOD10_3    ; modxx       ; work         ;
+;    |modxx:MOD10_1|         ; 7 (7)               ; 4 (4)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |crono|modxx:MOD10_1    ; modxx       ; work         ;
+;    |modxx:MOD10_2|         ; 7 (7)               ; 4 (4)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |crono|modxx:MOD10_2    ; modxx       ; work         ;
+;    |modxx:MOD10_3|         ; 4 (4)               ; 3 (3)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |crono|modxx:MOD10_3    ; modxx       ; work         ;
+;    |modxx:MOD10_4|         ; 6 (6)               ; 4 (4)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |crono|modxx:MOD10_4    ; modxx       ; work         ;
+;    |modxx:MOD10_5|         ; 3 (3)               ; 3 (3)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |crono|modxx:MOD10_5    ; modxx       ; work         ;
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-------------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+-------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                  ;
-+---------------------------------------+---------------------------------------------+
-; Register name                         ; Reason for Removal                          ;
-+---------------------------------------+---------------------------------------------+
-; modxx:MOD10_4|Qt[0..3]                ; Stuck at GND due to stuck port clock_enable ;
-; modxx:MOD10_5|Qt[0..2]                ; Stuck at GND due to stuck port clock_enable ;
-; Total Number of Removed Registers = 7 ;                                             ;
-+---------------------------------------+---------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -252,12 +244,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 35    ;
+; Total registers                              ; 42    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 15    ;
+; Number of registers using Asynchronous Clear ; 22    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 28    ;
+; Number of registers using Clock Enable       ; 37    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -277,7 +269,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+-----------------------------------+
 ; Parameter Name ; Value ; Type                              ;
 +----------------+-------+-----------------------------------+
-; count          ; 9     ; Signed Integer                    ;
+; count          ; 10    ; Signed Integer                    ;
 +----------------+-------+-----------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -287,7 +279,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+-----------------------------------+
 ; Parameter Name ; Value ; Type                              ;
 +----------------+-------+-----------------------------------+
-; count          ; 9     ; Signed Integer                    ;
+; count          ; 10    ; Signed Integer                    ;
 +----------------+-------+-----------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -297,7 +289,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+-----------------------------------+
 ; Parameter Name ; Value ; Type                              ;
 +----------------+-------+-----------------------------------+
-; count          ; 9     ; Signed Integer                    ;
+; count          ; 10    ; Signed Integer                    ;
 +----------------+-------+-----------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -317,7 +309,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+-----------------------------------+
 ; Parameter Name ; Value ; Type                              ;
 +----------------+-------+-----------------------------------+
-; count          ; 9     ; Signed Integer                    ;
+; count          ; 10    ; Signed Integer                    ;
 +----------------+-------+-----------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -347,23 +339,22 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 45                          ;
-; cycloneiii_ff         ; 35                          ;
-;     CLR               ; 6                           ;
+; cycloneiii_ff         ; 42                          ;
+;     CLR               ; 4                           ;
 ;     ENA               ; 19                          ;
-;     ENA CLR           ; 9                           ;
+;     ENA CLR           ; 18                          ;
 ;     plain             ; 1                           ;
-; cycloneiii_lcell_comb ; 88                          ;
+; cycloneiii_lcell_comb ; 119                         ;
 ;     arith             ; 18                          ;
 ;         2 data inputs ; 18                          ;
-;     normal            ; 70                          ;
-;         0 data inputs ; 2                           ;
-;         1 data inputs ; 10                          ;
-;         2 data inputs ; 1                           ;
-;         3 data inputs ; 17                          ;
-;         4 data inputs ; 40                          ;
+;     normal            ; 101                         ;
+;         1 data inputs ; 17                          ;
+;         2 data inputs ; 2                           ;
+;         3 data inputs ; 28                          ;
+;         4 data inputs ; 54                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 3.80                        ;
-; Average LUT depth     ; 2.24                        ;
+; Max LUT depth         ; 4.00                        ;
+; Average LUT depth     ; 2.39                        ;
 +-----------------------+-----------------------------+
 
 
@@ -372,7 +363,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:02     ;
 +----------------+--------------+
 
 
@@ -382,7 +373,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Mon Mar 22 20:37:13 2021
+    Info: Processing started: Thu Mar 25 11:09:47 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Crono -c Crono
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
@@ -399,39 +390,26 @@ Info (12021): Found 2 design units, including 1 entities, in source file crono.v
     Info (12023): Found entity 1: crono File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_5/crono.vhd Line: 6
 Info (12021): Found 3 design units, including 1 entities, in source file modxx.vhd
     Info (12022): Found design unit 1: modxx-behavior File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_5/modxx.vhd Line: 12
-    Info (12022): Found design unit 2: modxx_package File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_5/modxx.vhd Line: 37
+    Info (12022): Found design unit 2: modxx_package File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_5/modxx.vhd Line: 38
     Info (12023): Found entity 1: modxx File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_5/modxx.vhd Line: 5
 Info (12127): Elaborating entity "crono" for the top level hierarchy
 Info (12128): Elaborating entity "clk_div" for hierarchy "clk_div:DIV" File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_5/crono.vhd Line: 18
 Info (12128): Elaborating entity "modxx" for hierarchy "modxx:MOD10_0" File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_5/crono.vhd Line: 20
+Warning (10492): VHDL Process Statement warning at modxx.vhd(28): signal "tc" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_5/modxx.vhd Line: 28
 Info (12128): Elaborating entity "bcdto7seg" for hierarchy "bcdto7seg:SEG7_0" File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_5/crono.vhd Line: 21
 Info (12128): Elaborating entity "modxx" for hierarchy "modxx:MOD10_3" File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_5/crono.vhd Line: 29
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "HEX4[0]" is stuck at GND File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_5/crono.vhd Line: 9
-    Warning (13410): Pin "HEX4[1]" is stuck at GND File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_5/crono.vhd Line: 9
-    Warning (13410): Pin "HEX4[2]" is stuck at GND File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_5/crono.vhd Line: 9
-    Warning (13410): Pin "HEX4[3]" is stuck at GND File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_5/crono.vhd Line: 9
-    Warning (13410): Pin "HEX4[4]" is stuck at GND File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_5/crono.vhd Line: 9
-    Warning (13410): Pin "HEX4[5]" is stuck at GND File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_5/crono.vhd Line: 9
-    Warning (13410): Pin "HEX4[6]" is stuck at VCC File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_5/crono.vhd Line: 9
-    Warning (13410): Pin "HEX5[0]" is stuck at GND File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_5/crono.vhd Line: 9
-    Warning (13410): Pin "HEX5[1]" is stuck at GND File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_5/crono.vhd Line: 9
-    Warning (13410): Pin "HEX5[2]" is stuck at GND File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_5/crono.vhd Line: 9
-    Warning (13410): Pin "HEX5[3]" is stuck at GND File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_5/crono.vhd Line: 9
-    Warning (13410): Pin "HEX5[4]" is stuck at GND File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_5/crono.vhd Line: 9
-    Warning (13410): Pin "HEX5[5]" is stuck at GND File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_5/crono.vhd Line: 9
-    Warning (13410): Pin "HEX5[6]" is stuck at VCC File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_5/crono.vhd Line: 9
+Warning (10492): VHDL Process Statement warning at modxx.vhd(28): signal "tc" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_5/modxx.vhd Line: 28
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 125 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 154 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 3 input pins
     Info (21059): Implemented 42 output pins
-    Info (21061): Implemented 80 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 16 warnings
+    Info (21061): Implemented 109 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 3 warnings
     Info: Peak virtual memory: 4801 megabytes
-    Info: Processing ended: Mon Mar 22 20:37:23 2021
-    Info: Elapsed time: 00:00:10
-    Info: Total CPU time (on all processors): 00:00:20
+    Info: Processing ended: Thu Mar 25 11:10:01 2021
+    Info: Elapsed time: 00:00:14
+    Info: Total CPU time (on all processors): 00:00:23
 
 

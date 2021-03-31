@@ -17,19 +17,19 @@ begin
 
 	DIV: clk_div generic map(500000) port map(clk_i, rest, clk_out);
 	
-	MOD10_0: modxx generic map(9) port map(clk_out, rest, enab, rc01, bcd0);
+	MOD10_0: modxx generic map(10) port map(clk_out, rest, enab, rc01, bcd0);
 	SEG7_0: bcdto7seg port map(bcd0, HEX0); 
 	
-	MOD10_1: modxx generic map(9) port map(clk_out, rest, rc01, rc12, bcd1);
+	MOD10_1: modxx generic map(10) port map(clk_out, rest, rc01, rc12, bcd1);
 	SEG7_1: bcdto7seg port map(bcd1, HEX1);	
 	
-	MOD10_2: modxx generic map(9) port map(clk_out, rest, rc12, rc23, bcd2);
+	MOD10_2: modxx generic map(10) port map(clk_out, rest, rc12, rc23, bcd2);
 	SEG7_2: bcdto7seg port map(bcd2, HEX2);	
 	
 	MOD10_3: modxx generic map(6) port map(clk_out, rest, rc23, rc34, bcd3);
 	SEG7_3: bcdto7seg port map(bcd3, HEX3);
 
-	MOD10_4: modxx generic map(9) port map(clk_out, rest, rc34, rc45, bcd4);
+	MOD10_4: modxx generic map(10) port map(clk_out, rest, rc34, rc45, bcd4);
 	SEG7_4: bcdto7seg port map(bcd4, HEX4);
 
 	MOD10_5: modxx generic map(6) port map(clk_out, rest, rc45, open, bcd5);

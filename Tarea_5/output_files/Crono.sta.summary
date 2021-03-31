@@ -2,20 +2,20 @@
 Timing Analyzer Summary
 ------------------------------------------------------------
 
-Type  : Slow 1200mV 85C Model Setup 'clk_i'
-Slack : -3.077
-TNS   : -26.488
-
 Type  : Slow 1200mV 85C Model Setup 'clk_div:DIV|clk_sig'
-Slack : -1.174
-TNS   : -9.971
+Slack : -3.058
+TNS   : -52.644
+
+Type  : Slow 1200mV 85C Model Setup 'clk_i'
+Slack : -3.049
+TNS   : -25.525
 
 Type  : Slow 1200mV 85C Model Hold 'clk_div:DIV|clk_sig'
-Slack : 0.331
+Slack : 0.330
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'clk_i'
-Slack : 0.547
+Slack : 0.548
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk_i'
@@ -24,22 +24,22 @@ TNS   : -27.440
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk_div:DIV|clk_sig'
 Slack : -1.222
-TNS   : -18.330
+TNS   : -26.884
 
 Type  : Slow 1200mV 0C Model Setup 'clk_i'
-Slack : -2.735
-TNS   : -22.273
+Slack : -2.699
+TNS   : -21.410
 
 Type  : Slow 1200mV 0C Model Setup 'clk_div:DIV|clk_sig'
-Slack : -1.001
-TNS   : -8.016
+Slack : -2.689
+TNS   : -46.320
 
 Type  : Slow 1200mV 0C Model Hold 'clk_div:DIV|clk_sig'
 Slack : 0.300
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'clk_i'
-Slack : 0.505
+Slack : 0.507
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk_i'
@@ -48,30 +48,30 @@ TNS   : -27.440
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk_div:DIV|clk_sig'
 Slack : -1.222
-TNS   : -18.330
+TNS   : -26.884
 
 Type  : Fast 1200mV 0C Model Setup 'clk_i'
-Slack : -1.022
-TNS   : -3.871
+Slack : -1.009
+TNS   : -3.428
 
 Type  : Fast 1200mV 0C Model Setup 'clk_div:DIV|clk_sig'
-Slack : -0.023
-TNS   : -0.046
+Slack : -0.998
+TNS   : -15.952
 
 Type  : Fast 1200mV 0C Model Hold 'clk_div:DIV|clk_sig'
-Slack : 0.152
+Slack : 0.149
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'clk_i'
-Slack : 0.247
+Slack : 0.248
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk_i'
 Slack : -3.000
-TNS   : -23.630
+TNS   : -23.650
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk_div:DIV|clk_sig'
 Slack : -1.000
-TNS   : -15.000
+TNS   : -22.000
 
 ------------------------------------------------------------
