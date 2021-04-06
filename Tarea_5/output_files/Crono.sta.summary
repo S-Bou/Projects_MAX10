@@ -2,73 +2,73 @@
 Timing Analyzer Summary
 ------------------------------------------------------------
 
-Type  : Slow 1200mV 85C Model Setup 'clk_div:DIV|clk_sig'
-Slack : -3.058
-TNS   : -52.644
-
 Type  : Slow 1200mV 85C Model Setup 'clk_i'
-Slack : -3.049
-TNS   : -25.525
+Slack : -3.005
+TNS   : -24.528
+
+Type  : Slow 1200mV 85C Model Setup 'clk_div:DIV|clk_sig'
+Slack : -2.891
+TNS   : -48.565
 
 Type  : Slow 1200mV 85C Model Hold 'clk_div:DIV|clk_sig'
-Slack : 0.330
+Slack : 0.331
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'clk_i'
-Slack : 0.548
+Slack : 0.343
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk_i'
 Slack : -3.000
-TNS   : -27.440
+TNS   : -26.218
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk_div:DIV|clk_sig'
 Slack : -1.222
 TNS   : -26.884
 
 Type  : Slow 1200mV 0C Model Setup 'clk_i'
-Slack : -2.699
-TNS   : -21.410
+Slack : -2.622
+TNS   : -20.475
 
 Type  : Slow 1200mV 0C Model Setup 'clk_div:DIV|clk_sig'
-Slack : -2.689
-TNS   : -46.320
+Slack : -2.584
+TNS   : -42.765
 
 Type  : Slow 1200mV 0C Model Hold 'clk_div:DIV|clk_sig'
 Slack : 0.300
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'clk_i'
-Slack : 0.507
+Slack : 0.312
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk_i'
 Slack : -3.000
-TNS   : -27.440
+TNS   : -26.218
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk_div:DIV|clk_sig'
 Slack : -1.222
 TNS   : -26.884
 
 Type  : Fast 1200mV 0C Model Setup 'clk_i'
-Slack : -1.009
-TNS   : -3.428
+Slack : -0.988
+TNS   : -3.446
 
 Type  : Fast 1200mV 0C Model Setup 'clk_div:DIV|clk_sig'
-Slack : -0.998
-TNS   : -15.952
+Slack : -0.888
+TNS   : -13.904
 
 Type  : Fast 1200mV 0C Model Hold 'clk_div:DIV|clk_sig'
-Slack : 0.149
+Slack : 0.092
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'clk_i'
-Slack : 0.248
+Slack : 0.156
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk_i'
 Slack : -3.000
-TNS   : -23.650
+TNS   : -22.618
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk_div:DIV|clk_sig'
 Slack : -1.000

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for StepMotorDriver
-Mon Mar 29 10:18:00 2021
+Tue Apr 06 22:53:26 2021
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -42,7 +42,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Mar 29 10:18:00 2021       ;
+; Analysis & Synthesis Status        ; Successful - Tue Apr 06 22:53:26 2021       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; StepMotorDriver                             ;
 ; Top-level Entity Name              ; mux4to1                                     ;
@@ -249,7 +249,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -259,7 +259,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Mon Mar 29 10:17:50 2021
+    Info: Processing started: Tue Apr 06 22:53:11 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off StepMotorDriver -c StepMotorDriver
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
@@ -271,8 +271,9 @@ Info (12021): Found 3 design units, including 1 entities, in source file clk_div
     Info (12022): Found design unit 1: clk_div-behavioral File: D:/Programas/intelFPGA_lite/Projects_MAX10/Practica_8/clk_div.vhd Line: 9
     Info (12022): Found design unit 2: clk_div_package File: D:/Programas/intelFPGA_lite/Projects_MAX10/Practica_8/clk_div.vhd Line: 30
     Info (12023): Found entity 1: clk_div File: D:/Programas/intelFPGA_lite/Projects_MAX10/Practica_8/clk_div.vhd Line: 3
-Info (12021): Found 1 design units, including 1 entities, in source file step_motor_driver.vhd
-    Info (12023): Found entity 1: Step_Motor_Driver File: D:/Programas/intelFPGA_lite/Projects_MAX10/Practica_8/Step_Motor_Driver.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file step_motor_driver.vhd
+    Info (12022): Found design unit 1: Step_Motor_Driver-main File: D:/Programas/intelFPGA_lite/Projects_MAX10/Practica_8/Step_Motor_Driver.vhd Line: 13
+    Info (12023): Found entity 1: Step_Motor_Driver File: D:/Programas/intelFPGA_lite/Projects_MAX10/Practica_8/Step_Motor_Driver.vhd Line: 6
 Info (12127): Elaborating entity "mux4to1" for the top level hierarchy
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
@@ -282,9 +283,9 @@ Info (21057): Implemented 9 device resources after synthesis - the final resourc
     Info (21059): Implemented 1 output pins
     Info (21061): Implemented 2 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4785 megabytes
-    Info: Processing ended: Mon Mar 29 10:18:00 2021
-    Info: Elapsed time: 00:00:10
-    Info: Total CPU time (on all processors): 00:00:22
+    Info: Peak virtual memory: 4787 megabytes
+    Info: Processing ended: Tue Apr 06 22:53:26 2021
+    Info: Elapsed time: 00:00:15
+    Info: Total CPU time (on all processors): 00:00:21
 
 

@@ -15,7 +15,7 @@ architecture behavioral of crono is
    signal rc01, rc12, rc23, rc34, rc45: std_logic;	
 begin
 
-	DIV: clk_div generic map(500000) port map(clk_i, rest, clk_out);
+	DIV: clk_div generic map(250000) port map(clk_i, rest, clk_out);
 	
 	MOD10_0: modxx generic map(10) port map(clk_out, rest, enab, rc01, bcd0);
 	SEG7_0: bcdto7seg port map(bcd0, HEX0); 
