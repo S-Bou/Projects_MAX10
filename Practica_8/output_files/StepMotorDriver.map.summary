@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Tue Apr 06 22:53:26 2021
+Analysis & Synthesis Status : Successful - Sat Apr 10 10:07:48 2021
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : StepMotorDriver
-Top-level Entity Name : mux4to1
+Top-level Entity Name : Step_Motor_Driver
 Family : MAX 10
-Total logic elements : 2
-    Total combinational functions : 2
-    Dedicated logic registers : 0
-Total registers : 0
-Total pins : 7
+Total logic elements : 130
+    Total combinational functions : 130
+    Dedicated logic registers : 67
+Total registers : 67
+Total pins : 12
 Total virtual pins : 0
 Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0

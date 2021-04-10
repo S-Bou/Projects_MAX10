@@ -1,5 +1,5 @@
 Analysis & Synthesis report for StepMotorDriver
-Tue Apr 06 22:53:26 2021
+Sat Apr 10 10:07:48 2021
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -13,10 +13,18 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
-  9. Post-Synthesis Netlist Statistics for Top Partition
- 10. Elapsed Time Per Partition
- 11. Analysis & Synthesis Messages
+  8. Registers Removed During Synthesis
+  9. General Register Statistics
+ 10. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 11. Source assignments for Top-level Entity: |Step_Motor_Driver
+ 12. Parameter Settings for User Entity Instance: clk_div:CLK100
+ 13. Parameter Settings for User Entity Instance: clk_div:CLK200
+ 14. Parameter Settings for User Entity Instance: clk_div:CLK400
+ 15. Parameter Settings for User Entity Instance: clk_div:CLK800
+ 16. Port Connectivity Checks: "Driver:Dri"
+ 17. Post-Synthesis Netlist Statistics for Top Partition
+ 18. Elapsed Time Per Partition
+ 19. Analysis & Synthesis Messages
 
 
 
@@ -42,16 +50,16 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Apr 06 22:53:26 2021       ;
+; Analysis & Synthesis Status        ; Successful - Sat Apr 10 10:07:48 2021       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; StepMotorDriver                             ;
-; Top-level Entity Name              ; mux4to1                                     ;
+; Top-level Entity Name              ; Step_Motor_Driver                           ;
 ; Family                             ; MAX 10                                      ;
-; Total logic elements               ; 2                                           ;
-;     Total combinational functions  ; 2                                           ;
-;     Dedicated logic registers      ; 0                                           ;
-; Total registers                    ; 0                                           ;
-; Total pins                         ; 7                                           ;
+; Total logic elements               ; 130                                         ;
+;     Total combinational functions  ; 130                                         ;
+;     Dedicated logic registers      ; 67                                          ;
+; Total registers                    ; 67                                          ;
+; Total pins                         ; 12                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -67,7 +75,7 @@ refer to the applicable agreement for further details.
 ; Option                                                           ; Setting            ; Default Value      ;
 +------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                           ; 10M50DAF484C6GES   ;                    ;
-; Top-level entity name                                            ; mux4to1            ; StepMotorDriver    ;
+; Top-level entity name                                            ; Step_Motor_Driver  ; StepMotorDriver    ;
 ; Family name                                                      ; MAX 10             ; Cyclone V          ;
 ; Use smart compilation                                            ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
@@ -156,62 +164,87 @@ refer to the applicable agreement for further details.
 ; Maximum allowed            ; 6           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
+; Maximum used               ; 6           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
+;     Processors 2-6         ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                             ;
-+----------------------------------+-----------------+-----------------+-------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                      ; Library ;
-+----------------------------------+-----------------+-----------------+-------------------------------------------------------------------+---------+
-; mux4to1.vhd                      ; yes             ; User VHDL File  ; D:/Programas/intelFPGA_lite/Projects_MAX10/Practica_8/mux4to1.vhd ;         ;
-+----------------------------------+-----------------+-----------------+-------------------------------------------------------------------+---------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                       ;
++----------------------------------+-----------------+-----------------+-----------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                ; Library ;
++----------------------------------+-----------------+-----------------+-----------------------------------------------------------------------------+---------+
+; mux4to1.vhd                      ; yes             ; User VHDL File  ; D:/Programas/intelFPGA_lite/Projects_MAX10/Practica_8/mux4to1.vhd           ;         ;
+; clk_div.vhd                      ; yes             ; User VHDL File  ; D:/Programas/intelFPGA_lite/Projects_MAX10/Practica_8/clk_div.vhd           ;         ;
+; Step_Motor_Driver.vhd            ; yes             ; User VHDL File  ; D:/Programas/intelFPGA_lite/Projects_MAX10/Practica_8/Step_Motor_Driver.vhd ;         ;
+; Driver.vhd                       ; yes             ; User VHDL File  ; D:/Programas/intelFPGA_lite/Projects_MAX10/Practica_8/Driver.vhd            ;         ;
++----------------------------------+-----------------+-----------------+-----------------------------------------------------------------------------+---------+
 
 
-+------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                ;
-+---------------------------------------------+--------------+
-; Resource                                    ; Usage        ;
-+---------------------------------------------+--------------+
-; Estimated Total logic elements              ; 2            ;
-;                                             ;              ;
-; Total combinational functions               ; 2            ;
-; Logic element usage by number of LUT inputs ;              ;
-;     -- 4 input functions                    ; 2            ;
-;     -- 3 input functions                    ; 0            ;
-;     -- <=2 input functions                  ; 0            ;
-;                                             ;              ;
-; Logic elements by mode                      ;              ;
-;     -- normal mode                          ; 2            ;
-;     -- arithmetic mode                      ; 0            ;
-;                                             ;              ;
-; Total registers                             ; 0            ;
-;     -- Dedicated logic registers            ; 0            ;
-;     -- I/O registers                        ; 0            ;
-;                                             ;              ;
-; I/O pins                                    ; 7            ;
-;                                             ;              ;
-; Embedded Multiplier 9-bit elements          ; 0            ;
-;                                             ;              ;
-; Maximum fan-out node                        ; sel[1]~input ;
-; Maximum fan-out                             ; 2            ;
-; Total fan-out                               ; 16           ;
-; Average fan-out                             ; 1.00         ;
-+---------------------------------------------+--------------+
++-----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary               ;
++---------------------------------------------+-------------+
+; Resource                                    ; Usage       ;
++---------------------------------------------+-------------+
+; Estimated Total logic elements              ; 130         ;
+;                                             ;             ;
+; Total combinational functions               ; 130         ;
+; Logic element usage by number of LUT inputs ;             ;
+;     -- 4 input functions                    ; 36          ;
+;     -- 3 input functions                    ; 9           ;
+;     -- <=2 input functions                  ; 85          ;
+;                                             ;             ;
+; Logic elements by mode                      ;             ;
+;     -- normal mode                          ; 71          ;
+;     -- arithmetic mode                      ; 59          ;
+;                                             ;             ;
+; Total registers                             ; 67          ;
+;     -- Dedicated logic registers            ; 67          ;
+;     -- I/O registers                        ; 0           ;
+;                                             ;             ;
+; I/O pins                                    ; 12          ;
+;                                             ;             ;
+; Embedded Multiplier 9-bit elements          ; 0           ;
+;                                             ;             ;
+; Maximum fan-out node                        ; reset~input ;
+; Maximum fan-out                             ; 67          ;
+; Total fan-out                               ; 556         ;
+; Average fan-out                             ; 2.52        ;
++---------------------------------------------+-------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                ;
-+----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name ; Entity Name ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------+--------------+
-; |mux4to1                   ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 7    ; 0            ; 0          ; |mux4to1            ; mux4to1     ; work         ;
-+----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------+--------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                    ;
++----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-----------------------------------+-------------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name               ; Entity Name       ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-----------------------------------+-------------------+--------------+
+; |Step_Motor_Driver         ; 130 (0)             ; 67 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 12   ; 0            ; 0          ; |Step_Motor_Driver                ; Step_Motor_Driver ; work         ;
+;    |Driver:Dri|            ; 12 (12)             ; 3 (3)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Step_Motor_Driver|Driver:Dri     ; Driver            ; work         ;
+;    |clk_div:CLK100|        ; 32 (32)             ; 19 (19)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Step_Motor_Driver|clk_div:CLK100 ; clk_div           ; work         ;
+;    |clk_div:CLK200|        ; 29 (29)             ; 15 (15)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Step_Motor_Driver|clk_div:CLK200 ; clk_div           ; work         ;
+;    |clk_div:CLK400|        ; 28 (28)             ; 15 (15)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Step_Motor_Driver|clk_div:CLK400 ; clk_div           ; work         ;
+;    |clk_div:CLK800|        ; 27 (27)             ; 15 (15)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Step_Motor_Driver|clk_div:CLK800 ; clk_div           ; work         ;
+;    |mux4to1:MUX4T1|        ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Step_Motor_Driver|mux4to1:MUX4T1 ; mux4to1           ; work         ;
++----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-----------------------------------+-------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++--------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                             ;
++---------------------------------------+----------------------------------------+
+; Register name                         ; Reason for Removal                     ;
++---------------------------------------+----------------------------------------+
+; clk_div:CLK200|contador[0]            ; Merged with clk_div:CLK100|contador[0] ;
+; clk_div:CLK800|contador[0]            ; Merged with clk_div:CLK100|contador[0] ;
+; clk_div:CLK400|contador[0]            ; Merged with clk_div:CLK100|contador[0] ;
+; clk_div:CLK400|contador[1]            ; Merged with clk_div:CLK100|contador[1] ;
+; clk_div:CLK200|contador[1]            ; Merged with clk_div:CLK100|contador[1] ;
+; clk_div:CLK200|contador[2]            ; Merged with clk_div:CLK100|contador[2] ;
+; Total Number of Removed Registers = 6 ;                                        ;
++---------------------------------------+----------------------------------------+
 
 
 +------------------------------------------------------+
@@ -219,14 +252,92 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 0     ;
+; Total registers                              ; 67    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Clear ; 67    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Clock Enable       ; 3     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                      ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output            ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------+
+; 11:1               ; 3 bits    ; 21 LEs        ; 18 LEs               ; 3 LEs                  ; No         ; |Step_Motor_Driver|Driver:Dri|cout[2] ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------+
+
+
++-------------------------------------------------------------+
+; Source assignments for Top-level Entity: |Step_Motor_Driver ;
++------------+---------+------+-------------------------------+
+; Assignment ; Value   ; From ; To                            ;
++------------+---------+------+-------------------------------+
+; LOCATION   ; Pin_B12 ; -    ; clk_cont[1]                   ;
+; LOCATION   ; Pin_A13 ; -    ; clk_cont[0]                   ;
+; LOCATION   ; Pin_C12 ; -    ; mot_cont[1]                   ;
+; LOCATION   ; Pin_A12 ; -    ; mot_cont[0]                   ;
+; LOCATION   ; Pin_W10 ; -    ; mot_pow[3]                    ;
+; LOCATION   ; Pin_W9  ; -    ; mot_pow[2]                    ;
+; LOCATION   ; Pin_W8  ; -    ; mot_pow[1]                    ;
+; LOCATION   ; Pin_W7  ; -    ; mot_pow[0]                    ;
+; LOCATION   ; Pin_N14 ; -    ; clk_i                         ;
+; LOCATION   ; Pin_C11 ; -    ; reset                         ;
+; LOCATION   ; Pin_C10 ; -    ; enable                        ;
+; LOCATION   ; Pin_D12 ; -    ; u_d                           ;
++------------+---------+------+-------------------------------+
+
+
++-------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: clk_div:CLK100 ;
++----------------+--------+-----------------------------------+
+; Parameter Name ; Value  ; Type                              ;
++----------------+--------+-----------------------------------+
+; divider        ; 500000 ; Signed Integer                    ;
++----------------+--------+-----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: clk_div:CLK200 ;
++----------------+--------+-----------------------------------+
+; Parameter Name ; Value  ; Type                              ;
++----------------+--------+-----------------------------------+
+; divider        ; 250000 ; Signed Integer                    ;
++----------------+--------+-----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: clk_div:CLK400 ;
++----------------+--------+-----------------------------------+
+; Parameter Name ; Value  ; Type                              ;
++----------------+--------+-----------------------------------+
+; divider        ; 125000 ; Signed Integer                    ;
++----------------+--------+-----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: clk_div:CLK800 ;
++----------------+-------+------------------------------------+
+; Parameter Name ; Value ; Type                               ;
++----------------+-------+------------------------------------+
+; divider        ; 62500 ; Signed Integer                     ;
++----------------+-------+------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Driver:Dri"                                                                          ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                             ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; state ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
 
 
 +-----------------------------------------------------+
@@ -234,13 +345,22 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 7                           ;
-; cycloneiii_lcell_comb ; 2                           ;
-;     normal            ; 2                           ;
-;         4 data inputs ; 2                           ;
+; boundary_port         ; 12                          ;
+; cycloneiii_ff         ; 67                          ;
+;     CLR               ; 64                          ;
+;     ENA CLR           ; 3                           ;
+; cycloneiii_lcell_comb ; 130                         ;
+;     arith             ; 59                          ;
+;         2 data inputs ; 56                          ;
+;         3 data inputs ; 3                           ;
+;     normal            ; 71                          ;
+;         1 data inputs ; 5                           ;
+;         2 data inputs ; 24                          ;
+;         3 data inputs ; 6                           ;
+;         4 data inputs ; 36                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 2.00                        ;
-; Average LUT depth     ; 1.75                        ;
+; Max LUT depth         ; 4.00                        ;
+; Average LUT depth     ; 2.88                        ;
 +-----------------------+-----------------------------+
 
 
@@ -249,7 +369,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:00     ;
 +----------------+--------------+
 
 
@@ -259,7 +379,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Tue Apr 06 22:53:11 2021
+    Info: Processing started: Sat Apr 10 10:07:38 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off StepMotorDriver -c StepMotorDriver
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
@@ -269,23 +389,43 @@ Info (12021): Found 3 design units, including 1 entities, in source file mux4to1
     Info (12023): Found entity 1: mux4to1 File: D:/Programas/intelFPGA_lite/Projects_MAX10/Practica_8/mux4to1.vhd Line: 3
 Info (12021): Found 3 design units, including 1 entities, in source file clk_div.vhd
     Info (12022): Found design unit 1: clk_div-behavioral File: D:/Programas/intelFPGA_lite/Projects_MAX10/Practica_8/clk_div.vhd Line: 9
-    Info (12022): Found design unit 2: clk_div_package File: D:/Programas/intelFPGA_lite/Projects_MAX10/Practica_8/clk_div.vhd Line: 30
+    Info (12022): Found design unit 2: clk_div_package File: D:/Programas/intelFPGA_lite/Projects_MAX10/Practica_8/clk_div.vhd Line: 33
     Info (12023): Found entity 1: clk_div File: D:/Programas/intelFPGA_lite/Projects_MAX10/Practica_8/clk_div.vhd Line: 3
 Info (12021): Found 2 design units, including 1 entities, in source file step_motor_driver.vhd
-    Info (12022): Found design unit 1: Step_Motor_Driver-main File: D:/Programas/intelFPGA_lite/Projects_MAX10/Practica_8/Step_Motor_Driver.vhd Line: 13
-    Info (12023): Found entity 1: Step_Motor_Driver File: D:/Programas/intelFPGA_lite/Projects_MAX10/Practica_8/Step_Motor_Driver.vhd Line: 6
-Info (12127): Elaborating entity "mux4to1" for the top level hierarchy
+    Info (12022): Found design unit 1: Step_Motor_Driver-main File: D:/Programas/intelFPGA_lite/Projects_MAX10/Practica_8/Step_Motor_Driver.vhd Line: 15
+    Info (12023): Found entity 1: Step_Motor_Driver File: D:/Programas/intelFPGA_lite/Projects_MAX10/Practica_8/Step_Motor_Driver.vhd Line: 8
+Info (12021): Found 3 design units, including 1 entities, in source file driver.vhd
+    Info (12022): Found design unit 1: Driver-main File: D:/Programas/intelFPGA_lite/Projects_MAX10/Practica_8/Driver.vhd Line: 11
+    Info (12022): Found design unit 2: Driver_package File: D:/Programas/intelFPGA_lite/Projects_MAX10/Practica_8/Driver.vhd Line: 80
+    Info (12023): Found entity 1: Driver File: D:/Programas/intelFPGA_lite/Projects_MAX10/Practica_8/Driver.vhd Line: 4
+Info (12127): Elaborating entity "Step_Motor_Driver" for the top level hierarchy
+Warning (10036): Verilog HDL or VHDL warning at Step_Motor_Driver.vhd(26): object "counter" assigned a value but never read File: D:/Programas/intelFPGA_lite/Projects_MAX10/Practica_8/Step_Motor_Driver.vhd Line: 26
+Info (12128): Elaborating entity "clk_div" for hierarchy "clk_div:CLK100" File: D:/Programas/intelFPGA_lite/Projects_MAX10/Practica_8/Step_Motor_Driver.vhd Line: 30
+Warning (10492): VHDL Process Statement warning at clk_div.vhd(15): signal "reset" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Programas/intelFPGA_lite/Projects_MAX10/Practica_8/clk_div.vhd Line: 15
+Info (12128): Elaborating entity "clk_div" for hierarchy "clk_div:CLK200" File: D:/Programas/intelFPGA_lite/Projects_MAX10/Practica_8/Step_Motor_Driver.vhd Line: 31
+Warning (10492): VHDL Process Statement warning at clk_div.vhd(15): signal "reset" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Programas/intelFPGA_lite/Projects_MAX10/Practica_8/clk_div.vhd Line: 15
+Info (12128): Elaborating entity "clk_div" for hierarchy "clk_div:CLK400" File: D:/Programas/intelFPGA_lite/Projects_MAX10/Practica_8/Step_Motor_Driver.vhd Line: 32
+Warning (10492): VHDL Process Statement warning at clk_div.vhd(15): signal "reset" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Programas/intelFPGA_lite/Projects_MAX10/Practica_8/clk_div.vhd Line: 15
+Info (12128): Elaborating entity "clk_div" for hierarchy "clk_div:CLK800" File: D:/Programas/intelFPGA_lite/Projects_MAX10/Practica_8/Step_Motor_Driver.vhd Line: 33
+Warning (10492): VHDL Process Statement warning at clk_div.vhd(15): signal "reset" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Programas/intelFPGA_lite/Projects_MAX10/Practica_8/clk_div.vhd Line: 15
+Info (12128): Elaborating entity "mux4to1" for hierarchy "mux4to1:MUX4T1" File: D:/Programas/intelFPGA_lite/Projects_MAX10/Practica_8/Step_Motor_Driver.vhd Line: 35
+Info (12128): Elaborating entity "Driver" for hierarchy "Driver:Dri" File: D:/Programas/intelFPGA_lite/Projects_MAX10/Practica_8/Step_Motor_Driver.vhd Line: 37
+Warning (10492): VHDL Process Statement warning at Driver.vhd(32): signal "secu" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Programas/intelFPGA_lite/Projects_MAX10/Practica_8/Driver.vhd Line: 32
+Warning (10492): VHDL Process Statement warning at Driver.vhd(45): signal "secu" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Programas/intelFPGA_lite/Projects_MAX10/Practica_8/Driver.vhd Line: 45
+Warning (10492): VHDL Process Statement warning at Driver.vhd(58): signal "secu" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Programas/intelFPGA_lite/Projects_MAX10/Practica_8/Driver.vhd Line: 58
+Warning (19016): Clock multiplexers are found and protected
+    Warning (19017): Found clock multiplexer mux4to1:MUX4T1|Mux0 File: D:/Programas/intelFPGA_lite/Projects_MAX10/Practica_8/mux4to1.vhd Line: 12
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 9 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 6 input pins
-    Info (21059): Implemented 1 output pins
-    Info (21061): Implemented 2 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4787 megabytes
-    Info: Processing ended: Tue Apr 06 22:53:26 2021
-    Info: Elapsed time: 00:00:15
+Info (21057): Implemented 142 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 8 input pins
+    Info (21059): Implemented 4 output pins
+    Info (21061): Implemented 130 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 11 warnings
+    Info: Peak virtual memory: 4799 megabytes
+    Info: Processing ended: Sat Apr 10 10:07:48 2021
+    Info: Elapsed time: 00:00:10
     Info: Total CPU time (on all processors): 00:00:21
 
 
