@@ -1,0 +1,29 @@
+|LS194
+clk => temp[0].CLK
+clk => temp[1].CLK
+clk => temp[2].CLK
+clk => temp[3].CLK
+mr_n => temp[0].ACLR
+mr_n => temp[1].ACLR
+mr_n => temp[2].ACLR
+mr_n => temp[3].ACLR
+s0 => Mux0.IN4
+s0 => Mux1.IN4
+s0 => Mux2.IN4
+s0 => Mux3.IN4
+s1 => Mux0.IN5
+s1 => Mux1.IN5
+s1 => Mux2.IN5
+s1 => Mux3.IN5
+dsr => Mux0.IN0
+dsl_ser => Mux3.IN0
+p[0] => Mux3.IN1
+p[1] => Mux2.IN0
+p[2] => Mux1.IN0
+p[3] => Mux0.IN1
+q[0] <= temp[0].DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= temp[1].DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= temp[2].DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= temp[3].DB_MAX_OUTPUT_PORT_TYPE
+
+

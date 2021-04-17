@@ -1,0 +1,147 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Programas/intelFPGA_lite/Projects_MAX10/Modelsim_LS194/simulation/modelsim
+Ehard_block
+Z1 w1618678813
+Z2 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z3 DPx11 fiftyfivenm 21 fiftyfivenm_atom_pack 0 22 7d5Xo;QBOkc31OfQTzSXV0
+Z4 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z5 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z6 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z7 DPx11 fiftyfivenm 22 fiftyfivenm_components 0 22 IfY7Mh2WPBc;@7U@3<I^[0
+R0
+Z8 8LS194.vho
+Z9 FLS194.vho
+l0
+L34
+V;hd7E0Y^JGdPl8HZQR0Cc3
+!s100 ROH=D<N4CT6aCZ<37A[_?0
+Z10 OV;C;10.5b;63
+31
+Z11 !s110 1618678884
+!i10b 1
+Z12 !s108 1618678884.000000
+Z13 !s90 -reportprogress|300|-93|-work|work|LS194.vho|
+Z14 !s107 LS194.vho|
+!i113 1
+Z15 o-93 -work work
+Z16 tExplicit 1 CvgOpt 0
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 10 hard_block 0 22 ;hd7E0Y^JGdPl8HZQR0Cc3
+l75
+L53
+V?Kz^?jU4>i?7i<f0L^z<G3
+!s100 zW6ML5NVY?Ai`]`n2XhME3
+R10
+31
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+Els194
+R1
+R3
+R7
+R2
+Z17 DPx6 altera 11 dffeas_pack 0 22 :S1C`o89Vbe5bV6`:6CaB3
+R4
+R5
+R6
+Z18 DPx6 altera 28 altera_primitives_components 0 22 z?[99Tn<@QGNik3V1c6ah1
+R0
+R8
+R9
+l0
+L90
+V2SBgh1QckcF4Ci<D2B`852
+!s100 z8oR5ceeR@GSdT5KfI?ol3
+R10
+31
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+Astructure
+R3
+R7
+R2
+R17
+R4
+R5
+R6
+R18
+DEx4 work 5 ls194 0 22 2SBgh1QckcF4Ci<D2B`852
+l177
+L120
+Vg92>VOkU1U6B_jT3Rdgd]1
+!s100 6<O6[JNePYhOo;Yg<kZOb2
+R10
+31
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+Els194_tb
+Z19 w1618678140
+R5
+R6
+R0
+Z20 8D:/Programas/intelFPGA_lite/Projects_MAX10/Modelsim_LS194/LS194_tb.vhd
+Z21 FD:/Programas/intelFPGA_lite/Projects_MAX10/Modelsim_LS194/LS194_tb.vhd
+l0
+L5
+VCCb2RR4mFOP?YY7k_>`@41
+!s100 9De=X6dY4YJAO9j1d_[?<1
+R10
+31
+Z22 !s110 1618678885
+!i10b 1
+Z23 !s108 1618678885.000000
+Z24 !s90 -reportprogress|300|-93|-work|work|D:/Programas/intelFPGA_lite/Projects_MAX10/Modelsim_LS194/LS194_tb.vhd|
+Z25 !s107 D:/Programas/intelFPGA_lite/Projects_MAX10/Modelsim_LS194/LS194_tb.vhd|
+!i113 1
+R15
+R16
+Atb
+R5
+R6
+DEx4 work 8 ls194_tb 0 22 CCb2RR4mFOP?YY7k_>`@41
+l23
+L8
+V?<^^icN8n?k7eKSg]Y^Tm3
+!s100 ;[3i9;lFd;8Tbz1Z<g_Rc0
+R10
+31
+R22
+!i10b 1
+R23
+R24
+R25
+!i113 1
+R15
+R16
