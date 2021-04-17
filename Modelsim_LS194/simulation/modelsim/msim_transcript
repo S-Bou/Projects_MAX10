@@ -171,3 +171,6 @@ add wave -position end  sim:/ls194_tb/clk_period
 run
 # ** Error: Error: serial left shift failed 
 #    Time: 90 ns  Iteration: 0  Instance: /ls194_tb
+# Break key hit
+# End time: 19:10:51 on Apr 17,2021, Elapsed time: 0:03:42
+# Errors: 1, Warnings: 0

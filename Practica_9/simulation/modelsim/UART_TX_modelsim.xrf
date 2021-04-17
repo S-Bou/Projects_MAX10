@@ -1,0 +1,16 @@
+vendor_name = ModelSim
+source_file = 1, D:/Programas/intelFPGA_lite/Projects_MAX10/Practica_9/clk_div.vhd
+source_file = 1, D:/Programas/intelFPGA_lite/Projects_MAX10/Practica_9/UART_TX.vhd
+source_file = 1, d:/programas/intelfpga_lite/quartus_ii_18.1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, d:/programas/intelfpga_lite/quartus_ii_18.1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, d:/programas/intelfpga_lite/quartus_ii_18.1/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, d:/programas/intelfpga_lite/quartus_ii_18.1/quartus/libraries/vhdl/ieee/timing_p.vhd
+source_file = 1, D:/Programas/intelFPGA_lite/Projects_MAX10/Practica_9/db/UART_TX.cbx.xml
+design_name = hard_block
+design_name = uart_tx
+instance = comp, \~QUARTUS_CREATED_GND~I\, ~QUARTUS_CREATED_GND~I, uart_tx, 1
+instance = comp, \clk_i~input\, clk_i~input, uart_tx, 1
+instance = comp, \reset~input\, reset~input, uart_tx, 1
+instance = comp, \~QUARTUS_CREATED_UNVM~\, ~QUARTUS_CREATED_UNVM~, uart_tx, 1
+instance = comp, \~QUARTUS_CREATED_ADC1~\, ~QUARTUS_CREATED_ADC1~, uart_tx, 1
+instance = comp, \~QUARTUS_CREATED_ADC2~\, ~QUARTUS_CREATED_ADC2~, uart_tx, 1

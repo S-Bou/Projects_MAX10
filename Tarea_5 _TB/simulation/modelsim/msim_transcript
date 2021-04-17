@@ -1,0 +1,57 @@
+# Reading D:/Programas/intelFPGA_lite/Quartus_II_18.1/modelsim_ase/tcl/vsim/pref.tcl
+# do Crono_run_msim_gate_vhdl.do
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work gate_work 
+# Copying D:/Programas/intelFPGA_lite/Quartus_II_18.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {Crono.vho}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:24:21 on Apr 17,2021
+# vcom -reportprogress 300 -93 -work work Crono.vho 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package VITAL_Timing
+# -- Loading package VITAL_Primitives
+# -- Loading package fiftyfivenm_atom_pack
+# -- Loading package fiftyfivenm_components
+# -- Compiling entity hard_block
+# -- Compiling architecture structure of hard_block
+# -- Loading package dffeas_pack
+# -- Loading package altera_primitives_components
+# -- Compiling entity crono
+# -- Compiling architecture structure of crono
+# End time: 20:24:21 on Apr 17,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vcom -93 -work work {D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_5 _TB/crono_tb.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:24:22 on Apr 17,2021
+# vcom -reportprogress 300 -93 -work work D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_5 _TB/crono_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# ** Error: (vcom-11) Could not find work.clk_div_package.
+# ** Error (suppressible): D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_5 _TB/crono_tb.vhd(3): (vcom-1195) Cannot find expanded name "work.clk_div_package".
+# ** Error: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_5 _TB/crono_tb.vhd(3): Unknown expanded name.
+# ** Error: (vcom-11) Could not find work.modxx_package.
+# ** Error (suppressible): D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_5 _TB/crono_tb.vhd(4): (vcom-1195) Cannot find expanded name "work.modxx_package".
+# ** Error: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_5 _TB/crono_tb.vhd(4): Unknown expanded name.
+# ** Error: (vcom-11) Could not find work.bcdto7seg_package.
+# ** Error (suppressible): D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_5 _TB/crono_tb.vhd(5): (vcom-1195) Cannot find expanded name "work.bcdto7seg_package".
+# ** Error: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_5 _TB/crono_tb.vhd(5): Unknown expanded name.
+# ** Error: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_5 _TB/crono_tb.vhd(7): VHDL Compiler exiting
+# End time: 20:24:22 on Apr 17,2021, Elapsed time: 0:00:00
+# Errors: 10, Warnings: 0
+# ** Error: D:/Programas/intelFPGA_lite/Quartus_II_18.1/modelsim_ase/win32aloem/vcom failed.
+# Error in macro ./Crono_run_msim_gate_vhdl.do line 10
+# D:/Programas/intelFPGA_lite/Quartus_II_18.1/modelsim_ase/win32aloem/vcom failed.
+#     while executing
+# "vcom -93 -work work {D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_5 _TB/crono_tb.vhd}"
+# Load canceled
