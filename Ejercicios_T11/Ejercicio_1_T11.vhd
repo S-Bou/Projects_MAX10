@@ -1,0 +1,57 @@
+library ieee; use ieee.std_logic_1164.all;
+
+entity ejercicio_1_T11 is
+	port(
+		  clk, reset, x: in std_logic;
+	      z: out std_logic
+		 );
+end ejercicio_1_T11;
+
+architecture bhv of ejercicio_1_T11 is
+	
+	type estados is (cerobits, tresbits, unbit, dosbit);
+	signal estado, sig_estado: estados;
+	
+begin
+	
+	SINCRONO: process(clk) is
+	begin
+		if (reset = '0') then
+			estado <= cerobits;
+		elsif (clk'event and clk = '1') then
+			estado <= sig_estado;
+		end if;
+	end  process SINCRONO;
+	
+	Detector: process(estado) is
+	begin
+		case estado is
+			when cerobits =>
+				z <= '0';        -- MOORE salidas en estados no en 'if'
+				if x = '0' then
+					sig_estado <= unbit;
+				end if;
+			when tresbits =>
+				z <= '1';           
+				if x = '0' then
+					sig_estado <= unbit;
+				else 
+					sig_estado <= cerobits;					
+				end if;			
+			when unbit =>
+				z <= '0';      
+				if x = '1' then
+					sig_estado <= dosbit;
+				end if;			
+			when dosbit =>
+				z <= '0';           
+				if x = '0' then
+					sig_estado <= tresbits;
+				else 
+					sig_estado <= cerobits;
+				end if;			
+			when others =>
+            sig_estado <= cerobits;			
+		end case;
+	end process Detector;
+end bhv;

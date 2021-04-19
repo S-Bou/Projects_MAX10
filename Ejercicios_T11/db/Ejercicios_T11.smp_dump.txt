@@ -1,0 +1,7 @@
+
+State Machine - |ejercicio_1_T11|estado
+Name estado.dosbit estado.unbit estado.tresbits estado.cerobits 
+estado.cerobits 0 0 0 0 
+estado.tresbits 0 0 1 1 
+estado.unbit 0 1 0 1 
+estado.dosbit 1 0 0 1 

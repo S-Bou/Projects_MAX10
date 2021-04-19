@@ -1,5 +1,5 @@
 Analysis & Synthesis report for UART_TX
-Sat Apr 17 20:54:10 2021
+Mon Apr 19 09:40:45 2021
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -13,12 +13,15 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
-  9. Parameter Settings for User Entity Instance: clk_div:CLK0
- 10. Port Connectivity Checks: "clk_div:CLK0"
- 11. Post-Synthesis Netlist Statistics for Top Partition
- 12. Elapsed Time Per Partition
- 13. Analysis & Synthesis Messages
+  8. State Machine - |uart_tx|estado
+  9. Registers Removed During Synthesis
+ 10. Removed Registers Triggering Further Register Optimizations
+ 11. General Register Statistics
+ 12. Source assignments for Top-level Entity: |UART_TX
+ 13. Parameter Settings for User Entity Instance: clk_div:CLK0
+ 14. Post-Synthesis Netlist Statistics for Top Partition
+ 15. Elapsed Time Per Partition
+ 16. Analysis & Synthesis Messages
 
 
 
@@ -44,7 +47,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat Apr 17 20:54:10 2021       ;
+; Analysis & Synthesis Status        ; Successful - Mon Apr 19 09:40:45 2021       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; UART_TX                                     ;
 ; Top-level Entity Name              ; uart_tx                                     ;
@@ -53,7 +56,7 @@ refer to the applicable agreement for further details.
 ;     Total combinational functions  ; 0                                           ;
 ;     Dedicated logic registers      ; 0                                           ;
 ; Total registers                    ; 0                                           ;
-; Total pins                         ; 2                                           ;
+; Total pins                         ; 13                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -175,35 +178,35 @@ refer to the applicable agreement for further details.
 +----------------------------------+-----------------+-----------------+-------------------------------------------------------------------+---------+
 
 
-+-----------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary         ;
-+---------------------------------------------+-------+
-; Resource                                    ; Usage ;
-+---------------------------------------------+-------+
-;                                             ;       ;
-; Total combinational functions               ; 0     ;
-; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 0     ;
-;     -- 3 input functions                    ; 0     ;
-;     -- <=2 input functions                  ; 0     ;
-;                                             ;       ;
-; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 0     ;
-;     -- arithmetic mode                      ; 0     ;
-;                                             ;       ;
-; Total registers                             ; 0     ;
-;     -- Dedicated logic registers            ; 0     ;
-;     -- I/O registers                        ; 0     ;
-;                                             ;       ;
-; I/O pins                                    ; 2     ;
-;                                             ;       ;
-; Embedded Multiplier 9-bit elements          ; 0     ;
-;                                             ;       ;
-; Maximum fan-out node                        ; clk_i ;
-; Maximum fan-out                             ; 1     ;
-; Total fan-out                               ; 2     ;
-; Average fan-out                             ; 0.50  ;
-+---------------------------------------------+-------+
++----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary              ;
++---------------------------------------------+------------+
+; Resource                                    ; Usage      ;
++---------------------------------------------+------------+
+;                                             ;            ;
+; Total combinational functions               ; 0          ;
+; Logic element usage by number of LUT inputs ;            ;
+;     -- 4 input functions                    ; 0          ;
+;     -- 3 input functions                    ; 0          ;
+;     -- <=2 input functions                  ; 0          ;
+;                                             ;            ;
+; Logic elements by mode                      ;            ;
+;     -- normal mode                          ; 0          ;
+;     -- arithmetic mode                      ; 0          ;
+;                                             ;            ;
+; Total registers                             ; 0          ;
+;     -- Dedicated logic registers            ; 0          ;
+;     -- I/O registers                        ; 0          ;
+;                                             ;            ;
+; I/O pins                                    ; 13         ;
+;                                             ;            ;
+; Embedded Multiplier 9-bit elements          ; 0          ;
+;                                             ;            ;
+; Maximum fan-out node                        ; tx_data[0] ;
+; Maximum fan-out                             ; 1          ;
+; Total fan-out                               ; 13         ;
+; Average fan-out                             ; 0.50       ;
++---------------------------------------------+------------+
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -211,9 +214,50 @@ refer to the applicable agreement for further details.
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name ; Entity Name ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------+--------------+
-; |uart_tx                   ; 0 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 2    ; 0            ; 0          ; |uart_tx            ; uart_tx     ; work         ;
+; |uart_tx                   ; 0 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 13   ; 0            ; 0          ; |uart_tx            ; uart_tx     ; work         ;
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
+Encoding Type:  One-Hot
++------------------------------------------------------------------------+
+; State Machine - |uart_tx|estado                                        ;
++--------------+-------------+--------------+--------------+-------------+
+; Name         ; estado.stop ; estado.bittx ; estado.start ; estado.idle ;
++--------------+-------------+--------------+--------------+-------------+
+; estado.idle  ; 0           ; 0            ; 0            ; 0           ;
+; estado.start ; 0           ; 0            ; 1            ; 1           ;
+; estado.bittx ; 0           ; 1            ; 0            ; 1           ;
+; estado.stop  ; 1           ; 0            ; 0            ; 1           ;
++--------------+-------------+--------------+--------------+-------------+
+
+
++-------------------------------------------------------------+
+; Registers Removed During Synthesis                          ;
++----------------------------------------+--------------------+
+; Register name                          ; Reason for Removal ;
++----------------------------------------+--------------------+
+; estado.idle                            ; Lost fanout        ;
+; estado.start                           ; Lost fanout        ;
+; estado.bittx                           ; Lost fanout        ;
+; estado.stop                            ; Lost fanout        ;
+; clk_div:CLK0|clk_sig                   ; Lost fanout        ;
+; clk_div:CLK0|contador[0..11]           ; Lost fanout        ;
+; Total Number of Removed Registers = 17 ;                    ;
++----------------------------------------+--------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                        ;
++---------------+--------------------+-------------------------------------------------------------------------------+
+; Register name ; Reason for Removal ; Registers Removed due to This Register                                        ;
++---------------+--------------------+-------------------------------------------------------------------------------+
+; estado.idle   ; Lost Fanouts       ; clk_div:CLK0|clk_sig, clk_div:CLK0|contador[11], clk_div:CLK0|contador[10],   ;
+;               ;                    ; clk_div:CLK0|contador[9], clk_div:CLK0|contador[8], clk_div:CLK0|contador[7], ;
+;               ;                    ; clk_div:CLK0|contador[6], clk_div:CLK0|contador[5], clk_div:CLK0|contador[4], ;
+;               ;                    ; clk_div:CLK0|contador[3], clk_div:CLK0|contador[2], clk_div:CLK0|contador[1], ;
+;               ;                    ; clk_div:CLK0|contador[0]                                                      ;
++---------------+--------------------+-------------------------------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -231,6 +275,27 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 
 
++---------------------------------------------------+
+; Source assignments for Top-level Entity: |UART_TX ;
++------------+---------+------+---------------------+
+; Assignment ; Value   ; From ; To                  ;
++------------+---------+------+---------------------+
+; LOCATION   ; Pin_A14 ; -    ; tx_data[7]          ;
+; LOCATION   ; Pin_A13 ; -    ; tx_data[6]          ;
+; LOCATION   ; Pin_B12 ; -    ; tx_data[5]          ;
+; LOCATION   ; Pin_A12 ; -    ; tx_data[4]          ;
+; LOCATION   ; Pin_C12 ; -    ; tx_data[3]          ;
+; LOCATION   ; Pin_D12 ; -    ; tx_data[2]          ;
+; LOCATION   ; Pin_C11 ; -    ; tx_data[1]          ;
+; LOCATION   ; Pin_C10 ; -    ; tx_data[0]          ;
+; LOCATION   ; Pin_N14 ; -    ; clk_i               ;
+; LOCATION   ; Pin_B8  ; -    ; reset               ;
+; LOCATION   ; Pin_A7  ; -    ; tx_en               ;
+; LOCATION   ; Pin_W10 ; -    ; tx                  ;
+; LOCATION   ; Pin_A8  ; -    ; tx_rdy              ;
++------------+---------+------+---------------------+
+
+
 +-----------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: clk_div:CLK0 ;
 +----------------+-------+----------------------------------+
@@ -241,25 +306,19 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "clk_div:CLK0"                                                                          ;
-+---------+--------+----------+-------------------------------------------------------------------------------------+
-; Port    ; Type   ; Severity ; Details                                                                             ;
-+---------+--------+----------+-------------------------------------------------------------------------------------+
-; clk_out ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+---------+--------+----------+-------------------------------------------------------------------------------------+
-
-
 +-----------------------------------------------------+
 ; Post-Synthesis Netlist Statistics for Top Partition ;
-+-------------------+---------------------------------+
-; Type              ; Count                           ;
-+-------------------+---------------------------------+
-; boundary_port     ; 2                               ;
-;                   ;                                 ;
-; Max LUT depth     ; 0.00                            ;
-; Average LUT depth ; 0.00                            ;
-+-------------------+---------------------------------+
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 13                          ;
+; cycloneiii_lcell_comb ; 1                           ;
+;     normal            ; 1                           ;
+;         0 data inputs ; 1                           ;
+;                       ;                             ;
+; Max LUT depth         ; 0.00                        ;
+; Average LUT depth     ; 0.00                        ;
++-----------------------+-----------------------------+
 
 
 +-------------------------------+
@@ -277,7 +336,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Sat Apr 17 20:54:01 2021
+    Info: Processing started: Mon Apr 19 09:40:35 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off UART_TX -c UART_TX
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
@@ -286,24 +345,47 @@ Info (12021): Found 3 design units, including 1 entities, in source file clk_div
     Info (12022): Found design unit 2: clk_div_package File: D:/Programas/intelFPGA_lite/Projects_MAX10/Practica_9/clk_div.vhd Line: 33
     Info (12023): Found entity 1: clk_div File: D:/Programas/intelFPGA_lite/Projects_MAX10/Practica_9/clk_div.vhd Line: 3
 Info (12021): Found 2 design units, including 1 entities, in source file uart_tx.vhd
-    Info (12022): Found design unit 1: uart_tx-bhv File: D:/Programas/intelFPGA_lite/Projects_MAX10/Practica_9/UART_TX.vhd Line: 11
+    Info (12022): Found design unit 1: uart_tx-bhv File: D:/Programas/intelFPGA_lite/Projects_MAX10/Practica_9/UART_TX.vhd Line: 12
     Info (12023): Found entity 1: uart_tx File: D:/Programas/intelFPGA_lite/Projects_MAX10/Practica_9/UART_TX.vhd Line: 4
 Info (12127): Elaborating entity "UART_TX" for the top level hierarchy
-Warning (10036): Verilog HDL or VHDL warning at UART_TX.vhd(12): object "clk9600" assigned a value but never read File: D:/Programas/intelFPGA_lite/Projects_MAX10/Practica_9/UART_TX.vhd Line: 12
-Info (12128): Elaborating entity "clk_div" for hierarchy "clk_div:CLK0" File: D:/Programas/intelFPGA_lite/Projects_MAX10/Practica_9/UART_TX.vhd Line: 15
+Warning (10492): VHDL Process Statement warning at UART_TX.vhd(33): signal "reset" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Programas/intelFPGA_lite/Projects_MAX10/Practica_9/UART_TX.vhd Line: 33
+Warning (10492): VHDL Process Statement warning at UART_TX.vhd(47): signal "tx_en" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Programas/intelFPGA_lite/Projects_MAX10/Practica_9/UART_TX.vhd Line: 47
+Warning (10631): VHDL Process Statement warning at UART_TX.vhd(40): inferring latch(es) for signal or variable "tx", which holds its previous value in one or more paths through the process File: D:/Programas/intelFPGA_lite/Projects_MAX10/Practica_9/UART_TX.vhd Line: 40
+Warning (10631): VHDL Process Statement warning at UART_TX.vhd(40): inferring latch(es) for signal or variable "tx_rdy", which holds its previous value in one or more paths through the process File: D:/Programas/intelFPGA_lite/Projects_MAX10/Practica_9/UART_TX.vhd Line: 40
+Warning (10631): VHDL Process Statement warning at UART_TX.vhd(40): inferring latch(es) for signal or variable "sig_estado", which holds its previous value in one or more paths through the process File: D:/Programas/intelFPGA_lite/Projects_MAX10/Practica_9/UART_TX.vhd Line: 40
+Info (10041): Inferred latch for "sig_estado.stop" at UART_TX.vhd(40) File: D:/Programas/intelFPGA_lite/Projects_MAX10/Practica_9/UART_TX.vhd Line: 40
+Info (10041): Inferred latch for "sig_estado.bittx" at UART_TX.vhd(40) File: D:/Programas/intelFPGA_lite/Projects_MAX10/Practica_9/UART_TX.vhd Line: 40
+Info (10041): Inferred latch for "sig_estado.start" at UART_TX.vhd(40) File: D:/Programas/intelFPGA_lite/Projects_MAX10/Practica_9/UART_TX.vhd Line: 40
+Info (10041): Inferred latch for "sig_estado.idle" at UART_TX.vhd(40) File: D:/Programas/intelFPGA_lite/Projects_MAX10/Practica_9/UART_TX.vhd Line: 40
+Info (10041): Inferred latch for "tx_rdy" at UART_TX.vhd(40) File: D:/Programas/intelFPGA_lite/Projects_MAX10/Practica_9/UART_TX.vhd Line: 40
+Info (10041): Inferred latch for "tx" at UART_TX.vhd(40) File: D:/Programas/intelFPGA_lite/Projects_MAX10/Practica_9/UART_TX.vhd Line: 40
+Info (12128): Elaborating entity "clk_div" for hierarchy "clk_div:CLK0" File: D:/Programas/intelFPGA_lite/Projects_MAX10/Practica_9/UART_TX.vhd Line: 29
 Warning (10492): VHDL Process Statement warning at clk_div.vhd(15): signal "reset" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Programas/intelFPGA_lite/Projects_MAX10/Practica_9/clk_div.vhd Line: 15
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "tx" is stuck at VCC File: D:/Programas/intelFPGA_lite/Projects_MAX10/Practica_9/UART_TX.vhd Line: 8
+    Warning (13410): Pin "tx_rdy" is stuck at VCC File: D:/Programas/intelFPGA_lite/Projects_MAX10/Practica_9/UART_TX.vhd Line: 8
+Info (17049): 17 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 2 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "clk_i" File: D:/Programas/intelFPGA_lite/Projects_MAX10/Practica_9/UART_TX.vhd Line: 6
-    Warning (15610): No output dependent on input pin "reset" File: D:/Programas/intelFPGA_lite/Projects_MAX10/Practica_9/UART_TX.vhd Line: 6
-Info (21057): Implemented 2 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 2 input pins
-    Info (21059): Implemented 0 output pins
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 4793 megabytes
-    Info: Processing ended: Sat Apr 17 20:54:10 2021
-    Info: Elapsed time: 00:00:09
+Warning (21074): Design contains 11 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "tx_data[0]" File: D:/Programas/intelFPGA_lite/Projects_MAX10/Practica_9/UART_TX.vhd Line: 6
+    Warning (15610): No output dependent on input pin "tx_data[1]" File: D:/Programas/intelFPGA_lite/Projects_MAX10/Practica_9/UART_TX.vhd Line: 6
+    Warning (15610): No output dependent on input pin "tx_data[2]" File: D:/Programas/intelFPGA_lite/Projects_MAX10/Practica_9/UART_TX.vhd Line: 6
+    Warning (15610): No output dependent on input pin "tx_data[3]" File: D:/Programas/intelFPGA_lite/Projects_MAX10/Practica_9/UART_TX.vhd Line: 6
+    Warning (15610): No output dependent on input pin "tx_data[4]" File: D:/Programas/intelFPGA_lite/Projects_MAX10/Practica_9/UART_TX.vhd Line: 6
+    Warning (15610): No output dependent on input pin "tx_data[5]" File: D:/Programas/intelFPGA_lite/Projects_MAX10/Practica_9/UART_TX.vhd Line: 6
+    Warning (15610): No output dependent on input pin "tx_data[6]" File: D:/Programas/intelFPGA_lite/Projects_MAX10/Practica_9/UART_TX.vhd Line: 6
+    Warning (15610): No output dependent on input pin "tx_data[7]" File: D:/Programas/intelFPGA_lite/Projects_MAX10/Practica_9/UART_TX.vhd Line: 6
+    Warning (15610): No output dependent on input pin "tx_en" File: D:/Programas/intelFPGA_lite/Projects_MAX10/Practica_9/UART_TX.vhd Line: 7
+    Warning (15610): No output dependent on input pin "reset" File: D:/Programas/intelFPGA_lite/Projects_MAX10/Practica_9/UART_TX.vhd Line: 7
+    Warning (15610): No output dependent on input pin "clk_i" File: D:/Programas/intelFPGA_lite/Projects_MAX10/Practica_9/UART_TX.vhd Line: 7
+Info (21057): Implemented 13 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 11 input pins
+    Info (21059): Implemented 2 output pins
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 22 warnings
+    Info: Peak virtual memory: 4787 megabytes
+    Info: Processing ended: Mon Apr 19 09:40:45 2021
+    Info: Elapsed time: 00:00:10
     Info: Total CPU time (on all processors): 00:00:20
 
 

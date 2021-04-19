@@ -30,8 +30,8 @@ begin
 	
 	SINCRONO: process(clk9600) is
 	begin
-		is (reset = '1') then
-			estado = idle;
+		if (reset = '1') then
+			estado <= idle;
 		elsif (clk9600'event and clk9600 = '1') then
 			estado <= sig_estado;
 		end if;
@@ -41,7 +41,7 @@ begin
 	begin
 		case estado is
 			when idle =>
-				tx <= '1';
+				tx <= '1';           -- MOORE salidas en estados no en 'if'
 				tx_rdy <= '1';
 				
 				if tx_en = '1' then
@@ -55,9 +55,9 @@ begin
 			when stop =>
 			
 			when others =>
-			
+            sig_estado <= idle;			
 		end case;
-	
+	end process uart_tx;
 end bhv;
 
 			

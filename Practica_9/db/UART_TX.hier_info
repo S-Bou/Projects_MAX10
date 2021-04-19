@@ -1,6 +1,18 @@
 |UART_TX
+tx_data[0] => ~NO_FANOUT~
+tx_data[1] => ~NO_FANOUT~
+tx_data[2] => ~NO_FANOUT~
+tx_data[3] => ~NO_FANOUT~
+tx_data[4] => ~NO_FANOUT~
+tx_data[5] => ~NO_FANOUT~
+tx_data[6] => ~NO_FANOUT~
+tx_data[7] => ~NO_FANOUT~
 clk_i => clk_div:CLK0.clk_in
 reset => clk_div:CLK0.reset
+reset => estado~3.DATAIN
+tx_en => ~NO_FANOUT~
+tx <= <VCC>
+tx_rdy <= <VCC>
 
 
 |UART_TX|clk_div:CLK0

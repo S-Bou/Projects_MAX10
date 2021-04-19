@@ -1,0 +1,433 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"off",
+				"offx"
+			],
+			[
+				"pi",
+				"pick"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "Ejercicio_1_T11.vhd",
+			"settings":
+			{
+				"buffer_size": 1172,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Ejercicio_2_T11.vhd",
+			"settings":
+			{
+				"buffer_size": 1551,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Ejercicio_3_T11.vhd",
+			"settings":
+			{
+				"buffer_size": 1552,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: install",
+				"Package Control: Install Package"
+			],
+			[
+				"package",
+				"Package Control: Install Package"
+			],
+			[
+				"Ada",
+				"Package Control: Add Repository"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 185.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/D/Programas/intelFPGA_lite/Projects_MAX10/Modelsim_LS194/LS194_tb.vhd",
+		"/D/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_V6_FULL_+/calcu_main.vhd",
+		"/D/Programas/intelFPGA_lite/Projects_MAX10/Modelsim_LS194/LS194.vhd",
+		"/D/Programas/intelFPGA_lite/Projects_MAX10/Modelsim_LS194/LS194_nativelink_simulation.rpt",
+		"/D/Programas/intelFPGA_lite/Projects_Cyclone_IV/keyboard/list_ch08_04_key2ascii.vhd",
+		"/D/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_V5/packages_ALU.vhd",
+		"/D/Programas/intelFPGA_lite/ModelSim/MODO AUTONOMO/PruebaClase/Priority_encoder_8_3.vhd",
+		"/D/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_V3/packages_ALU.vhd",
+		"/D/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_V3/ALU/adder3b.vhd",
+		"/D/Programas/intelFPGA_lite/ModelSim/MODO AUTONOMO/PruebaClase/Priority_encoder_8_3_TB.vhd",
+		"/D/Programas/intelFPGA_lite/ModelSim/MODO AUTONOMO/PruebaClase/Priority_Encoder_8_3_tb2.vhd",
+		"/D/Programas/intelFPGA_lite/ModelSim/MODO AUTONOMO/PruebaClase/Priority_Encoder_8_3_tb3.vhd",
+		"/C/Users/bouyo/Desktop/list_ch04_20_fifo.vhd",
+		"/D/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_V2/ALU/fulladder.vhd",
+		"/D/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_V2/ALU/halfadder.vhd",
+		"/D/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_V2/ALU/adder3b.vhd",
+		"/D/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_V1/EntradasTeclado.vhd",
+		"/C/Users/bouyo/Desktop/ch08/list_ch08_03_kb_lcode.vhd",
+		"/D/Programas/intelFPGA_lite/Projects_Cyclone_IV/LCD_16X2/KeyToASCII.vhd",
+		"/D/Programas/intelFPGA_lite/Projects_Cyclone_IV/Pruebas_LCD/ALU/alu.vhd",
+		"/D/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_V1/EntradasTeclado.vhd.bak",
+		"/C/Users/bouyo/Desktop/16x2_lcd_controller/trunk/demo/lcd16x2_ctrl_demo.vhd",
+		"/D/Programas/intelFPGA_lite/Projects_Cyclone_IV/Pruebas_LCD/EntradasTeclado.vhd",
+		"/D/Programas/intelFPGA_lite/Projects_Cyclone_IV/Pruebas_LCD/LIB_LCD_4BITS_REVC.vhd",
+		"/C/Users/bouyo/Desktop/16x2_lcd_controller/trunk/lcd16x2_ctrl.vhd",
+		"/D/Programas/intelFPGA_lite/Projects_Cyclone_IV/LCD_16X2/lcd16x2_ctrl_demo.vhd",
+		"/D/Programas/intelFPGA_lite/Projects_MAX10/Practica_7_Library/my_package.vhd",
+		"/C/Users/bouyo/Downloads/INTESC_LCD_4BITS_RevC/PROCESADOR_LCD4BITS_REVC.vhd",
+		"/C/Users/bouyo/Downloads/INTESC_LCD_4BITS_RevC/LIB_LCD_4BITS_REVC.vhd",
+		"/C/Users/bouyo/Downloads/INTESC_LCD_4BITS_RevC/COMANDOS_LCD4BITS_REVC.vhd",
+		"/C/Users/bouyo/Downloads/INTESC_LCD_4BITS_RevC/CARACTERES_ESPECIALES4BITS_REVC.vhd",
+		"/D/Programas/intelFPGA_lite/Projects_MAX10/DE10_LITE_Default.qsf",
+		"/C/Users/bouyo/Desktop/ch08/list_ch08_05_kb_test.vhd",
+		"/C/Users/bouyo/Desktop/ch08/list_ch08_04_key2ascii.vhd",
+		"/C/Users/bouyo/Desktop/ch08/list_ch08_02_kb_mon.vhd",
+		"/C/Users/bouyo/Desktop/ch08/list_ch08_01_ps2_rx.vhd",
+		"/C/Users/bouyo/Desktop/16x2_lcd_controller/trunk/demo/readme.txt",
+		"/C/Users/bouyo/Desktop/16x2_lcd_controller/trunk/demo/pin_locations.ucf",
+		"/C/Users/bouyo/Desktop/16x2_lcd_controller/trunk/testbench/lcd16x2_ctrl_tb.vhd",
+		"/C/Users/bouyo/Desktop/ps2core/trunk/rtl/vhdl/ps2.vhd",
+		"/D/Projects/Atmel Studio/Projects ATtiny85/Prueba_Led/Prueba_Led.atsln",
+		"/D/Projects/Atmel Studio/Projects ATtiny85/Prueba_Led/Prueba_Led/main.asm",
+		"/C/Users/bouyo/AppData/Local/Temp/Rar$DIa1532.41028/main.c",
+		"/C/Users/bouyo/AppData/Local/Temp/Rar$DIa1532.44633/stm32f1xx_it.c",
+		"/D/UNI/4ºUNI/Semestre_A_20_21/S_Tiempo_Real/Bou_Grau_Sergio_Proyecto_20_21/Bou_Grau_Sergio_Proyecto_FCFS2/src/data.adb",
+		"/D/UNI/4ºUNI/Semestre_A_20_21/Sistemas Robotizados/Sesiones teoría/Sesion_11_RAPID/Ejercicio_RAPID_Leopoldo.mod",
+		"/C/Users/bouyo/AppData/Local/Temp/Rar$DIa16324.27236/main.c",
+		"/C/Users/bouyo/Desktop/Clase_120121.mod",
+		"/D/UNI/4ºUNI/Semestre_A_20_21/Sistemas Robotizados/Sesiones teoría/Sesion_11_RAPID/Ejemplo_RAPID_Clase_120121.mod",
+		"/D/UNI/4ºUNI/Semestre_A/Sistemas Robotizados/Sesiones teoría/Sesion_11/Ejemplo_RAPID_Clase_120121.mod",
+		"/D/UNI/4ºUNI/Semestre_A/Sistemas Robotizados/Sesiones teoría/Sesion_11/Clase_120121.mod",
+		"/C/Users/bouyo/AppData/Local/Temp/Rar$DIa8220.26293/name.h",
+		"/D/Programas/STMicroelectronics/Proyectos_STM32L476/uP_II_VL53L0X - V8/Src/vl53l0x_sigma.h",
+		"/C/Users/bouyo/AppData/Local/Temp/Rar$DIa8220.22740/name.c",
+		"/D/Programas/STMicroelectronics/Proyectos_STM32L476/uP_II_VL53L0X - V8/Src/vl53l0x_sigma.c",
+		"/C/Users/bouyo/AppData/Local/Temp/Rar$DIa8220.634/name.c",
+		"/D/Programas/STMicroelectronics/Proyectos_STM32L476/uP_II_VL53L0X - V3/Src/vl53l0x_sigma.c",
+		"/C/Users/bouyo/OneDrive/Semestre A/Sistemas Embebidos/MyKit/Modulos/intern_interrupt.c",
+		"/D/Programas/STMicroelectronics/Proyectos_STM32L476/uP_II_VL53L0X - V3/Src/Case_3.c",
+		"/D/Programas/STMicroelectronics/Proyectos_STM32L476/uP_II_VL53L0X - V3/Src/IntermitenciaSound.c",
+		"/C/Users/bouyo/OneDrive/Semestre A/Sistemas Embebidos/MyKit/Modulos/pwm_output.c",
+		"/C/Users/bouyo/OneDrive/Semestre A/Sistemas Embebidos/BouGrauSergio_Examen/main.c",
+		"/C/Users/bouyo/OneDrive/Semestre A/Sistemas Embebidos/BouGrauSergio_Examen/stm32l4xx_it.c",
+		"/C/Users/bouyo/OneDrive/Semestre A/Sistemas Embebidos/BouGrauSergio_Examen/examen.c",
+		"/C/Users/bouyo/OneDrive/Semestre A/Sistemas Embebidos/BouGrauSergio_Examen/examen.h",
+		"/D/Programas/STMicroelectronics/Proyectos_STM32L476/uP_II_VL53L0X - V6/Src/stm32l4xx_it.c",
+		"/C/Users/bouyo/OneDrive/Semestre A/Sistemas Embebidos/MyKit/Modulos/extern_interrupt.c",
+		"/C/Users/bouyo/OneDrive/Semestre A/Sistemas Embebidos/MyKit/Modulos/timer.c",
+		"/C/Users/bouyo/Downloads/X-CUBE-53L0A1/STM32CubeExpansion_VL53L0X_V1.2.0/Projects/Multi/Examples/VL53L0X/RangingWithSatellites/Src/main.c",
+		"/D/Programas/STMicroelectronics/Proyectos_STM32L476/uP_II_VL53L0X - V4/Src/vl53l0x_sigma.c",
+		"/D/Programas/STMicroelectronics/Proyectos_STM32L476/uP_II_VL53L0X/Src/vl53l0x_sigma.c",
+		"/D/Programas/STMicroelectronics/Proyectos_STM32L476/uP_II_VL53L0X - V3/Src/main.c",
+		"/D/Programas/STMicroelectronics/Proyectos_STM32L476/uP_II_VL53L0X - PRUEBA/Src/main.c",
+		"/D/Programas/STMicroelectronics/Proyectos_STM32L476/uP_II_VL53L0X/Src/main.c",
+		"/C/Users/bouyo/Desktop/VL53L0Xproject/Custom Libraries/I2CDev.h",
+		"/C/Users/bouyo/Desktop/VL53L0Xproject/main.c",
+		"/C/Users/bouyo/Desktop/VL53L0Xproject/Arduino Original library/VL53L0X.cpp",
+		"/D/Proyectos/GitHub S-Bou/RGBSensor/MyLibraries/tcs34725.c",
+		"/D/Programas/STMicroelectronics/Proyectos_STM32L476/uP_II_VL53L0X - Adafruit/Src/vl53l0x_sigma.h",
+		"/D/Programas/STMicroelectronics/Proyectos_STM32L476/uP_II_VL53L0X - Adafruit/Src/vl53l0x_sigma.c",
+		"/C/Users/bouyo/Downloads/VL53L0X_1.0.2/ApiExample/examples/src/vl53l0x_ContinuousRanging_Example.c",
+		"/D/Programas/STMicroelectronics/Proyectos_STM32L476/uP_II_VL53L0X - Adafruit/vl53l0x/Adafruit_VL53L0X.h",
+		"/C/Users/bouyo/Desktop/Adafruit_VL53L0X/src/Adafruit_VL53L0X.cpp",
+		"/C/Users/bouyo/Desktop/Adafruit_VL53L0X/src/platform/src/vl53l0x_i2c_comms.cpp",
+		"/C/Users/bouyo/Desktop/Adafruit_VL53L0X/src/vl53l0x_i2c_platform.h",
+		"/C/Users/bouyo/Desktop/Adafruit_VL53L0X/src/vl53l0x_def.h",
+		"/C/Users/bouyo/Desktop/Adafruit_VL53L0X/src/Adafruit_VL53L0X.h",
+		"/C/Users/bouyo/Desktop/Adafruit_VL53L0X/src/vl53l0x_api.h",
+		"/C/Users/bouyo/Desktop/Adafruit_VL53L0X/src/core/src/vl53l0x_api.cpp",
+		"/D/Programas/STMicroelectronics/Proyectos_STM32L476/uP_II_VL53L0X/vl53l0x/vl53l0x_api.h",
+		"/D/Programas/STMicroelectronics/Proyectos_STM32L476/uP_II_VL53L0X/vl53l0x/vl53l0x_api.c",
+		"/D/Programas/STMicroelectronics/Proyectos_STM32L476/uP_II_VL53L0X/vl53l0x/vl53l0x_platform.c",
+		"/D/Programas/GNAT/AdaProyects/Practica_4b_FULL/src/data.adb",
+		"/C/Users/bouyo/Downloads/X-CUBE-53L0A1/STM32CubeExpansion_VL53L0X_V1.2.0/Drivers/BSP/Components/vl53l0x/vl53l0x_device.h",
+		"/C/Users/bouyo/Downloads/X-CUBE-53L0A1/STM32CubeExpansion_VL53L0X_V1.2.0/Drivers/BSP/Components/vl53l0x/vl53l0x_platform_log.c",
+		"/C/Users/bouyo/Downloads/X-CUBE-53L0A1/STM32CubeExpansion_VL53L0X_V1.2.0/Drivers/BSP/STM32L4xx_Nucleo/stm32l4xx_nucleo.c",
+		"/C/Users/bouyo/Downloads/VL53L0X_1.0.2/ApiExample/examples/src/vl53l0x_SingleRanging_Example.c",
+		"/D/Programas/STMicroelectronics/Proyectos_STM32L476/X-CUBE-53L0A1/STM32CubeExpansion_VL53L0X_V1.2.0/Projects/Multi/Examples/VL53L0X/RangingWithSatellites/Src/main.c",
+		"/C/Users/bouyo/AppData/Local/Temp/Rar$DIa1424.20502/delayus.c",
+		"/C/Users/bouyo/Desktop/VL53L0Xproject/Custom Libraries/VL53L0X.h",
+		"/D/Programas/STMicroelectronics/Proyectos_STM32L476/X-CUBE-53L0A1/Ejemplo DIGIKEY/main.c",
+		"/C/Users/bouyo/AppData/Local/Temp/Rar$DIa12276.42438/main.c",
+		"/D/Programas/GNAT/AdaProyects/proyecto-base/src/data.adb",
+		"/C/Users/bouyo/Desktop/MyKit/Modulos/timer.c",
+		"/C/Users/bouyo/Desktop/MyKit/Modulos/pwm_output.c",
+		"/C/Users/bouyo/Desktop/MyKit/Modulos/extern_interrupt.c",
+		"/C/Users/bouyo/Desktop/MyKit/Modulos/examen.c",
+		"/C/Users/bouyo/Desktop/MyKit/Proyectos_Teoria/Practica_814_delayus/delayus.c",
+		"/C/Users/bouyo/Desktop/MyKit/Modulos/int_interrupt.c",
+		"/C/Users/bouyo/Desktop/MyKit/Modulos/ext_interrupt.c",
+		"/C/Users/bouyo/Desktop/led/led.h",
+		"/C/Users/bouyo/Desktop/led/led.c",
+		"/C/Users/bouyo/Desktop/MyKit/Modulos/clock.c",
+		"/C/Users/bouyo/Desktop/MyKit/Modulos/internalINT.c",
+		"/C/Users/bouyo/Desktop/MyKit/Modulos/interrupt.c",
+		"/C/Users/bouyo/Desktop/MyKit/Modulos/examen.h",
+		"/C/Users/bouyo/Desktop/MyKit/Modulos/timer.h",
+		"/C/Users/bouyo/Desktop/MyKit/Modulos/clok.h",
+		"/C/Users/bouyo/Desktop/MyKit/Modulos/clok.c",
+		"/D/Programas/STMicroelectronics/Proyectos_STM32L476/Practica_814_delayus/Src/main.c",
+		"/D/Programas/GNAT/AdaProyects/Practica_1b_pila/src/main.adb",
+		"/D/Programas/GNAT/AdaProyects/Practica_1b_pila/src/pila.adb",
+		"/D/Programas/GNAT/AdaProyects/Practica_1b/src/pila.ads",
+		"/C/Users/bouyo/Desktop/MyKit/PlantillaModulo/examen.h",
+		"/C/Users/bouyo/Desktop/MyKit/PlantillaModulo/examen.c",
+		"/C/Users/bouyo/Desktop/MODULE Module1.mod",
+		"/D/Programas/GNAT/AdaProyects/Practica_1b/src/main.adb",
+		"/D/Programas/GNAT/AdaProyects/Practica_3a_E1/src/barreras.adb"
+	],
+	"find":
+	{
+		"height": 0.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "Ejercicio_1_T11.vhd",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1172,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								349,
+								349
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/VHDL/Syntaxes/VHDL.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "Ejercicio_2_T11.vhd",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1551,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1551,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/VHDL/Syntaxes/VHDL.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "Ejercicio_3_T11.vhd",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1552,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1552,
+								1552
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/VHDL/Syntaxes/VHDL.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 39.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 96.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "Ejercicio_1_T11.sublime-project",
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

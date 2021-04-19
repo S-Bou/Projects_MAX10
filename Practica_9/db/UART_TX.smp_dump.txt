@@ -1,0 +1,7 @@
+
+State Machine - |uart_tx|estado
+Name estado.stop estado.bittx estado.start estado.idle 
+estado.idle 0 0 0 0 
+estado.start 0 0 1 1 
+estado.bittx 0 1 0 1 
+estado.stop 1 0 0 1 
