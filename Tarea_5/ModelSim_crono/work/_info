@@ -1,0 +1,287 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/Programas/intelFPGA_lite/Quartus_II_18.1
+Ebcdto7seg
+Z0 w1616414685
+Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z2 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z3 dD:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_5_Original_V2/ModelSim_crono
+Z4 8D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_5_Original_V2/bcdto7seg.vhd
+Z5 FD:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_5_Original_V2/bcdto7seg.vhd
+l0
+L3
+VO`AQi[]f26JKb66FR0<3f1
+!s100 WYoLW2328i7fJF>];b`BH3
+Z6 OV;C;10.5b;63
+32
+Z7 !s110 1619077040
+!i10b 1
+Z8 !s108 1619077040.000000
+Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_5_Original_V2/bcdto7seg.vhd|
+Z10 !s107 D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_5_Original_V2/bcdto7seg.vhd|
+!i113 1
+Z11 o-work work -2002 -explicit
+Z12 tExplicit 1 CvgOpt 0
+Amain
+R1
+R2
+DEx4 work 9 bcdto7seg 0 22 O`AQi[]f26JKb66FR0<3f1
+l10
+L8
+V``7llgdGjl_F:DDFSm`LY2
+!s100 nF405eoim2<MVKcXNolHL1
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Pbcdto7seg_package
+R1
+R2
+R0
+R3
+R4
+R5
+l0
+L29
+VzP6aR7TUSUMAQco2[L5iO2
+!s100 hcf6Z_gNJ:Q0:m@7LgS5<0
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Eclk_div
+Z13 w1616436013
+R1
+R2
+R3
+Z14 8D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_5_Original_V2/clk_div.vhd
+Z15 FD:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_5_Original_V2/clk_div.vhd
+l0
+L3
+Vcl7lMfm0K]aC5o;QGCnhe1
+!s100 ?Ij;V8K?<<=OX[0>gmcn=1
+R6
+32
+Z16 !s110 1619077039
+!i10b 1
+Z17 !s108 1619077039.000000
+Z18 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_5_Original_V2/clk_div.vhd|
+Z19 !s107 D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_5_Original_V2/clk_div.vhd|
+!i113 1
+R11
+R12
+Abehavioral
+R1
+R2
+DEx4 work 7 clk_div 0 22 cl7lMfm0K]aC5o;QGCnhe1
+l12
+L9
+V`6l3haS^b^oUg@oiL[eZ82
+!s100 gCbL27bj0IWPREF;A6CCz0
+R6
+32
+R16
+!i10b 1
+R17
+R18
+R19
+!i113 1
+R11
+R12
+Pclk_div_package
+R1
+R2
+R13
+R3
+R14
+R15
+l0
+L30
+VnZeoB1^h>2WQ6hzIC[edC1
+!s100 4RD8N2Sk3DFcVf9Q1PGhV0
+R6
+32
+R16
+!i10b 1
+R17
+R18
+R19
+!i113 1
+R11
+R12
+Ecrono
+Z20 w1617732867
+Z21 DPx4 work 17 bcdto7seg_package 0 22 zP6aR7TUSUMAQco2[L5iO2
+Z22 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z23 DPx4 work 13 modxx_package 0 22 A0Q62EnchOhJ=KM]L:6H_3
+Z24 DPx4 work 15 clk_div_package 0 22 nZeoB1^h>2WQ6hzIC[edC1
+R1
+R2
+R3
+Z25 8D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_5_Original_V2/crono.vhd
+Z26 FD:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_5_Original_V2/crono.vhd
+l0
+L6
+V205G4Lj@o=T^k1HBmfbJ;1
+!s100 h9<bB<RRl;jklIc03]gjg0
+R6
+32
+R7
+!i10b 1
+R8
+Z27 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_5_Original_V2/crono.vhd|
+Z28 !s107 D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_5_Original_V2/crono.vhd|
+!i113 1
+R11
+R12
+Abehavioral
+R21
+R22
+R23
+R24
+R1
+R2
+DEx4 work 5 crono 0 22 205G4Lj@o=T^k1HBmfbJ;1
+l16
+L12
+ViE1^hR7IK=l2HUAMF6JaG1
+!s100 jZQT]7BVCOnaX[45Nng5a0
+R6
+32
+R7
+!i10b 1
+R8
+R27
+R28
+!i113 1
+R11
+R12
+Ecrono_tb
+Z29 w1619077017
+R21
+R22
+R23
+R24
+R1
+R2
+R3
+Z30 8D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_5_Original_V2/crono_tb.vhd
+Z31 FD:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_5_Original_V2/crono_tb.vhd
+l0
+L7
+Vz9Kf?A5_:HkD4[AkeSRX_0
+!s100 h2ZZ3ERgWzIS1XVBC:W@82
+R6
+32
+R7
+!i10b 1
+R8
+Z32 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_5_Original_V2/crono_tb.vhd|
+Z33 !s107 D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_5_Original_V2/crono_tb.vhd|
+!i113 1
+R11
+R12
+Atb
+R21
+R22
+R23
+R24
+R1
+R2
+Z34 DEx4 work 8 crono_tb 0 22 z9Kf?A5_:HkD4[AkeSRX_0
+l26
+L10
+VA0BUR`]0MGdalSIDa3F?W2
+!s100 WBN0bfMUQP]YGLJ4InLd`0
+R6
+32
+R7
+!i10b 1
+R8
+R32
+R33
+!i113 1
+R11
+R12
+Emodxx
+Z35 w1616669207
+R22
+R1
+R2
+R3
+Z36 8D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_5_Original_V2/modxx.vhd
+Z37 FD:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_5_Original_V2/modxx.vhd
+l0
+L5
+VG2B@3a@JFdacB=zCNGg<?2
+!s100 6@[HZKcood[=jGW0TbV;W1
+R6
+32
+R16
+!i10b 1
+R17
+Z38 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_5_Original_V2/modxx.vhd|
+Z39 !s107 D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_5_Original_V2/modxx.vhd|
+!i113 1
+R11
+R12
+Abehavior
+R22
+R1
+R2
+DEx4 work 5 modxx 0 22 G2B@3a@JFdacB=zCNGg<?2
+l15
+L12
+V6Jg^3GHlJOOCQU`hnhi]81
+!s100 >ZSO:@cz@HQOmeOSNE9M00
+R6
+32
+R16
+!i10b 1
+R17
+R38
+R39
+!i113 1
+R11
+R12
+Pmodxx_package
+R22
+R1
+R2
+R35
+R3
+R36
+R37
+l0
+L38
+VA0Q62EnchOhJ=KM]L:6H_3
+!s100 1]KfBJf7JfE>T2@LP;H<43
+R6
+32
+R16
+!i10b 1
+R17
+R38
+R39
+!i113 1
+R11
+R12

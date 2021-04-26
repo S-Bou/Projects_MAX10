@@ -1,0 +1,352 @@
+# Reading D:/Programas/intelFPGA_lite/Quartus_II_18.1/modelsim_ase/tcl/vsim/pref.tcl
+# OpenFile D:/Programas/intelFPGA_lite/Projects_MAX10/Practica_9/ModelSim_uart_tx/sim_uart_tx.mpf
+# Loading project sim_uart_tx
+# Compile of clk_div.vhd was successful.
+# Compile of UART_TX.vhd was successful.
+# Compile of uart_tx_tb.vhd was successful.
+# 3 compiles, 0 failed with no errors.
+vsim -gui work.uart_tx_tb
+# vsim -gui work.uart_tx_tb 
+# Start time: 12:37:27 on Apr 24,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.clk_div_package
+# Loading work.uart_tx_tb(tb)
+# Loading work.uart_tx(bhv)
+# Loading work.clk_div(behavioral)
+add wave -position end  sim:/uart_tx_tb/tx_en_tb
+add wave -position end  sim:/uart_tx_tb/reset_tb
+add wave -position end  sim:/uart_tx_tb/clk_i_tb
+add wave -position end  sim:/uart_tx_tb/tx_data_tb
+add wave -position end  sim:/uart_tx_tb/SUT/estado
+add wave -position end  sim:/uart_tx_tb/SUT/sig_estado
+add wave -position end  sim:/uart_tx_tb/SUT/clk9600
+run
+add wave -position end  sim:/uart_tx_tb/SUT/tx
+add wave -position end  sim:/uart_tx_tb/tx_tb
+run
+restart
+run
+quit -sim
+# End time: 12:45:44 on Apr 24,2021, Elapsed time: 0:08:17
+# Errors: 0, Warnings: 0
+# Compile of UART_TX.vhd was successful.
+vsim -gui work.uart_tx_tb
+# vsim -gui work.uart_tx_tb 
+# Start time: 12:46:07 on Apr 24,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.clk_div_package
+# Loading work.uart_tx_tb(tb)
+# Loading work.uart_tx(bhv)
+# Loading work.clk_div(behavioral)
+add wave -position end  sim:/uart_tx_tb/reset_tb
+add wave -position end  sim:/uart_tx_tb/clk_i_tb
+add wave -position end  sim:/uart_tx_tb/tx_en_tb
+add wave -position end  sim:/uart_tx_tb/tx_tb
+add wave -position end  sim:/uart_tx_tb/SUT/estado
+add wave -position end  sim:/uart_tx_tb/SUT/sig_estado
+restart
+run
+add wave -position end  sim:/uart_tx_tb/SUT/tx_en
+run
+# Compile of uart_tx_tb.vhd was successful.
+restart
+# Loading work.uart_tx_tb(tb)
+run
+# Compile of UART_TX.vhd was successful.
+restart
+# Loading work.uart_tx(bhv)
+run
+# Compile of uart_tx_tb.vhd was successful.
+restart
+# Loading work.uart_tx_tb(tb)
+run
+restart
+run
+add wave -position end  sim:/uart_tx_tb/SUT/clk9600
+restart
+run
+restart
+run
+restart
+run
+# Compile of clk_div.vhd failed with 11 errors.
+# Compile of clk_div.vhd failed with 11 errors.
+# Compile of clk_div.vhd failed with 2 errors.
+# Compile of clk_div.vhd was successful.
+restart
+# Loading work.clk_div_package
+# Loading work.uart_tx_tb(tb)
+# Loading work.uart_tx(bhv)
+# Loading work.clk_div(behavioral)
+run
+# Compile of clk_div.vhd was successful.
+restart
+# Loading work.clk_div_package
+# Loading work.clk_div(behavioral)
+run
+add wave -position end  sim:/uart_tx_tb/tx_data_tb
+restart
+run
+# Compile of clk_div.vhd was successful.
+quit -sim
+# End time: 13:15:56 on Apr 24,2021, Elapsed time: 0:29:49
+# Errors: 0, Warnings: 0
+vsim -gui work.uart_tx_tb
+# vsim -gui work.uart_tx_tb 
+# Start time: 13:16:05 on Apr 24,2021
+# Loading std.standard
+# ** Error: (vsim-13) Recompile work.uart_tx_tb because work.clk_div_package has changed.
+# ** Error (suppressible): (vsim-12) Recompile work.uart_tx_tb(tb) after work.uart_tx_tb is recompiled.
+# ** Error: (vsim-13) Recompile work.uart_tx_tb(tb) because work.clk_div_package has changed.
+# Error loading design
+# End time: 13:16:06 on Apr 24,2021, Elapsed time: 0:00:01
+# Errors: 3, Warnings: 0
+vsim -gui work.uart_tx_tb
+# vsim -gui work.uart_tx_tb 
+# Start time: 13:16:27 on Apr 24,2021
+# Loading std.standard
+# ** Error: (vsim-13) Recompile work.uart_tx_tb because work.clk_div_package has changed.
+# ** Error (suppressible): (vsim-12) Recompile work.uart_tx_tb(tb) after work.uart_tx_tb is recompiled.
+# ** Error: (vsim-13) Recompile work.uart_tx_tb(tb) because work.clk_div_package has changed.
+# Error loading design
+# End time: 13:16:27 on Apr 24,2021, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+vsim -gui work.uart_tx_tb
+# vsim -gui work.uart_tx_tb 
+# Start time: 13:17:29 on Apr 24,2021
+# Loading std.standard
+# ** Error: (vsim-13) Recompile work.uart_tx_tb because work.clk_div_package has changed.
+# ** Error (suppressible): (vsim-12) Recompile work.uart_tx_tb(tb) after work.uart_tx_tb is recompiled.
+# ** Error: (vsim-13) Recompile work.uart_tx_tb(tb) because work.clk_div_package has changed.
+# Error loading design
+# End time: 13:17:29 on Apr 24,2021, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+# Compile of clk_div.vhd was successful.
+# Compile of UART_TX.vhd was successful.
+# Compile of uart_tx_tb.vhd was successful.
+# 3 compiles, 0 failed with no errors.
+vsim -gui work.uart_tx_tb
+# vsim -gui work.uart_tx_tb 
+# Start time: 13:18:08 on Apr 24,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.clk_div_package
+# Loading work.uart_tx_tb(tb)
+# Loading work.uart_tx(bhv)
+# Loading work.clk_div(behavioral)
+add wave -position end  sim:/uart_tx_tb/clk_i_tb
+add wave -position end  sim:/uart_tx_tb/SUT/clk9600
+add wave -position end  sim:/uart_tx_tb/tx_tb
+add wave -position end  sim:/uart_tx_tb/SUT/estado
+add wave -position end  sim:/uart_tx_tb/SUT/sig_estado
+add wave -position end  sim:/uart_tx_tb/reset_tb
+add wave -position end  sim:/uart_tx_tb/tx_en_tb
+run
+# Compile of clk_div.vhd was successful.
+restart
+# Loading work.clk_div_package
+# Loading work.uart_tx_tb(tb)
+# Loading work.uart_tx(bhv)
+# Loading work.clk_div(behavioral)
+run
+# Compile of clk_div.vhd was successful.
+# Compile of UART_TX.vhd was successful.
+restart
+# Loading work.clk_div_package
+# Loading work.uart_tx_tb(tb)
+# Loading work.uart_tx(bhv)
+# Loading work.clk_div(behavioral)
+run
+restart
+run
+# Compile of UART_TX.vhd was successful.
+restart
+# Loading work.uart_tx(bhv)
+run
+# Compile of UART_TX.vhd failed with 1 errors.
+# Compile of UART_TX.vhd was successful.
+restart
+# Loading work.uart_tx(bhv)
+run
+# Compile of UART_TX.vhd was successful.
+restart
+# Loading work.uart_tx(bhv)
+run
+# Compile of UART_TX.vhd was successful.
+restart
+# Loading work.uart_tx(bhv)
+run
+add wave -position end  sim:/uart_tx_tb/tx_en_tb
+add wave -position end  sim:/uart_tx_tb/SUT/reset
+add wave -position end  sim:/uart_tx_tb/SUT/tx_en
+add wave -position end  sim:/uart_tx_tb/SUT/clk9600
+add wave -position end  sim:/uart_tx_tb/SUT/tx
+add wave -position end  sim:/uart_tx_tb/SUT/estado
+add wave -position end  sim:/uart_tx_tb/SUT/sig_estado
+restart
+run
+add wave -position end  sim:/uart_tx_tb/tx_tb
+add wave -position end  sim:/uart_tx_tb/tx_en_tb
+add wave -position 2  sim:/uart_tx_tb/reset_tb
+restart
+run
+# Compile of clk_div.vhd was successful.
+# Compile of UART_TX.vhd was successful.
+# Compile of uart_tx_tb.vhd was successful.
+# 3 compiles, 0 failed with no errors.
+restart
+# Loading work.clk_div_package
+# Loading work.uart_tx_tb(tb)
+# Loading work.uart_tx(bhv)
+# Loading work.clk_div(behavioral)
+run
+add wave -position end  sim:/uart_tx_tb/clk_i_tb
+restart
+run
+add wave -position 5  sim:/uart_tx_tb/SUT/clk9600
+add wave -position 6  sim:/uart_tx_tb/SUT/tx
+restart
+run
+restart
+run
+quit -sim
+# End time: 14:24:50 on Apr 24,2021, Elapsed time: 1:06:42
+# Errors: 0, Warnings: 0
+vsim -gui work.uart_tx_tb
+# vsim -gui work.uart_tx_tb 
+# Start time: 14:25:03 on Apr 24,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.clk_div_package
+# Loading work.uart_tx_tb(tb)
+# Loading work.uart_tx(bhv)
+# Loading work.clk_div(behavioral)
+add wave -position end  sim:/uart_tx_tb/clk_i_tb
+add wave -position end  sim:/uart_tx_tb/reset_tb
+add wave -position end  sim:/uart_tx_tb/tx_en_tb
+add wave -position end  sim:/uart_tx_tb/tx_tb
+add wave -position end  sim:/uart_tx_tb/SUT/estado
+add wave -position end  sim:/uart_tx_tb/SUT/sig_estado
+add wave -position 3  sim:/uart_tx_tb/SUT/clk9600
+run
+restart
+run
+add wave -position end  sim:/uart_tx_tb/SUT/tx
+restart
+run
+# Compile of clk_div.vhd was successful.
+# Compile of UART_TX.vhd was successful.
+# Compile of uart_tx_tb.vhd was successful.
+# 3 compiles, 0 failed with no errors.
+restart
+# Loading work.clk_div_package
+# Loading work.uart_tx_tb(tb)
+# Loading work.uart_tx(bhv)
+# Loading work.clk_div(behavioral)
+run
+# Break key hit
+quit -sim
+# End time: 14:31:58 on Apr 24,2021, Elapsed time: 0:06:55
+# Errors: 0, Warnings: 0
+# Compile of clk_div.vhd was successful.
+# Compile of UART_TX.vhd was successful.
+# Compile of uart_tx_tb.vhd was successful.
+# 3 compiles, 0 failed with no errors.
+vsim -gui work.uart_tx_tb
+# vsim -gui work.uart_tx_tb 
+# Start time: 14:35:13 on Apr 24,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.clk_div_package
+# Loading work.uart_tx_tb(tb)
+# Loading work.uart_tx(bhv)
+# Loading work.clk_div(behavioral)
+add wave -position end  sim:/uart_tx_tb/SUT/CLK0/clk_in
+add wave -position end  sim:/uart_tx_tb/SUT/CLK0/contador
+add wave -position end  sim:/uart_tx_tb/SUT/CLK0/clk_sig
+add wave -position end  sim:/uart_tx_tb/SUT/CLK0/clk_out
+add wave -position end  sim:/uart_tx_tb/clk_i_tb
+add wave -position end  sim:/uart_tx_tb/reset_tb
+add wave -position end  sim:/uart_tx_tb/tx_en_tb
+add wave -position end  sim:/uart_tx_tb/tx_data_tb
+add wave -position end  sim:/uart_tx_tb/tx_tb
+add wave -position end  sim:/uart_tx_tb/SUT/estado
+add wave -position end  sim:/uart_tx_tb/SUT/sig_estado
+run
+# Compile of UART_TX.vhd was successful.
+restart
+# Loading work.uart_tx(bhv)
+run
+# Compile of UART_TX.vhd was successful.
+restart
+# Loading work.uart_tx(bhv)
+run
+run
+restart
+run
+# Compile of UART_TX.vhd was successful.
+restart
+# Loading work.uart_tx(bhv)
+run
+# Compile of UART_TX.vhd was successful.
+restart
+# Loading work.uart_tx(bhv)
+run
+quit -sim
+# End time: 14:53:08 on Apr 24,2021, Elapsed time: 0:17:55
+# Errors: 0, Warnings: 0
+# Compile of clk_div.vhd was successful.
+# Compile of UART_TX.vhd was successful.
+# Compile of uart_tx_tb.vhd was successful.
+# 3 compiles, 0 failed with no errors.
+vsim -gui work.uart_tx_tb
+# vsim -gui work.uart_tx_tb 
+# Start time: 15:10:31 on Apr 24,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.clk_div_package
+# Loading work.uart_tx_tb(tb)
+# Loading work.uart_tx(bhv)
+# Loading work.clk_div(behavioral)
+add wave -position end  sim:/uart_tx_tb/SUT/CLK0/clk_in
+add wave -position end  sim:/uart_tx_tb/SUT/CLK0/contador
+add wave -position end  sim:/uart_tx_tb/SUT/CLK0/clk_sig
+add wave -position end  sim:/uart_tx_tb/SUT/CLK0/clk_out
+add wave -position end  sim:/uart_tx_tb/clk_i_tb
+add wave -position end  sim:/uart_tx_tb/reset_tb
+add wave -position end  sim:/uart_tx_tb/tx_en_tb
+add wave -position end  sim:/uart_tx_tb/tx_data_tb
+add wave -position end  sim:/uart_tx_tb/tx_tb
+add wave -position end  sim:/uart_tx_tb/SUT/current_state
+run
+# Compile of uart_tx_tb.vhd was successful.
+restart
+# Loading work.uart_tx_tb(tb)
+run
+run
+restart
+run
+add wave -position end  sim:/uart_tx_tb/SUT/tx
+add wave -position end  sim:/uart_tx_tb/tx_tb
+restart
+run
+# Compile of uart_tx_tb.vhd was successful.
+restart
+# Loading work.uart_tx_tb(tb)
+run
+restart
+# Compile of uart_tx_tb.vhd was successful.
+run
+restart
+# Loading work.uart_tx_tb(tb)
+run
+# End time: 16:05:36 on Apr 24,2021, Elapsed time: 0:55:05
+# Errors: 0, Warnings: 0

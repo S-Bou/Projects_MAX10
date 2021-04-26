@@ -1,0 +1,137 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'clk_i'
+Slack : -3.806
+TNS   : -49.813
+
+Type  : Slow 1200mV 85C Model Setup 'baud_gen:CLK0|clk_sig'
+Slack : -2.055
+TNS   : -12.395
+
+Type  : Slow 1200mV 85C Model Hold 'baud_gen:CLK0|clk_sig'
+Slack : 0.331
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'clk_i'
+Slack : 0.361
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'clk_i'
+Slack : -1.725
+TNS   : -51.709
+
+Type  : Slow 1200mV 85C Model Recovery 'baud_gen:CLK0|clk_sig'
+Slack : -1.197
+TNS   : -21.467
+
+Type  : Slow 1200mV 85C Model Removal 'baud_gen:CLK0|clk_sig'
+Slack : 1.016
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'clk_i'
+Slack : 1.447
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk_i'
+Slack : -3.000
+TNS   : -40.882
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'reset'
+Slack : -3.000
+TNS   : -3.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'baud_gen:CLK0|clk_sig'
+Slack : -1.222
+TNS   : -21.996
+
+Type  : Slow 1200mV 0C Model Setup 'clk_i'
+Slack : -3.393
+TNS   : -44.440
+
+Type  : Slow 1200mV 0C Model Setup 'baud_gen:CLK0|clk_sig'
+Slack : -1.781
+TNS   : -9.712
+
+Type  : Slow 1200mV 0C Model Hold 'baud_gen:CLK0|clk_sig'
+Slack : 0.299
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'clk_i'
+Slack : 0.337
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'clk_i'
+Slack : -1.511
+TNS   : -45.159
+
+Type  : Slow 1200mV 0C Model Recovery 'baud_gen:CLK0|clk_sig'
+Slack : -1.057
+TNS   : -18.970
+
+Type  : Slow 1200mV 0C Model Removal 'baud_gen:CLK0|clk_sig'
+Slack : 1.013
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'clk_i'
+Slack : 1.405
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk_i'
+Slack : -3.000
+TNS   : -40.882
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'reset'
+Slack : -3.000
+TNS   : -3.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'baud_gen:CLK0|clk_sig'
+Slack : -1.222
+TNS   : -21.996
+
+Type  : Fast 1200mV 0C Model Setup 'clk_i'
+Slack : -1.452
+TNS   : -12.746
+
+Type  : Fast 1200mV 0C Model Setup 'baud_gen:CLK0|clk_sig'
+Slack : -0.765
+TNS   : -0.765
+
+Type  : Fast 1200mV 0C Model Hold 'baud_gen:CLK0|clk_sig'
+Slack : 0.082
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'clk_i'
+Slack : 0.167
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'clk_i'
+Slack : -0.857
+TNS   : -25.550
+
+Type  : Fast 1200mV 0C Model Recovery 'baud_gen:CLK0|clk_sig'
+Slack : -0.581
+TNS   : -10.376
+
+Type  : Fast 1200mV 0C Model Removal 'baud_gen:CLK0|clk_sig'
+Slack : 0.330
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'clk_i'
+Slack : 0.489
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk_i'
+Slack : -3.000
+TNS   : -34.992
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'reset'
+Slack : -3.000
+TNS   : -3.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'baud_gen:CLK0|clk_sig'
+Slack : -1.000
+TNS   : -18.000
+
+------------------------------------------------------------

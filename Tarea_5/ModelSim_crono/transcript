@@ -1,0 +1,220 @@
+# Reading D:/Programas/intelFPGA_lite/Quartus_II_18.1/modelsim_ase/tcl/vsim/pref.tcl
+# OpenFile D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_5_Original_V2/ModelSim_crono/crono_simu.mpf
+# Loading project crono_simu
+# Compile of crono_tb.vhd was successful with warnings.
+vsim -gui work.crono_tb
+# vsim -gui work.crono_tb 
+# Start time: 09:07:26 on Apr 22,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.clk_div_package
+# Loading ieee.numeric_std(body)
+# Loading work.modxx_package
+# Loading work.bcdto7seg_package
+# Loading work.crono_tb(tb)
+# Loading work.crono(behavioral)
+# Loading work.clk_div(behavioral)
+# Loading work.modxx(behavior)
+# Loading work.bcdto7seg(main)
+add wave -position end  sim:/crono_tb/clk_i_tb
+add wave -position end  sim:/crono_tb/rest_tb
+add wave -position end  sim:/crono_tb/enab_tb
+add wave -position end  sim:/crono_tb/HEX0_tb
+add wave -position end  sim:/crono_tb/HEX1_tb
+run
+# ** Fatal: (vsim-4) ****** Memory allocation failure. *****
+# Attempting to allocate 131072 bytes
+# Please check your system for available memory and swap space.
+# ** Fatal: (vsim-4) ****** Memory allocation failure. *****
+# Attempting to allocate 131072 bytes
+# Please check your system for available memory and swap space.
+# ** Fatal: (vsim-4) ****** Memory allocation failure. *****
+# Attempting to allocate 8448 bytes
+# Please check your system for available memory and swap space.
+# ** Fatal: (vsim-4) ****** Memory allocation failure. *****
+# Attempting to allocate 8448 bytes
+# Please check your system for available memory and swap space.
+# ** Fatal: (SIGSEGV) Bad handle or reference.
+#    Time: 0 ps  Iteration: 0  Process: /crono_tb/RESET File: D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_5_Original_V2/crono_tb.vhd
+# Fatal error in Process RESET at D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_5_Original_V2/crono_tb.vhd line 39
+# 
+# HDL call sequence:
+# Stopped at D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_5_Original_V2/crono_tb.vhd 39 Process RESET
+# 
+# Compile of clk_div.vhd was successful.
+# Compile of modxx.vhd was successful.
+# Compile of bcdto7seg.vhd was successful.
+# Compile of crono.vhd was successful.
+# Compile of crono_tb.vhd was successful with warnings.
+# 5 compiles, 0 failed with no errors.
+quit -sim
+# End time: 09:12:15 on Apr 22,2021, Elapsed time: 0:04:49
+# Errors: 4, Warnings: 0
+# Compile of crono_tb.vhd was successful with warnings.
+# Compile of crono_tb.vhd was successful with warnings.
+# Compile of crono_tb.vhd was successful with warnings.
+# Compile of crono_tb.vhd was successful.
+vsim -gui work.crono_tb
+# vsim -gui work.crono_tb 
+# Start time: 09:15:30 on Apr 22,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.clk_div_package
+# Loading ieee.numeric_std(body)
+# Loading work.modxx_package
+# Loading work.bcdto7seg_package
+# Loading work.crono_tb(tb)
+# Loading work.crono(behavioral)
+# Loading work.clk_div(behavioral)
+# Loading work.modxx(behavior)
+# Loading work.bcdto7seg(main)
+run
+add wave -position end  sim:/crono_tb/clk_i_tb
+add wave -position end  sim:/crono_tb/rest_tb
+add wave -position end  sim:/crono_tb/enab_tb
+add wave -position end  sim:/crono_tb/HEX0_tb
+add wave -position end  sim:/crono_tb/HEX1_tb
+run
+restart
+run
+quit -sim
+# End time: 09:26:42 on Apr 22,2021, Elapsed time: 0:11:12
+# Errors: 0, Warnings: 0
+# Compile of crono_tb.vhd failed with 4 errors.
+# Compile of crono_tb.vhd failed with 4 errors.
+# Compile of crono_tb.vhd was successful.
+vsim -gui work.crono_tb
+# vsim -gui work.crono_tb 
+# Start time: 09:27:47 on Apr 22,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.clk_div_package
+# Loading ieee.numeric_std(body)
+# Loading work.modxx_package
+# Loading work.bcdto7seg_package
+# Loading work.crono_tb(tb)
+# Loading work.crono(behavioral)
+# Loading work.clk_div(behavioral)
+# Loading work.modxx(behavior)
+# Loading work.bcdto7seg(main)
+add wave -position end  sim:/crono_tb/clk_i_tb
+add wave -position end  sim:/crono_tb/rest_tb
+add wave -position end  sim:/crono_tb/enab_tb
+add wave -position end  sim:/crono_tb/HEX0_tb
+add wave -position end  sim:/crono_tb/HEX1_tb
+run
+quit -sim
+# End time: 09:29:06 on Apr 22,2021, Elapsed time: 0:01:19
+# Errors: 0, Warnings: 0
+# Compile of crono_tb.vhd was successful.
+vsim -gui work.crono_tb
+# vsim -gui work.crono_tb 
+# Start time: 09:29:22 on Apr 22,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.clk_div_package
+# Loading ieee.numeric_std(body)
+# Loading work.modxx_package
+# Loading work.bcdto7seg_package
+# Loading work.crono_tb(tb)
+# Loading work.crono(behavioral)
+# Loading work.clk_div(behavioral)
+# Loading work.modxx(behavior)
+# Loading work.bcdto7seg(main)
+add wave -position end  sim:/crono_tb/clk_i_tb
+add wave -position end  sim:/crono_tb/rest_tb
+add wave -position end  sim:/crono_tb/enab_tb
+add wave -position end  sim:/crono_tb/HEX0_tb
+add wave -position end  sim:/crono_tb/HEX1_tb
+run
+quit -sim
+# End time: 09:30:50 on Apr 22,2021, Elapsed time: 0:01:28
+# Errors: 0, Warnings: 0
+# Compile of crono_tb.vhd was successful.
+vsim -gui work.crono_tb
+# vsim -gui work.crono_tb 
+# Start time: 09:31:10 on Apr 22,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.clk_div_package
+# Loading ieee.numeric_std(body)
+# Loading work.modxx_package
+# Loading work.bcdto7seg_package
+# Loading work.crono_tb(tb)
+# Loading work.crono(behavioral)
+# Loading work.clk_div(behavioral)
+# Loading work.modxx(behavior)
+# Loading work.bcdto7seg(main)
+add wave -position end  sim:/crono_tb/clk_i_tb
+add wave -position end  sim:/crono_tb/rest_tb
+add wave -position end  sim:/crono_tb/enab_tb
+add wave -position end  sim:/crono_tb/HEX0_tb
+add wave -position end  sim:/crono_tb/HEX1_tb
+run
+quit -sim
+# End time: 09:32:04 on Apr 22,2021, Elapsed time: 0:00:54
+# Errors: 0, Warnings: 0
+# Compile of clk_div.vhd was successful.
+# Compile of modxx.vhd was successful.
+# Compile of bcdto7seg.vhd was successful.
+# Compile of crono.vhd was successful.
+# Compile of crono_tb.vhd was successful.
+# 5 compiles, 0 failed with no errors.
+vsim -gui work.crono_tb
+# vsim -gui work.crono_tb 
+# Start time: 09:33:43 on Apr 22,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.clk_div_package
+# Loading ieee.numeric_std(body)
+# Loading work.modxx_package
+# Loading work.bcdto7seg_package
+# Loading work.crono_tb(tb)
+# Loading work.crono(behavioral)
+# Loading work.clk_div(behavioral)
+# Loading work.modxx(behavior)
+# Loading work.bcdto7seg(main)
+add wave -position end  sim:/crono_tb/clk_i_tb
+add wave -position end  sim:/crono_tb/rest_tb
+add wave -position end  sim:/crono_tb/enab_tb
+add wave -position end  sim:/crono_tb/HEX0_tb
+add wave -position end  sim:/crono_tb/HEX1_tb
+run
+quit -sim
+# End time: 09:37:10 on Apr 22,2021, Elapsed time: 0:03:27
+# Errors: 0, Warnings: 0
+# Compile of clk_div.vhd was successful.
+# Compile of modxx.vhd was successful.
+# Compile of bcdto7seg.vhd was successful.
+# Compile of crono.vhd was successful.
+# Compile of crono_tb.vhd was successful.
+# 5 compiles, 0 failed with no errors.
+vsim -gui work.crono_tb
+# vsim -gui work.crono_tb 
+# Start time: 09:37:29 on Apr 22,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.clk_div_package
+# Loading ieee.numeric_std(body)
+# Loading work.modxx_package
+# Loading work.bcdto7seg_package
+# Loading work.crono_tb(tb)
+# Loading work.crono(behavioral)
+# Loading work.clk_div(behavioral)
+# Loading work.modxx(behavior)
+# Loading work.bcdto7seg(main)
+add wave -position end  sim:/crono_tb/clk_i_tb
+add wave -position end  sim:/crono_tb/rest_tb
+add wave -position end  sim:/crono_tb/enab_tb
+add wave -position end  sim:/crono_tb/HEX0_tb
+add wave -position end  sim:/crono_tb/HEX1_tb
+run
+# End time: 09:47:03 on Apr 22,2021, Elapsed time: 0:09:34
+# Errors: 0, Warnings: 0

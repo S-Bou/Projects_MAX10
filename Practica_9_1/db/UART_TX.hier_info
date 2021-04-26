@@ -1,0 +1,74 @@
+|UART_TX
+tx_data[0] => tx_data_int[0].ADATA
+tx_data[0] => tx_data_int[0].DATAIN
+tx_data[1] => tx_data_int[1].ADATA
+tx_data[1] => tx_data_int[1].DATAIN
+tx_data[2] => tx_data_int[2].ADATA
+tx_data[2] => tx_data_int[2].DATAIN
+tx_data[3] => tx_data_int[3].ADATA
+tx_data[3] => tx_data_int[3].DATAIN
+tx_data[4] => tx_data_int[4].ADATA
+tx_data[4] => tx_data_int[4].DATAIN
+tx_data[5] => tx_data_int[5].ADATA
+tx_data[5] => tx_data_int[5].DATAIN
+tx_data[6] => tx_data_int[6].ADATA
+tx_data[6] => tx_data_int[6].DATAIN
+tx_data[7] => tx_data_int[7].ADATA
+tx_data[7] => tx_data_int[7].DATAIN
+clk_i => clk_div:CLK0.clk_in
+reset => clk_div:CLK0.reset
+reset => count[0].ACLR
+reset => count[1].ACLR
+reset => count[2].ACLR
+reset => count[3].ACLR
+reset => tx_data_int[0].ALOAD
+reset => tx_data_int[1].ALOAD
+reset => tx_data_int[2].ALOAD
+reset => tx_data_int[3].ALOAD
+reset => tx_data_int[4].ALOAD
+reset => tx_data_int[5].ALOAD
+reset => tx_data_int[6].ALOAD
+reset => tx_data_int[7].ALOAD
+reset => tx_rdy~reg0.PRESET
+reset => tx~reg0.PRESET
+reset => current_state~7.DATAIN
+tx_en => current_state.OUTPUTSELECT
+tx_en => current_state.OUTPUTSELECT
+tx_en => current_state.OUTPUTSELECT
+tx_en => current_state.OUTPUTSELECT
+tx << tx~reg0.DB_MAX_OUTPUT_PORT_TYPE
+tx_rdy << tx_rdy~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|UART_TX|clk_div:CLK0
+clk_in => clk_sig.CLK
+clk_in => contador[0].CLK
+clk_in => contador[1].CLK
+clk_in => contador[2].CLK
+clk_in => contador[3].CLK
+clk_in => contador[4].CLK
+clk_in => contador[5].CLK
+clk_in => contador[6].CLK
+clk_in => contador[7].CLK
+clk_in => contador[8].CLK
+clk_in => contador[9].CLK
+clk_in => contador[10].CLK
+clk_in => contador[11].CLK
+clk_in => contador[12].CLK
+reset => clk_sig.ACLR
+reset => contador[0].ACLR
+reset => contador[1].ACLR
+reset => contador[2].ACLR
+reset => contador[3].ACLR
+reset => contador[4].ACLR
+reset => contador[5].ACLR
+reset => contador[6].ACLR
+reset => contador[7].ACLR
+reset => contador[8].ACLR
+reset => contador[9].ACLR
+reset => contador[10].ACLR
+reset => contador[11].ACLR
+reset => contador[12].ACLR
+clk_out <= clk_sig.DB_MAX_OUTPUT_PORT_TYPE
+
+

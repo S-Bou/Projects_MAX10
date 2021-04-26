@@ -1,0 +1,53 @@
+D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_5_Original_V2/modxx.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_5_Original_V2/modxx.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity modxx
+-- Compiling architecture behavior of modxx
+-- Compiling package modxx_package
+
+} {} {}} D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_5_Original_V2/clk_div.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_5_Original_V2/clk_div.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity clk_div
+-- Compiling architecture behavioral of clk_div
+-- Compiling package clk_div_package
+
+} {} {}} D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_5_Original_V2/crono.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_5_Original_V2/crono.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package clk_div_package
+-- Loading package NUMERIC_STD
+-- Loading package modxx_package
+-- Loading package bcdto7seg_package
+-- Compiling entity crono
+-- Compiling architecture behavioral of crono
+
+} {} {}} D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_5_Original_V2/crono_tb.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_5_Original_V2/crono_tb.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package clk_div_package
+-- Loading package NUMERIC_STD
+-- Loading package modxx_package
+-- Loading package bcdto7seg_package
+-- Compiling entity crono_tb
+-- Compiling architecture tb of crono_tb
+
+} {} {}} D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_5_Original_V2/bcdto7seg.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/Programas/intelFPGA_lite/Projects_MAX10/Tarea_5_Original_V2/bcdto7seg.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity bcdto7seg
+-- Compiling architecture main of bcdto7seg
+-- Compiling package bcdto7seg_package
+
+} {} {}}

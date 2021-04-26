@@ -1,0 +1,67 @@
+# Reading D:/Programas/intelFPGA_lite/Quartus_II_18.1/modelsim_ase/tcl/vsim/pref.tcl
+# OpenFile D:/Programas/intelFPGA_lite/Projects_MAX10/Practica_9_2/ModelSim_uart_tx/sim_uart_tx.mpf
+# Loading project sim_uart_tx
+# Compile of baud_gen.vhd was successful.
+# Compile of UART_TX.vhd was successful.
+# Compile of uart_tx_tb.vhd was successful.
+# 3 compiles, 0 failed with no errors.
+vsim -gui work.uart_tx_tb
+# vsim -gui work.uart_tx_tb 
+# Start time: 16:35:12 on Apr 24,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.baud_gen_package
+# Loading work.uart_tx_tb(tb)
+# Loading work.uart_tx(bhv)
+# ** Fatal: (vsim-3817) Port "baudsel" of entity "uart_tx" is not in the component being instantiated.
+#    Time: 0 ps  Iteration: 0  Instance: /uart_tx_tb/SUT File: D:/Programas/intelFPGA_lite/Projects_MAX10/Practica_9_2/UART_TX.vhd Line: 7
+# FATAL ERROR while loading design
+# Error loading design
+# End time: 16:35:12 on Apr 24,2021, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# Compile of uart_tx_tb.vhd failed with 2 errors.
+# Compile of baud_gen.vhd was successful.
+# Compile of UART_TX.vhd was successful.
+# Compile of uart_tx_tb.vhd was successful.
+# 3 compiles, 0 failed with no errors.
+vsim -gui work.uart_tx_tb
+# vsim -gui work.uart_tx_tb 
+# Start time: 16:38:21 on Apr 24,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.baud_gen_package
+# Loading work.uart_tx_tb(tb)
+# Loading work.uart_tx(bhv)
+# Loading work.baud_gen(behavioral)
+do D:/Programas/intelFPGA_lite/Projects_MAX10/Practica_9_2/ModelSim_uart_tx/wave.do
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: bou  Hostname: DESKTOP-P90D7IV  ProcessID: 15180
+#           Attempting to use alternate WLF file "./wlfttxzvbs".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlfttxzvbs
+# ** Error: (vish-4014) No objects found matching '/uart_tx_tb/SUT/estado'.
+# Executing ONERROR command at macro D:\Programas\intelFPGA_lite\Projects_MAX10\Practica_9_2\ModelSim_uart_tx\wave.do line 12
+# ** Error: (vish-4014) No objects found matching '/uart_tx_tb/SUT/sig_estado'.
+# Executing ONERROR command at macro D:\Programas\intelFPGA_lite\Projects_MAX10\Practica_9_2\ModelSim_uart_tx\wave.do line 13
+run
+# Compile of baud_gen.vhd was successful.
+# Compile of UART_TX.vhd was successful.
+# Compile of uart_tx_tb.vhd was successful.
+# 3 compiles, 0 failed with no errors.
+restart
+# Loading work.baud_gen_package
+# Loading work.uart_tx_tb(tb)
+# Loading work.uart_tx(bhv)
+# Loading work.baud_gen(behavioral)
+run
+add wave -position end  sim:/uart_tx_tb/SUT/tx_data_int
+run
+add wave -position end  sim:/uart_tx_tb/SUT/current_state
+run
+restart
+run
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf D:/Programas/intelFPGA_lite/Projects_MAX10/Practica_9_2/ModelSim_uart_tx/wave.do
+# End time: 16:41:02 on Apr 24,2021, Elapsed time: 0:02:41
+# Errors: 6, Warnings: 2

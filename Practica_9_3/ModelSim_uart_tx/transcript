@@ -1,0 +1,95 @@
+# Reading D:/Programas/intelFPGA_lite/Quartus_II_18.1/modelsim_ase/tcl/vsim/pref.tcl
+# OpenFile D:/Programas/intelFPGA_lite/Projects_MAX10/Practica_9_3/ModelSim_uart_tx/sim_uart_tx.mpf
+# Loading project sim_uart_tx
+# Compile of baud_gen.vhd was successful.
+# Compile of UART_TX.vhd was successful.
+# Compile of uart_tx_tb.vhd was successful.
+# 3 compiles, 0 failed with no errors.
+vsim -gui work.uart_tx_tb
+# vsim -gui work.uart_tx_tb 
+# Start time: 16:57:03 on Apr 24,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.baud_gen_package
+# Loading work.uart_tx_tb(tb)
+# Loading work.uart_tx(bhv)
+# Loading work.baud_gen(behavioral)
+do D:/Programas/intelFPGA_lite/Projects_MAX10/Practica_9_3/ModelSim_uart_tx/wave.do
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: bou  Hostname: DESKTOP-P90D7IV  ProcessID: 15180
+#           Attempting to use alternate WLF file "./wlftas7239".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftas7239
+run
+quit -sim
+# End time: 16:58:13 on Apr 24,2021, Elapsed time: 0:01:10
+# Errors: 0, Warnings: 2
+# Compile of baud_gen.vhd was successful.
+# Compile of UART_TX.vhd was successful.
+# Compile of uart_tx_tb.vhd was successful.
+# 3 compiles, 0 failed with no errors.
+vsim -gui work.uart_tx_tb
+# vsim -gui work.uart_tx_tb 
+# Start time: 16:59:08 on Apr 24,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.baud_gen_package
+# Loading work.uart_tx_tb(tb)
+# Loading work.uart_tx(bhv)
+# Loading work.baud_gen(behavioral)
+do D:/Programas/intelFPGA_lite/Projects_MAX10/Practica_9_3/ModelSim_uart_tx/wave.do
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: bou  Hostname: DESKTOP-P90D7IV  ProcessID: 15180
+#           Attempting to use alternate WLF file "./wlfttqy4ae".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlfttqy4ae
+run
+add wave -position end  sim:/uart_tx_tb/SUT/paridad
+restart
+run
+# Compile of baud_gen.vhd was successful.
+# Compile of UART_TX.vhd was successful.
+# Compile of uart_tx_tb.vhd was successful.
+# 3 compiles, 0 failed with no errors.
+restart
+# Loading work.baud_gen_package
+# Loading work.uart_tx_tb(tb)
+# Loading work.uart_tx(bhv)
+# Loading work.baud_gen(behavioral)
+run
+# Compile of baud_gen.vhd was successful.
+# Compile of UART_TX.vhd was successful.
+# Compile of uart_tx_tb.vhd was successful.
+# 3 compiles, 0 failed with no errors.
+restart
+# Loading work.baud_gen_package
+# Loading work.uart_tx_tb(tb)
+# Loading work.uart_tx(bhv)
+# Loading work.baud_gen(behavioral)
+run
+# Compile of baud_gen.vhd was successful.
+# Compile of UART_TX.vhd was successful.
+# Compile of uart_tx_tb.vhd was successful.
+# 3 compiles, 0 failed with no errors.
+restart
+# Loading work.baud_gen_package
+# Loading work.uart_tx_tb(tb)
+# Loading work.uart_tx(bhv)
+# Loading work.baud_gen(behavioral)
+run
+restart
+run
+# Compile of baud_gen.vhd was successful.
+# Compile of UART_TX.vhd was successful.
+# Compile of uart_tx_tb.vhd was successful.
+# 3 compiles, 0 failed with no errors.
+restart
+# Loading work.baud_gen_package
+# Loading work.uart_tx_tb(tb)
+# Loading work.uart_tx(bhv)
+# Loading work.baud_gen(behavioral)
+run
+# End time: 17:39:40 on Apr 24,2021, Elapsed time: 0:40:32
+# Errors: 0, Warnings: 2

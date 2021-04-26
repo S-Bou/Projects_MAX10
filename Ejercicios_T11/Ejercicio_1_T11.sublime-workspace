@@ -16,27 +16,26 @@
 	"buffers":
 	[
 		{
-			"file": "Ejercicio_1_T11.vhd",
+			"file": "/C/Users/bouyo/Downloads/clk_div.vhd",
 			"settings":
 			{
-				"buffer_size": 1172,
+				"buffer_size": 940,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "Ejercicio_2_T11.vhd",
+			"file": "/C/Users/bouyo/Downloads/UART_TX.vhd",
 			"settings":
 			{
-				"buffer_size": 1551,
+				"buffer_size": 1895,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "Ejercicio_3_T11.vhd",
+			"file": "/C/Users/bouyo/Downloads/uart_tx_tb.vhd",
 			"settings":
 			{
-				"buffer_size": 1552,
-				"encoding": "UTF-8",
+				"buffer_size": 896,
 				"line_ending": "Windows"
 			}
 		}
@@ -89,6 +88,11 @@
 	},
 	"file_history":
 	[
+		"/D/Programas/intelFPGA_lite/Projects_MAX10/Tarea_5/crono_tb.vhd",
+		"/D/Programas/intelFPGA_lite/Projects_MAX10/Ejercicios_T11/Ejercicio_3_T11.vhd",
+		"/D/Programas/intelFPGA_lite/Projects_MAX10/Ejercicios_T11/Ejercicio_2_T11.vhd",
+		"/D/Programas/intelFPGA_lite/Projects_MAX10/Ejercicios_T11/Ejercicio_1_T11.vhd",
+		"/D/Programas/intelFPGA_lite/Projects_MAX10/Tarea_5_TbV1/crono_tb.vhd",
 		"/D/Programas/intelFPGA_lite/Projects_MAX10/Modelsim_LS194/LS194_tb.vhd",
 		"/D/Programas/intelFPGA_lite/Projects_Cyclone_IV/Calculadora_V6_FULL_+/calcu_main.vhd",
 		"/D/Programas/intelFPGA_lite/Projects_MAX10/Modelsim_LS194/LS194.vhd",
@@ -211,12 +215,7 @@
 		"/D/Programas/STMicroelectronics/Proyectos_STM32L476/Practica_814_delayus/Src/main.c",
 		"/D/Programas/GNAT/AdaProyects/Practica_1b_pila/src/main.adb",
 		"/D/Programas/GNAT/AdaProyects/Practica_1b_pila/src/pila.adb",
-		"/D/Programas/GNAT/AdaProyects/Practica_1b/src/pila.ads",
-		"/C/Users/bouyo/Desktop/MyKit/PlantillaModulo/examen.h",
-		"/C/Users/bouyo/Desktop/MyKit/PlantillaModulo/examen.c",
-		"/C/Users/bouyo/Desktop/MODULE Module1.mod",
-		"/D/Programas/GNAT/AdaProyects/Practica_1b/src/main.adb",
-		"/D/Programas/GNAT/AdaProyects/Practica_3a_E1/src/barreras.adb"
+		"/D/Programas/GNAT/AdaProyects/Practica_1b/src/pila.ads"
 	],
 	"find":
 	{
@@ -251,30 +250,29 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "Ejercicio_1_T11.vhd",
+					"file": "/C/Users/bouyo/Downloads/clk_div.vhd",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1172,
+						"buffer_size": 940,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								349,
-								349
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/VHDL/Syntaxes/VHDL.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/VHDL/Syntaxes/VHDL.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -285,19 +283,48 @@
 				},
 				{
 					"buffer": 1,
-					"file": "Ejercicio_2_T11.vhd",
+					"file": "/C/Users/bouyo/Downloads/UART_TX.vhd",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1551,
+						"buffer_size": 1895,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1551,
+								0,
 								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/VHDL/Syntaxes/VHDL.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 396.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/C/Users/bouyo/Downloads/uart_tx_tb.vhd",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 896,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								500,
+								500
 							]
 						],
 						"settings":
@@ -310,35 +337,6 @@
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "Ejercicio_3_T11.vhd",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1552,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1552,
-								1552
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/VHDL/Syntaxes/VHDL.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
 					"type": "text"
 				}
 			]

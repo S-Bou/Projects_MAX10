@@ -1,0 +1,152 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/Programas/intelFPGA_lite/Quartus_II_18.1
+Eclk_div
+Z0 w1619263469
+Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z2 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z3 dD:/Programas/intelFPGA_lite/Projects_MAX10/Practica_9/ModelSim_uart_tx
+Z4 8D:\Programas\intelFPGA_lite\Projects_MAX10\Practica_9\clk_div.vhd
+Z5 FD:\Programas\intelFPGA_lite\Projects_MAX10\Practica_9\clk_div.vhd
+l0
+L3
+V@3_Gd=kX:H<V162;LIn[n0
+!s100 o;oh`]Z;FmS0KGDG0C6N83
+Z6 OV;C;10.5b;63
+32
+Z7 !s110 1619269817
+!i10b 1
+Z8 !s108 1619269817.000000
+Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:\Programas\intelFPGA_lite\Projects_MAX10\Practica_9\clk_div.vhd|
+Z10 !s107 D:\Programas\intelFPGA_lite\Projects_MAX10\Practica_9\clk_div.vhd|
+!i113 1
+Z11 o-work work -2002 -explicit
+Z12 tExplicit 1 CvgOpt 0
+Abehavioral
+R1
+R2
+DEx4 work 7 clk_div 0 22 @3_Gd=kX:H<V162;LIn[n0
+l12
+L9
+VK2I4gM^FFnmZ;m1B7Jf1B3
+!s100 5D6=bK`Q@8U^n^XgML:P:0
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Pclk_div_package
+R1
+R2
+R0
+R3
+R4
+R5
+l0
+L34
+VPWb:X`Ylh2T3B7KK7;7FN1
+!s100 E?[ec1Ym;kWLM_m0[1lHL1
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Euart_tx
+Z13 w1619269636
+Z14 DPx4 work 15 clk_div_package 0 22 PWb:X`Ylh2T3B7KK7;7FN1
+R1
+R2
+R3
+Z15 8D:\Programas\intelFPGA_lite\Projects_MAX10\Practica_9\UART_TX.vhd
+Z16 FD:\Programas\intelFPGA_lite\Projects_MAX10\Practica_9\UART_TX.vhd
+l0
+L4
+VhI6MP4V]CS[`OzM43Gbfz1
+!s100 kZ_CoCT[jlUz@f30:VJZQ1
+R6
+32
+R7
+!i10b 1
+R8
+Z17 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:\Programas\intelFPGA_lite\Projects_MAX10\Practica_9\UART_TX.vhd|
+Z18 !s107 D:\Programas\intelFPGA_lite\Projects_MAX10\Practica_9\UART_TX.vhd|
+!i113 1
+R11
+R12
+Abhv
+R14
+R1
+R2
+DEx4 work 7 uart_tx 0 22 hI6MP4V]CS[`OzM43Gbfz1
+l29
+L12
+V>cVXfWiSMJ>o0IM[jzMMX0
+!s100 CHQ6EDmO]ME<c<?>2?<Zj3
+R6
+32
+R7
+!i10b 1
+R8
+R17
+R18
+!i113 1
+R11
+R12
+Euart_tx_tb
+Z19 w1619272210
+R14
+R1
+R2
+R3
+Z20 8D:\Programas\intelFPGA_lite\Projects_MAX10\Practica_9\uart_tx_tb.vhd
+Z21 FD:\Programas\intelFPGA_lite\Projects_MAX10\Practica_9\uart_tx_tb.vhd
+l0
+L4
+V600m`Cf`cRTR6]=9EKX0R0
+!s100 PFM2EJ`7_?nj8<if]SG:j0
+R6
+32
+Z22 !s110 1619272226
+!i10b 1
+Z23 !s108 1619272226.000000
+Z24 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:\Programas\intelFPGA_lite\Projects_MAX10\Practica_9\uart_tx_tb.vhd|
+Z25 !s107 D:\Programas\intelFPGA_lite\Projects_MAX10\Practica_9\uart_tx_tb.vhd|
+!i113 1
+R11
+R12
+Atb
+R14
+R1
+R2
+Z26 DEx4 work 10 uart_tx_tb 0 22 600m`Cf`cRTR6]=9EKX0R0
+l23
+L7
+Vb;?MOIfH9XGHT_33I;5@@3
+!s100 c`Xk78GC2NPR05kdVlR:f1
+R6
+32
+R22
+!i10b 1
+R23
+R24
+R25
+!i113 1
+R11
+R12
